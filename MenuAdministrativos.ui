@@ -242,7 +242,7 @@ color: whitesmoke;</string>
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="pagina1">
              <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -719,45 +719,17 @@ color: whitesmoke;</string>
                   <number>100</number>
                  </property>
                  <property name="rightMargin">
-                  <number>100</number>
+                  <number>0</number>
                  </property>
                  <property name="bottomMargin">
                   <number>100</number>
                  </property>
                  <property name="horizontalSpacing">
-                  <number>6</number>
+                  <number>20</number>
                  </property>
                  <property name="verticalSpacing">
-                  <number>30</number>
+                  <number>10</number>
                  </property>
-                 <item row="0" column="0" colspan="8" alignment="Qt::AlignHCenter">
-                  <widget class="QLabel" name="label_2">
-                   <property name="text">
-                    <string>Ingrese el código del usuario para registrar la visita.</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="0" alignment="Qt::AlignRight">
-                  <widget class="QLabel" name="label_6">
-                   <property name="text">
-                    <string>ID usuario:</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="6" column="0" alignment="Qt::AlignRight">
-                  <widget class="QLabel" name="label_11">
-                   <property name="text">
-                    <string>Fecha de hoy:</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="4" column="0" alignment="Qt::AlignRight">
-                  <widget class="QLabel" name="label_10">
-                   <property name="text">
-                    <string>Nombre:</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="3" column="4" alignment="Qt::AlignHCenter">
                   <widget class="QLabel" name="label_8">
                    <property name="maximumSize">
@@ -771,7 +743,14 @@ color: whitesmoke;</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="1" column="5">
+                 <item row="0" column="0" colspan="8" alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_2">
+                   <property name="text">
+                    <string>Ingrese el código del usuario para registrar la visita.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="5" alignment="Qt::AlignHCenter">
                   <widget class="QPushButton" name="Buscar_Visita_3">
                    <property name="minimumSize">
                     <size>
@@ -853,7 +832,7 @@ QPushButton:hover{
                    </property>
                   </widget>
                  </item>
-                 <item row="9" column="5">
+                 <item row="9" column="5" alignment="Qt::AlignRight">
                   <widget class="QPushButton" name="Buscar_Visita_5">
                    <property name="minimumSize">
                     <size>
@@ -891,11 +870,21 @@ QPushButton:hover{
                    </property>
                   </widget>
                  </item>
-                 <item row="6" column="4">
+                 <item row="7" column="4" alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_12">
+                   <property name="text">
+                    <string>Tu membresía vence en: 00 dias.</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="4" alignment="Qt::AlignHCenter">
                   <widget class="QPlainTextEdit" name="plainTextEdit_3">
                    <property name="minimumSize">
                     <size>
-                     <width>300</width>
+                     <width>500</width>
                      <height>50</height>
                     </size>
                    </property>
@@ -914,11 +903,11 @@ border-radius: 10px;</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="4" column="4">
+                 <item row="4" column="4" alignment="Qt::AlignHCenter">
                   <widget class="QPlainTextEdit" name="plainTextEdit_2">
                    <property name="minimumSize">
                     <size>
-                     <width>300</width>
+                     <width>500</width>
                      <height>50</height>
                     </size>
                    </property>
@@ -937,11 +926,11 @@ border-radius: 10px;</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="1" column="4">
+                 <item row="1" column="4" alignment="Qt::AlignHCenter">
                   <widget class="QPlainTextEdit" name="plainTextEdit">
                    <property name="minimumSize">
                     <size>
-                     <width>300</width>
+                     <width>500</width>
                      <height>50</height>
                     </size>
                    </property>
@@ -964,13 +953,24 @@ border-radius: 10px;
                    </property>
                   </widget>
                  </item>
-                 <item row="7" column="4">
-                  <widget class="QLabel" name="label_12">
+                 <item row="1" column="3" alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_6">
                    <property name="text">
-                    <string>Tu membresía vence en: 00 dias.</string>
+                    <string>ID usuario:</string>
                    </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
+                  </widget>
+                 </item>
+                 <item row="4" column="3" alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>Nombre:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="3" alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>Fecha de hoy:</string>
                    </property>
                   </widget>
                  </item>
@@ -1041,7 +1041,7 @@ border: 1px solid rgb(161, 161, 161);
                  <enum>QTabWidget::Rounded</enum>
                 </property>
                 <property name="currentIndex">
-                 <number>0</number>
+                 <number>3</number>
                 </property>
                 <property name="usesScrollButtons">
                  <bool>false</bool>
