@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="logos">
+    <file>logo.png</file>
+    <file>logo.ico</file>
+  </qresource>
+  <qresource prefix="menu">
+    <file>clientes.png</file>
+    <file>empleados.png</file>
+    <file>entrenador.png</file>
+    <file>reloj.png</file>
+    <file>venta.png</file>
+    <file>menuicon2.png</file>
+    <file>menuIcon.png</file>
+  </qresource>
+</RCC>
