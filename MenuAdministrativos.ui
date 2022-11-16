@@ -280,7 +280,7 @@ color: whitesmoke;</string>
                   <number>20</number>
                  </property>
                  <property name="leftMargin">
-                  <number>0</number>
+                  <number>15</number>
                  </property>
                  <property name="topMargin">
                   <number>0</number>
@@ -730,41 +730,48 @@ color: whitesmoke;</string>
                  <property name="verticalSpacing">
                   <number>30</number>
                  </property>
-                 <item row="0" column="0" colspan="3" alignment="Qt::AlignHCenter">
+                 <item row="0" column="0" colspan="8" alignment="Qt::AlignHCenter">
                   <widget class="QLabel" name="label_2">
                    <property name="text">
                     <string>Ingrese el código del usuario para registrar la visita.</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="1" column="1">
-                  <widget class="QPlainTextEdit" name="plainTextEdit">
-                   <property name="minimumSize">
-                    <size>
-                     <width>300</width>
-                     <height>50</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>16777215</width>
-                     <height>50</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">background-color: #343434;
-font: 87 14pt &quot;Arial Black&quot;;
-color: whitesmoke;
-border: 3px solid #e6b31e;
-border-radius: 10px;
-</string>
-                   </property>
-                   <property name="plainText">
-                    <string/>
+                 <item row="1" column="0" alignment="Qt::AlignRight">
+                  <widget class="QLabel" name="label_6">
+                   <property name="text">
+                    <string>ID usuario:</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="1" column="2">
+                 <item row="6" column="0" alignment="Qt::AlignRight">
+                  <widget class="QLabel" name="label_11">
+                   <property name="text">
+                    <string>Fecha de hoy:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0" alignment="Qt::AlignRight">
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>Nombre:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="4" alignment="Qt::AlignHCenter">
+                  <widget class="QLabel" name="label_8">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Información del usuario</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="5">
                   <widget class="QPushButton" name="Buscar_Visita_3">
                    <property name="minimumSize">
                     <size>
@@ -808,58 +815,7 @@ QPushButton:hover{
                    </property>
                   </widget>
                  </item>
-                 <item row="3" column="1" colspan="2">
-                  <widget class="QPlainTextEdit" name="plainTextEdit_2">
-                   <property name="minimumSize">
-                    <size>
-                     <width>300</width>
-                     <height>50</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>16777215</width>
-                     <height>50</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">background-color: #343434;
-font: 87 14pt &quot;Arial Black&quot;;
-color: whitesmoke;
-border: 3px solid #e6b31e;
-border-radius: 10px;</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="4" column="0">
-                  <widget class="QLabel" name="label_11">
-                   <property name="text">
-                    <string>Fecha de hoy:</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="3" column="0">
-                  <widget class="QLabel" name="label_10">
-                   <property name="text">
-                    <string>Nombre:</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="0">
-                  <widget class="QLabel" name="label_6">
-                   <property name="text">
-                    <string>ID usuario:</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="1" alignment="Qt::AlignHCenter">
-                  <widget class="QLabel" name="label_8">
-                   <property name="text">
-                    <string>Información del usuario</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="6" column="1" alignment="Qt::AlignHCenter">
+                 <item row="9" column="4" alignment="Qt::AlignHCenter">
                   <widget class="QPushButton" name="Buscar_Visita_4">
                    <property name="minimumSize">
                     <size>
@@ -897,7 +853,45 @@ QPushButton:hover{
                    </property>
                   </widget>
                  </item>
-                 <item row="4" column="1" colspan="2">
+                 <item row="9" column="5">
+                  <widget class="QPushButton" name="Buscar_Visita_5">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>70</height>
+                    </size>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Volver al menu</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="6" column="4">
                   <widget class="QPlainTextEdit" name="plainTextEdit_3">
                    <property name="minimumSize">
                     <size>
@@ -920,7 +914,57 @@ border-radius: 10px;</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="5" column="1" colspan="2">
+                 <item row="4" column="4">
+                  <widget class="QPlainTextEdit" name="plainTextEdit_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>300</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: #343434;
+font: 87 14pt &quot;Arial Black&quot;;
+color: whitesmoke;
+border: 3px solid #e6b31e;
+border-radius: 10px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="4">
+                  <widget class="QPlainTextEdit" name="plainTextEdit">
+                   <property name="minimumSize">
+                    <size>
+                     <width>300</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: #343434;
+font: 87 14pt &quot;Arial Black&quot;;
+color: whitesmoke;
+border: 3px solid #e6b31e;
+border-radius: 10px;
+</string>
+                   </property>
+                   <property name="plainText">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="7" column="4">
                   <widget class="QLabel" name="label_12">
                    <property name="text">
                     <string>Tu membresía vence en: 00 dias.</string>
