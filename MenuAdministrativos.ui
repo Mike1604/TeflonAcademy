@@ -242,7 +242,7 @@ color: whitesmoke;</string>
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="currentIndex">
-             <number>1</number>
+             <number>2</number>
             </property>
             <widget class="QWidget" name="pagina1">
              <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -2596,7 +2596,283 @@ color: rgb(255, 255, 255);</string>
                   <property name="verticalSpacing">
                    <number>10</number>
                   </property>
-                  <item row="0" column="0" alignment="Qt::AlignHCenter">
+                  <item row="1" column="0">
+                   <widget class="QScrollArea" name="scrollArea_4">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius: 5px;</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::NoFrame</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Sunken</enum>
+                    </property>
+                    <property name="widgetResizable">
+                     <bool>true</bool>
+                    </property>
+                    <widget class="QWidget" name="scrollAreaWidgetContents_5">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>0</y>
+                       <width>1129</width>
+                       <height>558</height>
+                      </rect>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_9">
+                      <item row="6" column="3" alignment="Qt::AlignHCenter">
+                       <widget class="QLineEdit" name="Eliminar_NombrePaciente">
+                        <property name="minimumSize">
+                         <size>
+                          <width>600</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="12" column="3" alignment="Qt::AlignHCenter">
+                       <widget class="QLineEdit" name="EliminarUltima">
+                        <property name="minimumSize">
+                         <size>
+                          <width>600</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="6" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                       <widget class="QLabel" name="label_41">
+                        <property name="styleSheet">
+                         <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="text">
+                         <string>Nombre:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="12" column="0" alignment="Qt::AlignRight">
+                       <widget class="QLabel" name="label_44">
+                        <property name="styleSheet">
+                         <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="text">
+                         <string>Rol:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="10" column="0" alignment="Qt::AlignRight">
+                       <widget class="QLabel" name="label_42">
+                        <property name="styleSheet">
+                         <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="text">
+                         <string>Telefono:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="3" alignment="Qt::AlignHCenter">
+                       <widget class="QLineEdit" name="ID_BuscarEliminarPaciente">
+                        <property name="minimumSize">
+                         <size>
+                          <width>600</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="11" column="0" alignment="Qt::AlignRight">
+                       <widget class="QLabel" name="label_43">
+                        <property name="styleSheet">
+                         <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="text">
+                         <string>Fecha Nacimiento:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="11" column="3" alignment="Qt::AlignHCenter">
+                       <widget class="QLineEdit" name="EliminarFecha">
+                        <property name="minimumSize">
+                         <size>
+                          <width>600</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="13" column="3" colspan="2" alignment="Qt::AlignHCenter">
+                       <widget class="QPushButton" name="EliminarPacienteBoton">
+                        <property name="minimumSize">
+                         <size>
+                          <width>130</width>
+                          <height>70</height>
+                         </size>
+                        </property>
+                        <property name="cursor">
+                         <cursorShape>PointingHandCursor</cursorShape>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+</string>
+                        </property>
+                        <property name="text">
+                         <string>Eliminar Paciente.</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="4" alignment="Qt::AlignLeft">
+                       <widget class="QPushButton" name="BuscarBotonEliminar">
+                        <property name="minimumSize">
+                         <size>
+                          <width>130</width>
+                          <height>70</height>
+                         </size>
+                        </property>
+                        <property name="cursor">
+                         <cursorShape>PointingHandCursor</cursorShape>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+</string>
+                        </property>
+                        <property name="text">
+                         <string>Buscar</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                       <widget class="QComboBox" name="BuscarRegistradosCombobox_2">
+                        <property name="contextMenuPolicy">
+                         <enum>Qt::DefaultContextMenu</enum>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+border: .5px solid #e6b31e;
+background-color: rgb(52, 52, 52);
+color: whitesmoke;</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>Buscar por ID:</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Buscar por Nombre:</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item row="2" column="3" alignment="Qt::AlignHCenter">
+                       <widget class="QLabel" name="label_40">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="text">
+                         <string>Datos del empleado encontrados:</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="10" column="3" alignment="Qt::AlignHCenter">
+                       <widget class="QLineEdit" name="Eliminar_TelefenoPaciente">
+                        <property name="minimumSize">
+                         <size>
+                          <width>600</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
                    <widget class="QLabel" name="label_37">
                     <property name="palette">
                      <palette>
@@ -2784,284 +3060,8 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
                     </property>
                     <property name="text">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;Eliminar empleado &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;Eliminar empleado &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
-                   </widget>
-                  </item>
-                  <item row="1" column="0">
-                   <widget class="QScrollArea" name="scrollArea_4">
-                    <property name="styleSheet">
-                     <string notr="true">border-radius: 5px;</string>
-                    </property>
-                    <property name="frameShape">
-                     <enum>QFrame::NoFrame</enum>
-                    </property>
-                    <property name="frameShadow">
-                     <enum>QFrame::Sunken</enum>
-                    </property>
-                    <property name="widgetResizable">
-                     <bool>true</bool>
-                    </property>
-                    <widget class="QWidget" name="scrollAreaWidgetContents_5">
-                     <property name="geometry">
-                      <rect>
-                       <x>0</x>
-                       <y>0</y>
-                       <width>1129</width>
-                       <height>558</height>
-                      </rect>
-                     </property>
-                     <layout class="QGridLayout" name="gridLayout_9">
-                      <item row="6" column="3" alignment="Qt::AlignHCenter">
-                       <widget class="QLineEdit" name="Eliminar_NombrePaciente">
-                        <property name="minimumSize">
-                         <size>
-                          <width>600</width>
-                          <height>0</height>
-                         </size>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="3" alignment="Qt::AlignHCenter">
-                       <widget class="QLineEdit" name="ID_BuscarEliminarPaciente">
-                        <property name="minimumSize">
-                         <size>
-                          <width>600</width>
-                          <height>0</height>
-                         </size>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="11" column="3" alignment="Qt::AlignHCenter">
-                       <widget class="QLineEdit" name="EliminarFecha">
-                        <property name="minimumSize">
-                         <size>
-                          <width>600</width>
-                          <height>0</height>
-                         </size>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="12" column="3" alignment="Qt::AlignHCenter">
-                       <widget class="QLineEdit" name="EliminarUltima">
-                        <property name="minimumSize">
-                         <size>
-                          <width>600</width>
-                          <height>0</height>
-                         </size>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="6" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
-                       <widget class="QLabel" name="label_41">
-                        <property name="styleSheet">
-                         <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                        </property>
-                        <property name="text">
-                         <string>Nombre:</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="10" column="3" alignment="Qt::AlignHCenter">
-                       <widget class="QLineEdit" name="Eliminar_TelefenoPaciente">
-                        <property name="minimumSize">
-                         <size>
-                          <width>600</width>
-                          <height>0</height>
-                         </size>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="12" column="0" alignment="Qt::AlignRight">
-                       <widget class="QLabel" name="label_44">
-                        <property name="styleSheet">
-                         <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                        </property>
-                        <property name="text">
-                         <string>Rol:</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="10" column="0" alignment="Qt::AlignRight">
-                       <widget class="QLabel" name="label_42">
-                        <property name="styleSheet">
-                         <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                        </property>
-                        <property name="text">
-                         <string>Telefono:</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="11" column="0" alignment="Qt::AlignRight">
-                       <widget class="QLabel" name="label_43">
-                        <property name="styleSheet">
-                         <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                        </property>
-                        <property name="text">
-                         <string>Fecha Nacimiento:</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="13" column="3" colspan="2" alignment="Qt::AlignHCenter">
-                       <widget class="QPushButton" name="EliminarPacienteBoton">
-                        <property name="minimumSize">
-                         <size>
-                          <width>130</width>
-                          <height>70</height>
-                         </size>
-                        </property>
-                        <property name="cursor">
-                         <cursorShape>PointingHandCursor</cursorShape>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">QPushButton{
-	background-color: #343434;
-	font: 87 14pt &quot;Arial Black&quot;;
-	color: whitesmoke;
-	border-radius: 5px;
-	border: .5px solid #e6b31e;
-	margin: 10 px;
-	right-margin: 10px;
-}
-
-QPushButton:hover{
-	background-color: #e6b31e;
-	font: 87 14pt &quot;Arial Black&quot;;
-	color: whitesmoke;
-	border-radius: 5px;
-	border: 1.5px solid #343434;
-	margin: 10 px;
-	right-margin: 10px;
-}
-
-</string>
-                        </property>
-                        <property name="text">
-                         <string>Eliminar Paciente.</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="4" alignment="Qt::AlignLeft">
-                       <widget class="QPushButton" name="BuscarBotonEliminar">
-                        <property name="minimumSize">
-                         <size>
-                          <width>130</width>
-                          <height>70</height>
-                         </size>
-                        </property>
-                        <property name="cursor">
-                         <cursorShape>PointingHandCursor</cursorShape>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">QPushButton{
-	background-color: #343434;
-	font: 87 14pt &quot;Arial Black&quot;;
-	color: whitesmoke;
-	border-radius: 5px;
-	border: .5px solid #e6b31e;
-	margin: 10 px;
-	right-margin: 10px;
-}
-
-QPushButton:hover{
-	background-color: #e6b31e;
-	font: 87 14pt &quot;Arial Black&quot;;
-	color: whitesmoke;
-	border-radius: 5px;
-	border: 1.5px solid #343434;
-	margin: 10 px;
-	right-margin: 10px;
-}
-
-</string>
-                        </property>
-                        <property name="text">
-                         <string>Buscar</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
-                       <widget class="QComboBox" name="BuscarRegistradosCombobox_2">
-                        <property name="contextMenuPolicy">
-                         <enum>Qt::DefaultContextMenu</enum>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-border: .5px solid #e6b31e;
-background-color: rgb(52, 52, 52);
-color: whitesmoke;</string>
-                        </property>
-                        <item>
-                         <property name="text">
-                          <string>Buscar por ID:</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string>Buscar por Nombre:</string>
-                         </property>
-                        </item>
-                        <item>
-                         <property name="text">
-                          <string/>
-                         </property>
-                        </item>
-                       </widget>
-                      </item>
-                      <item row="2" column="3" alignment="Qt::AlignHCenter">
-                       <widget class="QLabel" name="label_40">
-                        <property name="minimumSize">
-                         <size>
-                          <width>0</width>
-                          <height>0</height>
-                         </size>
-                        </property>
-                        <property name="maximumSize">
-                         <size>
-                          <width>16777215</width>
-                          <height>30</height>
-                         </size>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                        </property>
-                        <property name="text">
-                         <string>Datos del empleado encontrados:</string>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
                    </widget>
                   </item>
                  </layout>
@@ -3069,6 +3069,2928 @@ color: rgb(255, 255, 255);</string>
                </widget>
               </item>
              </layout>
+            </widget>
+            <widget class="QWidget" name="pagina_CRUD_Entrenadores">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="mouseTracking">
+              <bool>false</bool>
+             </property>
+             <property name="tabletTracking">
+              <bool>false</bool>
+             </property>
+             <widget class="QTabWidget" name="tabWidget_2">
+              <property name="geometry">
+               <rect>
+                <x>-10</x>
+                <y>0</y>
+                <width>1141</width>
+                <height>749</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Bahnschrift SemiBold SemiConden</family>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>ArrowCursor</cursorShape>
+              </property>
+              <property name="mouseTracking">
+               <bool>false</bool>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTabWidget::pane {
+} 
+
+QTabBar::tab {  
+  font: 63 18pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+  color: whitesmoke;
+  background-color: #343434;
+  border: 1px solid #cacaca; 
+  padding: 20px;
+	width: 180px;
+	height: 50px;
+} 
+
+QTabBar::tab:selected { 
+  background: #e6b31e; 
+border: 1px solid rgb(161, 161, 161);
+  margin-bottom: -1px; 
+}
+
+</string>
+              </property>
+              <property name="tabShape">
+               <enum>QTabWidget::Rounded</enum>
+              </property>
+              <property name="currentIndex">
+               <number>4</number>
+              </property>
+              <property name="usesScrollButtons">
+               <bool>false</bool>
+              </property>
+              <property name="documentMode">
+               <bool>false</bool>
+              </property>
+              <property name="tabsClosable">
+               <bool>false</bool>
+              </property>
+              <property name="movable">
+               <bool>true</bool>
+              </property>
+              <property name="tabBarAutoHide">
+               <bool>false</bool>
+              </property>
+              <widget class="QWidget" name="tab_5">
+               <attribute name="title">
+                <string>Agregar</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_12">
+                <item row="0" column="0">
+                 <widget class="QScrollArea" name="scrollArea_5">
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_4">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>1123</width>
+                     <height>639</height>
+                    </rect>
+                   </property>
+                   <widget class="QLabel" name="label_28">
+                    <property name="geometry">
+                     <rect>
+                      <x>151</x>
+                      <y>284</y>
+                      <width>97</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>Teléfono:</string>
+                    </property>
+                   </widget>
+                   <widget class="QDateEdit" name="UltimaCitaRegistrar_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>268</x>
+                      <y>162</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);</string>
+                    </property>
+                   </widget>
+                   <widget class="QLineEdit" name="EnfermedadesRegistrar_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>268</x>
+                      <y>406</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_48">
+                    <property name="geometry">
+                     <rect>
+                      <x>153</x>
+                      <y>101</y>
+                      <width>95</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>Nombre:</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_38">
+                    <property name="geometry">
+                     <rect>
+                      <x>51</x>
+                      <y>162</y>
+                      <width>197</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>Fecha de ingreso:</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_47">
+                    <property name="geometry">
+                     <rect>
+                      <x>324</x>
+                      <y>25</y>
+                      <width>487</width>
+                      <height>40</height>
+                     </rect>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>600</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="palette">
+                     <palette>
+                      <active>
+                       <colorrole role="WindowText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Button">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Text">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="ButtonText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Base">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Window">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                      </active>
+                      <inactive>
+                       <colorrole role="WindowText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Button">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Text">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="ButtonText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Base">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Window">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                      </inactive>
+                      <disabled>
+                       <colorrole role="WindowText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Button">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Text">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="ButtonText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Base">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Window">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                      </disabled>
+                     </palette>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Bahnschrift SemiBold SemiConden</family>
+                      <pointsize>25</pointsize>
+                      <weight>7</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 25pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:696; color:#ffffff;&quot;&gt;Ingrese la información del entrenador&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_46">
+                    <property name="geometry">
+                     <rect>
+                      <x>199</x>
+                      <y>467</y>
+                      <width>49</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>RFC:</string>
+                    </property>
+                   </widget>
+                   <widget class="QLineEdit" name="TelefonoRegistrar_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>268</x>
+                      <y>284</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                   </widget>
+                   <widget class="QDateEdit" name="FechaNacimientoRegistrar_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>268</x>
+                      <y>223</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);</string>
+                    </property>
+                   </widget>
+                   <widget class="QLineEdit" name="AlergiasRegistrar_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>268</x>
+                      <y>345</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_27">
+                    <property name="geometry">
+                     <rect>
+                      <x>9</x>
+                      <y>223</y>
+                      <width>239</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>Fecha de nacimiento:</string>
+                    </property>
+                   </widget>
+                   <widget class="QLineEdit" name="NombreRegistrar_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>268</x>
+                      <y>101</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>CrossCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_22">
+                    <property name="geometry">
+                     <rect>
+                      <x>183</x>
+                      <y>345</y>
+                      <width>65</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>CURP:</string>
+                    </property>
+                   </widget>
+                   <widget class="QLineEdit" name="MedicamentosRegistrar_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>268</x>
+                      <y>467</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="GuardarRegistrarPaciente_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>430</x>
+                      <y>520</y>
+                      <width>250</width>
+                      <height>80</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>250</width>
+                      <height>80</height>
+                     </size>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87  22pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 22pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Registrar</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_23">
+                    <property name="geometry">
+                     <rect>
+                      <x>197</x>
+                      <y>406</y>
+                      <width>51</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>NSS:</string>
+                    </property>
+                   </widget>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_6">
+               <attribute name="title">
+                <string>Actualizar</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_14">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QScrollArea" name="scrollArea_6">
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_6">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>1124</width>
+                     <height>660</height>
+                    </rect>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_15">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>50</number>
+                    </property>
+                    <property name="horizontalSpacing">
+                     <number>20</number>
+                    </property>
+                    <property name="verticalSpacing">
+                     <number>15</number>
+                    </property>
+                    <item row="1" column="0" alignment="Qt::AlignRight">
+                     <widget class="QComboBox" name="BuscarPor_7">
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+border: .5px solid #e6b31e;
+background-color: rgb(52, 52, 52);
+color: whitesmoke;</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Buscar por ID:</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Buscar por Nombre:</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="3" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_50">
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:696; color:#ffffff;&quot;&gt;Actualiza la información del usuario necesaria:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0" alignment="Qt::AlignRight">
+                     <widget class="QLabel" name="label_51">
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Nombre:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="10" column="1" alignment="Qt::AlignHCenter">
+                     <widget class="QLineEdit" name="UltimCitActu_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>600</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLineEdit" name="ID_BuscarActualizarPaciente_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>600</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>600</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+border: 3px solid #e6b31e;
+border-radius: 10px;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="12" column="0" alignment="Qt::AlignRight">
+                     <widget class="QLabel" name="label_53">
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>NSS:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="10" column="0" alignment="Qt::AlignRight">
+                     <widget class="QLabel" name="label_57">
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Teléfono:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="1" alignment="Qt::AlignHCenter">
+                     <widget class="QLineEdit" name="TelefonoActualizarPaciente_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>600</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="0" alignment="Qt::AlignRight">
+                     <widget class="QLabel" name="label_55">
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Fecha de ingreso:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="0" alignment="Qt::AlignRight">
+                     <widget class="QLabel" name="label_56">
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Fecha de nacimiento:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="13" column="0" alignment="Qt::AlignRight|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_54">
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>RFC:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="12" column="1" alignment="Qt::AlignHCenter">
+                     <widget class="QLineEdit" name="EnfermedadesActualizar_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>600</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="14" column="2" alignment="Qt::AlignLeft">
+                     <widget class="QPushButton" name="ActualizarBotonPaciente_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>130</width>
+                        <height>70</height>
+                       </size>
+                      </property>
+                      <property name="cursor">
+                       <cursorShape>PointingHandCursor</cursorShape>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Actualizar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="11" column="0" alignment="Qt::AlignRight">
+                     <widget class="QLabel" name="label_58">
+                      <property name="font">
+                       <font>
+                        <family>Bahnschrift SemiBold SemiConden</family>
+                        <pointsize>22</pointsize>
+                        <weight>7</weight>
+                        <italic>false</italic>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>CURP:</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QLabel" name="label_59">
+                      <property name="palette">
+                       <palette>
+                        <active>
+                         <colorrole role="WindowText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Button">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>35</red>
+                            <green>31</green>
+                            <blue>32</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Text">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Base">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>35</red>
+                            <green>31</green>
+                            <blue>32</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Window">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>35</red>
+                            <green>31</green>
+                            <blue>32</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                        </active>
+                        <inactive>
+                         <colorrole role="WindowText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Button">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>35</red>
+                            <green>31</green>
+                            <blue>32</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Text">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Base">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>35</red>
+                            <green>31</green>
+                            <blue>32</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Window">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>35</red>
+                            <green>31</green>
+                            <blue>32</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                        </inactive>
+                        <disabled>
+                         <colorrole role="WindowText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Button">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>35</red>
+                            <green>31</green>
+                            <blue>32</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Text">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="ButtonText">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>255</red>
+                            <green>255</green>
+                            <blue>255</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Base">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>35</red>
+                            <green>31</green>
+                            <blue>32</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                         <colorrole role="Window">
+                          <brush brushstyle="SolidPattern">
+                           <color alpha="255">
+                            <red>35</red>
+                            <green>31</green>
+                            <blue>32</blue>
+                           </color>
+                          </brush>
+                         </colorrole>
+                        </disabled>
+                       </palette>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Bahnschrift SemiBold SemiConden</family>
+                        <pointsize>25</pointsize>
+                        <weight>7</weight>
+                        <italic>false</italic>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 25pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Actualizar Entrenador:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="11" column="1" alignment="Qt::AlignHCenter">
+                     <widget class="QLineEdit" name="AlergiasActualizar_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>600</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1" alignment="Qt::AlignHCenter">
+                     <widget class="QLineEdit" name="NombreActualizarPaciente_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>600</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+
+border-radius: 5px;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2" alignment="Qt::AlignLeft">
+                     <widget class="QPushButton" name="BuscarBotonActualizar_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>130</width>
+                        <height>70</height>
+                       </size>
+                      </property>
+                      <property name="cursor">
+                       <cursorShape>PointingHandCursor</cursorShape>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+
+</string>
+                      </property>
+                      <property name="text">
+                       <string>Buscar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="9" column="1" alignment="Qt::AlignHCenter">
+                     <widget class="QLineEdit" name="FechNacActu_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>600</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="13" column="1" alignment="Qt::AlignHCenter">
+                     <widget class="QLineEdit" name="MedicamentosActualizar_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>600</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_7">
+               <attribute name="title">
+                <string>Clientes asignados</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_16">
+                <property name="bottomMargin">
+                 <number>30</number>
+                </property>
+                <item row="4" column="1" colspan="2" alignment="Qt::AlignHCenter">
+                 <widget class="QPushButton" name="RefrescarBotonRegistrados_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>130</width>
+                    <height>70</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Refrescar</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QLineEdit" name="BuscarRegistradosPacientesText_2">
+                  <property name="styleSheet">
+                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+border: 3px solid #e6b31e;
+border-radius: 10px;
+</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="4">
+                 <widget class="QPushButton" name="BuscarBotonRegistrados_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>130</width>
+                    <height>70</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Buscar</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0" colspan="2">
+                 <widget class="QComboBox" name="BuscarRegistradosCombobox_3">
+                  <property name="contextMenuPolicy">
+                   <enum>Qt::DefaultContextMenu</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+border: .5px solid #e6b31e;
+background-color: rgb(52, 52, 52);
+color: whitesmoke;</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Buscar por ID:</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Buscar por Nombre:</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="3" column="0" colspan="5">
+                 <widget class="QTableWidget" name="TablaEmpleados_2">
+                  <property name="styleSheet">
+                   <string notr="true">QHeaderView::section{
+	padding: 5px;
+	background-color: #77838d;
+	border: .5px solid #034aa6;
+	font: 87 13pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+
+}</string>
+                  </property>
+                  <property name="dragEnabled">
+                   <bool>false</bool>
+                  </property>
+                  <attribute name="horizontalHeaderCascadingSectionResizes">
+                   <bool>false</bool>
+                  </attribute>
+                  <attribute name="horizontalHeaderHighlightSections">
+                   <bool>false</bool>
+                  </attribute>
+                  <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                   <bool>false</bool>
+                  </attribute>
+                  <attribute name="horizontalHeaderStretchLastSection">
+                   <bool>true</bool>
+                  </attribute>
+                  <attribute name="verticalHeaderVisible">
+                   <bool>false</bool>
+                  </attribute>
+                  <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+                   <bool>false</bool>
+                  </attribute>
+                  <column>
+                   <property name="text">
+                    <string>ID</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Nombre</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Fecha Ingreso</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Edad</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Telefono</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Correo Electronico</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Altura</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Peso</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Membrecia Actual</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+                <item row="0" column="0" colspan="5" alignment="Qt::AlignHCenter">
+                 <widget class="QLabel" name="label_60">
+                  <property name="palette">
+                   <palette>
+                    <active>
+                     <colorrole role="WindowText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Button">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>35</red>
+                        <green>31</green>
+                        <blue>32</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Text">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ButtonText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Base">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>35</red>
+                        <green>31</green>
+                        <blue>32</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Window">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>35</red>
+                        <green>31</green>
+                        <blue>32</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                    </active>
+                    <inactive>
+                     <colorrole role="WindowText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Button">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>35</red>
+                        <green>31</green>
+                        <blue>32</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Text">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ButtonText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Base">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>35</red>
+                        <green>31</green>
+                        <blue>32</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Window">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>35</red>
+                        <green>31</green>
+                        <blue>32</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                    </inactive>
+                    <disabled>
+                     <colorrole role="WindowText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Button">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>35</red>
+                        <green>31</green>
+                        <blue>32</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Text">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="ButtonText">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>255</red>
+                        <green>255</green>
+                        <blue>255</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Base">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>35</red>
+                        <green>31</green>
+                        <blue>32</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                     <colorrole role="Window">
+                      <brush brushstyle="SolidPattern">
+                       <color alpha="255">
+                        <red>35</red>
+                        <green>31</green>
+                        <blue>32</blue>
+                       </color>
+                      </brush>
+                     </colorrole>
+                    </disabled>
+                   </palette>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Bahnschrift SemiBold SemiConden</family>
+                    <pointsize>25</pointsize>
+                    <weight>7</weight>
+                    <italic>false</italic>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 63 25pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;Clientes Asignados&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_9">
+               <attribute name="title">
+                <string>Mostrar</string>
+               </attribute>
+               <widget class="QPushButton" name="RefrescarBotonRegistrados_3">
+                <property name="geometry">
+                 <rect>
+                  <x>490</x>
+                  <y>560</y>
+                  <width>130</width>
+                  <height>70</height>
+                 </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>70</height>
+                 </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+</string>
+                </property>
+                <property name="text">
+                 <string>Refrescar</string>
+                </property>
+               </widget>
+               <widget class="QTableWidget" name="TablaEmpleados_3">
+                <property name="geometry">
+                 <rect>
+                  <x>13</x>
+                  <y>133</y>
+                  <width>1111</width>
+                  <height>421</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QHeaderView::section{
+	padding: 5px;
+	background-color: #77838d;
+	border: .5px solid #034aa6;
+	font: 87 13pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+
+}</string>
+                </property>
+                <property name="dragEnabled">
+                 <bool>false</bool>
+                </property>
+                <attribute name="horizontalHeaderCascadingSectionResizes">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="horizontalHeaderHighlightSections">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="verticalHeaderVisible">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+                 <bool>false</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Nombre</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Fecha Ingreso</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Fecha de Nacimineto</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Telefono</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>CURP</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NSS</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>RFC</string>
+                 </property>
+                </column>
+               </widget>
+               <widget class="QLineEdit" name="BuscarRegistradosPacientesText_3">
+                <property name="geometry">
+                 <rect>
+                  <x>245</x>
+                  <y>71</y>
+                  <width>737</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+border: 3px solid #e6b31e;
+border-radius: 10px;
+</string>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="BuscarRegistradosCombobox_5">
+                <property name="geometry">
+                 <rect>
+                  <x>13</x>
+                  <y>73</y>
+                  <width>226</width>
+                  <height>37</height>
+                 </rect>
+                </property>
+                <property name="contextMenuPolicy">
+                 <enum>Qt::DefaultContextMenu</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+border: .5px solid #e6b31e;
+background-color: rgb(52, 52, 52);
+color: whitesmoke;</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Buscar por ID:</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Buscar por Nombre:</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </item>
+               </widget>
+               <widget class="QLabel" name="label_67">
+                <property name="geometry">
+                 <rect>
+                  <x>420</x>
+                  <y>20</y>
+                  <width>301</width>
+                  <height>39</height>
+                 </rect>
+                </property>
+                <property name="palette">
+                 <palette>
+                  <active>
+                   <colorrole role="WindowText">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Button">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>35</red>
+                      <green>31</green>
+                      <blue>32</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Text">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="ButtonText">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Base">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>35</red>
+                      <green>31</green>
+                      <blue>32</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Window">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>35</red>
+                      <green>31</green>
+                      <blue>32</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                  </active>
+                  <inactive>
+                   <colorrole role="WindowText">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Button">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>35</red>
+                      <green>31</green>
+                      <blue>32</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Text">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="ButtonText">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Base">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>35</red>
+                      <green>31</green>
+                      <blue>32</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Window">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>35</red>
+                      <green>31</green>
+                      <blue>32</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                  </inactive>
+                  <disabled>
+                   <colorrole role="WindowText">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Button">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>35</red>
+                      <green>31</green>
+                      <blue>32</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Text">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="ButtonText">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>255</green>
+                      <blue>255</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Base">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>35</red>
+                      <green>31</green>
+                      <blue>32</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                   <colorrole role="Window">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>35</red>
+                      <green>31</green>
+                      <blue>32</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                  </disabled>
+                 </palette>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Bahnschrift SemiBold SemiConden</family>
+                  <pointsize>25</pointsize>
+                  <weight>7</weight>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 63 25pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; color:#ffffff;&quot;&gt;Empleados Registrados&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="BuscarBotonRegistrados_3">
+                <property name="geometry">
+                 <rect>
+                  <x>994</x>
+                  <y>57</y>
+                  <width>130</width>
+                  <height>70</height>
+                 </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>70</height>
+                 </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+</string>
+                </property>
+                <property name="text">
+                 <string>Buscar</string>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="tab_8">
+               <attribute name="title">
+                <string>Elminar</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_17">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>50</number>
+                </property>
+                <property name="horizontalSpacing">
+                 <number>20</number>
+                </property>
+                <property name="verticalSpacing">
+                 <number>10</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QScrollArea" name="scrollArea_7">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 5px;</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Sunken</enum>
+                  </property>
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_7">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>1141</width>
+                     <height>607</height>
+                    </rect>
+                   </property>
+                   <widget class="QLineEdit" name="ID_BuscarEliminarPaciente_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>293</x>
+                      <y>82</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="EliminarPacienteBoton_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>480</x>
+                      <y>540</y>
+                      <width>192</width>
+                      <height>70</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>130</width>
+                      <height>70</height>
+                     </size>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Eliminar</string>
+                    </property>
+                   </widget>
+                   <widget class="QComboBox" name="BuscarRegistradosCombobox_4">
+                    <property name="geometry">
+                     <rect>
+                      <x>61</x>
+                      <y>81</y>
+                      <width>226</width>
+                      <height>37</height>
+                     </rect>
+                    </property>
+                    <property name="contextMenuPolicy">
+                     <enum>Qt::DefaultContextMenu</enum>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+border: .5px solid #e6b31e;
+background-color: rgb(52, 52, 52);
+color: whitesmoke;</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Buscar por ID:</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Buscar por Nombre:</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </item>
+                   </widget>
+                   <widget class="QPushButton" name="BuscarBotonEliminar_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>922</x>
+                      <y>60</y>
+                      <width>130</width>
+                      <height>70</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>130</width>
+                      <height>70</height>
+                     </size>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 14pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Buscar</string>
+                    </property>
+                   </widget>
+                   <widget class="QLineEdit" name="TelefonoRegistrar_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>290</x>
+                      <y>340</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_52">
+                    <property name="geometry">
+                     <rect>
+                      <x>31</x>
+                      <y>296</y>
+                      <width>239</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>Fecha de nacimiento:</string>
+                    </property>
+                   </widget>
+                   <widget class="QDateEdit" name="FechaNacimientoRegistrar_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>290</x>
+                      <y>290</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);</string>
+                    </property>
+                   </widget>
+                   <widget class="QLineEdit" name="EnfermedadesRegistrar_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>290</x>
+                      <y>440</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                   </widget>
+                   <widget class="QLineEdit" name="AlergiasRegistrar_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>290</x>
+                      <y>390</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_61">
+                    <property name="geometry">
+                     <rect>
+                      <x>219</x>
+                      <y>440</y>
+                      <width>51</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>NSS:</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_62">
+                    <property name="geometry">
+                     <rect>
+                      <x>205</x>
+                      <y>390</y>
+                      <width>65</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>CURP:</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_63">
+                    <property name="geometry">
+                     <rect>
+                      <x>173</x>
+                      <y>340</y>
+                      <width>97</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>Teléfono:</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_64">
+                    <property name="geometry">
+                     <rect>
+                      <x>175</x>
+                      <y>190</y>
+                      <width>95</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>Nombre:</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_65">
+                    <property name="geometry">
+                     <rect>
+                      <x>73</x>
+                      <y>241</y>
+                      <width>197</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>Fecha de ingreso:</string>
+                    </property>
+                   </widget>
+                   <widget class="QDateEdit" name="UltimaCitaRegistrar_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>290</x>
+                      <y>241</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);</string>
+                    </property>
+                   </widget>
+                   <widget class="QLineEdit" name="MedicamentosRegistrar_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>290</x>
+                      <y>490</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_66">
+                    <property name="geometry">
+                     <rect>
+                      <x>340</x>
+                      <y>136</y>
+                      <width>487</width>
+                      <height>40</height>
+                     </rect>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>600</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="palette">
+                     <palette>
+                      <active>
+                       <colorrole role="WindowText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Button">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Text">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="ButtonText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Base">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Window">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                      </active>
+                      <inactive>
+                       <colorrole role="WindowText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Button">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Text">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="ButtonText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Base">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Window">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                      </inactive>
+                      <disabled>
+                       <colorrole role="WindowText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Button">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Text">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="ButtonText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Base">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Window">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                      </disabled>
+                     </palette>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Bahnschrift SemiBold SemiConden</family>
+                      <pointsize>25</pointsize>
+                      <weight>7</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 25pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:696; color:#ffffff;&quot;&gt;Informacion del usuario a eliminar :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_68">
+                    <property name="geometry">
+                     <rect>
+                      <x>221</x>
+                      <y>490</y>
+                      <width>49</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>RFC:</string>
+                    </property>
+                   </widget>
+                   <widget class="QLineEdit" name="NombreRegistrar_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>290</x>
+                      <y>190</y>
+                      <width>600</width>
+                      <height>35</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>600</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>CrossCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_69">
+                    <property name="geometry">
+                     <rect>
+                      <x>450</x>
+                      <y>20</y>
+                      <width>261</width>
+                      <height>40</height>
+                     </rect>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>600</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="palette">
+                     <palette>
+                      <active>
+                       <colorrole role="WindowText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Button">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Text">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="ButtonText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Base">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Window">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                      </active>
+                      <inactive>
+                       <colorrole role="WindowText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Button">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Text">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="ButtonText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Base">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Window">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                      </inactive>
+                      <disabled>
+                       <colorrole role="WindowText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Button">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Text">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="ButtonText">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>255</red>
+                          <green>255</green>
+                          <blue>255</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Base">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                       <colorrole role="Window">
+                        <brush brushstyle="SolidPattern">
+                         <color alpha="255">
+                          <red>35</red>
+                          <green>31</green>
+                          <blue>32</blue>
+                         </color>
+                        </brush>
+                       </colorrole>
+                      </disabled>
+                     </palette>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Bahnschrift SemiBold SemiConden</family>
+                      <pointsize>25</pointsize>
+                      <weight>7</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 25pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:696; color:#ffffff;&quot;&gt;Eliminar Entrenador&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
             </widget>
             <widget class="QWidget" name="page_3"/>
            </widget>
