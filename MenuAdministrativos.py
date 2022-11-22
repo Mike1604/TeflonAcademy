@@ -1,0 +1,6259 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'MenuAdministrativos.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MenuAdministrativo(object):
+    def setupUi(self, MenuAdministrativo):
+        MenuAdministrativo.setObjectName("MenuAdministrativo")
+        MenuAdministrativo.resize(1720, 961)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/logos/logo.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MenuAdministrativo.setWindowIcon(icon)
+        self.centralwidget = QtWidgets.QWidget(MenuAdministrativo)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayout_26 = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout_26.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_26.setSpacing(0)
+        self.gridLayout_26.setObjectName("gridLayout_26")
+        self.Frame_Inferior = QtWidgets.QFrame(self.centralwidget)
+        self.Frame_Inferior.setStyleSheet("background-color: #231f20;")
+        self.Frame_Inferior.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.Frame_Inferior.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.Frame_Inferior.setObjectName("Frame_Inferior")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.Frame_Inferior)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setSpacing(0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.Menu_Lateral_Frame = QtWidgets.QFrame(self.Frame_Inferior)
+        self.Menu_Lateral_Frame.setMinimumSize(QtCore.QSize(0, 0))
+        self.Menu_Lateral_Frame.setMaximumSize(QtCore.QSize(0, 16777215))
+        self.Menu_Lateral_Frame.setStyleSheet("background-color: #343434;")
+        self.Menu_Lateral_Frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.Menu_Lateral_Frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.Menu_Lateral_Frame.setObjectName("Menu_Lateral_Frame")
+        self.verticalLayout_27 = QtWidgets.QVBoxLayout(self.Menu_Lateral_Frame)
+        self.verticalLayout_27.setObjectName("verticalLayout_27")
+        self.frame_56 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
+        self.frame_56.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_56.setStyleSheet("QLabel{\n"
+"    font: 87 10pt \"Arial Black\";\n"
+"    \n"
+"color: rgb(226, 176, 30);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"    border: 0px;\n"
+"    \n"
+"    image: url(:/menu/reloj.png);\n"
+"    \n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    \n"
+"    image: url(:/menu/relojhover.png);\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.frame_56.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_56.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_56.setObjectName("frame_56")
+        self.verticalLayout_33 = QtWidgets.QVBoxLayout(self.frame_56)
+        self.verticalLayout_33.setSpacing(20)
+        self.verticalLayout_33.setObjectName("verticalLayout_33")
+        self.pushButton_35 = QtWidgets.QPushButton(self.frame_56)
+        self.pushButton_35.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_35.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.pushButton_35.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_35.setStyleSheet("")
+        self.pushButton_35.setText("")
+        self.pushButton_35.setObjectName("pushButton_35")
+        self.verticalLayout_33.addWidget(self.pushButton_35)
+        self.label_153 = QtWidgets.QLabel(self.frame_56)
+        self.label_153.setMinimumSize(QtCore.QSize(0, 20))
+        self.label_153.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.label_153.setStyleSheet("")
+        self.label_153.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_153.setWordWrap(True)
+        self.label_153.setObjectName("label_153")
+        self.verticalLayout_33.addWidget(self.label_153)
+        self.verticalLayout_27.addWidget(self.frame_56)
+        self.frame_55 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
+        self.frame_55.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_55.setStyleSheet("QLabel{\n"
+"    font: 87 10pt \"Arial Black\";\n"
+"    \n"
+"color: rgb(226, 176, 30);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"    border: 0px;    \n"
+"    image: url(:/menu/empleados.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/EmpleadosHover.png);\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.frame_55.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_55.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_55.setObjectName("frame_55")
+        self.verticalLayout_32 = QtWidgets.QVBoxLayout(self.frame_55)
+        self.verticalLayout_32.setSpacing(20)
+        self.verticalLayout_32.setObjectName("verticalLayout_32")
+        self.pushButton_34 = QtWidgets.QPushButton(self.frame_55)
+        self.pushButton_34.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_34.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.pushButton_34.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_34.setStyleSheet("")
+        self.pushButton_34.setText("")
+        self.pushButton_34.setObjectName("pushButton_34")
+        self.verticalLayout_32.addWidget(self.pushButton_34)
+        self.label_152 = QtWidgets.QLabel(self.frame_55)
+        self.label_152.setMinimumSize(QtCore.QSize(0, 20))
+        self.label_152.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.label_152.setStyleSheet("")
+        self.label_152.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_152.setWordWrap(True)
+        self.label_152.setObjectName("label_152")
+        self.verticalLayout_32.addWidget(self.label_152)
+        self.verticalLayout_27.addWidget(self.frame_55)
+        self.frame_54 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
+        self.frame_54.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_54.setStyleSheet("QLabel{\n"
+"    font: 87 10pt \"Arial Black\";\n"
+"    \n"
+"color: rgb(226, 176, 30);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/venta.png);\n"
+"    \n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/PuntoVentaHover.png);\n"
+"}\n"
+"\n"
+"")
+        self.frame_54.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_54.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_54.setObjectName("frame_54")
+        self.verticalLayout_31 = QtWidgets.QVBoxLayout(self.frame_54)
+        self.verticalLayout_31.setSpacing(20)
+        self.verticalLayout_31.setObjectName("verticalLayout_31")
+        self.pushButton_33 = QtWidgets.QPushButton(self.frame_54)
+        self.pushButton_33.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_33.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.pushButton_33.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_33.setStyleSheet("")
+        self.pushButton_33.setText("")
+        self.pushButton_33.setObjectName("pushButton_33")
+        self.verticalLayout_31.addWidget(self.pushButton_33)
+        self.label_151 = QtWidgets.QLabel(self.frame_54)
+        self.label_151.setMinimumSize(QtCore.QSize(0, 20))
+        self.label_151.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.label_151.setStyleSheet("")
+        self.label_151.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_151.setWordWrap(True)
+        self.label_151.setObjectName("label_151")
+        self.verticalLayout_31.addWidget(self.label_151)
+        self.verticalLayout_27.addWidget(self.frame_54)
+        self.frame_51 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
+        self.frame_51.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_51.setStyleSheet("QLabel{\n"
+"    font: 87 10pt \"Arial Black\";\n"
+"    \n"
+"color: rgb(226, 176, 30);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/entrenador.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/EntrenadoresHover.png);\n"
+"}\n"
+"\n"
+"")
+        self.frame_51.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_51.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_51.setObjectName("frame_51")
+        self.verticalLayout_26 = QtWidgets.QVBoxLayout(self.frame_51)
+        self.verticalLayout_26.setContentsMargins(-1, -1, -1, 9)
+        self.verticalLayout_26.setSpacing(20)
+        self.verticalLayout_26.setObjectName("verticalLayout_26")
+        self.pushButton_30 = QtWidgets.QPushButton(self.frame_51)
+        self.pushButton_30.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_30.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.pushButton_30.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_30.setStyleSheet("")
+        self.pushButton_30.setText("")
+        self.pushButton_30.setObjectName("pushButton_30")
+        self.verticalLayout_26.addWidget(self.pushButton_30)
+        self.label_136 = QtWidgets.QLabel(self.frame_51)
+        self.label_136.setMinimumSize(QtCore.QSize(0, 20))
+        self.label_136.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.label_136.setStyleSheet("")
+        self.label_136.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_136.setWordWrap(True)
+        self.label_136.setObjectName("label_136")
+        self.verticalLayout_26.addWidget(self.label_136)
+        self.verticalLayout_27.addWidget(self.frame_51)
+        self.frame_36 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
+        self.frame_36.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_36.setStyleSheet("QLabel{\n"
+"    font: 87 10pt \"Arial Black\";\n"
+"    \n"
+"color: rgb(226, 176, 30);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/clientes.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/ClientesHover.png);\n"
+"}\n"
+"")
+        self.frame_36.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_36.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_36.setObjectName("frame_36")
+        self.verticalLayout_21 = QtWidgets.QVBoxLayout(self.frame_36)
+        self.verticalLayout_21.setSpacing(20)
+        self.verticalLayout_21.setObjectName("verticalLayout_21")
+        self.pushButton_24 = QtWidgets.QPushButton(self.frame_36)
+        self.pushButton_24.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_24.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.pushButton_24.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_24.setStyleSheet("")
+        self.pushButton_24.setText("")
+        self.pushButton_24.setObjectName("pushButton_24")
+        self.verticalLayout_21.addWidget(self.pushButton_24)
+        self.label_134 = QtWidgets.QLabel(self.frame_36)
+        self.label_134.setMinimumSize(QtCore.QSize(0, 20))
+        self.label_134.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.label_134.setStyleSheet("")
+        self.label_134.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_134.setWordWrap(True)
+        self.label_134.setObjectName("label_134")
+        self.verticalLayout_21.addWidget(self.label_134)
+        self.verticalLayout_27.addWidget(self.frame_36)
+        self.frame_35 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
+        self.frame_35.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_35.setStyleSheet("QLabel{\n"
+"    font: 87 10pt \"Arial Black\";\n"
+"    \n"
+"color: rgb(226, 176, 30);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"    border: 0px;\n"
+"    \n"
+"    image: url(:/menu/home2.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/home.png);\n"
+"}\n"
+"\n"
+"")
+        self.frame_35.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_35.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_35.setObjectName("frame_35")
+        self.verticalLayout_20 = QtWidgets.QVBoxLayout(self.frame_35)
+        self.verticalLayout_20.setSpacing(20)
+        self.verticalLayout_20.setObjectName("verticalLayout_20")
+        self.pushButton_23 = QtWidgets.QPushButton(self.frame_35)
+        self.pushButton_23.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_23.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.pushButton_23.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_23.setStyleSheet("")
+        self.pushButton_23.setText("")
+        self.pushButton_23.setObjectName("pushButton_23")
+        self.verticalLayout_20.addWidget(self.pushButton_23)
+        self.label_133 = QtWidgets.QLabel(self.frame_35)
+        self.label_133.setMinimumSize(QtCore.QSize(0, 20))
+        self.label_133.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.label_133.setStyleSheet("")
+        self.label_133.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_133.setWordWrap(True)
+        self.label_133.setObjectName("label_133")
+        self.verticalLayout_20.addWidget(self.label_133)
+        self.verticalLayout_27.addWidget(self.frame_35)
+        self.frame_53 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
+        self.frame_53.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_53.setStyleSheet("QLabel{\n"
+"    font: 87 10pt \"Arial Black\";\n"
+"    \n"
+"color: rgb(226, 176, 30);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/logout.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/logouthover.png);\n"
+"}\n"
+"\n"
+"")
+        self.frame_53.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_53.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_53.setObjectName("frame_53")
+        self.verticalLayout_30 = QtWidgets.QVBoxLayout(self.frame_53)
+        self.verticalLayout_30.setSpacing(20)
+        self.verticalLayout_30.setObjectName("verticalLayout_30")
+        self.pushButton_32 = QtWidgets.QPushButton(self.frame_53)
+        self.pushButton_32.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_32.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.pushButton_32.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_32.setStyleSheet("")
+        self.pushButton_32.setText("")
+        self.pushButton_32.setObjectName("pushButton_32")
+        self.verticalLayout_30.addWidget(self.pushButton_32)
+        self.label_150 = QtWidgets.QLabel(self.frame_53)
+        self.label_150.setMinimumSize(QtCore.QSize(0, 20))
+        self.label_150.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.label_150.setStyleSheet("")
+        self.label_150.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_150.setWordWrap(True)
+        self.label_150.setObjectName("label_150")
+        self.verticalLayout_30.addWidget(self.label_150)
+        self.verticalLayout_27.addWidget(self.frame_53)
+        self.label_131 = QtWidgets.QLabel(self.Menu_Lateral_Frame)
+        self.label_131.setMinimumSize(QtCore.QSize(0, 20))
+        self.label_131.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.label_131.setStyleSheet("QLabel{\n"
+"    font: 87 8pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 15px;\n"
+"}\n"
+"\n"
+"QLabel:hover{\n"
+"color: rgb(226, 176, 30);\n"
+"    font: 87 10pt \"Arial Black\";\n"
+"    border-radius: 15px;\n"
+"}")
+        self.label_131.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_131.setWordWrap(True)
+        self.label_131.setObjectName("label_131")
+        self.verticalLayout_27.addWidget(self.label_131)
+        self.horizontalLayout.addWidget(self.Menu_Lateral_Frame)
+        self.frame_4 = QtWidgets.QFrame(self.Frame_Inferior)
+        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_4.setObjectName("frame_4")
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.frame_4)
+        self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_3.setSpacing(0)
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.stackedWidget = QtWidgets.QStackedWidget(self.frame_4)
+        self.stackedWidget.setObjectName("stackedWidget")
+        self.MenuPrincipal = QtWidgets.QWidget()
+        self.MenuPrincipal.setObjectName("MenuPrincipal")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.MenuPrincipal)
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_2.setSpacing(0)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame_5 = QtWidgets.QFrame(self.MenuPrincipal)
+        self.frame_5.setMinimumSize(QtCore.QSize(0, 100))
+        self.frame_5.setMaximumSize(QtCore.QSize(16777215, 100))
+        self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_5.setObjectName("frame_5")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_5)
+        self.horizontalLayout_4.setContentsMargins(15, 0, 15, 0)
+        self.horizontalLayout_4.setSpacing(20)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.label_123 = QtWidgets.QLabel(self.frame_5)
+        self.label_123.setMinimumSize(QtCore.QSize(100, 100))
+        self.label_123.setStyleSheet("image: url(:/menu/adorno.png);")
+        self.label_123.setText("")
+        self.label_123.setObjectName("label_123")
+        self.horizontalLayout_4.addWidget(self.label_123)
+        self.label_Bienvenida = QtWidgets.QLabel(self.frame_5)
+        self.label_Bienvenida.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
+"    color: whitesmoke;")
+        self.label_Bienvenida.setObjectName("label_Bienvenida")
+        self.horizontalLayout_4.addWidget(self.label_Bienvenida)
+        spacerItem = QtWidgets.QSpacerItem(715, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_4.addItem(spacerItem)
+        self.label = QtWidgets.QLabel(self.frame_5)
+        self.label.setMinimumSize(QtCore.QSize(100, 100))
+        self.label.setStyleSheet("image: url(:/logos/logo.png);")
+        self.label.setText("")
+        self.label.setObjectName("label")
+        self.horizontalLayout_4.addWidget(self.label)
+        self.verticalLayout_2.addWidget(self.frame_5)
+        self.frame_6 = QtWidgets.QFrame(self.MenuPrincipal)
+        self.frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_6.setObjectName("frame_6")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.frame_6)
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_3.setSpacing(0)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.frame_7 = QtWidgets.QFrame(self.frame_6)
+        self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_7.setObjectName("frame_7")
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.frame_7)
+        self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_5.setSpacing(15)
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.frame_33 = QtWidgets.QFrame(self.frame_7)
+        self.frame_33.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_33.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_33.setObjectName("frame_33")
+        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.frame_33)
+        self.verticalLayout_4.setContentsMargins(0, 50, 0, 0)
+        self.verticalLayout_4.setSpacing(0)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        self.frame_34 = QtWidgets.QFrame(self.frame_33)
+        self.frame_34.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_34.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_34.setObjectName("frame_34")
+        self.horizontalLayout_16 = QtWidgets.QHBoxLayout(self.frame_34)
+        self.horizontalLayout_16.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_16.setSpacing(15)
+        self.horizontalLayout_16.setObjectName("horizontalLayout_16")
+        self.frame_3 = QtWidgets.QFrame(self.frame_34)
+        self.frame_3.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_3.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
+"color: whitesmoke;")
+        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_3.setObjectName("frame_3")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.frame_3)
+        self.verticalLayout_5.setSpacing(0)
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.frame_2 = QtWidgets.QFrame(self.frame_3)
+        self.frame_2.setStyleSheet("\n"
+"font: 87 32pt \"Helvetica Black\";\n"
+"color: whitesmoke;")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.horizontalLayout_17 = QtWidgets.QHBoxLayout(self.frame_2)
+        self.horizontalLayout_17.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_17.setSpacing(15)
+        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
+        self.frame_37 = QtWidgets.QFrame(self.frame_2)
+        self.frame_37.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_37.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_37.setObjectName("frame_37")
+        self.verticalLayout_19 = QtWidgets.QVBoxLayout(self.frame_37)
+        self.verticalLayout_19.setObjectName("verticalLayout_19")
+        self.pushButton_22 = QtWidgets.QPushButton(self.frame_37)
+        self.pushButton_22.setMinimumSize(QtCore.QSize(200, 200))
+        self.pushButton_22.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_22.setStyleSheet("QPushButton{\n"
+"    border: 0px;    \n"
+"    image: url(:/menu/reloj.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/relojhover.png);\n"
+"}")
+        self.pushButton_22.setText("")
+        self.pushButton_22.setObjectName("pushButton_22")
+        self.verticalLayout_19.addWidget(self.pushButton_22)
+        self.label_13 = QtWidgets.QLabel(self.frame_37)
+        self.label_13.setWordWrap(True)
+        self.label_13.setObjectName("label_13")
+        self.verticalLayout_19.addWidget(self.label_13, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_17.addWidget(self.frame_37, 0, QtCore.Qt.AlignHCenter)
+        self.frame_38 = QtWidgets.QFrame(self.frame_2)
+        self.frame_38.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_38.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_38.setObjectName("frame_38")
+        self.verticalLayout_22 = QtWidgets.QVBoxLayout(self.frame_38)
+        self.verticalLayout_22.setObjectName("verticalLayout_22")
+        self.pushButton_25 = QtWidgets.QPushButton(self.frame_38)
+        self.pushButton_25.setMinimumSize(QtCore.QSize(200, 200))
+        self.pushButton_25.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_25.setStyleSheet("QPushButton{\n"
+"    border: 0px;\n"
+"    \n"
+"    image: url(:/menu/venta.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/PuntoVentaHover.png);\n"
+"}")
+        self.pushButton_25.setText("")
+        self.pushButton_25.setObjectName("pushButton_25")
+        self.verticalLayout_22.addWidget(self.pushButton_25)
+        self.label_15 = QtWidgets.QLabel(self.frame_38)
+        self.label_15.setWordWrap(False)
+        self.label_15.setObjectName("label_15")
+        self.verticalLayout_22.addWidget(self.label_15, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_17.addWidget(self.frame_38, 0, QtCore.Qt.AlignHCenter)
+        self.frame_39 = QtWidgets.QFrame(self.frame_2)
+        self.frame_39.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_39.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_39.setObjectName("frame_39")
+        self.verticalLayout_23 = QtWidgets.QVBoxLayout(self.frame_39)
+        self.verticalLayout_23.setObjectName("verticalLayout_23")
+        self.pushButton_26 = QtWidgets.QPushButton(self.frame_39)
+        self.pushButton_26.setMinimumSize(QtCore.QSize(200, 200))
+        self.pushButton_26.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_26.setStyleSheet("QPushButton{\n"
+"    border: 0px;\n"
+"    \n"
+"    image: url(:/menu/empleados.png);\n"
+"    \n"
+"}\n"
+"QPushButton:hover{\n"
+"    image: url(:/menu/EmpleadosHover.png);\n"
+"    border: 10px;\n"
+"}")
+        self.pushButton_26.setText("")
+        self.pushButton_26.setObjectName("pushButton_26")
+        self.verticalLayout_23.addWidget(self.pushButton_26, 0, QtCore.Qt.AlignHCenter)
+        self.label_132 = QtWidgets.QLabel(self.frame_39)
+        self.label_132.setScaledContents(True)
+        self.label_132.setWordWrap(True)
+        self.label_132.setObjectName("label_132")
+        self.verticalLayout_23.addWidget(self.label_132, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_17.addWidget(self.frame_39, 0, QtCore.Qt.AlignHCenter)
+        self.verticalLayout_5.addWidget(self.frame_2)
+        self.frame_40 = QtWidgets.QFrame(self.frame_3)
+        self.frame_40.setMinimumSize(QtCore.QSize(300, 0))
+        self.frame_40.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
+"color: whitesmoke;")
+        self.frame_40.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_40.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_40.setObjectName("frame_40")
+        self.horizontalLayout_18 = QtWidgets.QHBoxLayout(self.frame_40)
+        self.horizontalLayout_18.setObjectName("horizontalLayout_18")
+        self.frame_42 = QtWidgets.QFrame(self.frame_40)
+        self.frame_42.setMinimumSize(QtCore.QSize(300, 0))
+        self.frame_42.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
+"color: whitesmoke;")
+        self.frame_42.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_42.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_42.setObjectName("frame_42")
+        self.verticalLayout_24 = QtWidgets.QVBoxLayout(self.frame_42)
+        self.verticalLayout_24.setObjectName("verticalLayout_24")
+        self.pushButton_27 = QtWidgets.QPushButton(self.frame_42)
+        self.pushButton_27.setMinimumSize(QtCore.QSize(200, 200))
+        self.pushButton_27.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_27.setStyleSheet("QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/entrenador.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/EntrenadoresHover.png);\n"
+"}")
+        self.pushButton_27.setText("")
+        self.pushButton_27.setObjectName("pushButton_27")
+        self.verticalLayout_24.addWidget(self.pushButton_27)
+        self.label_137 = QtWidgets.QLabel(self.frame_42)
+        self.label_137.setWordWrap(True)
+        self.label_137.setObjectName("label_137")
+        self.verticalLayout_24.addWidget(self.label_137, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_18.addWidget(self.frame_42, 0, QtCore.Qt.AlignHCenter)
+        self.frame_41 = QtWidgets.QFrame(self.frame_40)
+        self.frame_41.setMinimumSize(QtCore.QSize(300, 0))
+        self.frame_41.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
+"color: whitesmoke;")
+        self.frame_41.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_41.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_41.setObjectName("frame_41")
+        self.verticalLayout_25 = QtWidgets.QVBoxLayout(self.frame_41)
+        self.verticalLayout_25.setObjectName("verticalLayout_25")
+        self.pushButton_2 = QtWidgets.QPushButton(self.frame_41)
+        self.pushButton_2.setMinimumSize(QtCore.QSize(200, 200))
+        self.pushButton_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_2.setStyleSheet("QPushButton{\n"
+"    border: 0px;\n"
+"    \n"
+"    image: url(:/menu/clientes.png);\n"
+"    \n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/ClientesHover.png);\n"
+"}")
+        self.pushButton_2.setText("")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.verticalLayout_25.addWidget(self.pushButton_2, 0, QtCore.Qt.AlignHCenter)
+        self.label_135 = QtWidgets.QLabel(self.frame_41)
+        self.label_135.setWordWrap(True)
+        self.label_135.setObjectName("label_135")
+        self.verticalLayout_25.addWidget(self.label_135)
+        self.horizontalLayout_18.addWidget(self.frame_41, 0, QtCore.Qt.AlignHCenter)
+        self.verticalLayout_5.addWidget(self.frame_40, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_16.addWidget(self.frame_3)
+        self.verticalLayout_4.addWidget(self.frame_34)
+        self.horizontalLayout_5.addWidget(self.frame_33)
+        self.verticalLayout_3.addWidget(self.frame_7)
+        self.verticalLayout_2.addWidget(self.frame_6)
+        self.stackedWidget.addWidget(self.MenuPrincipal)
+        self.MenuPuntoVenta = QtWidgets.QWidget()
+        self.MenuPuntoVenta.setObjectName("MenuPuntoVenta")
+        self.gridLayout_27 = QtWidgets.QGridLayout(self.MenuPuntoVenta)
+        self.gridLayout_27.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_27.setSpacing(0)
+        self.gridLayout_27.setObjectName("gridLayout_27")
+        self.frame_24 = QtWidgets.QFrame(self.MenuPuntoVenta)
+        self.frame_24.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_24.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_24.setObjectName("frame_24")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.frame_24)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setSpacing(0)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.frame_25 = QtWidgets.QFrame(self.frame_24)
+        self.frame_25.setMaximumSize(QtCore.QSize(16777215, 150))
+        self.frame_25.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_25.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_25.setObjectName("frame_25")
+        self.horizontalLayout_12 = QtWidgets.QHBoxLayout(self.frame_25)
+        self.horizontalLayout_12.setContentsMargins(0, 0, 20, 0)
+        self.horizontalLayout_12.setSpacing(20)
+        self.horizontalLayout_12.setObjectName("horizontalLayout_12")
+        self.label_125 = QtWidgets.QLabel(self.frame_25)
+        self.label_125.setMinimumSize(QtCore.QSize(150, 150))
+        self.label_125.setStyleSheet("image: url(:/menu/adorno.png);")
+        self.label_125.setText("")
+        self.label_125.setObjectName("label_125")
+        self.horizontalLayout_12.addWidget(self.label_125)
+        self.label_Bienvenida_2 = QtWidgets.QLabel(self.frame_25)
+        self.label_Bienvenida_2.setStyleSheet("font: 87 28pt \"Helvetica Black\";\n"
+"    color: whitesmoke;")
+        self.label_Bienvenida_2.setObjectName("label_Bienvenida_2")
+        self.horizontalLayout_12.addWidget(self.label_Bienvenida_2, 0, QtCore.Qt.AlignVCenter)
+        spacerItem1 = QtWidgets.QSpacerItem(715, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_12.addItem(spacerItem1)
+        self.label_126 = QtWidgets.QLabel(self.frame_25)
+        self.label_126.setMinimumSize(QtCore.QSize(150, 150))
+        self.label_126.setStyleSheet("image: url(:/logos/logo.png);")
+        self.label_126.setText("")
+        self.label_126.setObjectName("label_126")
+        self.horizontalLayout_12.addWidget(self.label_126)
+        self.verticalLayout.addWidget(self.frame_25)
+        self.frame_26 = QtWidgets.QFrame(self.frame_24)
+        self.frame_26.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_26.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_26.setObjectName("frame_26")
+        self.verticalLayout_14 = QtWidgets.QVBoxLayout(self.frame_26)
+        self.verticalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_14.setSpacing(0)
+        self.verticalLayout_14.setObjectName("verticalLayout_14")
+        self.frame_27 = QtWidgets.QFrame(self.frame_26)
+        self.frame_27.setStyleSheet("\n"
+"\n"
+"font: 87 32pt \"Helvetica Black\";\n"
+"color: whitesmoke;")
+        self.frame_27.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_27.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_27.setObjectName("frame_27")
+        self.horizontalLayout_13 = QtWidgets.QHBoxLayout(self.frame_27)
+        self.horizontalLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_13.setSpacing(0)
+        self.horizontalLayout_13.setObjectName("horizontalLayout_13")
+        self.frame_28 = QtWidgets.QFrame(self.frame_27)
+        self.frame_28.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_28.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_28.setObjectName("frame_28")
+        self.verticalLayout_15 = QtWidgets.QVBoxLayout(self.frame_28)
+        self.verticalLayout_15.setObjectName("verticalLayout_15")
+        self.pushButton_11 = QtWidgets.QPushButton(self.frame_28)
+        self.pushButton_11.setMinimumSize(QtCore.QSize(300, 200))
+        self.pushButton_11.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_11.setStyleSheet("QPushButton{\n"
+"    border: 0px;    \n"
+"    image: url(:/menu/ventaIcon.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"}")
+        self.pushButton_11.setText("")
+        self.pushButton_11.setObjectName("pushButton_11")
+        self.verticalLayout_15.addWidget(self.pushButton_11)
+        self.label_127 = QtWidgets.QLabel(self.frame_28)
+        self.label_127.setWordWrap(True)
+        self.label_127.setObjectName("label_127")
+        self.verticalLayout_15.addWidget(self.label_127, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.horizontalLayout_13.addWidget(self.frame_28, 0, QtCore.Qt.AlignHCenter)
+        self.frame_29 = QtWidgets.QFrame(self.frame_27)
+        self.frame_29.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_29.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_29.setObjectName("frame_29")
+        self.verticalLayout_16 = QtWidgets.QVBoxLayout(self.frame_29)
+        self.verticalLayout_16.setObjectName("verticalLayout_16")
+        self.pushButton_12 = QtWidgets.QPushButton(self.frame_29)
+        self.pushButton_12.setMinimumSize(QtCore.QSize(300, 200))
+        self.pushButton_12.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_12.setStyleSheet("QPushButton{\n"
+"    border: 0px;    \n"
+"    image: url(:/menu/InventarioIcon.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"}")
+        self.pushButton_12.setText("")
+        self.pushButton_12.setObjectName("pushButton_12")
+        self.verticalLayout_16.addWidget(self.pushButton_12)
+        self.label_128 = QtWidgets.QLabel(self.frame_29)
+        self.label_128.setWordWrap(True)
+        self.label_128.setObjectName("label_128")
+        self.verticalLayout_16.addWidget(self.label_128, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.horizontalLayout_13.addWidget(self.frame_29, 0, QtCore.Qt.AlignHCenter)
+        self.verticalLayout_14.addWidget(self.frame_27)
+        self.frame_30 = QtWidgets.QFrame(self.frame_26)
+        self.frame_30.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
+"color: whitesmoke;")
+        self.frame_30.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_30.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_30.setObjectName("frame_30")
+        self.horizontalLayout_14 = QtWidgets.QHBoxLayout(self.frame_30)
+        self.horizontalLayout_14.setObjectName("horizontalLayout_14")
+        self.frame_32 = QtWidgets.QFrame(self.frame_30)
+        self.frame_32.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_32.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_32.setObjectName("frame_32")
+        self.verticalLayout_18 = QtWidgets.QVBoxLayout(self.frame_32)
+        self.verticalLayout_18.setObjectName("verticalLayout_18")
+        self.pushButton_14 = QtWidgets.QPushButton(self.frame_32)
+        self.pushButton_14.setMinimumSize(QtCore.QSize(300, 200))
+        self.pushButton_14.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_14.setStyleSheet("QPushButton{\n"
+"    border: 0px;    \n"
+"    image: url(:/menu/ReporteIcon.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"}")
+        self.pushButton_14.setText("")
+        self.pushButton_14.setObjectName("pushButton_14")
+        self.verticalLayout_18.addWidget(self.pushButton_14)
+        self.label_130 = QtWidgets.QLabel(self.frame_32)
+        self.label_130.setWordWrap(True)
+        self.label_130.setObjectName("label_130")
+        self.verticalLayout_18.addWidget(self.label_130, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.horizontalLayout_14.addWidget(self.frame_32)
+        self.verticalLayout_14.addWidget(self.frame_30)
+        self.verticalLayout.addWidget(self.frame_26)
+        self.gridLayout_27.addWidget(self.frame_24, 0, 0, 1, 1)
+        self.stackedWidget.addWidget(self.MenuPuntoVenta)
+        self.PuntoVenta = QtWidgets.QWidget()
+        self.PuntoVenta.setObjectName("PuntoVenta")
+        self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.PuntoVenta)
+        self.verticalLayout_9.setObjectName("verticalLayout_9")
+        self.frame_13 = QtWidgets.QFrame(self.PuntoVenta)
+        self.frame_13.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_13.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_13.setObjectName("frame_13")
+        self.verticalLayout_10 = QtWidgets.QVBoxLayout(self.frame_13)
+        self.verticalLayout_10.setObjectName("verticalLayout_10")
+        self.frame_12 = QtWidgets.QFrame(self.frame_13)
+        self.frame_12.setStyleSheet("font: 87 16pt \"Arial Black\";\n"
+"color: whitesmoke;")
+        self.frame_12.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_12.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_12.setObjectName("frame_12")
+        self.horizontalLayout_9 = QtWidgets.QHBoxLayout(self.frame_12)
+        self.horizontalLayout_9.setContentsMargins(5, 5, 5, 5)
+        self.horizontalLayout_9.setObjectName("horizontalLayout_9")
+        self.frame_15 = QtWidgets.QFrame(self.frame_12)
+        self.frame_15.setStyleSheet("")
+        self.frame_15.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_15.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_15.setObjectName("frame_15")
+        self.gridLayout_18 = QtWidgets.QGridLayout(self.frame_15)
+        self.gridLayout_18.setObjectName("gridLayout_18")
+        self.label_70 = QtWidgets.QLabel(self.frame_15)
+        self.label_70.setObjectName("label_70")
+        self.gridLayout_18.addWidget(self.label_70, 0, 0, 1, 1)
+        self.label_86 = QtWidgets.QLabel(self.frame_15)
+        self.label_86.setObjectName("label_86")
+        self.gridLayout_18.addWidget(self.label_86, 1, 0, 1, 1)
+        self.lineEdit_4 = QtWidgets.QLineEdit(self.frame_15)
+        self.lineEdit_4.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_4.setReadOnly(True)
+        self.lineEdit_4.setObjectName("lineEdit_4")
+        self.gridLayout_18.addWidget(self.lineEdit_4, 1, 1, 1, 1)
+        self.lineEdit = QtWidgets.QLineEdit(self.frame_15)
+        self.lineEdit.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit.setReadOnly(True)
+        self.lineEdit.setObjectName("lineEdit")
+        self.gridLayout_18.addWidget(self.lineEdit, 0, 1, 1, 1)
+        self.horizontalLayout_9.addWidget(self.frame_15)
+        self.frame_16 = QtWidgets.QFrame(self.frame_12)
+        self.frame_16.setStyleSheet("font: 87 15pt \"Arial Black\";\n"
+"color: whitesmoke;")
+        self.frame_16.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_16.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_16.setObjectName("frame_16")
+        self.verticalLayout_11 = QtWidgets.QVBoxLayout(self.frame_16)
+        self.verticalLayout_11.setObjectName("verticalLayout_11")
+        self.radioButton = QtWidgets.QRadioButton(self.frame_16)
+        self.radioButton.setObjectName("radioButton")
+        self.verticalLayout_11.addWidget(self.radioButton)
+        self.radioButton_2 = QtWidgets.QRadioButton(self.frame_16)
+        self.radioButton_2.setObjectName("radioButton_2")
+        self.verticalLayout_11.addWidget(self.radioButton_2)
+        self.radioButton_3 = QtWidgets.QRadioButton(self.frame_16)
+        self.radioButton_3.setObjectName("radioButton_3")
+        self.verticalLayout_11.addWidget(self.radioButton_3)
+        self.horizontalLayout_9.addWidget(self.frame_16)
+        self.frame_17 = QtWidgets.QFrame(self.frame_12)
+        self.frame_17.setStyleSheet("")
+        self.frame_17.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_17.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_17.setObjectName("frame_17")
+        self.gridLayout_11 = QtWidgets.QGridLayout(self.frame_17)
+        self.gridLayout_11.setObjectName("gridLayout_11")
+        self.label_82 = QtWidgets.QLabel(self.frame_17)
+        self.label_82.setObjectName("label_82")
+        self.gridLayout_11.addWidget(self.label_82, 1, 0, 1, 2)
+        self.lineEdit_3 = QtWidgets.QLineEdit(self.frame_17)
+        self.lineEdit_3.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit_3.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_3.setReadOnly(True)
+        self.lineEdit_3.setObjectName("lineEdit_3")
+        self.gridLayout_11.addWidget(self.lineEdit_3, 1, 2, 1, 1)
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.frame_17)
+        self.lineEdit_2.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit_2.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_2.setReadOnly(True)
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.gridLayout_11.addWidget(self.lineEdit_2, 0, 2, 1, 1)
+        self.label_73 = QtWidgets.QLabel(self.frame_17)
+        self.label_73.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_73.setObjectName("label_73")
+        self.gridLayout_11.addWidget(self.label_73, 0, 0, 1, 2)
+        self.horizontalLayout_9.addWidget(self.frame_17)
+        self.verticalLayout_10.addWidget(self.frame_12)
+        self.frame_14 = QtWidgets.QFrame(self.frame_13)
+        self.frame_14.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_14.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_14.setObjectName("frame_14")
+        self.gridLayout_21 = QtWidgets.QGridLayout(self.frame_14)
+        self.gridLayout_21.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_21.setSpacing(0)
+        self.gridLayout_21.setObjectName("gridLayout_21")
+        self.stackedWidget_2 = QtWidgets.QStackedWidget(self.frame_14)
+        self.stackedWidget_2.setObjectName("stackedWidget_2")
+        self.Puntodeventas = QtWidgets.QWidget()
+        self.Puntodeventas.setObjectName("Puntodeventas")
+        self.verticalLayout_12 = QtWidgets.QVBoxLayout(self.Puntodeventas)
+        self.verticalLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_12.setSpacing(0)
+        self.verticalLayout_12.setObjectName("verticalLayout_12")
+        self.frame_18 = QtWidgets.QFrame(self.Puntodeventas)
+        self.frame_18.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_18.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_18.setObjectName("frame_18")
+        self.horizontalLayout_10 = QtWidgets.QHBoxLayout(self.frame_18)
+        self.horizontalLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_10.setSpacing(0)
+        self.horizontalLayout_10.setObjectName("horizontalLayout_10")
+        self.frame_20 = QtWidgets.QFrame(self.frame_18)
+        self.frame_20.setStyleSheet("\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;")
+        self.frame_20.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_20.setObjectName("frame_20")
+        self.gridLayout_22 = QtWidgets.QGridLayout(self.frame_20)
+        self.gridLayout_22.setVerticalSpacing(10)
+        self.gridLayout_22.setObjectName("gridLayout_22")
+        self.label_106 = QtWidgets.QLabel(self.frame_20)
+        self.label_106.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_106.setObjectName("label_106")
+        self.gridLayout_22.addWidget(self.label_106, 0, 0, 1, 3)
+        self.lineEdit_8 = QtWidgets.QLineEdit(self.frame_20)
+        self.lineEdit_8.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit_8.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_8.setReadOnly(True)
+        self.lineEdit_8.setObjectName("lineEdit_8")
+        self.gridLayout_22.addWidget(self.lineEdit_8, 3, 2, 1, 1)
+        self.lineEdit_9 = QtWidgets.QLineEdit(self.frame_20)
+        self.lineEdit_9.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit_9.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_9.setReadOnly(True)
+        self.lineEdit_9.setObjectName("lineEdit_9")
+        self.gridLayout_22.addWidget(self.lineEdit_9, 5, 2, 1, 1)
+        self.lineEdit_6 = QtWidgets.QLineEdit(self.frame_20)
+        self.lineEdit_6.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit_6.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_6.setReadOnly(True)
+        self.lineEdit_6.setObjectName("lineEdit_6")
+        self.gridLayout_22.addWidget(self.lineEdit_6, 4, 2, 1, 1)
+        self.label_120 = QtWidgets.QLabel(self.frame_20)
+        self.label_120.setObjectName("label_120")
+        self.gridLayout_22.addWidget(self.label_120, 5, 0, 1, 1)
+        self.lineEdit_5 = QtWidgets.QLineEdit(self.frame_20)
+        self.lineEdit_5.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit_5.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_5.setObjectName("lineEdit_5")
+        self.gridLayout_22.addWidget(self.lineEdit_5, 1, 2, 1, 1)
+        self.label_116 = QtWidgets.QLabel(self.frame_20)
+        self.label_116.setObjectName("label_116")
+        self.gridLayout_22.addWidget(self.label_116, 4, 0, 1, 2)
+        self.label_115 = QtWidgets.QLabel(self.frame_20)
+        self.label_115.setObjectName("label_115")
+        self.gridLayout_22.addWidget(self.label_115, 3, 0, 1, 2)
+        self.label_112 = QtWidgets.QLabel(self.frame_20)
+        self.label_112.setObjectName("label_112")
+        self.gridLayout_22.addWidget(self.label_112, 1, 0, 1, 2)
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_22.addItem(spacerItem2, 3, 3, 1, 1)
+        self.pushButton_7 = QtWidgets.QPushButton(self.frame_20)
+        self.pushButton_7.setMinimumSize(QtCore.QSize(100, 0))
+        self.pushButton_7.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}")
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.gridLayout_22.addWidget(self.pushButton_7, 2, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_10.addWidget(self.frame_20)
+        self.frame_21 = QtWidgets.QFrame(self.frame_18)
+        self.frame_21.setStyleSheet("font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;")
+        self.frame_21.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_21.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_21.setObjectName("frame_21")
+        self.gridLayout_23 = QtWidgets.QGridLayout(self.frame_21)
+        self.gridLayout_23.setObjectName("gridLayout_23")
+        self.label_119 = QtWidgets.QLabel(self.frame_21)
+        self.label_119.setObjectName("label_119")
+        self.gridLayout_23.addWidget(self.label_119, 1, 0, 1, 1)
+        self.label_122 = QtWidgets.QLabel(self.frame_21)
+        self.label_122.setObjectName("label_122")
+        self.gridLayout_23.addWidget(self.label_122, 4, 0, 1, 1)
+        self.label_121 = QtWidgets.QLabel(self.frame_21)
+        self.label_121.setObjectName("label_121")
+        self.gridLayout_23.addWidget(self.label_121, 2, 0, 1, 1)
+        self.pushButton_8 = QtWidgets.QPushButton(self.frame_21)
+        self.pushButton_8.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.gridLayout_23.addWidget(self.pushButton_8, 6, 1, 1, 1)
+        self.lineEdit_11 = QtWidgets.QLineEdit(self.frame_21)
+        self.lineEdit_11.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit_11.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_11.setReadOnly(True)
+        self.lineEdit_11.setObjectName("lineEdit_11")
+        self.gridLayout_23.addWidget(self.lineEdit_11, 4, 1, 1, 1)
+        self.lineEdit_7 = QtWidgets.QLineEdit(self.frame_21)
+        self.lineEdit_7.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit_7.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_7.setObjectName("lineEdit_7")
+        self.gridLayout_23.addWidget(self.lineEdit_7, 1, 1, 1, 1)
+        self.lineEdit_10 = QtWidgets.QLineEdit(self.frame_21)
+        self.lineEdit_10.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit_10.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_10.setObjectName("lineEdit_10")
+        self.gridLayout_23.addWidget(self.lineEdit_10, 2, 1, 1, 1)
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_23.addItem(spacerItem3, 4, 2, 1, 1)
+        self.horizontalLayout_10.addWidget(self.frame_21)
+        self.verticalLayout_12.addWidget(self.frame_18)
+        self.frame_19 = QtWidgets.QFrame(self.Puntodeventas)
+        self.frame_19.setStyleSheet("")
+        self.frame_19.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_19.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_19.setObjectName("frame_19")
+        self.horizontalLayout_11 = QtWidgets.QHBoxLayout(self.frame_19)
+        self.horizontalLayout_11.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_11.setSpacing(5)
+        self.horizontalLayout_11.setObjectName("horizontalLayout_11")
+        self.frame_22 = QtWidgets.QFrame(self.frame_19)
+        self.frame_22.setStyleSheet("")
+        self.frame_22.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_22.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_22.setObjectName("frame_22")
+        self.gridLayout_24 = QtWidgets.QGridLayout(self.frame_22)
+        self.gridLayout_24.setObjectName("gridLayout_24")
+        self.tableWidget = QtWidgets.QTableWidget(self.frame_22)
+        self.tableWidget.setStyleSheet("QHeaderView::section{\n"
+"    padding: 5px;\n"
+"    background-color: #77838d;\n"
+"    border: .5px solid #034aa6;\n"
+"    font: 87 13pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"\n"
+"}")
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(5)
+        self.tableWidget.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, item)
+        self.gridLayout_24.addWidget(self.tableWidget, 0, 0, 1, 1)
+        self.horizontalLayout_11.addWidget(self.frame_22)
+        self.frame_23 = QtWidgets.QFrame(self.frame_19)
+        self.frame_23.setStyleSheet("\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;")
+        self.frame_23.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_23.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_23.setObjectName("frame_23")
+        self.verticalLayout_13 = QtWidgets.QVBoxLayout(self.frame_23)
+        self.verticalLayout_13.setObjectName("verticalLayout_13")
+        self.label_113 = QtWidgets.QLabel(self.frame_23)
+        self.label_113.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_113.setObjectName("label_113")
+        self.verticalLayout_13.addWidget(self.label_113)
+        self.label_114 = QtWidgets.QLabel(self.frame_23)
+        self.label_114.setObjectName("label_114")
+        self.verticalLayout_13.addWidget(self.label_114)
+        self.lineEdit_12 = QtWidgets.QLineEdit(self.frame_23)
+        self.lineEdit_12.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit_12.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.lineEdit_12.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_12.setReadOnly(True)
+        self.lineEdit_12.setObjectName("lineEdit_12")
+        self.verticalLayout_13.addWidget(self.lineEdit_12)
+        self.pushButton_9 = QtWidgets.QPushButton(self.frame_23)
+        self.pushButton_9.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_9.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}")
+        self.pushButton_9.setObjectName("pushButton_9")
+        self.verticalLayout_13.addWidget(self.pushButton_9)
+        self.pushButton_10 = QtWidgets.QPushButton(self.frame_23)
+        self.pushButton_10.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_10.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}")
+        self.pushButton_10.setObjectName("pushButton_10")
+        self.verticalLayout_13.addWidget(self.pushButton_10)
+        self.horizontalLayout_11.addWidget(self.frame_23)
+        self.horizontalLayout_11.setStretch(0, 8)
+        self.verticalLayout_12.addWidget(self.frame_19)
+        self.stackedWidget_2.addWidget(self.Puntodeventas)
+        self.page_2 = QtWidgets.QWidget()
+        self.page_2.setObjectName("page_2")
+        self.gridLayout_44 = QtWidgets.QGridLayout(self.page_2)
+        self.gridLayout_44.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_44.setSpacing(0)
+        self.gridLayout_44.setObjectName("gridLayout_44")
+        self.tabWidget_4 = QtWidgets.QTabWidget(self.page_2)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.tabWidget_4.setFont(font)
+        self.tabWidget_4.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.tabWidget_4.setMouseTracking(False)
+        self.tabWidget_4.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.tabWidget_4.setStyleSheet("QTabWidget::pane {\n"
+"} \n"
+"\n"
+"QTabBar::tab {  \n"
+"  font: 63 18pt \"Bahnschrift SemiBold SemiConden\";\n"
+"  color: whitesmoke;\n"
+"  background-color: #343434;\n"
+"  border: 1px solid #cacaca; \n"
+"  padding: 20px;\n"
+"    width: 230px;\n"
+"    height: 50px;\n"
+"} \n"
+"\n"
+"QTabBar::tab:selected { \n"
+"  background: #e6b31e; \n"
+"border: 1px solid rgb(161, 161, 161);\n"
+"  margin-bottom: -1px; \n"
+"}\n"
+"\n"
+"")
+        self.tabWidget_4.setTabShape(QtWidgets.QTabWidget.Rounded)
+        self.tabWidget_4.setUsesScrollButtons(False)
+        self.tabWidget_4.setDocumentMode(False)
+        self.tabWidget_4.setTabsClosable(False)
+        self.tabWidget_4.setMovable(True)
+        self.tabWidget_4.setTabBarAutoHide(False)
+        self.tabWidget_4.setObjectName("tabWidget_4")
+        self.tab_20 = QtWidgets.QWidget()
+        self.tab_20.setObjectName("tab_20")
+        self.gridLayout_37 = QtWidgets.QGridLayout(self.tab_20)
+        self.gridLayout_37.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_37.setSpacing(0)
+        self.gridLayout_37.setObjectName("gridLayout_37")
+        self.scrollArea_14 = QtWidgets.QScrollArea(self.tab_20)
+        self.scrollArea_14.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_14.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_14.setWidgetResizable(True)
+        self.scrollArea_14.setObjectName("scrollArea_14")
+        self.scrollAreaWidgetContents_14 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_14.setGeometry(QtCore.QRect(0, 0, 1030, 325))
+        self.scrollAreaWidgetContents_14.setObjectName("scrollAreaWidgetContents_14")
+        self.gridLayout_38 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_14)
+        self.gridLayout_38.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_38.setHorizontalSpacing(20)
+        self.gridLayout_38.setVerticalSpacing(0)
+        self.gridLayout_38.setObjectName("gridLayout_38")
+        self.lineEdit_24 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_14)
+        self.lineEdit_24.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_24.setObjectName("lineEdit_24")
+        self.gridLayout_38.addWidget(self.lineEdit_24, 7, 1, 1, 1)
+        self.dateEdit = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_14)
+        self.dateEdit.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.dateEdit.setObjectName("dateEdit")
+        self.gridLayout_38.addWidget(self.dateEdit, 8, 1, 1, 1)
+        self.GuardarRegistrarPaciente_5 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_14)
+        self.GuardarRegistrarPaciente_5.setMinimumSize(QtCore.QSize(250, 80))
+        self.GuardarRegistrarPaciente_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.GuardarRegistrarPaciente_5.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87  22pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 22pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.GuardarRegistrarPaciente_5.setObjectName("GuardarRegistrarPaciente_5")
+        self.gridLayout_38.addWidget(self.GuardarRegistrarPaciente_5, 12, 3, 1, 2)
+        self.lineEdit_21 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_14)
+        self.lineEdit_21.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_21.setObjectName("lineEdit_21")
+        self.gridLayout_38.addWidget(self.lineEdit_21, 3, 1, 1, 1)
+        self.lineEdit_23 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_14)
+        self.lineEdit_23.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_23.setObjectName("lineEdit_23")
+        self.gridLayout_38.addWidget(self.lineEdit_23, 6, 1, 1, 1)
+        self.lineEdit_22 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_14)
+        self.lineEdit_22.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_22.setObjectName("lineEdit_22")
+        self.gridLayout_38.addWidget(self.lineEdit_22, 4, 1, 1, 1)
+        self.NombreRegistrar_12 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_14)
+        self.NombreRegistrar_12.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_12.setCursor(QtGui.QCursor(QtCore.Qt.CrossCursor))
+        self.NombreRegistrar_12.setStyleSheet("font: 63 18pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar_12.setObjectName("NombreRegistrar_12")
+        self.gridLayout_38.addWidget(self.NombreRegistrar_12, 0, 1, 1, 1)
+        self.label_163 = QtWidgets.QLabel(self.scrollAreaWidgetContents_14)
+        self.label_163.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_163.setObjectName("label_163")
+        self.gridLayout_38.addWidget(self.label_163, 0, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_37 = QtWidgets.QLabel(self.scrollAreaWidgetContents_14)
+        self.label_37.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_37.setObjectName("label_37")
+        self.gridLayout_38.addWidget(self.label_37, 4, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_60 = QtWidgets.QLabel(self.scrollAreaWidgetContents_14)
+        self.label_60.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_60.setObjectName("label_60")
+        self.gridLayout_38.addWidget(self.label_60, 6, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_26 = QtWidgets.QLabel(self.scrollAreaWidgetContents_14)
+        self.label_26.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_26.setObjectName("label_26")
+        self.gridLayout_38.addWidget(self.label_26, 8, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_67 = QtWidgets.QLabel(self.scrollAreaWidgetContents_14)
+        self.label_67.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_67.setObjectName("label_67")
+        self.gridLayout_38.addWidget(self.label_67, 3, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_164 = QtWidgets.QLabel(self.scrollAreaWidgetContents_14)
+        self.label_164.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_164.setObjectName("label_164")
+        self.gridLayout_38.addWidget(self.label_164, 7, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_171 = QtWidgets.QLabel(self.scrollAreaWidgetContents_14)
+        self.label_171.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_171.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_171.setObjectName("label_171")
+        self.gridLayout_38.addWidget(self.label_171, 5, 0, 1, 1)
+        self.lineEdit_31 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_14)
+        self.lineEdit_31.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_31.setObjectName("lineEdit_31")
+        self.gridLayout_38.addWidget(self.lineEdit_31, 5, 1, 1, 1)
+        self.scrollArea_14.setWidget(self.scrollAreaWidgetContents_14)
+        self.gridLayout_37.addWidget(self.scrollArea_14, 1, 0, 1, 1)
+        self.tabWidget_4.addTab(self.tab_20, "")
+        self.tab_21 = QtWidgets.QWidget()
+        self.tab_21.setObjectName("tab_21")
+        self.gridLayout_39 = QtWidgets.QGridLayout(self.tab_21)
+        self.gridLayout_39.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_39.setSpacing(0)
+        self.gridLayout_39.setObjectName("gridLayout_39")
+        self.scrollArea_15 = QtWidgets.QScrollArea(self.tab_21)
+        self.scrollArea_15.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_15.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_15.setWidgetResizable(True)
+        self.scrollArea_15.setAlignment(QtCore.Qt.AlignCenter)
+        self.scrollArea_15.setObjectName("scrollArea_15")
+        self.scrollAreaWidgetContents_15 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_15.setGeometry(QtCore.QRect(0, 0, 997, 605))
+        self.scrollAreaWidgetContents_15.setObjectName("scrollAreaWidgetContents_15")
+        self.gridLayout_40 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_15)
+        self.gridLayout_40.setContentsMargins(0, 0, 0, 50)
+        self.gridLayout_40.setHorizontalSpacing(20)
+        self.gridLayout_40.setVerticalSpacing(15)
+        self.gridLayout_40.setObjectName("gridLayout_40")
+        self.label_14 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_14.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_14.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_14.setObjectName("label_14")
+        self.gridLayout_40.addWidget(self.label_14, 7, 0, 1, 1)
+        self.lineEdit_27 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_27.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.lineEdit_27.setObjectName("lineEdit_27")
+        self.gridLayout_40.addWidget(self.lineEdit_27, 10, 1, 1, 1)
+        self.label_59 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_59.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_59.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_59.setObjectName("label_59")
+        self.gridLayout_40.addWidget(self.label_59, 8, 0, 1, 1)
+        self.label_69 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_69.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);\n"
+"")
+        self.label_69.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_69.setObjectName("label_69")
+        self.gridLayout_40.addWidget(self.label_69, 10, 0, 1, 1)
+        self.label_162 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_162.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_162.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_162.setObjectName("label_162")
+        self.gridLayout_40.addWidget(self.label_162, 11, 0, 1, 1)
+        self.label_167 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_167.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_167.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_167.setObjectName("label_167")
+        self.gridLayout_40.addWidget(self.label_167, 12, 0, 1, 1)
+        self.lineEdit_25 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_25.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.lineEdit_25.setObjectName("lineEdit_25")
+        self.gridLayout_40.addWidget(self.lineEdit_25, 7, 1, 1, 1)
+        self.lineEdit_26 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_26.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.lineEdit_26.setObjectName("lineEdit_26")
+        self.gridLayout_40.addWidget(self.lineEdit_26, 8, 1, 1, 1)
+        self.lineEdit_29 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_29.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.lineEdit_29.setObjectName("lineEdit_29")
+        self.gridLayout_40.addWidget(self.lineEdit_29, 12, 1, 1, 1)
+        self.lineEdit_28 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_28.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.lineEdit_28.setObjectName("lineEdit_28")
+        self.gridLayout_40.addWidget(self.lineEdit_28, 11, 1, 1, 1)
+        self.ActualizarBotonPaciente_6 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_15)
+        self.ActualizarBotonPaciente_6.setMinimumSize(QtCore.QSize(130, 70))
+        self.ActualizarBotonPaciente_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.ActualizarBotonPaciente_6.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.ActualizarBotonPaciente_6.setObjectName("ActualizarBotonPaciente_6")
+        self.gridLayout_40.addWidget(self.ActualizarBotonPaciente_6, 13, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.NombreActualizarPaciente_11 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.NombreActualizarPaciente_11.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente_11.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente_11.setObjectName("NombreActualizarPaciente_11")
+        self.gridLayout_40.addWidget(self.NombreActualizarPaciente_11, 3, 1, 1, 1)
+        self.label_165 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_165.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_165.setObjectName("label_165")
+        self.gridLayout_40.addWidget(self.label_165, 2, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.label_166 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_166.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_166.setObjectName("label_166")
+        self.gridLayout_40.addWidget(self.label_166, 3, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.BuscarBotonActualizar_9 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_15)
+        self.BuscarBotonActualizar_9.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonActualizar_9.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonActualizar_9.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.BuscarBotonActualizar_9.setObjectName("BuscarBotonActualizar_9")
+        self.gridLayout_40.addWidget(self.BuscarBotonActualizar_9, 0, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.BuscarPor_13 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_15)
+        self.BuscarPor_13.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarPor_13.setObjectName("BuscarPor_13")
+        self.BuscarPor_13.addItem("")
+        self.BuscarPor_13.addItem("")
+        self.gridLayout_40.addWidget(self.BuscarPor_13, 0, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.ID_BuscarActualizarPaciente_6 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.ID_BuscarActualizarPaciente_6.setMinimumSize(QtCore.QSize(600, 0))
+        self.ID_BuscarActualizarPaciente_6.setMaximumSize(QtCore.QSize(600, 16777215))
+        self.ID_BuscarActualizarPaciente_6.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;")
+        self.ID_BuscarActualizarPaciente_6.setObjectName("ID_BuscarActualizarPaciente_6")
+        self.gridLayout_40.addWidget(self.ID_BuscarActualizarPaciente_6, 0, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.label_170 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_170.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_170.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_170.setObjectName("label_170")
+        self.gridLayout_40.addWidget(self.label_170, 9, 0, 1, 1)
+        self.lineEdit_30 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_30.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.lineEdit_30.setObjectName("lineEdit_30")
+        self.gridLayout_40.addWidget(self.lineEdit_30, 9, 1, 1, 1)
+        self.scrollArea_15.setWidget(self.scrollAreaWidgetContents_15)
+        self.gridLayout_39.addWidget(self.scrollArea_15, 0, 0, 1, 1)
+        self.tabWidget_4.addTab(self.tab_21, "")
+        self.tab_23 = QtWidgets.QWidget()
+        self.tab_23.setObjectName("tab_23")
+        self.gridLayout_42 = QtWidgets.QGridLayout(self.tab_23)
+        self.gridLayout_42.setContentsMargins(0, 0, 0, 50)
+        self.gridLayout_42.setHorizontalSpacing(20)
+        self.gridLayout_42.setVerticalSpacing(10)
+        self.gridLayout_42.setObjectName("gridLayout_42")
+        self.scrollArea_16 = QtWidgets.QScrollArea(self.tab_23)
+        self.scrollArea_16.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_16.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_16.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.scrollArea_16.setWidgetResizable(True)
+        self.scrollArea_16.setObjectName("scrollArea_16")
+        self.scrollAreaWidgetContents_16 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_16.setGeometry(QtCore.QRect(0, 0, 993, 364))
+        self.scrollAreaWidgetContents_16.setObjectName("scrollAreaWidgetContents_16")
+        self.gridLayout_43 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_16)
+        self.gridLayout_43.setObjectName("gridLayout_43")
+        self.label_172 = QtWidgets.QLabel(self.scrollAreaWidgetContents_16)
+        self.label_172.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_172.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_172.setObjectName("label_172")
+        self.gridLayout_43.addWidget(self.label_172, 9, 0, 1, 1)
+        self.label_168 = QtWidgets.QLabel(self.scrollAreaWidgetContents_16)
+        self.label_168.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_168.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_168.setObjectName("label_168")
+        self.gridLayout_43.addWidget(self.label_168, 7, 0, 1, 1)
+        self.label_169 = QtWidgets.QLabel(self.scrollAreaWidgetContents_16)
+        self.label_169.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_169.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_169.setObjectName("label_169")
+        self.gridLayout_43.addWidget(self.label_169, 8, 0, 1, 1)
+        self.label_176 = QtWidgets.QLabel(self.scrollAreaWidgetContents_16)
+        self.label_176.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_176.setText("")
+        self.label_176.setObjectName("label_176")
+        self.gridLayout_43.addWidget(self.label_176, 11, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_178 = QtWidgets.QLabel(self.scrollAreaWidgetContents_16)
+        self.label_178.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_178.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.label_178.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_178.setObjectName("label_178")
+        self.gridLayout_43.addWidget(self.label_178, 2, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_174 = QtWidgets.QLabel(self.scrollAreaWidgetContents_16)
+        self.label_174.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_174.setObjectName("label_174")
+        self.gridLayout_43.addWidget(self.label_174, 6, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
+        self.BuscarBotonEliminar_5 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_16)
+        self.BuscarBotonEliminar_5.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonEliminar_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonEliminar_5.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.BuscarBotonEliminar_5.setObjectName("BuscarBotonEliminar_5")
+        self.gridLayout_43.addWidget(self.BuscarBotonEliminar_5, 1, 4, 1, 1, QtCore.Qt.AlignLeft)
+        self.ID_BuscarEliminarPaciente_5 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_16)
+        self.ID_BuscarEliminarPaciente_5.setMinimumSize(QtCore.QSize(600, 0))
+        self.ID_BuscarEliminarPaciente_5.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.ID_BuscarEliminarPaciente_5.setObjectName("ID_BuscarEliminarPaciente_5")
+        self.gridLayout_43.addWidget(self.ID_BuscarEliminarPaciente_5, 1, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.BuscarRegistradosCombobox_14 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_16)
+        self.BuscarRegistradosCombobox_14.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.BuscarRegistradosCombobox_14.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarRegistradosCombobox_14.setObjectName("BuscarRegistradosCombobox_14")
+        self.BuscarRegistradosCombobox_14.addItem("")
+        self.BuscarRegistradosCombobox_14.addItem("")
+        self.gridLayout_43.addWidget(self.BuscarRegistradosCombobox_14, 1, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
+        self.lineEdit_32 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_16)
+        self.lineEdit_32.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_32.setObjectName("lineEdit_32")
+        self.gridLayout_43.addWidget(self.lineEdit_32, 7, 3, 1, 1)
+        self.lineEdit_33 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_16)
+        self.lineEdit_33.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_33.setObjectName("lineEdit_33")
+        self.gridLayout_43.addWidget(self.lineEdit_33, 8, 3, 1, 1)
+        self.lineEdit_34 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_16)
+        self.lineEdit_34.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_34.setObjectName("lineEdit_34")
+        self.gridLayout_43.addWidget(self.lineEdit_34, 9, 3, 1, 1)
+        self.Eliminar_NombrePaciente_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_16)
+        self.Eliminar_NombrePaciente_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.Eliminar_NombrePaciente_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.Eliminar_NombrePaciente_4.setObjectName("Eliminar_NombrePaciente_4")
+        self.gridLayout_43.addWidget(self.Eliminar_NombrePaciente_4, 6, 2, 1, 2)
+        self.EliminarPacienteBoton_5 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_16)
+        self.EliminarPacienteBoton_5.setMinimumSize(QtCore.QSize(130, 70))
+        self.EliminarPacienteBoton_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.EliminarPacienteBoton_5.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.EliminarPacienteBoton_5.setObjectName("EliminarPacienteBoton_5")
+        self.gridLayout_43.addWidget(self.EliminarPacienteBoton_5, 11, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.scrollArea_16.setWidget(self.scrollAreaWidgetContents_16)
+        self.gridLayout_42.addWidget(self.scrollArea_16, 0, 0, 1, 1)
+        self.tabWidget_4.addTab(self.tab_23, "")
+        self.tab_22 = QtWidgets.QWidget()
+        self.tab_22.setObjectName("tab_22")
+        self.gridLayout_41 = QtWidgets.QGridLayout(self.tab_22)
+        self.gridLayout_41.setContentsMargins(-1, -1, -1, 30)
+        self.gridLayout_41.setObjectName("gridLayout_41")
+        self.TablaEmpleados_8 = QtWidgets.QTableWidget(self.tab_22)
+        self.TablaEmpleados_8.setStyleSheet("QHeaderView::section{\n"
+"    padding: 5px;\n"
+"    background-color: #77838d;\n"
+"    border: .5px solid #034aa6;\n"
+"    font: 87 13pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"\n"
+"}")
+        self.TablaEmpleados_8.setDragEnabled(False)
+        self.TablaEmpleados_8.setWordWrap(True)
+        self.TablaEmpleados_8.setObjectName("TablaEmpleados_8")
+        self.TablaEmpleados_8.setColumnCount(8)
+        self.TablaEmpleados_8.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_8.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_8.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_8.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_8.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_8.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_8.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_8.setHorizontalHeaderItem(6, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_8.setHorizontalHeaderItem(7, item)
+        self.TablaEmpleados_8.horizontalHeader().setCascadingSectionResizes(False)
+        self.TablaEmpleados_8.horizontalHeader().setHighlightSections(False)
+        self.TablaEmpleados_8.horizontalHeader().setSortIndicatorShown(False)
+        self.TablaEmpleados_8.horizontalHeader().setStretchLastSection(True)
+        self.TablaEmpleados_8.verticalHeader().setVisible(False)
+        self.TablaEmpleados_8.verticalHeader().setSortIndicatorShown(False)
+        self.gridLayout_41.addWidget(self.TablaEmpleados_8, 2, 0, 1, 4)
+        self.BuscarBotonRegistrados_8 = QtWidgets.QPushButton(self.tab_22)
+        self.BuscarBotonRegistrados_8.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonRegistrados_8.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonRegistrados_8.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.BuscarBotonRegistrados_8.setObjectName("BuscarBotonRegistrados_8")
+        self.gridLayout_41.addWidget(self.BuscarBotonRegistrados_8, 1, 3, 1, 1)
+        self.RefrescarBotonRegistrados_6 = QtWidgets.QPushButton(self.tab_22)
+        self.RefrescarBotonRegistrados_6.setMinimumSize(QtCore.QSize(130, 70))
+        self.RefrescarBotonRegistrados_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.RefrescarBotonRegistrados_6.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.RefrescarBotonRegistrados_6.setObjectName("RefrescarBotonRegistrados_6")
+        self.gridLayout_41.addWidget(self.RefrescarBotonRegistrados_6, 3, 1, 1, 2, QtCore.Qt.AlignHCenter)
+        self.BuscarRegistradosCombobox_13 = QtWidgets.QComboBox(self.tab_22)
+        self.BuscarRegistradosCombobox_13.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.BuscarRegistradosCombobox_13.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarRegistradosCombobox_13.setObjectName("BuscarRegistradosCombobox_13")
+        self.BuscarRegistradosCombobox_13.addItem("")
+        self.BuscarRegistradosCombobox_13.addItem("")
+        self.gridLayout_41.addWidget(self.BuscarRegistradosCombobox_13, 1, 0, 1, 2)
+        self.BuscarRegistradosPacientesText_8 = QtWidgets.QLineEdit(self.tab_22)
+        self.BuscarRegistradosPacientesText_8.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.BuscarRegistradosPacientesText_8.setObjectName("BuscarRegistradosPacientesText_8")
+        self.gridLayout_41.addWidget(self.BuscarRegistradosPacientesText_8, 1, 2, 1, 1)
+        self.tabWidget_4.addTab(self.tab_22, "")
+        self.gridLayout_44.addWidget(self.tabWidget_4, 0, 0, 1, 1)
+        self.stackedWidget_2.addWidget(self.page_2)
+        self.Ventas = QtWidgets.QWidget()
+        self.Ventas.setObjectName("Ventas")
+        self.gridLayout_30 = QtWidgets.QGridLayout(self.Ventas)
+        self.gridLayout_30.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_30.setHorizontalSpacing(10)
+        self.gridLayout_30.setVerticalSpacing(15)
+        self.gridLayout_30.setObjectName("gridLayout_30")
+        self.BuscarRegistradosCombobox_10 = QtWidgets.QComboBox(self.Ventas)
+        self.BuscarRegistradosCombobox_10.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.BuscarRegistradosCombobox_10.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarRegistradosCombobox_10.setObjectName("BuscarRegistradosCombobox_10")
+        self.BuscarRegistradosCombobox_10.addItem("")
+        self.BuscarRegistradosCombobox_10.addItem("")
+        self.BuscarRegistradosCombobox_10.addItem("")
+        self.BuscarRegistradosCombobox_10.setItemText(2, "")
+        self.gridLayout_30.addWidget(self.BuscarRegistradosCombobox_10, 1, 0, 1, 1)
+        self.BuscarRegistradosCombobox_11 = QtWidgets.QComboBox(self.Ventas)
+        self.BuscarRegistradosCombobox_11.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.BuscarRegistradosCombobox_11.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarRegistradosCombobox_11.setObjectName("BuscarRegistradosCombobox_11")
+        self.BuscarRegistradosCombobox_11.addItem("")
+        self.BuscarRegistradosCombobox_11.addItem("")
+        self.BuscarRegistradosCombobox_11.addItem("")
+        self.gridLayout_30.addWidget(self.BuscarRegistradosCombobox_11, 3, 3, 1, 1)
+        self.TablaEmpleados_7 = QtWidgets.QTableWidget(self.Ventas)
+        self.TablaEmpleados_7.setStyleSheet("QHeaderView::section{\n"
+"    padding: 5px;\n"
+"    background-color: #77838d;\n"
+"    border: .5px solid #034aa6;\n"
+"    font: 87 13pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"\n"
+"}")
+        self.TablaEmpleados_7.setDragEnabled(False)
+        self.TablaEmpleados_7.setObjectName("TablaEmpleados_7")
+        self.TablaEmpleados_7.setColumnCount(5)
+        self.TablaEmpleados_7.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_7.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_7.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_7.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_7.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_7.setHorizontalHeaderItem(4, item)
+        self.TablaEmpleados_7.horizontalHeader().setCascadingSectionResizes(False)
+        self.TablaEmpleados_7.horizontalHeader().setHighlightSections(False)
+        self.TablaEmpleados_7.horizontalHeader().setSortIndicatorShown(False)
+        self.TablaEmpleados_7.horizontalHeader().setStretchLastSection(True)
+        self.TablaEmpleados_7.verticalHeader().setVisible(False)
+        self.TablaEmpleados_7.verticalHeader().setSortIndicatorShown(False)
+        self.gridLayout_30.addWidget(self.TablaEmpleados_7, 2, 0, 1, 5)
+        self.BuscarRegistradosPacientesText_7 = QtWidgets.QLineEdit(self.Ventas)
+        self.BuscarRegistradosPacientesText_7.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.BuscarRegistradosPacientesText_7.setObjectName("BuscarRegistradosPacientesText_7")
+        self.gridLayout_30.addWidget(self.BuscarRegistradosPacientesText_7, 1, 1, 1, 3)
+        self.label_124 = QtWidgets.QLabel(self.Ventas)
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_124.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_124.setFont(font)
+        self.label_124.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_124.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_124.setObjectName("label_124")
+        self.gridLayout_30.addWidget(self.label_124, 0, 0, 1, 4)
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_30.addItem(spacerItem4, 3, 2, 1, 1)
+        self.pushButton_15 = QtWidgets.QPushButton(self.Ventas)
+        self.pushButton_15.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.pushButton_15.setObjectName("pushButton_15")
+        self.gridLayout_30.addWidget(self.pushButton_15, 3, 0, 1, 2)
+        self.BuscarBotonRegistrados_7 = QtWidgets.QPushButton(self.Ventas)
+        self.BuscarBotonRegistrados_7.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonRegistrados_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonRegistrados_7.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.BuscarBotonRegistrados_7.setObjectName("BuscarBotonRegistrados_7")
+        self.gridLayout_30.addWidget(self.BuscarBotonRegistrados_7, 0, 4, 2, 1)
+        self.stackedWidget_2.addWidget(self.Ventas)
+        self.gridLayout_21.addWidget(self.stackedWidget_2, 0, 1, 1, 1)
+        self.verticalLayout_10.addWidget(self.frame_14)
+        self.verticalLayout_10.setStretch(0, 2)
+        self.verticalLayout_10.setStretch(1, 9)
+        self.verticalLayout_9.addWidget(self.frame_13)
+        self.verticalLayout_9.setStretch(0, 6)
+        self.stackedWidget.addWidget(self.PuntoVenta)
+        self.VentaTicket = QtWidgets.QWidget()
+        self.VentaTicket.setObjectName("VentaTicket")
+        self.gridLayout_28 = QtWidgets.QGridLayout(self.VentaTicket)
+        self.gridLayout_28.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_28.setSpacing(0)
+        self.gridLayout_28.setObjectName("gridLayout_28")
+        self.frame = QtWidgets.QFrame(self.VentaTicket)
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.frame)
+        self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_6.setSpacing(0)
+        self.verticalLayout_6.setObjectName("verticalLayout_6")
+        self.frame_8 = QtWidgets.QFrame(self.frame)
+        self.frame_8.setMinimumSize(QtCore.QSize(0, 60))
+        self.frame_8.setMaximumSize(QtCore.QSize(16777215, 60))
+        self.frame_8.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_8.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_8.setObjectName("frame_8")
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.frame_8)
+        self.horizontalLayout_6.setContentsMargins(15, 0, 15, 0)
+        self.horizontalLayout_6.setSpacing(20)
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.label_138 = QtWidgets.QLabel(self.frame_8)
+        self.label_138.setMinimumSize(QtCore.QSize(100, 100))
+        self.label_138.setStyleSheet("image: url(:/menu/adorno.png);")
+        self.label_138.setText("")
+        self.label_138.setObjectName("label_138")
+        self.horizontalLayout_6.addWidget(self.label_138)
+        self.label_Bienvenida_3 = QtWidgets.QLabel(self.frame_8)
+        self.label_Bienvenida_3.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
+"    color: whitesmoke;")
+        self.label_Bienvenida_3.setObjectName("label_Bienvenida_3")
+        self.horizontalLayout_6.addWidget(self.label_Bienvenida_3)
+        spacerItem5 = QtWidgets.QSpacerItem(715, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_6.addItem(spacerItem5)
+        self.label_5 = QtWidgets.QLabel(self.frame_8)
+        self.label_5.setMinimumSize(QtCore.QSize(60, 60))
+        self.label_5.setStyleSheet("image: url(:/logos/logo.png);")
+        self.label_5.setText("")
+        self.label_5.setObjectName("label_5")
+        self.horizontalLayout_6.addWidget(self.label_5)
+        self.verticalLayout_6.addWidget(self.frame_8)
+        self.frame_9 = QtWidgets.QFrame(self.frame)
+        self.frame_9.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_9.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_9.setObjectName("frame_9")
+        self.horizontalLayout_19 = QtWidgets.QHBoxLayout(self.frame_9)
+        self.horizontalLayout_19.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_19.setSpacing(0)
+        self.horizontalLayout_19.setObjectName("horizontalLayout_19")
+        self.frame_44 = QtWidgets.QFrame(self.frame_9)
+        self.frame_44.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_44.setMaximumSize(QtCore.QSize(700, 16777215))
+        self.frame_44.setStyleSheet("")
+        self.frame_44.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_44.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_44.setObjectName("frame_44")
+        self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.frame_44)
+        self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_8.setSpacing(0)
+        self.verticalLayout_8.setObjectName("verticalLayout_8")
+        self.frame_10 = QtWidgets.QFrame(self.frame_44)
+        self.frame_10.setMinimumSize(QtCore.QSize(600, 600))
+        self.frame_10.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_10.setStyleSheet("QFrame{\n"
+"    background-color: whitesmoke;\n"
+"    \n"
+"}\n"
+"\n"
+"")
+        self.frame_10.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_10.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_10.setObjectName("frame_10")
+        self.verticalLayout_29 = QtWidgets.QVBoxLayout(self.frame_10)
+        self.verticalLayout_29.setContentsMargins(10, 0, 10, 0)
+        self.verticalLayout_29.setSpacing(10)
+        self.verticalLayout_29.setObjectName("verticalLayout_29")
+        self.label_7 = QtWidgets.QLabel(self.frame_10)
+        self.label_7.setMinimumSize(QtCore.QSize(70, 70))
+        self.label_7.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
+"image: url(:/menu/logonegro.png);\n"
+"border: 0px solid #e6b31e;")
+        self.label_7.setText("")
+        self.label_7.setObjectName("label_7")
+        self.verticalLayout_29.addWidget(self.label_7)
+        self.label_9 = QtWidgets.QLabel(self.frame_10)
+        self.label_9.setMinimumSize(QtCore.QSize(270, 50))
+        self.label_9.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 63 20pt \"Bahnschrift SemiBold SemiConden\";")
+        self.label_9.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_9.setObjectName("label_9")
+        self.verticalLayout_29.addWidget(self.label_9)
+        self.FechaTicket = QtWidgets.QLabel(self.frame_10)
+        self.FechaTicket.setMinimumSize(QtCore.QSize(170, 0))
+        self.FechaTicket.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 87 10pt \"Helvetica Black\";")
+        self.FechaTicket.setAlignment(QtCore.Qt.AlignCenter)
+        self.FechaTicket.setObjectName("FechaTicket")
+        self.verticalLayout_29.addWidget(self.FechaTicket)
+        self.label_139 = QtWidgets.QLabel(self.frame_10)
+        self.label_139.setMinimumSize(QtCore.QSize(170, 100))
+        self.label_139.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 87 10pt \"Helvetica Black\";")
+        self.label_139.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_139.setObjectName("label_139")
+        self.verticalLayout_29.addWidget(self.label_139)
+        self.tableWidget_3 = QtWidgets.QTableWidget(self.frame_10)
+        self.tableWidget_3.setMinimumSize(QtCore.QSize(510, 0))
+        self.tableWidget_3.setStyleSheet("QHeaderView::section{\n"
+"    color: rgb(30, 15, 0);\n"
+"    padding: 5px;\n"
+"    border: 2px dashed gray;\n"
+"    font: 87 13pt \"Arial Black\";\n"
+"\n"
+"};\n"
+"")
+        self.tableWidget_3.setProperty("showDropIndicator", True)
+        self.tableWidget_3.setShowGrid(True)
+        self.tableWidget_3.setGridStyle(QtCore.Qt.DashLine)
+        self.tableWidget_3.setCornerButtonEnabled(True)
+        self.tableWidget_3.setObjectName("tableWidget_3")
+        self.tableWidget_3.setColumnCount(5)
+        self.tableWidget_3.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_3.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_3.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_3.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_3.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_3.setHorizontalHeaderItem(4, item)
+        self.tableWidget_3.horizontalHeader().setCascadingSectionResizes(False)
+        self.tableWidget_3.horizontalHeader().setSortIndicatorShown(False)
+        self.tableWidget_3.horizontalHeader().setStretchLastSection(True)
+        self.verticalLayout_29.addWidget(self.tableWidget_3)
+        self.frame_48 = QtWidgets.QFrame(self.frame_10)
+        self.frame_48.setMinimumSize(QtCore.QSize(510, 30))
+        self.frame_48.setStyleSheet("background-color: rgb(230, 179, 30);\n"
+"font: 63 16pt \"Bahnschrift SemiBold SemiConden\";")
+        self.frame_48.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_48.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_48.setObjectName("frame_48")
+        self.horizontalLayout_22 = QtWidgets.QHBoxLayout(self.frame_48)
+        self.horizontalLayout_22.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_22.setSpacing(0)
+        self.horizontalLayout_22.setObjectName("horizontalLayout_22")
+        spacerItem6 = QtWidgets.QSpacerItem(213, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_22.addItem(spacerItem6)
+        self.label_143 = QtWidgets.QLabel(self.frame_48)
+        self.label_143.setStyleSheet("color: rgb(30, 15, 0);")
+        self.label_143.setObjectName("label_143")
+        self.horizontalLayout_22.addWidget(self.label_143)
+        spacerItem7 = QtWidgets.QSpacerItem(212, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_22.addItem(spacerItem7)
+        self.label_144 = QtWidgets.QLabel(self.frame_48)
+        self.label_144.setStyleSheet("color: rgb(30, 15, 0);\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(245, 245, 245);\n"
+"")
+        self.label_144.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_144.setObjectName("label_144")
+        self.horizontalLayout_22.addWidget(self.label_144)
+        self.verticalLayout_29.addWidget(self.frame_48)
+        self.label_149 = QtWidgets.QLabel(self.frame_10)
+        self.label_149.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 87 10pt \"Helvetica Black\";")
+        self.label_149.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_149.setObjectName("label_149")
+        self.verticalLayout_29.addWidget(self.label_149)
+        self.label_147 = QtWidgets.QLabel(self.frame_10)
+        self.label_147.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 87 10pt \"Helvetica Black\";")
+        self.label_147.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_147.setObjectName("label_147")
+        self.verticalLayout_29.addWidget(self.label_147)
+        self.verticalLayout_8.addWidget(self.frame_10, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.pushButton_29 = QtWidgets.QPushButton(self.frame_44)
+        self.pushButton_29.setMinimumSize(QtCore.QSize(200, 60))
+        self.pushButton_29.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_29.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}")
+        self.pushButton_29.setObjectName("pushButton_29")
+        self.verticalLayout_8.addWidget(self.pushButton_29, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_19.addWidget(self.frame_44)
+        self.frame_45 = QtWidgets.QFrame(self.frame_9)
+        self.frame_45.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_45.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_45.setStyleSheet("")
+        self.frame_45.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_45.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_45.setObjectName("frame_45")
+        self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.frame_45)
+        self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_7.setSpacing(0)
+        self.verticalLayout_7.setObjectName("verticalLayout_7")
+        self.frame_43 = QtWidgets.QFrame(self.frame_45)
+        self.frame_43.setMinimumSize(QtCore.QSize(900, 600))
+        self.frame_43.setStyleSheet("QFrame{\n"
+"    background-color: whitesmoke;\n"
+"};\n"
+"")
+        self.frame_43.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_43.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_43.setObjectName("frame_43")
+        self.verticalLayout_28 = QtWidgets.QVBoxLayout(self.frame_43)
+        self.verticalLayout_28.setObjectName("verticalLayout_28")
+        self.frame_46 = QtWidgets.QFrame(self.frame_43)
+        self.frame_46.setMinimumSize(QtCore.QSize(0, 60))
+        self.frame_46.setStyleSheet("\n"
+"background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 63 32pt \"Bahnschrift SemiBold SemiConden\";\n"
+"\n"
+"")
+        self.frame_46.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_46.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_46.setObjectName("frame_46")
+        self.horizontalLayout_20 = QtWidgets.QHBoxLayout(self.frame_46)
+        self.horizontalLayout_20.setObjectName("horizontalLayout_20")
+        self.label_140 = QtWidgets.QLabel(self.frame_46)
+        self.label_140.setMinimumSize(QtCore.QSize(270, 50))
+        self.label_140.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 63 32pt \"Bahnschrift SemiBold SemiConden\";")
+        self.label_140.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_140.setObjectName("label_140")
+        self.horizontalLayout_20.addWidget(self.label_140)
+        spacerItem8 = QtWidgets.QSpacerItem(427, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_20.addItem(spacerItem8)
+        self.Tota_label = QtWidgets.QLabel(self.frame_46)
+        self.Tota_label.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 63 32pt \"Bahnschrift SemiBold SemiConden\";")
+        self.Tota_label.setObjectName("Tota_label")
+        self.horizontalLayout_20.addWidget(self.Tota_label)
+        self.verticalLayout_28.addWidget(self.frame_46)
+        self.tableWidget_2 = QtWidgets.QTableWidget(self.frame_43)
+        self.tableWidget_2.setStyleSheet("QHeaderView::section{\n"
+"    padding: 5px;\n"
+"    background-color: #1e0f00;\n"
+"    border: 50px solid #fffff;\n"
+"    font: 87 13pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"\n"
+"};\n"
+"")
+        self.tableWidget_2.setObjectName("tableWidget_2")
+        self.tableWidget_2.setColumnCount(5)
+        self.tableWidget_2.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_2.setHorizontalHeaderItem(4, item)
+        self.tableWidget_2.horizontalHeader().setCascadingSectionResizes(False)
+        self.tableWidget_2.horizontalHeader().setSortIndicatorShown(False)
+        self.tableWidget_2.horizontalHeader().setStretchLastSection(True)
+        self.verticalLayout_28.addWidget(self.tableWidget_2)
+        self.frame_47 = QtWidgets.QFrame(self.frame_43)
+        self.frame_47.setMinimumSize(QtCore.QSize(0, 30))
+        self.frame_47.setStyleSheet("background-color: rgb(230, 179, 30);\n"
+"font: 63 16pt \"Bahnschrift SemiBold SemiConden\";")
+        self.frame_47.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_47.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_47.setObjectName("frame_47")
+        self.horizontalLayout_21 = QtWidgets.QHBoxLayout(self.frame_47)
+        self.horizontalLayout_21.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_21.setSpacing(0)
+        self.horizontalLayout_21.setObjectName("horizontalLayout_21")
+        spacerItem9 = QtWidgets.QSpacerItem(356, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_21.addItem(spacerItem9)
+        self.label_142 = QtWidgets.QLabel(self.frame_47)
+        self.label_142.setStyleSheet("color: rgb(30, 15, 0);\n"
+"")
+        self.label_142.setObjectName("label_142")
+        self.horizontalLayout_21.addWidget(self.label_142)
+        spacerItem10 = QtWidgets.QSpacerItem(355, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_21.addItem(spacerItem10)
+        self.label_141 = QtWidgets.QLabel(self.frame_47)
+        self.label_141.setStyleSheet("color: rgb(30, 15, 0);\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(245, 245, 245);\n"
+"")
+        self.label_141.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_141.setObjectName("label_141")
+        self.horizontalLayout_21.addWidget(self.label_141)
+        self.verticalLayout_28.addWidget(self.frame_47)
+        self.frame_49 = QtWidgets.QFrame(self.frame_43)
+        self.frame_49.setMinimumSize(QtCore.QSize(0, 60))
+        self.frame_49.setStyleSheet("\n"
+"background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 63 32pt \"Bahnschrift SemiBold SemiConden\";\n"
+"\n"
+"")
+        self.frame_49.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_49.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_49.setObjectName("frame_49")
+        self.horizontalLayout_23 = QtWidgets.QHBoxLayout(self.frame_49)
+        self.horizontalLayout_23.setObjectName("horizontalLayout_23")
+        self.label_145 = QtWidgets.QLabel(self.frame_49)
+        self.label_145.setMinimumSize(QtCore.QSize(270, 50))
+        self.label_145.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 63 32pt \"Bahnschrift SemiBold SemiConden\";")
+        self.label_145.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_145.setObjectName("label_145")
+        self.horizontalLayout_23.addWidget(self.label_145)
+        spacerItem11 = QtWidgets.QSpacerItem(369, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_23.addItem(spacerItem11)
+        self.lineEdit_13 = QtWidgets.QLineEdit(self.frame_49)
+        self.lineEdit_13.setMinimumSize(QtCore.QSize(50, 0))
+        self.lineEdit_13.setMaximumSize(QtCore.QSize(150, 16777215))
+        self.lineEdit_13.setStyleSheet("background-color: rgb(245, 245, 245);\n"
+"font: 63 32pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_13.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.lineEdit_13.setObjectName("lineEdit_13")
+        self.horizontalLayout_23.addWidget(self.lineEdit_13)
+        self.verticalLayout_28.addWidget(self.frame_49)
+        self.frame_50 = QtWidgets.QFrame(self.frame_43)
+        self.frame_50.setMinimumSize(QtCore.QSize(0, 60))
+        self.frame_50.setStyleSheet("\n"
+"background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 63 32pt \"Bahnschrift SemiBold SemiConden\";\n"
+"\n"
+"")
+        self.frame_50.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_50.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_50.setObjectName("frame_50")
+        self.horizontalLayout_24 = QtWidgets.QHBoxLayout(self.frame_50)
+        self.horizontalLayout_24.setObjectName("horizontalLayout_24")
+        self.label_146 = QtWidgets.QLabel(self.frame_50)
+        self.label_146.setMinimumSize(QtCore.QSize(270, 50))
+        self.label_146.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 63 32pt \"Bahnschrift SemiBold SemiConden\";")
+        self.label_146.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_146.setObjectName("label_146")
+        self.horizontalLayout_24.addWidget(self.label_146)
+        spacerItem12 = QtWidgets.QSpacerItem(369, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_24.addItem(spacerItem12)
+        self.Tota_label_3 = QtWidgets.QLabel(self.frame_50)
+        self.Tota_label_3.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
+"border: 0px solid #e6b31e;\n"
+"font: 63 32pt \"Bahnschrift SemiBold SemiConden\";")
+        self.Tota_label_3.setObjectName("Tota_label_3")
+        self.horizontalLayout_24.addWidget(self.Tota_label_3)
+        self.verticalLayout_28.addWidget(self.frame_50)
+        self.verticalLayout_7.addWidget(self.frame_43, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.pushButton_28 = QtWidgets.QPushButton(self.frame_45)
+        self.pushButton_28.setMinimumSize(QtCore.QSize(200, 60))
+        self.pushButton_28.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_28.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}")
+        self.pushButton_28.setObjectName("pushButton_28")
+        self.verticalLayout_7.addWidget(self.pushButton_28, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_19.addWidget(self.frame_45)
+        self.verticalLayout_6.addWidget(self.frame_9)
+        self.gridLayout_28.addWidget(self.frame, 0, 0, 1, 1)
+        self.stackedWidget.addWidget(self.VentaTicket)
+        self.RegistrarVisita = QtWidgets.QWidget()
+        self.RegistrarVisita.setObjectName("RegistrarVisita")
+        self.horizontalLayout_7 = QtWidgets.QHBoxLayout(self.RegistrarVisita)
+        self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_7.setSpacing(0)
+        self.horizontalLayout_7.setObjectName("horizontalLayout_7")
+        self.frame_11 = QtWidgets.QFrame(self.RegistrarVisita)
+        self.frame_11.setStyleSheet("font: 87 16pt \"Arial Black\";\n"
+"color: whitesmoke;")
+        self.frame_11.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_11.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_11.setObjectName("frame_11")
+        self.gridLayout = QtWidgets.QGridLayout(self.frame_11)
+        self.gridLayout.setContentsMargins(100, -1, 0, 100)
+        self.gridLayout.setHorizontalSpacing(20)
+        self.gridLayout.setVerticalSpacing(10)
+        self.gridLayout.setObjectName("gridLayout")
+        self.label_8 = QtWidgets.QLabel(self.frame_11)
+        self.label_8.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.label_8.setObjectName("label_8")
+        self.gridLayout.addWidget(self.label_8, 3, 4, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_2 = QtWidgets.QLabel(self.frame_11)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 0, 0, 1, 8, QtCore.Qt.AlignHCenter)
+        self.Buscar_Visita_3 = QtWidgets.QPushButton(self.frame_11)
+        self.Buscar_Visita_3.setMinimumSize(QtCore.QSize(150, 70))
+        self.Buscar_Visita_3.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.Buscar_Visita_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Buscar_Visita_3.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.Buscar_Visita_3.setObjectName("Buscar_Visita_3")
+        self.gridLayout.addWidget(self.Buscar_Visita_3, 1, 5, 1, 1, QtCore.Qt.AlignHCenter)
+        self.Buscar_Visita_4 = QtWidgets.QPushButton(self.frame_11)
+        self.Buscar_Visita_4.setMinimumSize(QtCore.QSize(200, 70))
+        self.Buscar_Visita_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Buscar_Visita_4.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.Buscar_Visita_4.setObjectName("Buscar_Visita_4")
+        self.gridLayout.addWidget(self.Buscar_Visita_4, 9, 4, 1, 1, QtCore.Qt.AlignHCenter)
+        self.Buscar_Visita_5 = QtWidgets.QPushButton(self.frame_11)
+        self.Buscar_Visita_5.setMinimumSize(QtCore.QSize(200, 70))
+        self.Buscar_Visita_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.Buscar_Visita_5.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.Buscar_Visita_5.setObjectName("Buscar_Visita_5")
+        self.gridLayout.addWidget(self.Buscar_Visita_5, 9, 5, 1, 1, QtCore.Qt.AlignRight)
+        self.label_12 = QtWidgets.QLabel(self.frame_11)
+        self.label_12.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_12.setObjectName("label_12")
+        self.gridLayout.addWidget(self.label_12, 7, 4, 1, 1, QtCore.Qt.AlignHCenter)
+        self.plainTextEdit_3 = QtWidgets.QPlainTextEdit(self.frame_11)
+        self.plainTextEdit_3.setMinimumSize(QtCore.QSize(500, 50))
+        self.plainTextEdit_3.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.plainTextEdit_3.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;")
+        self.plainTextEdit_3.setObjectName("plainTextEdit_3")
+        self.gridLayout.addWidget(self.plainTextEdit_3, 6, 4, 1, 1, QtCore.Qt.AlignHCenter)
+        self.plainTextEdit_2 = QtWidgets.QPlainTextEdit(self.frame_11)
+        self.plainTextEdit_2.setMinimumSize(QtCore.QSize(500, 50))
+        self.plainTextEdit_2.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.plainTextEdit_2.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;")
+        self.plainTextEdit_2.setObjectName("plainTextEdit_2")
+        self.gridLayout.addWidget(self.plainTextEdit_2, 4, 4, 1, 1, QtCore.Qt.AlignHCenter)
+        self.plainTextEdit = QtWidgets.QPlainTextEdit(self.frame_11)
+        self.plainTextEdit.setMinimumSize(QtCore.QSize(500, 50))
+        self.plainTextEdit.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.plainTextEdit.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.plainTextEdit.setPlainText("")
+        self.plainTextEdit.setObjectName("plainTextEdit")
+        self.gridLayout.addWidget(self.plainTextEdit, 1, 4, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_6 = QtWidgets.QLabel(self.frame_11)
+        self.label_6.setObjectName("label_6")
+        self.gridLayout.addWidget(self.label_6, 1, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_10 = QtWidgets.QLabel(self.frame_11)
+        self.label_10.setObjectName("label_10")
+        self.gridLayout.addWidget(self.label_10, 4, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_11 = QtWidgets.QLabel(self.frame_11)
+        self.label_11.setObjectName("label_11")
+        self.gridLayout.addWidget(self.label_11, 6, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_7.addWidget(self.frame_11)
+        self.stackedWidget.addWidget(self.RegistrarVisita)
+        self.CRUD_Empleados = QtWidgets.QWidget()
+        self.CRUD_Empleados.setObjectName("CRUD_Empleados")
+        self.gridLayout_5 = QtWidgets.QGridLayout(self.CRUD_Empleados)
+        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_5.setSpacing(0)
+        self.gridLayout_5.setObjectName("gridLayout_5")
+        self.tabWidget = QtWidgets.QTabWidget(self.CRUD_Empleados)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.tabWidget.setFont(font)
+        self.tabWidget.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.tabWidget.setMouseTracking(False)
+        self.tabWidget.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.tabWidget.setStyleSheet("QTabWidget::pane {\n"
+"} \n"
+"\n"
+"QTabBar::tab {  \n"
+"  font: 63 18pt \"Bahnschrift SemiBold SemiConden\";\n"
+"  color: whitesmoke;\n"
+"  background-color: #343434;\n"
+"  border: 1px solid #cacaca; \n"
+"  padding: 20px;\n"
+"    width: 230px;\n"
+"    height: 50px;\n"
+"} \n"
+"\n"
+"QTabBar::tab:selected { \n"
+"  background: #e6b31e; \n"
+"border: 1px solid rgb(161, 161, 161);\n"
+"  margin-bottom: -1px; \n"
+"}\n"
+"\n"
+"")
+        self.tabWidget.setTabShape(QtWidgets.QTabWidget.Rounded)
+        self.tabWidget.setUsesScrollButtons(False)
+        self.tabWidget.setDocumentMode(False)
+        self.tabWidget.setTabsClosable(False)
+        self.tabWidget.setMovable(True)
+        self.tabWidget.setTabBarAutoHide(False)
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setObjectName("tab")
+        self.gridLayout_4 = QtWidgets.QGridLayout(self.tab)
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.scrollArea_2 = QtWidgets.QScrollArea(self.tab)
+        self.scrollArea_2.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_2.setWidgetResizable(True)
+        self.scrollArea_2.setObjectName("scrollArea_2")
+        self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 1698, 775))
+        self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_2)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(10)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.label_17 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_17.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_17.setObjectName("label_17")
+        self.gridLayout_2.addWidget(self.label_17, 8, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.AlergiasRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
+        self.AlergiasRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.AlergiasRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.AlergiasRegistrar.setObjectName("AlergiasRegistrar")
+        self.gridLayout_2.addWidget(self.AlergiasRegistrar, 8, 3, 1, 2, QtCore.Qt.AlignLeft)
+        self.GuardarRegistrarPaciente = QtWidgets.QPushButton(self.scrollAreaWidgetContents_2)
+        self.GuardarRegistrarPaciente.setMinimumSize(QtCore.QSize(250, 80))
+        self.GuardarRegistrarPaciente.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.GuardarRegistrarPaciente.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87  22pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 22pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.GuardarRegistrarPaciente.setObjectName("GuardarRegistrarPaciente")
+        self.gridLayout_2.addWidget(self.GuardarRegistrarPaciente, 14, 3, 1, 2, QtCore.Qt.AlignHCenter)
+        self.label_25 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_25.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_25.setObjectName("label_25")
+        self.gridLayout_2.addWidget(self.label_25, 5, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.NombreRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
+        self.NombreRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.NombreRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar.setObjectName("NombreRegistrar")
+        self.gridLayout_2.addWidget(self.NombreRegistrar, 1, 3, 1, 2, QtCore.Qt.AlignLeft)
+        self.label_19 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_19.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_19.setObjectName("label_19")
+        self.gridLayout_2.addWidget(self.label_19, 9, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.MedicamentosRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
+        self.MedicamentosRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosRegistrar.setObjectName("MedicamentosRegistrar")
+        self.gridLayout_2.addWidget(self.MedicamentosRegistrar, 10, 3, 1, 2, QtCore.Qt.AlignLeft)
+        self.EnfermedadesRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
+        self.EnfermedadesRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.EnfermedadesRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EnfermedadesRegistrar.setObjectName("EnfermedadesRegistrar")
+        self.gridLayout_2.addWidget(self.EnfermedadesRegistrar, 9, 3, 1, 2, QtCore.Qt.AlignLeft)
+        self.label_24 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_24.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_24.setObjectName("label_24")
+        self.gridLayout_2.addWidget(self.label_24, 6, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_21 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_21.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_21.setObjectName("label_21")
+        self.gridLayout_2.addWidget(self.label_21, 4, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_18 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_18.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_18.setObjectName("label_18")
+        self.gridLayout_2.addWidget(self.label_18, 10, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_16 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_16.setMaximumSize(QtCore.QSize(600, 50))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_16.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_16.setFont(font)
+        self.label_16.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_16.setObjectName("label_16")
+        self.gridLayout_2.addWidget(self.label_16, 0, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_20 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_20.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_20.setObjectName("label_20")
+        self.gridLayout_2.addWidget(self.label_20, 1, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.TelefonoRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
+        self.TelefonoRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.TelefonoRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.TelefonoRegistrar.setObjectName("TelefonoRegistrar")
+        self.gridLayout_2.addWidget(self.TelefonoRegistrar, 6, 3, 1, 1, QtCore.Qt.AlignLeft)
+        self.UltimaCitaRegistrar = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_2)
+        self.UltimaCitaRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.UltimaCitaRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);")
+        self.UltimaCitaRegistrar.setObjectName("UltimaCitaRegistrar")
+        self.gridLayout_2.addWidget(self.UltimaCitaRegistrar, 4, 3, 1, 1, QtCore.Qt.AlignLeft)
+        self.FechaNacimientoRegistrar = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_2)
+        self.FechaNacimientoRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.FechaNacimientoRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);")
+        self.FechaNacimientoRegistrar.setObjectName("FechaNacimientoRegistrar")
+        self.gridLayout_2.addWidget(self.FechaNacimientoRegistrar, 5, 3, 1, 1, QtCore.Qt.AlignLeft)
+        self.label_45 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_45.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_45.setObjectName("label_45")
+        self.gridLayout_2.addWidget(self.label_45, 7, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.BuscarPor_4 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_2)
+        self.BuscarPor_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.BuscarPor_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"    border: .5px solid #0000;\n"
+"    \n"
+"    background-color: rgb(255, 255, 255);\n"
+"    color: rgb(0, 0, 0);")
+        self.BuscarPor_4.setObjectName("BuscarPor_4")
+        self.BuscarPor_4.addItem("")
+        self.BuscarPor_4.addItem("")
+        self.gridLayout_2.addWidget(self.BuscarPor_4, 7, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
+        self.gridLayout_4.addWidget(self.scrollArea_2, 1, 0, 1, 1)
+        self.tabWidget.addTab(self.tab, "")
+        self.tab_3 = QtWidgets.QWidget()
+        self.tab_3.setObjectName("tab_3")
+        self.gridLayout_7 = QtWidgets.QGridLayout(self.tab_3)
+        self.gridLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_7.setSpacing(0)
+        self.gridLayout_7.setObjectName("gridLayout_7")
+        self.scrollArea_3 = QtWidgets.QScrollArea(self.tab_3)
+        self.scrollArea_3.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_3.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_3.setWidgetResizable(True)
+        self.scrollArea_3.setAlignment(QtCore.Qt.AlignCenter)
+        self.scrollArea_3.setObjectName("scrollArea_3")
+        self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1716, 793))
+        self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
+        self.gridLayout_6 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_3)
+        self.gridLayout_6.setContentsMargins(0, 0, 0, 50)
+        self.gridLayout_6.setHorizontalSpacing(20)
+        self.gridLayout_6.setVerticalSpacing(15)
+        self.gridLayout_6.setObjectName("gridLayout_6")
+        self.label_29 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_29.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_29.setObjectName("label_29")
+        self.gridLayout_6.addWidget(self.label_29, 2, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.BuscarPor_3 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_3)
+        self.BuscarPor_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.BuscarPor_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"    border: .5px solid #0000;\n"
+"    \n"
+"    background-color: rgb(255, 255, 255);\n"
+"    color: rgb(0, 0, 0);")
+        self.BuscarPor_3.setObjectName("BuscarPor_3")
+        self.BuscarPor_3.addItem("")
+        self.BuscarPor_3.addItem("")
+        self.gridLayout_6.addWidget(self.BuscarPor_3, 10, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_30 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_30.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_30.setObjectName("label_30")
+        self.gridLayout_6.addWidget(self.label_30, 3, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.BuscarPor_2 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_3)
+        self.BuscarPor_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarPor_2.setObjectName("BuscarPor_2")
+        self.BuscarPor_2.addItem("")
+        self.BuscarPor_2.addItem("")
+        self.gridLayout_6.addWidget(self.BuscarPor_2, 0, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_39 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_39.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_39.setObjectName("label_39")
+        self.gridLayout_6.addWidget(self.label_39, 10, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.ID_BuscarActualizarPaciente = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.ID_BuscarActualizarPaciente.setMinimumSize(QtCore.QSize(600, 0))
+        self.ID_BuscarActualizarPaciente.setMaximumSize(QtCore.QSize(600, 16777215))
+        self.ID_BuscarActualizarPaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;")
+        self.ID_BuscarActualizarPaciente.setObjectName("ID_BuscarActualizarPaciente")
+        self.gridLayout_6.addWidget(self.ID_BuscarActualizarPaciente, 0, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.AlergiasActualizar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.AlergiasActualizar.setMinimumSize(QtCore.QSize(600, 0))
+        self.AlergiasActualizar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.AlergiasActualizar.setObjectName("AlergiasActualizar")
+        self.gridLayout_6.addWidget(self.AlergiasActualizar, 11, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.EnfermedadesActualizar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.EnfermedadesActualizar.setMinimumSize(QtCore.QSize(600, 0))
+        self.EnfermedadesActualizar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EnfermedadesActualizar.setObjectName("EnfermedadesActualizar")
+        self.gridLayout_6.addWidget(self.EnfermedadesActualizar, 12, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.UltimCitActu = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.UltimCitActu.setMinimumSize(QtCore.QSize(600, 0))
+        self.UltimCitActu.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.UltimCitActu.setObjectName("UltimCitActu")
+        self.gridLayout_6.addWidget(self.UltimCitActu, 9, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_32 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_32.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_32.setObjectName("label_32")
+        self.gridLayout_6.addWidget(self.label_32, 8, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_34 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(22)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_34.setFont(font)
+        self.label_34.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_34.setObjectName("label_34")
+        self.gridLayout_6.addWidget(self.label_34, 11, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.FechNacActu = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.FechNacActu.setMinimumSize(QtCore.QSize(600, 0))
+        self.FechNacActu.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.FechNacActu.setObjectName("FechNacActu")
+        self.gridLayout_6.addWidget(self.FechNacActu, 8, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.ActualizarBotonPaciente = QtWidgets.QPushButton(self.scrollAreaWidgetContents_3)
+        self.ActualizarBotonPaciente.setMinimumSize(QtCore.QSize(130, 70))
+        self.ActualizarBotonPaciente.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.ActualizarBotonPaciente.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.ActualizarBotonPaciente.setObjectName("ActualizarBotonPaciente")
+        self.gridLayout_6.addWidget(self.ActualizarBotonPaciente, 14, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.BuscarBotonActualizar = QtWidgets.QPushButton(self.scrollAreaWidgetContents_3)
+        self.BuscarBotonActualizar.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonActualizar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonActualizar.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.BuscarBotonActualizar.setObjectName("BuscarBotonActualizar")
+        self.gridLayout_6.addWidget(self.BuscarBotonActualizar, 0, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.label_31 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_31.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_31.setObjectName("label_31")
+        self.gridLayout_6.addWidget(self.label_31, 4, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.NombreActualizarPaciente = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.NombreActualizarPaciente.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente.setObjectName("NombreActualizarPaciente")
+        self.gridLayout_6.addWidget(self.NombreActualizarPaciente, 3, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.TelefonoActualizarPaciente = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.TelefonoActualizarPaciente.setMinimumSize(QtCore.QSize(600, 0))
+        self.TelefonoActualizarPaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.TelefonoActualizarPaciente.setObjectName("TelefonoActualizarPaciente")
+        self.gridLayout_6.addWidget(self.TelefonoActualizarPaciente, 4, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_36 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_36.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_36.setObjectName("label_36")
+        self.gridLayout_6.addWidget(self.label_36, 13, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
+        self.label_33 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_33.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_33.setObjectName("label_33")
+        self.gridLayout_6.addWidget(self.label_33, 9, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_35 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_35.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_35.setObjectName("label_35")
+        self.gridLayout_6.addWidget(self.label_35, 12, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.MedicamentosActualizar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.MedicamentosActualizar.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosActualizar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosActualizar.setObjectName("MedicamentosActualizar")
+        self.gridLayout_6.addWidget(self.MedicamentosActualizar, 13, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.scrollArea_3.setWidget(self.scrollAreaWidgetContents_3)
+        self.gridLayout_7.addWidget(self.scrollArea_3, 0, 0, 1, 1)
+        self.tabWidget.addTab(self.tab_3, "")
+        self.tab_2 = QtWidgets.QWidget()
+        self.tab_2.setObjectName("tab_2")
+        self.gridLayout_3 = QtWidgets.QGridLayout(self.tab_2)
+        self.gridLayout_3.setContentsMargins(-1, -1, -1, 30)
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.TablaEmpleados = QtWidgets.QTableWidget(self.tab_2)
+        self.TablaEmpleados.setStyleSheet("QHeaderView::section{\n"
+"    padding: 5px;\n"
+"    background-color: #77838d;\n"
+"    border: .5px solid #034aa6;\n"
+"    font: 87 13pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"\n"
+"}")
+        self.TablaEmpleados.setDragEnabled(False)
+        self.TablaEmpleados.setObjectName("TablaEmpleados")
+        self.TablaEmpleados.setColumnCount(9)
+        self.TablaEmpleados.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados.setHorizontalHeaderItem(6, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados.setHorizontalHeaderItem(7, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados.setHorizontalHeaderItem(8, item)
+        self.TablaEmpleados.horizontalHeader().setCascadingSectionResizes(False)
+        self.TablaEmpleados.horizontalHeader().setHighlightSections(False)
+        self.TablaEmpleados.horizontalHeader().setSortIndicatorShown(False)
+        self.TablaEmpleados.horizontalHeader().setStretchLastSection(True)
+        self.TablaEmpleados.verticalHeader().setVisible(False)
+        self.TablaEmpleados.verticalHeader().setSortIndicatorShown(False)
+        self.gridLayout_3.addWidget(self.TablaEmpleados, 2, 0, 1, 4)
+        self.BuscarBotonRegistrados = QtWidgets.QPushButton(self.tab_2)
+        self.BuscarBotonRegistrados.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonRegistrados.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonRegistrados.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.BuscarBotonRegistrados.setObjectName("BuscarBotonRegistrados")
+        self.gridLayout_3.addWidget(self.BuscarBotonRegistrados, 1, 3, 1, 1)
+        self.RefrescarBotonRegistrados = QtWidgets.QPushButton(self.tab_2)
+        self.RefrescarBotonRegistrados.setMinimumSize(QtCore.QSize(130, 70))
+        self.RefrescarBotonRegistrados.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.RefrescarBotonRegistrados.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.RefrescarBotonRegistrados.setObjectName("RefrescarBotonRegistrados")
+        self.gridLayout_3.addWidget(self.RefrescarBotonRegistrados, 3, 1, 1, 2, QtCore.Qt.AlignHCenter)
+        self.BuscarRegistradosCombobox = QtWidgets.QComboBox(self.tab_2)
+        self.BuscarRegistradosCombobox.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.BuscarRegistradosCombobox.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarRegistradosCombobox.setObjectName("BuscarRegistradosCombobox")
+        self.BuscarRegistradosCombobox.addItem("")
+        self.BuscarRegistradosCombobox.addItem("")
+        self.BuscarRegistradosCombobox.addItem("")
+        self.BuscarRegistradosCombobox.setItemText(2, "")
+        self.gridLayout_3.addWidget(self.BuscarRegistradosCombobox, 1, 0, 1, 2)
+        self.BuscarRegistradosPacientesText = QtWidgets.QLineEdit(self.tab_2)
+        self.BuscarRegistradosPacientesText.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.BuscarRegistradosPacientesText.setObjectName("BuscarRegistradosPacientesText")
+        self.gridLayout_3.addWidget(self.BuscarRegistradosPacientesText, 1, 2, 1, 1)
+        self.tabWidget.addTab(self.tab_2, "")
+        self.tab_4 = QtWidgets.QWidget()
+        self.tab_4.setObjectName("tab_4")
+        self.gridLayout_8 = QtWidgets.QGridLayout(self.tab_4)
+        self.gridLayout_8.setContentsMargins(0, 0, 0, 50)
+        self.gridLayout_8.setHorizontalSpacing(20)
+        self.gridLayout_8.setVerticalSpacing(10)
+        self.gridLayout_8.setObjectName("gridLayout_8")
+        self.scrollArea_4 = QtWidgets.QScrollArea(self.tab_4)
+        self.scrollArea_4.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_4.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_4.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.scrollArea_4.setWidgetResizable(True)
+        self.scrollArea_4.setObjectName("scrollArea_4")
+        self.scrollAreaWidgetContents_5 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 1716, 743))
+        self.scrollAreaWidgetContents_5.setObjectName("scrollAreaWidgetContents_5")
+        self.gridLayout_9 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_5)
+        self.gridLayout_9.setObjectName("gridLayout_9")
+        self.Eliminar_NombrePaciente = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_5)
+        self.Eliminar_NombrePaciente.setMinimumSize(QtCore.QSize(600, 0))
+        self.Eliminar_NombrePaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.Eliminar_NombrePaciente.setObjectName("Eliminar_NombrePaciente")
+        self.gridLayout_9.addWidget(self.Eliminar_NombrePaciente, 6, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.EliminarUltima = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_5)
+        self.EliminarUltima.setMinimumSize(QtCore.QSize(600, 0))
+        self.EliminarUltima.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EliminarUltima.setObjectName("EliminarUltima")
+        self.gridLayout_9.addWidget(self.EliminarUltima, 12, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_41 = QtWidgets.QLabel(self.scrollAreaWidgetContents_5)
+        self.label_41.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_41.setObjectName("label_41")
+        self.gridLayout_9.addWidget(self.label_41, 6, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
+        self.label_44 = QtWidgets.QLabel(self.scrollAreaWidgetContents_5)
+        self.label_44.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_44.setObjectName("label_44")
+        self.gridLayout_9.addWidget(self.label_44, 12, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_42 = QtWidgets.QLabel(self.scrollAreaWidgetContents_5)
+        self.label_42.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_42.setObjectName("label_42")
+        self.gridLayout_9.addWidget(self.label_42, 10, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.ID_BuscarEliminarPaciente = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_5)
+        self.ID_BuscarEliminarPaciente.setMinimumSize(QtCore.QSize(600, 0))
+        self.ID_BuscarEliminarPaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.ID_BuscarEliminarPaciente.setObjectName("ID_BuscarEliminarPaciente")
+        self.gridLayout_9.addWidget(self.ID_BuscarEliminarPaciente, 1, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_43 = QtWidgets.QLabel(self.scrollAreaWidgetContents_5)
+        self.label_43.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_43.setObjectName("label_43")
+        self.gridLayout_9.addWidget(self.label_43, 11, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.EliminarFecha = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_5)
+        self.EliminarFecha.setMinimumSize(QtCore.QSize(600, 0))
+        self.EliminarFecha.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EliminarFecha.setObjectName("EliminarFecha")
+        self.gridLayout_9.addWidget(self.EliminarFecha, 11, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.EliminarPacienteBoton = QtWidgets.QPushButton(self.scrollAreaWidgetContents_5)
+        self.EliminarPacienteBoton.setMinimumSize(QtCore.QSize(130, 70))
+        self.EliminarPacienteBoton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.EliminarPacienteBoton.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.EliminarPacienteBoton.setObjectName("EliminarPacienteBoton")
+        self.gridLayout_9.addWidget(self.EliminarPacienteBoton, 13, 3, 1, 2, QtCore.Qt.AlignHCenter)
+        self.BuscarBotonEliminar = QtWidgets.QPushButton(self.scrollAreaWidgetContents_5)
+        self.BuscarBotonEliminar.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonEliminar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonEliminar.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.BuscarBotonEliminar.setObjectName("BuscarBotonEliminar")
+        self.gridLayout_9.addWidget(self.BuscarBotonEliminar, 1, 4, 1, 1, QtCore.Qt.AlignLeft)
+        self.BuscarRegistradosCombobox_2 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_5)
+        self.BuscarRegistradosCombobox_2.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.BuscarRegistradosCombobox_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarRegistradosCombobox_2.setObjectName("BuscarRegistradosCombobox_2")
+        self.BuscarRegistradosCombobox_2.addItem("")
+        self.BuscarRegistradosCombobox_2.addItem("")
+        self.BuscarRegistradosCombobox_2.addItem("")
+        self.BuscarRegistradosCombobox_2.setItemText(2, "")
+        self.gridLayout_9.addWidget(self.BuscarRegistradosCombobox_2, 1, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
+        self.label_40 = QtWidgets.QLabel(self.scrollAreaWidgetContents_5)
+        self.label_40.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_40.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.label_40.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_40.setObjectName("label_40")
+        self.gridLayout_9.addWidget(self.label_40, 2, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.Eliminar_TelefenoPaciente = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_5)
+        self.Eliminar_TelefenoPaciente.setMinimumSize(QtCore.QSize(600, 0))
+        self.Eliminar_TelefenoPaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.Eliminar_TelefenoPaciente.setObjectName("Eliminar_TelefenoPaciente")
+        self.gridLayout_9.addWidget(self.Eliminar_TelefenoPaciente, 10, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.scrollArea_4.setWidget(self.scrollAreaWidgetContents_5)
+        self.gridLayout_8.addWidget(self.scrollArea_4, 0, 0, 1, 1)
+        self.tabWidget.addTab(self.tab_4, "")
+        self.gridLayout_5.addWidget(self.tabWidget, 0, 0, 1, 1)
+        self.stackedWidget.addWidget(self.CRUD_Empleados)
+        self.CRUD_Entrenadores = QtWidgets.QWidget()
+        self.CRUD_Entrenadores.setEnabled(True)
+        self.CRUD_Entrenadores.setMouseTracking(False)
+        self.CRUD_Entrenadores.setTabletTracking(False)
+        self.CRUD_Entrenadores.setObjectName("CRUD_Entrenadores")
+        self.gridLayout_45 = QtWidgets.QGridLayout(self.CRUD_Entrenadores)
+        self.gridLayout_45.setObjectName("gridLayout_45")
+        self.tabWidget_2 = QtWidgets.QTabWidget(self.CRUD_Entrenadores)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.tabWidget_2.sizePolicy().hasHeightForWidth())
+        self.tabWidget_2.setSizePolicy(sizePolicy)
+        self.tabWidget_2.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.tabWidget_2.setFont(font)
+        self.tabWidget_2.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.tabWidget_2.setMouseTracking(False)
+        self.tabWidget_2.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.tabWidget_2.setStyleSheet("QTabWidget::pane {\n"
+"} \n"
+"\n"
+"QTabBar::tab {  \n"
+"  font: 63 18pt \"Bahnschrift SemiBold SemiConden\";\n"
+"  color: whitesmoke;\n"
+"  background-color: #343434;\n"
+"  border: 1px solid #cacaca; \n"
+"  padding: 20px;\n"
+"    width: 180px;\n"
+"    height: 50px;\n"
+"} \n"
+"\n"
+"QTabBar::tab:selected { \n"
+"  background: #e6b31e; \n"
+"border: 1px solid rgb(161, 161, 161);\n"
+"  margin-bottom: -1px; \n"
+"}\n"
+"\n"
+"")
+        self.tabWidget_2.setTabShape(QtWidgets.QTabWidget.Rounded)
+        self.tabWidget_2.setUsesScrollButtons(False)
+        self.tabWidget_2.setDocumentMode(False)
+        self.tabWidget_2.setTabsClosable(False)
+        self.tabWidget_2.setMovable(True)
+        self.tabWidget_2.setTabBarAutoHide(False)
+        self.tabWidget_2.setObjectName("tabWidget_2")
+        self.tab_5 = QtWidgets.QWidget()
+        self.tab_5.setObjectName("tab_5")
+        self.gridLayout_12 = QtWidgets.QGridLayout(self.tab_5)
+        self.gridLayout_12.setObjectName("gridLayout_12")
+        self.scrollArea_5 = QtWidgets.QScrollArea(self.tab_5)
+        self.scrollArea_5.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_5.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_5.setWidgetResizable(True)
+        self.scrollArea_5.setObjectName("scrollArea_5")
+        self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 1680, 757))
+        self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
+        self.gridLayout_29 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_4)
+        self.gridLayout_29.setObjectName("gridLayout_29")
+        self.label_27 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_27.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_27.setObjectName("label_27")
+        self.gridLayout_29.addWidget(self.label_27, 6, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_28 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_28.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_28.setObjectName("label_28")
+        self.gridLayout_29.addWidget(self.label_28, 7, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_46 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_46.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_46.setObjectName("label_46")
+        self.gridLayout_29.addWidget(self.label_46, 10, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_22 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_22.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_22.setObjectName("label_22")
+        self.gridLayout_29.addWidget(self.label_22, 8, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_23 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_23.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_23.setObjectName("label_23")
+        self.gridLayout_29.addWidget(self.label_23, 9, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_38 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_38.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_38.setObjectName("label_38")
+        self.gridLayout_29.addWidget(self.label_38, 5, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_48 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_48.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_48.setObjectName("label_48")
+        self.gridLayout_29.addWidget(self.label_48, 3, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.NombreRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
+        self.NombreRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_2.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.NombreRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar_2.setObjectName("NombreRegistrar_2")
+        self.gridLayout_29.addWidget(self.NombreRegistrar_2, 3, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.UltimaCitaRegistrar_2 = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_4)
+        self.UltimaCitaRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.UltimaCitaRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);")
+        self.UltimaCitaRegistrar_2.setObjectName("UltimaCitaRegistrar_2")
+        self.gridLayout_29.addWidget(self.UltimaCitaRegistrar_2, 5, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.FechaNacimientoRegistrar_2 = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_4)
+        self.FechaNacimientoRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.FechaNacimientoRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);")
+        self.FechaNacimientoRegistrar_2.setObjectName("FechaNacimientoRegistrar_2")
+        self.gridLayout_29.addWidget(self.FechaNacimientoRegistrar_2, 6, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_47 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_47.setMaximumSize(QtCore.QSize(600, 50))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_47.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_47.setFont(font)
+        self.label_47.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_47.setObjectName("label_47")
+        self.gridLayout_29.addWidget(self.label_47, 0, 1, 1, 1)
+        self.TelefonoRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
+        self.TelefonoRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.TelefonoRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.TelefonoRegistrar_2.setObjectName("TelefonoRegistrar_2")
+        self.gridLayout_29.addWidget(self.TelefonoRegistrar_2, 7, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.AlergiasRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
+        self.AlergiasRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.AlergiasRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.AlergiasRegistrar_2.setObjectName("AlergiasRegistrar_2")
+        self.gridLayout_29.addWidget(self.AlergiasRegistrar_2, 8, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.EnfermedadesRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
+        self.EnfermedadesRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.EnfermedadesRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EnfermedadesRegistrar_2.setObjectName("EnfermedadesRegistrar_2")
+        self.gridLayout_29.addWidget(self.EnfermedadesRegistrar_2, 9, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.MedicamentosRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
+        self.MedicamentosRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosRegistrar_2.setObjectName("MedicamentosRegistrar_2")
+        self.gridLayout_29.addWidget(self.MedicamentosRegistrar_2, 10, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.GuardarRegistrarPaciente_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_4)
+        self.GuardarRegistrarPaciente_2.setMinimumSize(QtCore.QSize(250, 80))
+        self.GuardarRegistrarPaciente_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.GuardarRegistrarPaciente_2.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87  22pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 22pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.GuardarRegistrarPaciente_2.setObjectName("GuardarRegistrarPaciente_2")
+        self.gridLayout_29.addWidget(self.GuardarRegistrarPaciente_2, 11, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.scrollArea_5.setWidget(self.scrollAreaWidgetContents_4)
+        self.gridLayout_12.addWidget(self.scrollArea_5, 0, 0, 1, 1)
+        self.tabWidget_2.addTab(self.tab_5, "")
+        self.tab_6 = QtWidgets.QWidget()
+        self.tab_6.setObjectName("tab_6")
+        self.gridLayout_14 = QtWidgets.QGridLayout(self.tab_6)
+        self.gridLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_14.setSpacing(0)
+        self.gridLayout_14.setObjectName("gridLayout_14")
+        self.scrollArea_6 = QtWidgets.QScrollArea(self.tab_6)
+        self.scrollArea_6.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_6.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_6.setWidgetResizable(True)
+        self.scrollArea_6.setAlignment(QtCore.Qt.AlignCenter)
+        self.scrollArea_6.setObjectName("scrollArea_6")
+        self.scrollAreaWidgetContents_6 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_6.setGeometry(QtCore.QRect(0, 0, 1698, 775))
+        self.scrollAreaWidgetContents_6.setObjectName("scrollAreaWidgetContents_6")
+        self.gridLayout_15 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_6)
+        self.gridLayout_15.setContentsMargins(0, 0, 0, 50)
+        self.gridLayout_15.setHorizontalSpacing(20)
+        self.gridLayout_15.setVerticalSpacing(15)
+        self.gridLayout_15.setObjectName("gridLayout_15")
+        self.label_58 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(22)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_58.setFont(font)
+        self.label_58.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_58.setObjectName("label_58")
+        self.gridLayout_15.addWidget(self.label_58, 10, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_51 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_51.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_51.setObjectName("label_51")
+        self.gridLayout_15.addWidget(self.label_51, 3, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_53 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_53.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_53.setObjectName("label_53")
+        self.gridLayout_15.addWidget(self.label_53, 11, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.BuscarBotonActualizar_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_6)
+        self.BuscarBotonActualizar_2.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonActualizar_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonActualizar_2.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.BuscarBotonActualizar_2.setObjectName("BuscarBotonActualizar_2")
+        self.gridLayout_15.addWidget(self.BuscarBotonActualizar_2, 0, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.ActualizarBotonPaciente_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_6)
+        self.ActualizarBotonPaciente_2.setMinimumSize(QtCore.QSize(130, 70))
+        self.ActualizarBotonPaciente_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.ActualizarBotonPaciente_2.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.ActualizarBotonPaciente_2.setObjectName("ActualizarBotonPaciente_2")
+        self.gridLayout_15.addWidget(self.ActualizarBotonPaciente_2, 13, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.label_56 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_56.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_56.setObjectName("label_56")
+        self.gridLayout_15.addWidget(self.label_56, 8, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.BuscarPor_7 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_6)
+        self.BuscarPor_7.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarPor_7.setObjectName("BuscarPor_7")
+        self.BuscarPor_7.addItem("")
+        self.BuscarPor_7.addItem("")
+        self.gridLayout_15.addWidget(self.BuscarPor_7, 0, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.ID_BuscarActualizarPaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.ID_BuscarActualizarPaciente_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.ID_BuscarActualizarPaciente_2.setMaximumSize(QtCore.QSize(600, 16777215))
+        self.ID_BuscarActualizarPaciente_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;")
+        self.ID_BuscarActualizarPaciente_2.setObjectName("ID_BuscarActualizarPaciente_2")
+        self.gridLayout_15.addWidget(self.ID_BuscarActualizarPaciente_2, 0, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.FechNacActu_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.FechNacActu_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.FechNacActu_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.FechNacActu_2.setObjectName("FechNacActu_2")
+        self.gridLayout_15.addWidget(self.FechNacActu_2, 8, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.EnfermedadesActualizar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.EnfermedadesActualizar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.EnfermedadesActualizar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EnfermedadesActualizar_2.setObjectName("EnfermedadesActualizar_2")
+        self.gridLayout_15.addWidget(self.EnfermedadesActualizar_2, 11, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.MedicamentosActualizar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.MedicamentosActualizar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosActualizar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosActualizar_2.setObjectName("MedicamentosActualizar_2")
+        self.gridLayout_15.addWidget(self.MedicamentosActualizar_2, 12, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_54 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_54.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_54.setObjectName("label_54")
+        self.gridLayout_15.addWidget(self.label_54, 12, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
+        self.label_55 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_55.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_55.setObjectName("label_55")
+        self.gridLayout_15.addWidget(self.label_55, 4, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.NombreActualizarPaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.NombreActualizarPaciente_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente_2.setObjectName("NombreActualizarPaciente_2")
+        self.gridLayout_15.addWidget(self.NombreActualizarPaciente_2, 3, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.TelefonoActualizarPaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.TelefonoActualizarPaciente_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.TelefonoActualizarPaciente_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.TelefonoActualizarPaciente_2.setObjectName("TelefonoActualizarPaciente_2")
+        self.gridLayout_15.addWidget(self.TelefonoActualizarPaciente_2, 4, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.AlergiasActualizar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.AlergiasActualizar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.AlergiasActualizar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.AlergiasActualizar_2.setObjectName("AlergiasActualizar_2")
+        self.gridLayout_15.addWidget(self.AlergiasActualizar_2, 10, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.UltimCitActu_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.UltimCitActu_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.UltimCitActu_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.UltimCitActu_2.setObjectName("UltimCitActu_2")
+        self.gridLayout_15.addWidget(self.UltimCitActu_2, 9, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_57 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_57.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_57.setObjectName("label_57")
+        self.gridLayout_15.addWidget(self.label_57, 9, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_50 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_50.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_50.setObjectName("label_50")
+        self.gridLayout_15.addWidget(self.label_50, 2, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.scrollArea_6.setWidget(self.scrollAreaWidgetContents_6)
+        self.gridLayout_14.addWidget(self.scrollArea_6, 0, 0, 1, 1)
+        self.tabWidget_2.addTab(self.tab_6, "")
+        self.tab_7 = QtWidgets.QWidget()
+        self.tab_7.setObjectName("tab_7")
+        self.gridLayout_16 = QtWidgets.QGridLayout(self.tab_7)
+        self.gridLayout_16.setContentsMargins(-1, -1, -1, 30)
+        self.gridLayout_16.setObjectName("gridLayout_16")
+        self.BuscarRegistradosPacientesText_2 = QtWidgets.QLineEdit(self.tab_7)
+        self.BuscarRegistradosPacientesText_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.BuscarRegistradosPacientesText_2.setObjectName("BuscarRegistradosPacientesText_2")
+        self.gridLayout_16.addWidget(self.BuscarRegistradosPacientesText_2, 1, 2, 1, 1)
+        self.BuscarBotonRegistrados_2 = QtWidgets.QPushButton(self.tab_7)
+        self.BuscarBotonRegistrados_2.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonRegistrados_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonRegistrados_2.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.BuscarBotonRegistrados_2.setObjectName("BuscarBotonRegistrados_2")
+        self.gridLayout_16.addWidget(self.BuscarBotonRegistrados_2, 1, 3, 1, 1)
+        self.BuscarRegistradosCombobox_3 = QtWidgets.QComboBox(self.tab_7)
+        self.BuscarRegistradosCombobox_3.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.BuscarRegistradosCombobox_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarRegistradosCombobox_3.setObjectName("BuscarRegistradosCombobox_3")
+        self.BuscarRegistradosCombobox_3.addItem("")
+        self.BuscarRegistradosCombobox_3.addItem("")
+        self.BuscarRegistradosCombobox_3.addItem("")
+        self.BuscarRegistradosCombobox_3.setItemText(2, "")
+        self.gridLayout_16.addWidget(self.BuscarRegistradosCombobox_3, 1, 0, 1, 2)
+        self.RefrescarBotonRegistrados_2 = QtWidgets.QPushButton(self.tab_7)
+        self.RefrescarBotonRegistrados_2.setMinimumSize(QtCore.QSize(130, 70))
+        self.RefrescarBotonRegistrados_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.RefrescarBotonRegistrados_2.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.RefrescarBotonRegistrados_2.setObjectName("RefrescarBotonRegistrados_2")
+        self.gridLayout_16.addWidget(self.RefrescarBotonRegistrados_2, 3, 1, 1, 2, QtCore.Qt.AlignHCenter)
+        self.TablaEmpleados_2 = QtWidgets.QTableWidget(self.tab_7)
+        self.TablaEmpleados_2.setStyleSheet("QHeaderView::section{\n"
+"    padding: 5px;\n"
+"    background-color: #77838d;\n"
+"    border: .5px solid #034aa6;\n"
+"    font: 87 13pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"\n"
+"}")
+        self.TablaEmpleados_2.setDragEnabled(False)
+        self.TablaEmpleados_2.setObjectName("TablaEmpleados_2")
+        self.TablaEmpleados_2.setColumnCount(9)
+        self.TablaEmpleados_2.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_2.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_2.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_2.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_2.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_2.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_2.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_2.setHorizontalHeaderItem(6, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_2.setHorizontalHeaderItem(7, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_2.setHorizontalHeaderItem(8, item)
+        self.TablaEmpleados_2.horizontalHeader().setCascadingSectionResizes(False)
+        self.TablaEmpleados_2.horizontalHeader().setHighlightSections(False)
+        self.TablaEmpleados_2.horizontalHeader().setSortIndicatorShown(False)
+        self.TablaEmpleados_2.horizontalHeader().setStretchLastSection(True)
+        self.TablaEmpleados_2.verticalHeader().setVisible(False)
+        self.TablaEmpleados_2.verticalHeader().setSortIndicatorShown(False)
+        self.gridLayout_16.addWidget(self.TablaEmpleados_2, 2, 0, 1, 4)
+        self.tabWidget_2.addTab(self.tab_7, "")
+        self.tab_9 = QtWidgets.QWidget()
+        self.tab_9.setObjectName("tab_9")
+        self.gridLayout_64 = QtWidgets.QGridLayout(self.tab_9)
+        self.gridLayout_64.setObjectName("gridLayout_64")
+        self.BuscarRegistradosCombobox_5 = QtWidgets.QComboBox(self.tab_9)
+        self.BuscarRegistradosCombobox_5.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.BuscarRegistradosCombobox_5.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarRegistradosCombobox_5.setObjectName("BuscarRegistradosCombobox_5")
+        self.BuscarRegistradosCombobox_5.addItem("")
+        self.BuscarRegistradosCombobox_5.addItem("")
+        self.BuscarRegistradosCombobox_5.addItem("")
+        self.BuscarRegistradosCombobox_5.setItemText(2, "")
+        self.gridLayout_64.addWidget(self.BuscarRegistradosCombobox_5, 0, 0, 1, 1)
+        self.BuscarRegistradosPacientesText_3 = QtWidgets.QLineEdit(self.tab_9)
+        self.BuscarRegistradosPacientesText_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.BuscarRegistradosPacientesText_3.setObjectName("BuscarRegistradosPacientesText_3")
+        self.gridLayout_64.addWidget(self.BuscarRegistradosPacientesText_3, 0, 1, 1, 1)
+        self.BuscarBotonRegistrados_3 = QtWidgets.QPushButton(self.tab_9)
+        self.BuscarBotonRegistrados_3.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonRegistrados_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonRegistrados_3.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.BuscarBotonRegistrados_3.setObjectName("BuscarBotonRegistrados_3")
+        self.gridLayout_64.addWidget(self.BuscarBotonRegistrados_3, 0, 2, 1, 1)
+        self.TablaEmpleados_3 = QtWidgets.QTableWidget(self.tab_9)
+        self.TablaEmpleados_3.setStyleSheet("QHeaderView::section{\n"
+"    padding: 5px;\n"
+"    background-color: #77838d;\n"
+"    border: .5px solid #034aa6;\n"
+"    font: 87 13pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"\n"
+"}")
+        self.TablaEmpleados_3.setDragEnabled(False)
+        self.TablaEmpleados_3.setObjectName("TablaEmpleados_3")
+        self.TablaEmpleados_3.setColumnCount(8)
+        self.TablaEmpleados_3.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_3.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_3.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_3.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_3.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_3.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_3.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_3.setHorizontalHeaderItem(6, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_3.setHorizontalHeaderItem(7, item)
+        self.TablaEmpleados_3.horizontalHeader().setCascadingSectionResizes(False)
+        self.TablaEmpleados_3.horizontalHeader().setHighlightSections(False)
+        self.TablaEmpleados_3.horizontalHeader().setSortIndicatorShown(False)
+        self.TablaEmpleados_3.horizontalHeader().setStretchLastSection(True)
+        self.TablaEmpleados_3.verticalHeader().setVisible(False)
+        self.TablaEmpleados_3.verticalHeader().setSortIndicatorShown(False)
+        self.gridLayout_64.addWidget(self.TablaEmpleados_3, 1, 0, 1, 3)
+        self.RefrescarBotonRegistrados_3 = QtWidgets.QPushButton(self.tab_9)
+        self.RefrescarBotonRegistrados_3.setMinimumSize(QtCore.QSize(130, 70))
+        self.RefrescarBotonRegistrados_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.RefrescarBotonRegistrados_3.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.RefrescarBotonRegistrados_3.setObjectName("RefrescarBotonRegistrados_3")
+        self.gridLayout_64.addWidget(self.RefrescarBotonRegistrados_3, 2, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.tabWidget_2.addTab(self.tab_9, "")
+        self.tab_8 = QtWidgets.QWidget()
+        self.tab_8.setObjectName("tab_8")
+        self.gridLayout_17 = QtWidgets.QGridLayout(self.tab_8)
+        self.gridLayout_17.setContentsMargins(0, 0, 0, 50)
+        self.gridLayout_17.setHorizontalSpacing(20)
+        self.gridLayout_17.setVerticalSpacing(10)
+        self.gridLayout_17.setObjectName("gridLayout_17")
+        self.scrollArea_7 = QtWidgets.QScrollArea(self.tab_8)
+        self.scrollArea_7.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.scrollArea_7.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_7.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_7.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.scrollArea_7.setWidgetResizable(True)
+        self.scrollArea_7.setObjectName("scrollArea_7")
+        self.scrollAreaWidgetContents_7 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_7.setGeometry(QtCore.QRect(0, 0, 1698, 725))
+        self.scrollAreaWidgetContents_7.setObjectName("scrollAreaWidgetContents_7")
+        self.gridLayout_65 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_7)
+        self.gridLayout_65.setObjectName("gridLayout_65")
+        self.BuscarRegistradosCombobox_4 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_7)
+        self.BuscarRegistradosCombobox_4.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.BuscarRegistradosCombobox_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarRegistradosCombobox_4.setObjectName("BuscarRegistradosCombobox_4")
+        self.BuscarRegistradosCombobox_4.addItem("")
+        self.BuscarRegistradosCombobox_4.addItem("")
+        self.BuscarRegistradosCombobox_4.addItem("")
+        self.BuscarRegistradosCombobox_4.setItemText(2, "")
+        self.gridLayout_65.addWidget(self.BuscarRegistradosCombobox_4, 0, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.ID_BuscarEliminarPaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.ID_BuscarEliminarPaciente_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.ID_BuscarEliminarPaciente_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.ID_BuscarEliminarPaciente_2.setObjectName("ID_BuscarEliminarPaciente_2")
+        self.gridLayout_65.addWidget(self.ID_BuscarEliminarPaciente_2, 0, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.BuscarBotonEliminar_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_7)
+        self.BuscarBotonEliminar_2.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonEliminar_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonEliminar_2.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.BuscarBotonEliminar_2.setObjectName("BuscarBotonEliminar_2")
+        self.gridLayout_65.addWidget(self.BuscarBotonEliminar_2, 0, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.label_66 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_66.setMaximumSize(QtCore.QSize(600, 50))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_66.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_66.setFont(font)
+        self.label_66.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_66.setObjectName("label_66")
+        self.gridLayout_65.addWidget(self.label_66, 1, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_64 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_64.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_64.setObjectName("label_64")
+        self.gridLayout_65.addWidget(self.label_64, 2, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.NombreRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.NombreRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_3.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.NombreRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar_3.setObjectName("NombreRegistrar_3")
+        self.gridLayout_65.addWidget(self.NombreRegistrar_3, 2, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_65 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_65.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_65.setObjectName("label_65")
+        self.gridLayout_65.addWidget(self.label_65, 3, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.UltimaCitaRegistrar_3 = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_7)
+        self.UltimaCitaRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.UltimaCitaRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);")
+        self.UltimaCitaRegistrar_3.setObjectName("UltimaCitaRegistrar_3")
+        self.gridLayout_65.addWidget(self.UltimaCitaRegistrar_3, 3, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_52 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_52.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_52.setObjectName("label_52")
+        self.gridLayout_65.addWidget(self.label_52, 4, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.FechaNacimientoRegistrar_3 = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_7)
+        self.FechaNacimientoRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.FechaNacimientoRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);")
+        self.FechaNacimientoRegistrar_3.setObjectName("FechaNacimientoRegistrar_3")
+        self.gridLayout_65.addWidget(self.FechaNacimientoRegistrar_3, 4, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_63 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_63.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_63.setObjectName("label_63")
+        self.gridLayout_65.addWidget(self.label_63, 5, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.TelefonoRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.TelefonoRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.TelefonoRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.TelefonoRegistrar_3.setObjectName("TelefonoRegistrar_3")
+        self.gridLayout_65.addWidget(self.TelefonoRegistrar_3, 5, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_62 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_62.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_62.setObjectName("label_62")
+        self.gridLayout_65.addWidget(self.label_62, 6, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.AlergiasRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.AlergiasRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.AlergiasRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.AlergiasRegistrar_3.setObjectName("AlergiasRegistrar_3")
+        self.gridLayout_65.addWidget(self.AlergiasRegistrar_3, 6, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_61 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_61.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_61.setObjectName("label_61")
+        self.gridLayout_65.addWidget(self.label_61, 7, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.EnfermedadesRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.EnfermedadesRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.EnfermedadesRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EnfermedadesRegistrar_3.setObjectName("EnfermedadesRegistrar_3")
+        self.gridLayout_65.addWidget(self.EnfermedadesRegistrar_3, 7, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_68 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_68.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_68.setObjectName("label_68")
+        self.gridLayout_65.addWidget(self.label_68, 8, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.MedicamentosRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.MedicamentosRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosRegistrar_3.setObjectName("MedicamentosRegistrar_3")
+        self.gridLayout_65.addWidget(self.MedicamentosRegistrar_3, 8, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.EliminarPacienteBoton_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_7)
+        self.EliminarPacienteBoton_2.setMinimumSize(QtCore.QSize(130, 70))
+        self.EliminarPacienteBoton_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.EliminarPacienteBoton_2.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.EliminarPacienteBoton_2.setObjectName("EliminarPacienteBoton_2")
+        self.gridLayout_65.addWidget(self.EliminarPacienteBoton_2, 9, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.scrollArea_7.setWidget(self.scrollAreaWidgetContents_7)
+        self.gridLayout_17.addWidget(self.scrollArea_7, 0, 0, 1, 1)
+        self.tabWidget_2.addTab(self.tab_8, "")
+        self.gridLayout_45.addWidget(self.tabWidget_2, 0, 1, 1, 1)
+        self.stackedWidget.addWidget(self.CRUD_Entrenadores)
+        self.CRUD_Clientes = QtWidgets.QWidget()
+        self.CRUD_Clientes.setObjectName("CRUD_Clientes")
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout(self.CRUD_Clientes)
+        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
+        self.tabWidget_3 = QtWidgets.QTabWidget(self.CRUD_Clientes)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.tabWidget_3.setFont(font)
+        self.tabWidget_3.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.tabWidget_3.setMouseTracking(False)
+        self.tabWidget_3.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.tabWidget_3.setStyleSheet("QTabWidget::pane {\n"
+"} \n"
+"\n"
+"QTabBar::tab {  \n"
+"  font: 63 18pt \"Bahnschrift SemiBold SemiConden\";\n"
+"  color: whitesmoke;\n"
+"  background-color: #343434;\n"
+"  border: 1px solid #cacaca; \n"
+"  padding: 15px;\n"
+"    width: 250px;\n"
+"    height: 50px;\n"
+"} \n"
+"\n"
+"QTabBar::tab:selected { \n"
+"  background: #e6b31e; \n"
+"border: 1px solid rgb(161, 161, 161);\n"
+"  margin-bottom: -1px; \n"
+"}\n"
+"\n"
+"")
+        self.tabWidget_3.setTabShape(QtWidgets.QTabWidget.Rounded)
+        self.tabWidget_3.setUsesScrollButtons(False)
+        self.tabWidget_3.setDocumentMode(False)
+        self.tabWidget_3.setTabsClosable(False)
+        self.tabWidget_3.setMovable(True)
+        self.tabWidget_3.setTabBarAutoHide(False)
+        self.tabWidget_3.setObjectName("tabWidget_3")
+        self.tab_10 = QtWidgets.QWidget()
+        self.tab_10.setObjectName("tab_10")
+        self.gridLayout_10 = QtWidgets.QGridLayout(self.tab_10)
+        self.gridLayout_10.setObjectName("gridLayout_10")
+        self.scrollArea_8 = QtWidgets.QScrollArea(self.tab_10)
+        self.scrollArea_8.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.scrollArea_8.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_8.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_8.setWidgetResizable(True)
+        self.scrollArea_8.setObjectName("scrollArea_8")
+        self.scrollAreaWidgetContents_8 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_8.setGeometry(QtCore.QRect(0, 0, 1680, 767))
+        self.scrollAreaWidgetContents_8.setObjectName("scrollAreaWidgetContents_8")
+        self.gridLayout_25 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_8)
+        self.gridLayout_25.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_25.setObjectName("gridLayout_25")
+        self.label_72 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_72.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_72.setObjectName("label_72")
+        self.gridLayout_25.addWidget(self.label_72, 4, 1, 1, 1, QtCore.Qt.AlignRight)
+        self.label_71 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_71.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_71.setObjectName("label_71")
+        self.gridLayout_25.addWidget(self.label_71, 7, 1, 1, 1, QtCore.Qt.AlignRight)
+        self.label_74 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_74.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_74.setObjectName("label_74")
+        self.gridLayout_25.addWidget(self.label_74, 8, 1, 1, 1, QtCore.Qt.AlignRight)
+        self.label_49 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_49.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_49.setObjectName("label_49")
+        self.gridLayout_25.addWidget(self.label_49, 6, 1, 1, 1, QtCore.Qt.AlignRight)
+        self.label_77 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_77.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_77.setObjectName("label_77")
+        self.gridLayout_25.addWidget(self.label_77, 5, 1, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
+        self.label_76 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_76.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_76.setObjectName("label_76")
+        self.gridLayout_25.addWidget(self.label_76, 1, 1, 1, 1, QtCore.Qt.AlignRight)
+        self.AlergiasRegistrar_5 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
+        self.AlergiasRegistrar_5.setMinimumSize(QtCore.QSize(600, 0))
+        self.AlergiasRegistrar_5.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.AlergiasRegistrar_5.setText("")
+        self.AlergiasRegistrar_5.setObjectName("AlergiasRegistrar_5")
+        self.gridLayout_25.addWidget(self.AlergiasRegistrar_5, 5, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.AlergiasRegistrar_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
+        self.AlergiasRegistrar_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.AlergiasRegistrar_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.AlergiasRegistrar_4.setText("")
+        self.AlergiasRegistrar_4.setObjectName("AlergiasRegistrar_4")
+        self.gridLayout_25.addWidget(self.AlergiasRegistrar_4, 6, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.EnfermedadesRegistrar_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
+        self.EnfermedadesRegistrar_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.EnfermedadesRegistrar_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EnfermedadesRegistrar_4.setObjectName("EnfermedadesRegistrar_4")
+        self.gridLayout_25.addWidget(self.EnfermedadesRegistrar_4, 7, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.NombreRegistrar_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
+        self.NombreRegistrar_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_4.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.NombreRegistrar_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar_4.setObjectName("NombreRegistrar_4")
+        self.gridLayout_25.addWidget(self.NombreRegistrar_4, 1, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.TelefonoRegistrar_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
+        self.TelefonoRegistrar_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.TelefonoRegistrar_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.TelefonoRegistrar_4.setObjectName("TelefonoRegistrar_4")
+        self.gridLayout_25.addWidget(self.TelefonoRegistrar_4, 4, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_75 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_75.setMaximumSize(QtCore.QSize(600, 50))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_75.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_75.setFont(font)
+        self.label_75.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_75.setObjectName("label_75")
+        self.gridLayout_25.addWidget(self.label_75, 0, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.MedicamentosRegistrar_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
+        self.MedicamentosRegistrar_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosRegistrar_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosRegistrar_4.setObjectName("MedicamentosRegistrar_4")
+        self.gridLayout_25.addWidget(self.MedicamentosRegistrar_4, 8, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.GuardarRegistrarPaciente_3 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_8)
+        self.GuardarRegistrarPaciente_3.setMinimumSize(QtCore.QSize(250, 80))
+        self.GuardarRegistrarPaciente_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.GuardarRegistrarPaciente_3.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87  22pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 22pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.GuardarRegistrarPaciente_3.setObjectName("GuardarRegistrarPaciente_3")
+        self.gridLayout_25.addWidget(self.GuardarRegistrarPaciente_3, 9, 3, 1, 1, QtCore.Qt.AlignLeft)
+        self.scrollArea_8.setWidget(self.scrollAreaWidgetContents_8)
+        self.gridLayout_10.addWidget(self.scrollArea_8, 0, 0, 1, 1)
+        self.tabWidget_3.addTab(self.tab_10, "")
+        self.tab_14 = QtWidgets.QWidget()
+        self.tab_14.setObjectName("tab_14")
+        self.gridLayout_31 = QtWidgets.QGridLayout(self.tab_14)
+        self.gridLayout_31.setObjectName("gridLayout_31")
+        self.label_95 = QtWidgets.QLabel(self.tab_14)
+        self.label_95.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_95.setObjectName("label_95")
+        self.gridLayout_31.addWidget(self.label_95, 2, 2, 1, 1, QtCore.Qt.AlignRight)
+        self.BuscarBotonActualizar_4 = QtWidgets.QPushButton(self.tab_14)
+        self.BuscarBotonActualizar_4.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonActualizar_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonActualizar_4.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.BuscarBotonActualizar_4.setObjectName("BuscarBotonActualizar_4")
+        self.gridLayout_31.addWidget(self.BuscarBotonActualizar_4, 2, 4, 1, 1, QtCore.Qt.AlignLeft)
+        self.NombreRegistrar_5 = QtWidgets.QLineEdit(self.tab_14)
+        self.NombreRegistrar_5.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_5.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.NombreRegistrar_5.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar_5.setObjectName("NombreRegistrar_5")
+        self.gridLayout_31.addWidget(self.NombreRegistrar_5, 2, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.NombreRegistrar_7 = QtWidgets.QLineEdit(self.tab_14)
+        self.NombreRegistrar_7.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_7.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.NombreRegistrar_7.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.NombreRegistrar_7.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar_7.setText("")
+        self.NombreRegistrar_7.setObjectName("NombreRegistrar_7")
+        self.gridLayout_31.addWidget(self.NombreRegistrar_7, 5, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_96 = QtWidgets.QLabel(self.tab_14)
+        self.label_96.setMaximumSize(QtCore.QSize(600, 50))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_96.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_96.setFont(font)
+        self.label_96.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_96.setObjectName("label_96")
+        self.gridLayout_31.addWidget(self.label_96, 0, 2, 1, 2, QtCore.Qt.AlignHCenter)
+        self.label_98 = QtWidgets.QLabel(self.tab_14)
+        self.label_98.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_98.setObjectName("label_98")
+        self.gridLayout_31.addWidget(self.label_98, 4, 2, 1, 1, QtCore.Qt.AlignRight)
+        self.NombreRegistrar_6 = QtWidgets.QLineEdit(self.tab_14)
+        self.NombreRegistrar_6.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_6.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.NombreRegistrar_6.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.NombreRegistrar_6.setMouseTracking(True)
+        self.NombreRegistrar_6.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar_6.setObjectName("NombreRegistrar_6")
+        self.gridLayout_31.addWidget(self.NombreRegistrar_6, 4, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_100 = QtWidgets.QLabel(self.tab_14)
+        self.label_100.setMaximumSize(QtCore.QSize(600, 50))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_100.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_100.setFont(font)
+        self.label_100.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_100.setObjectName("label_100")
+        self.gridLayout_31.addWidget(self.label_100, 7, 2, 1, 2, QtCore.Qt.AlignHCenter)
+        self.label_97 = QtWidgets.QLabel(self.tab_14)
+        self.label_97.setMaximumSize(QtCore.QSize(600, 50))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_97.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_97.setFont(font)
+        self.label_97.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_97.setObjectName("label_97")
+        self.gridLayout_31.addWidget(self.label_97, 3, 2, 1, 2, QtCore.Qt.AlignHCenter)
+        self.label_99 = QtWidgets.QLabel(self.tab_14)
+        self.label_99.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_99.setObjectName("label_99")
+        self.gridLayout_31.addWidget(self.label_99, 5, 1, 1, 2, QtCore.Qt.AlignRight)
+        self.NombreRegistrar_10 = QtWidgets.QLineEdit(self.tab_14)
+        self.NombreRegistrar_10.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_10.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.NombreRegistrar_10.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.NombreRegistrar_10.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar_10.setObjectName("NombreRegistrar_10")
+        self.gridLayout_31.addWidget(self.NombreRegistrar_10, 10, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_104 = QtWidgets.QLabel(self.tab_14)
+        self.label_104.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_104.setObjectName("label_104")
+        self.gridLayout_31.addWidget(self.label_104, 11, 1, 1, 2, QtCore.Qt.AlignRight)
+        self.label_103 = QtWidgets.QLabel(self.tab_14)
+        self.label_103.setMaximumSize(QtCore.QSize(600, 50))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_103.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_103.setFont(font)
+        self.label_103.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_103.setObjectName("label_103")
+        self.gridLayout_31.addWidget(self.label_103, 9, 2, 1, 2, QtCore.Qt.AlignHCenter)
+        self.label_101 = QtWidgets.QLabel(self.tab_14)
+        self.label_101.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_101.setObjectName("label_101")
+        self.gridLayout_31.addWidget(self.label_101, 10, 2, 1, 1, QtCore.Qt.AlignRight)
+        self.NombreRegistrar_9 = QtWidgets.QLineEdit(self.tab_14)
+        self.NombreRegistrar_9.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_9.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.NombreRegistrar_9.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.NombreRegistrar_9.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar_9.setText("")
+        self.NombreRegistrar_9.setObjectName("NombreRegistrar_9")
+        self.gridLayout_31.addWidget(self.NombreRegistrar_9, 11, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.NombreRegistrar_8 = QtWidgets.QLineEdit(self.tab_14)
+        self.NombreRegistrar_8.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_8.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.NombreRegistrar_8.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar_8.setObjectName("NombreRegistrar_8")
+        self.gridLayout_31.addWidget(self.NombreRegistrar_8, 8, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_102 = QtWidgets.QLabel(self.tab_14)
+        self.label_102.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_102.setObjectName("label_102")
+        self.gridLayout_31.addWidget(self.label_102, 8, 2, 1, 1, QtCore.Qt.AlignRight)
+        self.BuscarBotonActualizar_5 = QtWidgets.QPushButton(self.tab_14)
+        self.BuscarBotonActualizar_5.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonActualizar_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonActualizar_5.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.BuscarBotonActualizar_5.setObjectName("BuscarBotonActualizar_5")
+        self.gridLayout_31.addWidget(self.BuscarBotonActualizar_5, 8, 4, 1, 1, QtCore.Qt.AlignLeft)
+        self.BuscarBotonActualizar_6 = QtWidgets.QPushButton(self.tab_14)
+        self.BuscarBotonActualizar_6.setMinimumSize(QtCore.QSize(400, 70))
+        self.BuscarBotonActualizar_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonActualizar_6.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.BuscarBotonActualizar_6.setObjectName("BuscarBotonActualizar_6")
+        self.gridLayout_31.addWidget(self.BuscarBotonActualizar_6, 12, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.tabWidget_3.addTab(self.tab_14, "")
+        self.tab_11 = QtWidgets.QWidget()
+        self.tab_11.setObjectName("tab_11")
+        self.gridLayout_13 = QtWidgets.QGridLayout(self.tab_11)
+        self.gridLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_13.setSpacing(0)
+        self.gridLayout_13.setObjectName("gridLayout_13")
+        self.scrollArea_9 = QtWidgets.QScrollArea(self.tab_11)
+        self.scrollArea_9.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_9.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_9.setWidgetResizable(True)
+        self.scrollArea_9.setAlignment(QtCore.Qt.AlignCenter)
+        self.scrollArea_9.setObjectName("scrollArea_9")
+        self.scrollAreaWidgetContents_9 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_9.setGeometry(QtCore.QRect(0, 0, 1698, 785))
+        self.scrollAreaWidgetContents_9.setObjectName("scrollAreaWidgetContents_9")
+        self.label_78 = QtWidgets.QLabel(self.scrollAreaWidgetContents_9)
+        self.label_78.setGeometry(QtCore.QRect(420, 180, 281, 35))
+        self.label_78.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_78.setObjectName("label_78")
+        self.label_79 = QtWidgets.QLabel(self.scrollAreaWidgetContents_9)
+        self.label_79.setGeometry(QtCore.QRect(270, 250, 95, 35))
+        self.label_79.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_79.setObjectName("label_79")
+        self.ID_BuscarActualizarPaciente_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_9)
+        self.ID_BuscarActualizarPaciente_3.setGeometry(QtCore.QRect(280, 114, 600, 41))
+        self.ID_BuscarActualizarPaciente_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.ID_BuscarActualizarPaciente_3.setMaximumSize(QtCore.QSize(600, 16777215))
+        self.ID_BuscarActualizarPaciente_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;")
+        self.ID_BuscarActualizarPaciente_3.setObjectName("ID_BuscarActualizarPaciente_3")
+        self.BuscarPor_8 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_9)
+        self.BuscarPor_8.setGeometry(QtCore.QRect(34, 116, 226, 37))
+        self.BuscarPor_8.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarPor_8.setObjectName("BuscarPor_8")
+        self.BuscarPor_8.addItem("")
+        self.BuscarPor_8.addItem("")
+        self.UltimCitActu_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_9)
+        self.UltimCitActu_3.setGeometry(QtCore.QRect(380, 400, 600, 35))
+        self.UltimCitActu_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.UltimCitActu_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.UltimCitActu_3.setObjectName("UltimCitActu_3")
+        self.NombreActualizarPaciente_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_9)
+        self.NombreActualizarPaciente_3.setGeometry(QtCore.QRect(380, 250, 600, 35))
+        self.NombreActualizarPaciente_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente_3.setObjectName("NombreActualizarPaciente_3")
+        self.label_83 = QtWidgets.QLabel(self.scrollAreaWidgetContents_9)
+        self.label_83.setGeometry(QtCore.QRect(150, 300, 221, 35))
+        self.label_83.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_83.setObjectName("label_83")
+        self.label_84 = QtWidgets.QLabel(self.scrollAreaWidgetContents_9)
+        self.label_84.setGeometry(QtCore.QRect(120, 350, 251, 35))
+        self.label_84.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_84.setObjectName("label_84")
+        self.TelefonoActualizarPaciente_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_9)
+        self.TelefonoActualizarPaciente_3.setGeometry(QtCore.QRect(380, 300, 600, 35))
+        self.TelefonoActualizarPaciente_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.TelefonoActualizarPaciente_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.TelefonoActualizarPaciente_3.setObjectName("TelefonoActualizarPaciente_3")
+        self.label_85 = QtWidgets.QLabel(self.scrollAreaWidgetContents_9)
+        self.label_85.setGeometry(QtCore.QRect(110, 400, 261, 35))
+        self.label_85.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_85.setObjectName("label_85")
+        self.FechNacActu_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_9)
+        self.FechNacActu_3.setGeometry(QtCore.QRect(380, 350, 600, 35))
+        self.FechNacActu_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.FechNacActu_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.FechNacActu_3.setObjectName("FechNacActu_3")
+        self.label_87 = QtWidgets.QLabel(self.scrollAreaWidgetContents_9)
+        self.label_87.setGeometry(QtCore.QRect(410, 50, 281, 40))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_87.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_87.setFont(font)
+        self.label_87.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_87.setObjectName("label_87")
+        self.ActualizarBotonPaciente_3 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_9)
+        self.ActualizarBotonPaciente_3.setGeometry(QtCore.QRect(490, 470, 130, 70))
+        self.ActualizarBotonPaciente_3.setMinimumSize(QtCore.QSize(130, 70))
+        self.ActualizarBotonPaciente_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.ActualizarBotonPaciente_3.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.ActualizarBotonPaciente_3.setObjectName("ActualizarBotonPaciente_3")
+        self.BuscarBotonActualizar_3 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_9)
+        self.BuscarBotonActualizar_3.setGeometry(QtCore.QRect(900, 100, 130, 70))
+        self.BuscarBotonActualizar_3.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonActualizar_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonActualizar_3.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.BuscarBotonActualizar_3.setObjectName("BuscarBotonActualizar_3")
+        self.scrollArea_9.setWidget(self.scrollAreaWidgetContents_9)
+        self.gridLayout_13.addWidget(self.scrollArea_9, 0, 0, 1, 1)
+        self.tabWidget_3.addTab(self.tab_11, "")
+        self.tab_15 = QtWidgets.QWidget()
+        self.tab_15.setObjectName("tab_15")
+        self.label_80 = QtWidgets.QLabel(self.tab_15)
+        self.label_80.setGeometry(QtCore.QRect(230, 230, 95, 35))
+        self.label_80.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_80.setObjectName("label_80")
+        self.label_105 = QtWidgets.QLabel(self.tab_15)
+        self.label_105.setGeometry(QtCore.QRect(360, 30, 441, 40))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_105.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_105.setFont(font)
+        self.label_105.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_105.setObjectName("label_105")
+        self.BuscarPor_9 = QtWidgets.QComboBox(self.tab_15)
+        self.BuscarPor_9.setGeometry(QtCore.QRect(54, 96, 226, 37))
+        self.BuscarPor_9.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarPor_9.setObjectName("BuscarPor_9")
+        self.BuscarPor_9.addItem("")
+        self.BuscarPor_9.addItem("")
+        self.label_81 = QtWidgets.QLabel(self.tab_15)
+        self.label_81.setGeometry(QtCore.QRect(320, 160, 531, 35))
+        self.label_81.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_81.setObjectName("label_81")
+        self.ActualizarBotonPaciente_4 = QtWidgets.QPushButton(self.tab_15)
+        self.ActualizarBotonPaciente_4.setGeometry(QtCore.QRect(510, 540, 130, 70))
+        self.ActualizarBotonPaciente_4.setMinimumSize(QtCore.QSize(130, 70))
+        self.ActualizarBotonPaciente_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.ActualizarBotonPaciente_4.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.ActualizarBotonPaciente_4.setObjectName("ActualizarBotonPaciente_4")
+        self.NombreActualizarPaciente_4 = QtWidgets.QLineEdit(self.tab_15)
+        self.NombreActualizarPaciente_4.setGeometry(QtCore.QRect(340, 230, 600, 35))
+        self.NombreActualizarPaciente_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente_4.setObjectName("NombreActualizarPaciente_4")
+        self.label_107 = QtWidgets.QLabel(self.tab_15)
+        self.label_107.setGeometry(QtCore.QRect(230, 280, 101, 35))
+        self.label_107.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_107.setObjectName("label_107")
+        self.ID_BuscarActualizarPaciente_4 = QtWidgets.QLineEdit(self.tab_15)
+        self.ID_BuscarActualizarPaciente_4.setGeometry(QtCore.QRect(300, 94, 600, 41))
+        self.ID_BuscarActualizarPaciente_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.ID_BuscarActualizarPaciente_4.setMaximumSize(QtCore.QSize(600, 16777215))
+        self.ID_BuscarActualizarPaciente_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;")
+        self.ID_BuscarActualizarPaciente_4.setObjectName("ID_BuscarActualizarPaciente_4")
+        self.BuscarBotonActualizar_7 = QtWidgets.QPushButton(self.tab_15)
+        self.BuscarBotonActualizar_7.setGeometry(QtCore.QRect(920, 80, 130, 70))
+        self.BuscarBotonActualizar_7.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonActualizar_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonActualizar_7.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.BuscarBotonActualizar_7.setObjectName("BuscarBotonActualizar_7")
+        self.label_108 = QtWidgets.QLabel(self.tab_15)
+        self.label_108.setGeometry(QtCore.QRect(110, 330, 221, 35))
+        self.label_108.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_108.setObjectName("label_108")
+        self.label_109 = QtWidgets.QLabel(self.tab_15)
+        self.label_109.setGeometry(QtCore.QRect(260, 380, 61, 35))
+        self.label_109.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_109.setObjectName("label_109")
+        self.label_110 = QtWidgets.QLabel(self.tab_15)
+        self.label_110.setGeometry(QtCore.QRect(180, 430, 141, 35))
+        self.label_110.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_110.setObjectName("label_110")
+        self.label_111 = QtWidgets.QLabel(self.tab_15)
+        self.label_111.setGeometry(QtCore.QRect(240, 480, 91, 35))
+        self.label_111.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_111.setObjectName("label_111")
+        self.NombreActualizarPaciente_5 = QtWidgets.QLineEdit(self.tab_15)
+        self.NombreActualizarPaciente_5.setGeometry(QtCore.QRect(340, 280, 600, 35))
+        self.NombreActualizarPaciente_5.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente_5.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente_5.setObjectName("NombreActualizarPaciente_5")
+        self.NombreActualizarPaciente_6 = QtWidgets.QLineEdit(self.tab_15)
+        self.NombreActualizarPaciente_6.setGeometry(QtCore.QRect(340, 330, 600, 35))
+        self.NombreActualizarPaciente_6.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente_6.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente_6.setObjectName("NombreActualizarPaciente_6")
+        self.NombreActualizarPaciente_7 = QtWidgets.QLineEdit(self.tab_15)
+        self.NombreActualizarPaciente_7.setGeometry(QtCore.QRect(340, 380, 600, 35))
+        self.NombreActualizarPaciente_7.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente_7.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente_7.setObjectName("NombreActualizarPaciente_7")
+        self.NombreActualizarPaciente_8 = QtWidgets.QLineEdit(self.tab_15)
+        self.NombreActualizarPaciente_8.setGeometry(QtCore.QRect(340, 430, 600, 35))
+        self.NombreActualizarPaciente_8.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente_8.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente_8.setObjectName("NombreActualizarPaciente_8")
+        self.NombreActualizarPaciente_9 = QtWidgets.QLineEdit(self.tab_15)
+        self.NombreActualizarPaciente_9.setGeometry(QtCore.QRect(340, 480, 600, 35))
+        self.NombreActualizarPaciente_9.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente_9.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente_9.setObjectName("NombreActualizarPaciente_9")
+        self.tabWidget_3.addTab(self.tab_15, "")
+        self.tab_12 = QtWidgets.QWidget()
+        self.tab_12.setObjectName("tab_12")
+        self.gridLayout_19 = QtWidgets.QGridLayout(self.tab_12)
+        self.gridLayout_19.setContentsMargins(-1, -1, -1, 30)
+        self.gridLayout_19.setObjectName("gridLayout_19")
+        self.RefrescarBotonRegistrados_4 = QtWidgets.QPushButton(self.tab_12)
+        self.RefrescarBotonRegistrados_4.setMinimumSize(QtCore.QSize(130, 70))
+        self.RefrescarBotonRegistrados_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.RefrescarBotonRegistrados_4.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.RefrescarBotonRegistrados_4.setObjectName("RefrescarBotonRegistrados_4")
+        self.gridLayout_19.addWidget(self.RefrescarBotonRegistrados_4, 4, 1, 1, 2, QtCore.Qt.AlignHCenter)
+        self.BuscarRegistradosPacientesText_4 = QtWidgets.QLineEdit(self.tab_12)
+        self.BuscarRegistradosPacientesText_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.BuscarRegistradosPacientesText_4.setObjectName("BuscarRegistradosPacientesText_4")
+        self.gridLayout_19.addWidget(self.BuscarRegistradosPacientesText_4, 2, 2, 1, 1)
+        self.BuscarBotonRegistrados_4 = QtWidgets.QPushButton(self.tab_12)
+        self.BuscarBotonRegistrados_4.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonRegistrados_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonRegistrados_4.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.BuscarBotonRegistrados_4.setObjectName("BuscarBotonRegistrados_4")
+        self.gridLayout_19.addWidget(self.BuscarBotonRegistrados_4, 2, 4, 1, 1)
+        self.BuscarRegistradosCombobox_6 = QtWidgets.QComboBox(self.tab_12)
+        self.BuscarRegistradosCombobox_6.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.BuscarRegistradosCombobox_6.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarRegistradosCombobox_6.setObjectName("BuscarRegistradosCombobox_6")
+        self.BuscarRegistradosCombobox_6.addItem("")
+        self.BuscarRegistradosCombobox_6.addItem("")
+        self.BuscarRegistradosCombobox_6.addItem("")
+        self.BuscarRegistradosCombobox_6.setItemText(2, "")
+        self.gridLayout_19.addWidget(self.BuscarRegistradosCombobox_6, 2, 0, 1, 2)
+        self.TablaEmpleados_4 = QtWidgets.QTableWidget(self.tab_12)
+        self.TablaEmpleados_4.setStyleSheet("QHeaderView::section{\n"
+"    padding: 5px;\n"
+"    background-color: #77838d;\n"
+"    border: .5px solid #034aa6;\n"
+"    font: 87 13pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"\n"
+"}")
+        self.TablaEmpleados_4.setDragEnabled(False)
+        self.TablaEmpleados_4.setObjectName("TablaEmpleados_4")
+        self.TablaEmpleados_4.setColumnCount(9)
+        self.TablaEmpleados_4.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_4.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_4.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_4.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_4.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_4.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_4.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_4.setHorizontalHeaderItem(6, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_4.setHorizontalHeaderItem(7, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.TablaEmpleados_4.setHorizontalHeaderItem(8, item)
+        self.TablaEmpleados_4.horizontalHeader().setCascadingSectionResizes(False)
+        self.TablaEmpleados_4.horizontalHeader().setHighlightSections(False)
+        self.TablaEmpleados_4.horizontalHeader().setSortIndicatorShown(False)
+        self.TablaEmpleados_4.horizontalHeader().setStretchLastSection(True)
+        self.TablaEmpleados_4.verticalHeader().setVisible(False)
+        self.TablaEmpleados_4.verticalHeader().setSortIndicatorShown(False)
+        self.gridLayout_19.addWidget(self.TablaEmpleados_4, 3, 0, 1, 5)
+        self.label_88 = QtWidgets.QLabel(self.tab_12)
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_88.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_88.setFont(font)
+        self.label_88.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_88.setObjectName("label_88")
+        self.gridLayout_19.addWidget(self.label_88, 0, 0, 1, 5, QtCore.Qt.AlignHCenter)
+        self.tabWidget_3.addTab(self.tab_12, "")
+        self.tab_13 = QtWidgets.QWidget()
+        self.tab_13.setObjectName("tab_13")
+        self.gridLayout_20 = QtWidgets.QGridLayout(self.tab_13)
+        self.gridLayout_20.setContentsMargins(0, 0, 0, 50)
+        self.gridLayout_20.setHorizontalSpacing(20)
+        self.gridLayout_20.setVerticalSpacing(10)
+        self.gridLayout_20.setObjectName("gridLayout_20")
+        self.scrollArea_10 = QtWidgets.QScrollArea(self.tab_13)
+        self.scrollArea_10.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_10.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_10.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.scrollArea_10.setWidgetResizable(True)
+        self.scrollArea_10.setObjectName("scrollArea_10")
+        self.scrollAreaWidgetContents_10 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_10.setGeometry(QtCore.QRect(0, 0, 1698, 735))
+        self.scrollAreaWidgetContents_10.setObjectName("scrollAreaWidgetContents_10")
+        self.Eliminar_NombrePaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_10)
+        self.Eliminar_NombrePaciente_2.setGeometry(QtCore.QRect(320, 200, 600, 35))
+        self.Eliminar_NombrePaciente_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.Eliminar_NombrePaciente_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.Eliminar_NombrePaciente_2.setObjectName("Eliminar_NombrePaciente_2")
+        self.EliminarUltima_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_10)
+        self.EliminarUltima_2.setGeometry(QtCore.QRect(320, 350, 600, 35))
+        self.EliminarUltima_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.EliminarUltima_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EliminarUltima_2.setObjectName("EliminarUltima_2")
+        self.label_89 = QtWidgets.QLabel(self.scrollAreaWidgetContents_10)
+        self.label_89.setGeometry(QtCore.QRect(210, 200, 95, 35))
+        self.label_89.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_89.setObjectName("label_89")
+        self.label_90 = QtWidgets.QLabel(self.scrollAreaWidgetContents_10)
+        self.label_90.setGeometry(QtCore.QRect(250, 350, 61, 35))
+        self.label_90.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_90.setObjectName("label_90")
+        self.label_91 = QtWidgets.QLabel(self.scrollAreaWidgetContents_10)
+        self.label_91.setGeometry(QtCore.QRect(210, 250, 97, 35))
+        self.label_91.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_91.setObjectName("label_91")
+        self.ID_BuscarEliminarPaciente_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_10)
+        self.ID_BuscarEliminarPaciente_3.setGeometry(QtCore.QRect(294, 87, 600, 35))
+        self.ID_BuscarEliminarPaciente_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.ID_BuscarEliminarPaciente_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.ID_BuscarEliminarPaciente_3.setObjectName("ID_BuscarEliminarPaciente_3")
+        self.label_92 = QtWidgets.QLabel(self.scrollAreaWidgetContents_10)
+        self.label_92.setGeometry(QtCore.QRect(90, 300, 221, 35))
+        self.label_92.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_92.setObjectName("label_92")
+        self.EliminarFecha_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_10)
+        self.EliminarFecha_2.setGeometry(QtCore.QRect(320, 300, 600, 35))
+        self.EliminarFecha_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.EliminarFecha_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EliminarFecha_2.setObjectName("EliminarFecha_2")
+        self.EliminarPacienteBoton_3 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_10)
+        self.EliminarPacienteBoton_3.setGeometry(QtCore.QRect(490, 520, 131, 70))
+        self.EliminarPacienteBoton_3.setMinimumSize(QtCore.QSize(130, 70))
+        self.EliminarPacienteBoton_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.EliminarPacienteBoton_3.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.EliminarPacienteBoton_3.setObjectName("EliminarPacienteBoton_3")
+        self.BuscarBotonEliminar_3 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_10)
+        self.BuscarBotonEliminar_3.setGeometry(QtCore.QRect(900, 70, 130, 70))
+        self.BuscarBotonEliminar_3.setMinimumSize(QtCore.QSize(130, 70))
+        self.BuscarBotonEliminar_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.BuscarBotonEliminar_3.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"")
+        self.BuscarBotonEliminar_3.setObjectName("BuscarBotonEliminar_3")
+        self.BuscarRegistradosCombobox_7 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_10)
+        self.BuscarRegistradosCombobox_7.setGeometry(QtCore.QRect(62, 86, 226, 37))
+        self.BuscarRegistradosCombobox_7.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        self.BuscarRegistradosCombobox_7.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarRegistradosCombobox_7.setObjectName("BuscarRegistradosCombobox_7")
+        self.BuscarRegistradosCombobox_7.addItem("")
+        self.BuscarRegistradosCombobox_7.addItem("")
+        self.BuscarRegistradosCombobox_7.addItem("")
+        self.BuscarRegistradosCombobox_7.setItemText(2, "")
+        self.label_93 = QtWidgets.QLabel(self.scrollAreaWidgetContents_10)
+        self.label_93.setGeometry(QtCore.QRect(430, 150, 271, 30))
+        self.label_93.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_93.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.label_93.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_93.setObjectName("label_93")
+        self.Eliminar_TelefenoPaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_10)
+        self.Eliminar_TelefenoPaciente_2.setGeometry(QtCore.QRect(320, 250, 600, 35))
+        self.Eliminar_TelefenoPaciente_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.Eliminar_TelefenoPaciente_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.Eliminar_TelefenoPaciente_2.setObjectName("Eliminar_TelefenoPaciente_2")
+        self.label_94 = QtWidgets.QLabel(self.scrollAreaWidgetContents_10)
+        self.label_94.setGeometry(QtCore.QRect(450, 40, 221, 39))
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.WindowText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Text, brush)
+        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.ButtonText, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(35, 31, 32))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.label_94.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(25)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_94.setFont(font)
+        self.label_94.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_94.setObjectName("label_94")
+        self.EliminarFecha_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_10)
+        self.EliminarFecha_4.setGeometry(QtCore.QRect(320, 400, 600, 35))
+        self.EliminarFecha_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.EliminarFecha_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EliminarFecha_4.setObjectName("EliminarFecha_4")
+        self.EliminarUltima_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_10)
+        self.EliminarUltima_4.setGeometry(QtCore.QRect(320, 450, 600, 35))
+        self.EliminarUltima_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.EliminarUltima_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EliminarUltima_4.setObjectName("EliminarUltima_4")
+        self.label_117 = QtWidgets.QLabel(self.scrollAreaWidgetContents_10)
+        self.label_117.setGeometry(QtCore.QRect(230, 450, 81, 35))
+        self.label_117.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_117.setObjectName("label_117")
+        self.label_118 = QtWidgets.QLabel(self.scrollAreaWidgetContents_10)
+        self.label_118.setGeometry(QtCore.QRect(170, 400, 141, 35))
+        self.label_118.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_118.setObjectName("label_118")
+        self.scrollArea_10.setWidget(self.scrollAreaWidgetContents_10)
+        self.gridLayout_20.addWidget(self.scrollArea_10, 0, 0, 1, 1)
+        self.tabWidget_3.addTab(self.tab_13, "")
+        self.horizontalLayout_8.addWidget(self.tabWidget_3)
+        self.stackedWidget.addWidget(self.CRUD_Clientes)
+        self.horizontalLayout_3.addWidget(self.stackedWidget)
+        self.horizontalLayout.addWidget(self.frame_4)
+        self.gridLayout_26.addWidget(self.Frame_Inferior, 1, 0, 1, 1)
+        self.Navbar_Frame = QtWidgets.QFrame(self.centralwidget)
+        self.Navbar_Frame.setMinimumSize(QtCore.QSize(0, 0))
+        self.Navbar_Frame.setMaximumSize(QtCore.QSize(16777215, 80))
+        self.Navbar_Frame.setStyleSheet("background-color: #343434;")
+        self.Navbar_Frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.Navbar_Frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.Navbar_Frame.setObjectName("Navbar_Frame")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.Navbar_Frame)
+        self.horizontalLayout_2.setContentsMargins(20, 0, 20, 0)
+        self.horizontalLayout_2.setSpacing(0)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.pushButton = QtWidgets.QPushButton(self.Navbar_Frame)
+        self.pushButton.setMinimumSize(QtCore.QSize(70, 70))
+        self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/menuIcon.png);\n"
+"    \n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    \n"
+"    image: url(:/menu/menuicon2.png);\n"
+"}\n"
+"")
+        self.pushButton.setText("")
+        self.pushButton.setObjectName("pushButton")
+        self.horizontalLayout_2.addWidget(self.pushButton)
+        self.label_Info_actual = QtWidgets.QLabel(self.Navbar_Frame)
+        self.label_Info_actual.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_Info_actual.setStyleSheet("font: 87 16pt \"Arial Black\";\n"
+"color: whitesmoke;")
+        self.label_Info_actual.setText("")
+        self.label_Info_actual.setWordWrap(True)
+        self.label_Info_actual.setObjectName("label_Info_actual")
+        self.horizontalLayout_2.addWidget(self.label_Info_actual)
+        spacerItem13 = QtWidgets.QSpacerItem(386, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem13)
+        self.label_3 = QtWidgets.QLabel(self.Navbar_Frame)
+        self.label_3.setMinimumSize(QtCore.QSize(70, 70))
+        self.label_3.setStyleSheet("image: url(:/logos/logo.png);")
+        self.label_3.setText("")
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_2.addWidget(self.label_3)
+        spacerItem14 = QtWidgets.QSpacerItem(385, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem14)
+        self.label_4 = QtWidgets.QLabel(self.Navbar_Frame)
+        self.label_4.setStyleSheet("font: 87 16pt \"Arial Black\";\n"
+"color: whitesmoke;")
+        self.label_4.setObjectName("label_4")
+        self.horizontalLayout_2.addWidget(self.label_4)
+        self.gridLayout_26.addWidget(self.Navbar_Frame, 0, 0, 1, 1)
+        MenuAdministrativo.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MenuAdministrativo)
+        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget_2.setCurrentIndex(0)
+        self.tabWidget_4.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget_2.setCurrentIndex(0)
+        self.tabWidget_3.setCurrentIndex(0)
+        QtCore.QMetaObject.connectSlotsByName(MenuAdministrativo)
+        """
+        Aqui inician las instrucciones a las funciones:
+        """
+        #Botones menu desplegable
+        self.pushButton_35.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.RegistrarVisita))
+        self.pushButton_34.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Empleados))
+        self.pushButton_33.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPuntoVenta))
+        self.pushButton_30.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Entrenadores))
+        self.pushButton_24.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Clientes))
+        self.pushButton_23.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPrincipal))
+        #Clickear menu
+        self.pushButton.clicked.connect(lambda: self.desplegrMenu())
+        #Botones Menu principal
+        self.pushButton_22.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.RegistrarVisita))
+        self.pushButton_26.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Empleados))
+        self.pushButton_25.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPuntoVenta))
+        self.pushButton_27.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Entrenadores))
+        self.pushButton_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Clientes))
+        #Botones Menu punto de venta
+        self.pushButton_11.clicked.connect(lambda: self.puntoVentaOpc(1))
+        self.pushButton_12.clicked.connect(lambda: self.puntoVentaOpc(2))
+        self.pushButton_14.clicked.connect(lambda: self.puntoVentaOpc(3))
+        #Botones punto de venta
+        self.radioButton.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.Puntodeventas))
+        self.radioButton_2.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.page_2))
+        self.radioButton_3.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.Ventas))
+        """
+        Aqui inician las funciones:
+        """
+    def desplegrMenu(self):
+        if True:
+            width = self.Menu_Lateral_Frame.width()
+            normal = 0
+            if width==0:
+                extender = 200
+            else:
+                extender = normal
+            
+            self.animacion = QtCore.QPropertyAnimation(self.Menu_Lateral_Frame, b'minimumWidth') 
+            self.animacion.setDuration(300)
+            self.animacion.setStartValue(width) 
+            self.animacion.setEndValue(extender) 
+            self.animacion.setEasingCurve(QtCore.QEasingCurve.InOutQuart) 
+            self.animacion.start()
+    
+    def puntoVentaOpc(self,opc):
+        if opc==1:
+            self.stackedWidget.setCurrentWidget(self.PuntoVenta)
+            self.stackedWidget_2.setCurrentWidget(self.Puntodeventas)
+            self.radioButton.setChecked(True)
+        elif opc==2:
+            self.stackedWidget.setCurrentWidget(self.PuntoVenta)
+            self.stackedWidget_2.setCurrentWidget(self.page_2)
+            self.radioButton_2.setChecked(True)
+        elif opc==3:
+            self.stackedWidget.setCurrentWidget(self.PuntoVenta)
+            self.stackedWidget_2.setCurrentWidget(self.Ventas)
+            self.radioButton_3.setChecked(True)
+            
+    def retranslateUi(self, MenuAdministrativo):
+        _translate = QtCore.QCoreApplication.translate
+        MenuAdministrativo.setWindowTitle(_translate("MenuAdministrativo", "Administrativos"))
+        self.label_153.setText(_translate("MenuAdministrativo", "Registrar Visita"))
+        self.label_152.setText(_translate("MenuAdministrativo", "Empleados"))
+        self.label_151.setText(_translate("MenuAdministrativo", "Punto de venta"))
+        self.label_136.setText(_translate("MenuAdministrativo", "Entrenadores"))
+        self.label_134.setText(_translate("MenuAdministrativo", "Clientes"))
+        self.label_133.setText(_translate("MenuAdministrativo", "Menu"))
+        self.label_150.setText(_translate("MenuAdministrativo", "Cerrar sesion"))
+        self.label_131.setText(_translate("MenuAdministrativo", "Teflon Academy by GoldenSharks"))
+        self.label_Bienvenida.setText(_translate("MenuAdministrativo", "Bienvenido ....!"))
+        self.label_13.setText(_translate("MenuAdministrativo", "Registrar visita"))
+        self.label_15.setText(_translate("MenuAdministrativo", "Punto de venta"))
+        self.label_132.setText(_translate("MenuAdministrativo", "Administrar Empleados"))
+        self.label_137.setText(_translate("MenuAdministrativo", "Administrar Entrenadores"))
+        self.label_135.setText(_translate("MenuAdministrativo", "Administrar Clientes"))
+        self.label_Bienvenida_2.setText(_translate("MenuAdministrativo", "¡Bienvenido al punto de venta!"))
+        self.label_127.setText(_translate("MenuAdministrativo", "Realizar venta"))
+        self.label_128.setText(_translate("MenuAdministrativo", "Administrar inventario"))
+        self.label_130.setText(_translate("MenuAdministrativo", "Reporte de ventas"))
+        self.label_70.setText(_translate("MenuAdministrativo", "ID Usuario:"))
+        self.label_86.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.radioButton.setText(_translate("MenuAdministrativo", "Punto de venta"))
+        self.radioButton_2.setText(_translate("MenuAdministrativo", "Inventario"))
+        self.radioButton_3.setText(_translate("MenuAdministrativo", "Ventas"))
+        self.label_82.setText(_translate("MenuAdministrativo", "Folio de venta:"))
+        self.label_73.setText(_translate("MenuAdministrativo", "Fecha:"))
+        self.label_106.setText(_translate("MenuAdministrativo", "Venta de productos"))
+        self.label_120.setText(_translate("MenuAdministrativo", "Precio:"))
+        self.label_116.setText(_translate("MenuAdministrativo", "Cantidad en stock:"))
+        self.label_115.setText(_translate("MenuAdministrativo", "Nombre producto:"))
+        self.label_112.setText(_translate("MenuAdministrativo", "Código producto:"))
+        self.pushButton_7.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.label_119.setText(_translate("MenuAdministrativo", "Cantidad a vender:"))
+        self.label_122.setText(_translate("MenuAdministrativo", "Total:"))
+        self.label_121.setText(_translate("MenuAdministrativo", "Descuento:"))
+        self.pushButton_8.setText(_translate("MenuAdministrativo", "Agregar"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MenuAdministrativo", "Codigo"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("MenuAdministrativo", "Nombre"))
+        item = self.tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("MenuAdministrativo", "Cantidad"))
+        item = self.tableWidget.horizontalHeaderItem(3)
+        item.setText(_translate("MenuAdministrativo", "Precio"))
+        item = self.tableWidget.horizontalHeaderItem(4)
+        item.setText(_translate("MenuAdministrativo", "Total"))
+        self.label_113.setText(_translate("MenuAdministrativo", "Resumen"))
+        self.label_114.setText(_translate("MenuAdministrativo", "Total a pagar: "))
+        self.pushButton_9.setText(_translate("MenuAdministrativo", "Cancelar venta"))
+        self.pushButton_10.setText(_translate("MenuAdministrativo", "Realizar Venta"))
+        self.GuardarRegistrarPaciente_5.setText(_translate("MenuAdministrativo", "Registrar"))
+        self.label_163.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_37.setText(_translate("MenuAdministrativo", "Distribuidor:"))
+        self.label_60.setText(_translate("MenuAdministrativo", "Costo:"))
+        self.label_26.setText(_translate("MenuAdministrativo", "Caducidad"))
+        self.label_67.setText(_translate("MenuAdministrativo", "Cantidad:"))
+        self.label_164.setText(_translate("MenuAdministrativo", "Precio:"))
+        self.label_171.setText(_translate("MenuAdministrativo", "Lote:"))
+        self.tabWidget_4.setTabText(self.tabWidget_4.indexOf(self.tab_20), _translate("MenuAdministrativo", "Registrar producto"))
+        self.label_14.setText(_translate("MenuAdministrativo", "Cantidad:"))
+        self.label_59.setText(_translate("MenuAdministrativo", "Distribuidor:"))
+        self.label_69.setText(_translate("MenuAdministrativo", "Costo:"))
+        self.label_162.setText(_translate("MenuAdministrativo", "Precio:"))
+        self.label_167.setText(_translate("MenuAdministrativo", "Caducidad:"))
+        self.ActualizarBotonPaciente_6.setText(_translate("MenuAdministrativo", "Actualizar"))
+        self.label_165.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Actualiza la información del producto necesaria:</span></p></body></html>"))
+        self.label_166.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.BuscarBotonActualizar_9.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.BuscarPor_13.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarPor_13.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.label_170.setText(_translate("MenuAdministrativo", "Lote:"))
+        self.tabWidget_4.setTabText(self.tabWidget_4.indexOf(self.tab_21), _translate("MenuAdministrativo", "Actualizar producto"))
+        self.label_172.setText(_translate("MenuAdministrativo", "Costo:"))
+        self.label_168.setText(_translate("MenuAdministrativo", "Cantidad:"))
+        self.label_169.setText(_translate("MenuAdministrativo", "Lote:"))
+        self.label_178.setText(_translate("MenuAdministrativo", "Datos del producto encontrados:"))
+        self.label_174.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.BuscarBotonEliminar_5.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.BuscarRegistradosCombobox_14.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarRegistradosCombobox_14.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.EliminarPacienteBoton_5.setText(_translate("MenuAdministrativo", "Eliminar prodcuto"))
+        self.tabWidget_4.setTabText(self.tabWidget_4.indexOf(self.tab_23), _translate("MenuAdministrativo", "Elminar producto"))
+        self.TablaEmpleados_8.setSortingEnabled(False)
+        item = self.TablaEmpleados_8.horizontalHeaderItem(0)
+        item.setText(_translate("MenuAdministrativo", "Codigo"))
+        item = self.TablaEmpleados_8.horizontalHeaderItem(1)
+        item.setText(_translate("MenuAdministrativo", "Nombre"))
+        item = self.TablaEmpleados_8.horizontalHeaderItem(2)
+        item.setText(_translate("MenuAdministrativo", "Cantidad"))
+        item = self.TablaEmpleados_8.horizontalHeaderItem(3)
+        item.setText(_translate("MenuAdministrativo", "Distribuidor"))
+        item = self.TablaEmpleados_8.horizontalHeaderItem(4)
+        item.setText(_translate("MenuAdministrativo", "Lote"))
+        item = self.TablaEmpleados_8.horizontalHeaderItem(5)
+        item.setText(_translate("MenuAdministrativo", "Costo"))
+        item = self.TablaEmpleados_8.horizontalHeaderItem(6)
+        item.setText(_translate("MenuAdministrativo", "Precio"))
+        item = self.TablaEmpleados_8.horizontalHeaderItem(7)
+        item.setText(_translate("MenuAdministrativo", "Caducidad"))
+        self.BuscarBotonRegistrados_8.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.RefrescarBotonRegistrados_6.setText(_translate("MenuAdministrativo", "Refrescar"))
+        self.BuscarRegistradosCombobox_13.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarRegistradosCombobox_13.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.tabWidget_4.setTabText(self.tabWidget_4.indexOf(self.tab_22), _translate("MenuAdministrativo", "Inventario actual"))
+        self.BuscarRegistradosCombobox_10.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarRegistradosCombobox_10.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.BuscarRegistradosCombobox_11.setItemText(0, _translate("MenuAdministrativo", "Ordenar por ID"))
+        self.BuscarRegistradosCombobox_11.setItemText(1, _translate("MenuAdministrativo", "Ordenar por fecha"))
+        self.BuscarRegistradosCombobox_11.setItemText(2, _translate("MenuAdministrativo", "Ordenar por cantidad"))
+        item = self.TablaEmpleados_7.horizontalHeaderItem(0)
+        item.setText(_translate("MenuAdministrativo", "ID"))
+        item = self.TablaEmpleados_7.horizontalHeaderItem(1)
+        item.setText(_translate("MenuAdministrativo", "ID vendedor"))
+        item = self.TablaEmpleados_7.horizontalHeaderItem(2)
+        item.setText(_translate("MenuAdministrativo", "Fecha de venta"))
+        item = self.TablaEmpleados_7.horizontalHeaderItem(3)
+        item.setText(_translate("MenuAdministrativo", "Cantidad productos"))
+        item = self.TablaEmpleados_7.horizontalHeaderItem(4)
+        item.setText(_translate("MenuAdministrativo", "Total de venta"))
+        self.label_124.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-size:24pt; color:#ffffff;\">Ventas</span></p></body></html>"))
+        self.pushButton_15.setText(_translate("MenuAdministrativo", "Refrescar"))
+        self.BuscarBotonRegistrados_7.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.label_Bienvenida_3.setText(_translate("MenuAdministrativo", "Venta"))
+        self.label_9.setText(_translate("MenuAdministrativo", "Gimnasio Teflon Academy"))
+        self.FechaTicket.setText(_translate("MenuAdministrativo", "Fecha: 06/11/2022\n"
+""))
+        self.label_139.setText(_translate("MenuAdministrativo", "RFC:HDGT128745HJCRTA7\n"
+"Factura No.3596\n"
+"Av. Lopez Mateos #156\n"
+"Tel: 3364646565\n"
+"Ciudad: Guadalajara\n"
+"Ventas"))
+        item = self.tableWidget_3.horizontalHeaderItem(0)
+        item.setText(_translate("MenuAdministrativo", "Codigo"))
+        item = self.tableWidget_3.horizontalHeaderItem(1)
+        item.setText(_translate("MenuAdministrativo", "Nombre"))
+        item = self.tableWidget_3.horizontalHeaderItem(2)
+        item.setText(_translate("MenuAdministrativo", "Cantidad"))
+        item = self.tableWidget_3.horizontalHeaderItem(3)
+        item.setText(_translate("MenuAdministrativo", "Precio"))
+        item = self.tableWidget_3.horizontalHeaderItem(4)
+        item.setText(_translate("MenuAdministrativo", "Total"))
+        self.label_143.setText(_translate("MenuAdministrativo", "Total neto"))
+        self.label_144.setText(_translate("MenuAdministrativo", "Total: $0000.00"))
+        self.label_149.setText(_translate("MenuAdministrativo", "Folio: 56444654566"))
+        self.label_147.setText(_translate("MenuAdministrativo", "Pago en una sola Exhibición\n"
+"¡Gracias por su compra!"))
+        self.pushButton_29.setText(_translate("MenuAdministrativo", "Finalizar Venta"))
+        self.label_140.setText(_translate("MenuAdministrativo", "Total a Pagar:"))
+        self.Tota_label.setText(_translate("MenuAdministrativo", "$0000.00"))
+        item = self.tableWidget_2.horizontalHeaderItem(0)
+        item.setText(_translate("MenuAdministrativo", "Codigo"))
+        item = self.tableWidget_2.horizontalHeaderItem(1)
+        item.setText(_translate("MenuAdministrativo", "Nombre"))
+        item = self.tableWidget_2.horizontalHeaderItem(2)
+        item.setText(_translate("MenuAdministrativo", "Cantidad"))
+        item = self.tableWidget_2.horizontalHeaderItem(3)
+        item.setText(_translate("MenuAdministrativo", "Precio"))
+        item = self.tableWidget_2.horizontalHeaderItem(4)
+        item.setText(_translate("MenuAdministrativo", "Total"))
+        self.label_142.setText(_translate("MenuAdministrativo", "Total"))
+        self.label_141.setText(_translate("MenuAdministrativo", "Total: 0000.00"))
+        self.label_145.setText(_translate("MenuAdministrativo", "Cantidad Pagada"))
+        self.lineEdit_13.setText(_translate("MenuAdministrativo", "00000"))
+        self.label_146.setText(_translate("MenuAdministrativo", "Dar Cambio:"))
+        self.Tota_label_3.setText(_translate("MenuAdministrativo", "$0000.0"))
+        self.pushButton_28.setText(_translate("MenuAdministrativo", "Generar Ticket"))
+        self.label_8.setText(_translate("MenuAdministrativo", "Información del usuario"))
+        self.label_2.setText(_translate("MenuAdministrativo", "Ingrese el código del usuario para registrar la visita."))
+        self.Buscar_Visita_3.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.Buscar_Visita_4.setText(_translate("MenuAdministrativo", "Registrar visita"))
+        self.Buscar_Visita_5.setText(_translate("MenuAdministrativo", "Volver al menu"))
+        self.label_12.setText(_translate("MenuAdministrativo", "Tu membresía vence en: 00 dias."))
+        self.label_6.setText(_translate("MenuAdministrativo", "ID usuario:"))
+        self.label_10.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_11.setText(_translate("MenuAdministrativo", "Fecha de hoy:"))
+        self.label_17.setText(_translate("MenuAdministrativo", "CURP:"))
+        self.GuardarRegistrarPaciente.setText(_translate("MenuAdministrativo", "Registrar"))
+        self.label_25.setText(_translate("MenuAdministrativo", "Fecha de nacimiento:"))
+        self.label_19.setText(_translate("MenuAdministrativo", "NSS:"))
+        self.label_24.setText(_translate("MenuAdministrativo", "Teléfono:"))
+        self.label_21.setText(_translate("MenuAdministrativo", "Fecha de ingreso:"))
+        self.label_18.setText(_translate("MenuAdministrativo", "RFC:"))
+        self.label_16.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Ingrese la información del empleado</span></p></body></html>"))
+        self.label_20.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_45.setText(_translate("MenuAdministrativo", "Rol"))
+        self.BuscarPor_4.setItemText(0, _translate("MenuAdministrativo", "Empleado"))
+        self.BuscarPor_4.setItemText(1, _translate("MenuAdministrativo", "Administrativo"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MenuAdministrativo", "Registrar Empleado"))
+        self.label_29.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Actualiza la información del usuario necesaria:</span></p></body></html>"))
+        self.BuscarPor_3.setItemText(0, _translate("MenuAdministrativo", "Empleado"))
+        self.BuscarPor_3.setItemText(1, _translate("MenuAdministrativo", "Administrativo"))
+        self.label_30.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.BuscarPor_2.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarPor_2.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.label_39.setText(_translate("MenuAdministrativo", "Rol"))
+        self.label_32.setText(_translate("MenuAdministrativo", "Fecha de nacimiento:"))
+        self.label_34.setText(_translate("MenuAdministrativo", "CURP:"))
+        self.ActualizarBotonPaciente.setText(_translate("MenuAdministrativo", "Actualizar"))
+        self.BuscarBotonActualizar.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.label_31.setText(_translate("MenuAdministrativo", "Fecha de ingreso:"))
+        self.label_36.setText(_translate("MenuAdministrativo", "RFC:"))
+        self.label_33.setText(_translate("MenuAdministrativo", "Teléfono:"))
+        self.label_35.setText(_translate("MenuAdministrativo", "NSS:"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MenuAdministrativo", "Actualizar Empleado"))
+        item = self.TablaEmpleados.horizontalHeaderItem(0)
+        item.setText(_translate("MenuAdministrativo", "ID"))
+        item = self.TablaEmpleados.horizontalHeaderItem(1)
+        item.setText(_translate("MenuAdministrativo", "Nombre"))
+        item = self.TablaEmpleados.horizontalHeaderItem(2)
+        item.setText(_translate("MenuAdministrativo", "Fecha Ingreso"))
+        item = self.TablaEmpleados.horizontalHeaderItem(3)
+        item.setText(_translate("MenuAdministrativo", "Fecha Nacimiento"))
+        item = self.TablaEmpleados.horizontalHeaderItem(4)
+        item.setText(_translate("MenuAdministrativo", "Telefono"))
+        item = self.TablaEmpleados.horizontalHeaderItem(5)
+        item.setText(_translate("MenuAdministrativo", "Rol"))
+        item = self.TablaEmpleados.horizontalHeaderItem(6)
+        item.setText(_translate("MenuAdministrativo", "CURP"))
+        item = self.TablaEmpleados.horizontalHeaderItem(7)
+        item.setText(_translate("MenuAdministrativo", "NSS"))
+        item = self.TablaEmpleados.horizontalHeaderItem(8)
+        item.setText(_translate("MenuAdministrativo", "RFC"))
+        self.BuscarBotonRegistrados.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.RefrescarBotonRegistrados.setText(_translate("MenuAdministrativo", "Refrescar"))
+        self.BuscarRegistradosCombobox.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarRegistradosCombobox.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MenuAdministrativo", "Empleados Registrados"))
+        self.label_41.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_44.setText(_translate("MenuAdministrativo", "Rol:"))
+        self.label_42.setText(_translate("MenuAdministrativo", "Telefono:"))
+        self.label_43.setText(_translate("MenuAdministrativo", "Fecha Nacimiento:"))
+        self.EliminarPacienteBoton.setText(_translate("MenuAdministrativo", "Eliminar Paciente."))
+        self.BuscarBotonEliminar.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.BuscarRegistradosCombobox_2.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarRegistradosCombobox_2.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.label_40.setText(_translate("MenuAdministrativo", "Datos del empleado encontrados:"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("MenuAdministrativo", "Elminar Empleado"))
+        self.label_27.setText(_translate("MenuAdministrativo", "Fecha de nacimiento:"))
+        self.label_28.setText(_translate("MenuAdministrativo", "Teléfono:"))
+        self.label_46.setText(_translate("MenuAdministrativo", "RFC:"))
+        self.label_22.setText(_translate("MenuAdministrativo", "CURP:"))
+        self.label_23.setText(_translate("MenuAdministrativo", "NSS:"))
+        self.label_38.setText(_translate("MenuAdministrativo", "Fecha de ingreso:"))
+        self.label_48.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_47.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Ingrese la información del entrenador</span></p></body></html>"))
+        self.GuardarRegistrarPaciente_2.setText(_translate("MenuAdministrativo", "Registrar"))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_5), _translate("MenuAdministrativo", "Agregar"))
+        self.label_58.setText(_translate("MenuAdministrativo", "CURP:"))
+        self.label_51.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_53.setText(_translate("MenuAdministrativo", "NSS:"))
+        self.BuscarBotonActualizar_2.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.ActualizarBotonPaciente_2.setText(_translate("MenuAdministrativo", "Actualizar"))
+        self.label_56.setText(_translate("MenuAdministrativo", "Fecha de nacimiento:"))
+        self.BuscarPor_7.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarPor_7.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.label_54.setText(_translate("MenuAdministrativo", "RFC:"))
+        self.label_55.setText(_translate("MenuAdministrativo", "Fecha de ingreso:"))
+        self.label_57.setText(_translate("MenuAdministrativo", "Teléfono:"))
+        self.label_50.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Actualiza la información del usuario necesaria:</span></p></body></html>"))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_6), _translate("MenuAdministrativo", "Actualizar"))
+        self.BuscarBotonRegistrados_2.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.BuscarRegistradosCombobox_3.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarRegistradosCombobox_3.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.RefrescarBotonRegistrados_2.setText(_translate("MenuAdministrativo", "Refrescar"))
+        item = self.TablaEmpleados_2.horizontalHeaderItem(0)
+        item.setText(_translate("MenuAdministrativo", "ID"))
+        item = self.TablaEmpleados_2.horizontalHeaderItem(1)
+        item.setText(_translate("MenuAdministrativo", "Nombre"))
+        item = self.TablaEmpleados_2.horizontalHeaderItem(2)
+        item.setText(_translate("MenuAdministrativo", "Fecha Ingreso"))
+        item = self.TablaEmpleados_2.horizontalHeaderItem(3)
+        item.setText(_translate("MenuAdministrativo", "Edad"))
+        item = self.TablaEmpleados_2.horizontalHeaderItem(4)
+        item.setText(_translate("MenuAdministrativo", "Telefono"))
+        item = self.TablaEmpleados_2.horizontalHeaderItem(5)
+        item.setText(_translate("MenuAdministrativo", "Correo Electronico"))
+        item = self.TablaEmpleados_2.horizontalHeaderItem(6)
+        item.setText(_translate("MenuAdministrativo", "Altura"))
+        item = self.TablaEmpleados_2.horizontalHeaderItem(7)
+        item.setText(_translate("MenuAdministrativo", "Peso"))
+        item = self.TablaEmpleados_2.horizontalHeaderItem(8)
+        item.setText(_translate("MenuAdministrativo", "Membrecia Actual"))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_7), _translate("MenuAdministrativo", "Clientes asignados"))
+        self.BuscarRegistradosCombobox_5.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarRegistradosCombobox_5.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.BuscarBotonRegistrados_3.setText(_translate("MenuAdministrativo", "Buscar"))
+        item = self.TablaEmpleados_3.horizontalHeaderItem(0)
+        item.setText(_translate("MenuAdministrativo", "ID"))
+        item = self.TablaEmpleados_3.horizontalHeaderItem(1)
+        item.setText(_translate("MenuAdministrativo", "Nombre"))
+        item = self.TablaEmpleados_3.horizontalHeaderItem(2)
+        item.setText(_translate("MenuAdministrativo", "Fecha Ingreso"))
+        item = self.TablaEmpleados_3.horizontalHeaderItem(3)
+        item.setText(_translate("MenuAdministrativo", "Fecha de Nacimineto"))
+        item = self.TablaEmpleados_3.horizontalHeaderItem(4)
+        item.setText(_translate("MenuAdministrativo", "Telefono"))
+        item = self.TablaEmpleados_3.horizontalHeaderItem(5)
+        item.setText(_translate("MenuAdministrativo", "CURP"))
+        item = self.TablaEmpleados_3.horizontalHeaderItem(6)
+        item.setText(_translate("MenuAdministrativo", "NSS"))
+        item = self.TablaEmpleados_3.horizontalHeaderItem(7)
+        item.setText(_translate("MenuAdministrativo", "RFC"))
+        self.RefrescarBotonRegistrados_3.setText(_translate("MenuAdministrativo", "Refrescar"))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_9), _translate("MenuAdministrativo", "Mostrar"))
+        self.BuscarRegistradosCombobox_4.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarRegistradosCombobox_4.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.BuscarBotonEliminar_2.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.label_66.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Informacion del usuario a eliminar :</span></p></body></html>"))
+        self.label_64.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_65.setText(_translate("MenuAdministrativo", "Fecha de ingreso:"))
+        self.label_52.setText(_translate("MenuAdministrativo", "Fecha de nacimiento:"))
+        self.label_63.setText(_translate("MenuAdministrativo", "Teléfono:"))
+        self.label_62.setText(_translate("MenuAdministrativo", "CURP:"))
+        self.label_61.setText(_translate("MenuAdministrativo", "NSS:"))
+        self.label_68.setText(_translate("MenuAdministrativo", "RFC:"))
+        self.EliminarPacienteBoton_2.setText(_translate("MenuAdministrativo", "Eliminar"))
+        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_8), _translate("MenuAdministrativo", "Elminar"))
+        self.label_72.setText(_translate("MenuAdministrativo", "Teléfono:"))
+        self.label_71.setText(_translate("MenuAdministrativo", "Peso actual:"))
+        self.label_74.setText(_translate("MenuAdministrativo", "Altura:"))
+        self.label_49.setText(_translate("MenuAdministrativo", "Edad:"))
+        self.label_77.setText(_translate("MenuAdministrativo", "Correo electronico:"))
+        self.label_76.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_75.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Ingrese la información del cliente</span></p></body></html>"))
+        self.GuardarRegistrarPaciente_3.setText(_translate("MenuAdministrativo", "Registrar"))
+        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_10), _translate("MenuAdministrativo", "Agregar"))
+        self.label_95.setText(_translate("MenuAdministrativo", "Buscar por ID cliente:"))
+        self.BuscarBotonActualizar_4.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.label_96.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Selecciona el cliente</span></p></body></html>"))
+        self.label_98.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_100.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Selecciona el entrenador</span></p></body></html>"))
+        self.label_97.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Informacion del cliente</span></p></body></html>"))
+        self.label_99.setText(_translate("MenuAdministrativo", "Correo electronico:"))
+        self.label_104.setText(_translate("MenuAdministrativo", "Correo electronico:"))
+        self.label_103.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Informacion del entrenador</span></p></body></html>"))
+        self.label_101.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_102.setText(_translate("MenuAdministrativo", "Buscar por ID entrenador:"))
+        self.BuscarBotonActualizar_5.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.BuscarBotonActualizar_6.setText(_translate("MenuAdministrativo", "Asignar entrenador"))
+        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_14), _translate("MenuAdministrativo", "Asignar Entrenador"))
+        self.label_78.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Informacion del cliente:</span></p></body></html>"))
+        self.label_79.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.BuscarPor_8.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarPor_8.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.label_83.setText(_translate("MenuAdministrativo", "Correo electronico:"))
+        self.label_84.setText(_translate("MenuAdministrativo", "Situacion Membresia:"))
+        self.label_85.setText(_translate("MenuAdministrativo", "Fecha de vencimiento: "))
+        self.label_87.setText(_translate("MenuAdministrativo", "<html><head/><body><p>Seleccionar el cliente</p></body></html>"))
+        self.ActualizarBotonPaciente_3.setText(_translate("MenuAdministrativo", "Actualizar"))
+        self.BuscarBotonActualizar_3.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_11), _translate("MenuAdministrativo", "Actualizar Membresia"))
+        self.label_80.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_105.setText(_translate("MenuAdministrativo", "<html><head/><body><p>Actualizar informacion del cliente</p></body></html>"))
+        self.BuscarPor_9.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarPor_9.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.label_81.setText(_translate("MenuAdministrativo", "<html><head/><body><p>Actualizar informacion del usuario necesaria:</p></body></html>"))
+        self.ActualizarBotonPaciente_4.setText(_translate("MenuAdministrativo", "Actualizar"))
+        self.label_107.setText(_translate("MenuAdministrativo", "Telefono:"))
+        self.BuscarBotonActualizar_7.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.label_108.setText(_translate("MenuAdministrativo", "Correo electronico:"))
+        self.label_109.setText(_translate("MenuAdministrativo", "Edad:"))
+        self.label_110.setText(_translate("MenuAdministrativo", "Peso actual:"))
+        self.label_111.setText(_translate("MenuAdministrativo", "Altura:"))
+        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_15), _translate("MenuAdministrativo", "Actualizar Informacion"))
+        self.RefrescarBotonRegistrados_4.setText(_translate("MenuAdministrativo", "Refrescar"))
+        self.BuscarBotonRegistrados_4.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.BuscarRegistradosCombobox_6.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarRegistradosCombobox_6.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        item = self.TablaEmpleados_4.horizontalHeaderItem(0)
+        item.setText(_translate("MenuAdministrativo", "ID"))
+        item = self.TablaEmpleados_4.horizontalHeaderItem(1)
+        item.setText(_translate("MenuAdministrativo", "Nombre"))
+        item = self.TablaEmpleados_4.horizontalHeaderItem(2)
+        item.setText(_translate("MenuAdministrativo", "Fecha Ingreso"))
+        item = self.TablaEmpleados_4.horizontalHeaderItem(3)
+        item.setText(_translate("MenuAdministrativo", "Edad"))
+        item = self.TablaEmpleados_4.horizontalHeaderItem(4)
+        item.setText(_translate("MenuAdministrativo", "Telefono"))
+        item = self.TablaEmpleados_4.horizontalHeaderItem(5)
+        item.setText(_translate("MenuAdministrativo", "Correo Electronico"))
+        item = self.TablaEmpleados_4.horizontalHeaderItem(6)
+        item.setText(_translate("MenuAdministrativo", "Altura"))
+        item = self.TablaEmpleados_4.horizontalHeaderItem(7)
+        item.setText(_translate("MenuAdministrativo", "Peso"))
+        item = self.TablaEmpleados_4.horizontalHeaderItem(8)
+        item.setText(_translate("MenuAdministrativo", "Membresia Actual"))
+        self.label_88.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-size:24pt; color:#ffffff;\">Clientes asignados</span></p></body></html>"))
+        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_12), _translate("MenuAdministrativo", "Mostrar"))
+        self.label_89.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_90.setText(_translate("MenuAdministrativo", "Edad:"))
+        self.label_91.setText(_translate("MenuAdministrativo", "Telefono:"))
+        self.label_92.setText(_translate("MenuAdministrativo", "Correo Electronico:"))
+        self.EliminarPacienteBoton_3.setText(_translate("MenuAdministrativo", "Eliminar"))
+        self.BuscarBotonEliminar_3.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.BuscarRegistradosCombobox_7.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarRegistradosCombobox_7.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.label_93.setText(_translate("MenuAdministrativo", "Informacion del Cliente:"))
+        self.label_94.setText(_translate("MenuAdministrativo", "<html><head/><body><p align=\"center\"><span style=\" font-size:24pt; color:#ffffff;\">Eliminar cliente</span></p></body></html>"))
+        self.label_117.setText(_translate("MenuAdministrativo", "Altura:"))
+        self.label_118.setText(_translate("MenuAdministrativo", "Peso Actual:"))
+        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_13), _translate("MenuAdministrativo", "Elminar"))
+        self.label_4.setText(_translate("MenuAdministrativo", "Teflon Academy"))
+
+import images_rc
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MenuAdministrativo = QtWidgets.QMainWindow()
+    ui = Ui_MenuAdministrativo()
+    ui.setupUi(MenuAdministrativo)
+    MenuAdministrativo.show()
+    sys.exit(app.exec_())
+

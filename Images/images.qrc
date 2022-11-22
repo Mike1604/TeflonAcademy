@@ -4,6 +4,8 @@
     <file>logo.ico</file>
   </qresource>
   <qresource prefix="menu">
+    <file>home2.png</file>
+    <file>home.png</file>
     <file>LogoLogin.png</file>
     <file>logonegro.png</file>
     <file>ClientesHover.png</file>
