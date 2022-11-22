@@ -4,6 +4,12 @@
     <file>logo.ico</file>
   </qresource>
   <qresource prefix="menu">
+    <file>adorno.png</file>
+    <file>flechaIcon.png</file>
+    <file>InventarioIcon.png</file>
+    <file>ordenIcon.png</file>
+    <file>ReporteIcon.png</file>
+    <file>ventaIcon.png</file>
     <file>clientes.png</file>
     <file>empleados.png</file>
     <file>entrenador.png</file>
