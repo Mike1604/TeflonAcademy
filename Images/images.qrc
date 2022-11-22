@@ -4,6 +4,15 @@
     <file>logo.ico</file>
   </qresource>
   <qresource prefix="menu">
+    <file>LogoLogin.png</file>
+    <file>logonegro.png</file>
+    <file>ClientesHover.png</file>
+    <file>EmpleadosHover.png</file>
+    <file>EntrenadoresHover.png</file>
+    <file>PuntoVentaHover.png</file>
+    <file>logout.png</file>
+    <file>logouthover.png</file>
+    <file>relojhover.png</file>
     <file>adorno.png</file>
     <file>flechaIcon.png</file>
     <file>InventarioIcon.png</file>
