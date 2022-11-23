@@ -198,23 +198,22 @@ class Ui_LogIn(object):
             self.msgError("Falta de informacion", "Debes llenar todos los campos para poder iniciar sesion")
         else:
             if rol=="Cliente":
-                sql='''select *from cliente where cast(id_cliente as varchar)='{}' '''.format(user)
+                sql='''select id_cliente,contraseña from cliente where cast(id_cliente as varchar)='{}' '''.format(user)
             else:
-                sql='''select *from empleadosyadmin where cast(id_empleado as varchar)='{}' '''.format(user)
+                sql='''select id_empleado,contraseña from empleadosyadmin where cast(id_empleado as varchar)='{}' '''.format(user)
             cursor.execute(sql)
             row=cursor.fetchall()
             print(row)
             if len(row)==0:
-                self.msgError("Sin coincidencia", "No hay ningun usuario registrado con ese ID")
+                msg="No hay ningun usuario registrado con ese ID en "+rol+"s"
+                self.msgError("Sin coincidencia", msg)
             else:
                 for rows in row: 
                     if rol=="Cliente":
-                        if str(rows[8])!=passw:
-                            msg = QtWidgets.QMessageBox()
+                        if str(rows[1])!=passw:
                             self.msgError("Contraseña Incorrecta", "La contraseña no coincide con el usuario")
                         else:
                             id=rows[0]
-                            print(id)
                             #Conecto al usuario
                             self.window = QtWidgets.QMainWindow()
                             self.ui = Ui_MenuAdministrativo
@@ -224,7 +223,7 @@ class Ui_LogIn(object):
                             self.lineEdit_8.setText("")
                             self.window.show()
                     else:
-                        if str(rows[8])!=passw:
+                        if str(rows[1])!=passw:
                             msg = QtWidgets.QMessageBox()
                             self.msgError("Contraseña Incorrecta", "La contraseña no coincide con el usuario")
                         else:

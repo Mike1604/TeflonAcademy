@@ -1,5 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from PyQt5.QtWidgets import QPushButton, QLineEdit
 class Ui_MenuAdministrativo(object):
     def setupUi(self, MenuAdministrativo, cursor, id, LogIn):
         MenuAdministrativo.setObjectName("MenuAdministrativo")
@@ -5841,7 +5841,14 @@ class Ui_MenuAdministrativo(object):
         """
         Aqui inician las instrucciones a las funciones:
         """
-        #Botones menu desplegable
+        #Bienvenida
+        SQL="""select Nombre from empleadosyadmin where cast(id_empleado as varchar)='{}' """.format(id)
+        cursor.execute(SQL)
+        row=cursor.fetchall()
+        for rows in row: 
+            name = rows[0]
+        self.label_Bienvenida.setText("¡Bienvenido "+name+"!")
+        #Botones menu desplegable (Navegacion)
         self.pushButton_35.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.RegistrarVisita))
         self.pushButton_34.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Empleados))
         self.pushButton_33.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPuntoVenta))
@@ -5849,23 +5856,29 @@ class Ui_MenuAdministrativo(object):
         self.pushButton_24.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Clientes))
         self.pushButton_23.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPrincipal))
         self.pushButton_32.clicked.connect(lambda: self.cerrarSesion(MenuAdministrativo, cursor, LogIn))
-        #Clickear menu
+        #Clickear menu (Navegacion)
         self.pushButton.clicked.connect(lambda: self.desplegrMenu())
-        #Botones Menu principal
+        #Botones Menu principal (Navegacion)
         self.pushButton_22.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.RegistrarVisita))
         self.pushButton_26.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Empleados))
         self.pushButton_25.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPuntoVenta))
         self.pushButton_27.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Entrenadores))
         self.pushButton_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Clientes))
-        #Botones Menu punto de venta
+        #Botones Menu punto de venta (Navegacion)
         self.pushButton_11.clicked.connect(lambda: self.puntoVentaOpc(1))
         self.pushButton_12.clicked.connect(lambda: self.puntoVentaOpc(2))
         self.pushButton_14.clicked.connect(lambda: self.puntoVentaOpc(3))
-        #Botones punto de venta
+        #Botones punto de venta (Navegacion)
         self.radioButton.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.Puntodeventas))
         self.radioButton_2.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.page_2))
         self.radioButton_3.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.Ventas))
-        self.GuardarRegistrarPaciente.clicked.connect(lambda: self.prueba())
+        #Botones CRUD Empleados (Registrar)
+        self.GuardarRegistrarPaciente.clicked.connect(lambda: self.registrarEmpleado(cursor))
+        self.pushButton_3.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_6))
+        #Botones CRUD Empleados (Actualizar)
+        self.BuscarBotonActualizar.clicked.connect(lambda: self.buscarActualizarEmpleado(cursor))
+        self.pushButton_4.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_7))
+        
         
         
         
@@ -5876,8 +5889,6 @@ class Ui_MenuAdministrativo(object):
         MenuPrincipal.close()
         Login.show()
         
-    def prueba(self):
-        self.MedicamentosRegistrar_6.setEchoMode(QtWidgets.QLineEdit.Normal)
     def desplegrMenu(self):
         if True:
             width = self.Menu_Lateral_Frame.width()
@@ -5907,7 +5918,116 @@ class Ui_MenuAdministrativo(object):
             self.stackedWidget.setCurrentWidget(self.PuntoVenta)
             self.stackedWidget_2.setCurrentWidget(self.Ventas)
             self.radioButton_3.setChecked(True)
-           
+
+    def passwordHide(self, passw):
+        if passw.echoMode() == QLineEdit.Password:
+            passw.setEchoMode(QtWidgets.QLineEdit.Normal)
+        else:
+            passw.setEchoMode(QtWidgets.QLineEdit.Password)
+            
+    def registrarEmpleado(self, cursor):
+        nombre=self.NombreRegistrar.text()
+        fechIngreso=self.UltimaCitaRegistrar.text()
+        naci=self.FechaNacimientoRegistrar.text()
+        tel=self.TelefonoRegistrar.text()
+        rol=self.BuscarPor_4.currentText()
+        curp=self.AlergiasRegistrar.text()
+        NSS=self.EnfermedadesRegistrar.text()
+        RFC=self.MedicamentosRegistrar.text() 
+        passw=self.MedicamentosRegistrar_6.text()
+        if len(nombre)==0:
+            self.msgError("Falta de informacion", "Debes ingresar un nombre para poder registrar a un empleado")
+        elif len(fechIngreso)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de ingreso para poder registrar a un empleado")
+        elif len(naci)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de nacimiento para poder registrar a un empleado")
+        elif (len(tel)==0) or (len(tel)!=10):
+            self.msgError("Falta de informacion", "Debes ingresar un numero de telefono valido de almenos 10 digitos")
+        elif (len(curp)==0) or (len(curp)!=18):
+            self.msgError("Falta de informacion", "Debes ingresar una CURP valida la cual se compone de 18 digitos") 
+        elif (len(NSS)==0) or (len(NSS)!=11):
+            self.msgError("Falta de informacion", "Debes ingresar un NSS valido de almenos 11 digitos")
+        elif (len(RFC)==0) or (len(RFC)!=13):
+            self.msgError("Falta de informacion", "Debes ingresar un RFC valido de almenos 13 digitos")
+        elif (len(passw)==0) or (len(passw)!=8):
+            self.msgError("Falta de informacion", "Debes ingresar una contraseña valida de almenos 8 digitos")
+        else:
+            SQL=""" insert into empleadosyadmin (Nombre, Fecha_Ingreso, Fecha_Nacimiento, rol, Telefono_Empleado, CURP_Empleado, NSS_Empleado, RFC_Empleado, Contraseña)\
+                values ('{}','{}','{}','{}',{},'{}','{}','{}','{}'); """.format(nombre, fechIngreso, naci,rol, tel, curp, NSS, RFC, passw)
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+            except Exception as ex:
+                print(ex)
+            self.NombreRegistrar.clear()
+            self.TelefonoRegistrar.clear()
+            self.AlergiasRegistrar.clear()
+            self.EnfermedadesRegistrar.clear()
+            self.MedicamentosRegistrar.clear()
+            self.MedicamentosRegistrar_6.clear()
+    
+    def buscarActualizarEmpleado(self, cursor):
+        self.NombreActualizarPaciente.clear()
+        self.TelefonoActualizarPaciente.clear()
+        self.FechNacActu.clear()
+        self.UltimCitActu.clear()
+        self.AlergiasActualizar.clear()
+        self.EnfermedadesActualizar.clear()
+        self.MedicamentosActualizar.clear()
+        self.MedicamentosRegistrar_7.clear()
+        data=self.ID_BuscarActualizarPaciente.text()
+        if len(data)==0:
+            self.msgError("Busqued no valida", "Debes Ingresar informacion valida para buscar")
+        else:
+            opc = self.BuscarPor_2.currentText()
+            if opc == "Buscar por ID:":
+                SQL="""select *from empleadosyadmin where cast(id_empleado as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese ID")
+                else:
+                    for rows in row:
+                        self.NombreActualizarPaciente.setText(str(rows[1]))
+                        self.TelefonoActualizarPaciente.setText(str(rows[2]))
+                        self.FechNacActu.setText(str(rows[3]))
+                        self.UltimCitActu.setText(str(rows[5]))
+                        self.BuscarPor_3.setCurrentText(rows[4])
+                        self.AlergiasActualizar.setText(str(rows[6]))
+                        self.EnfermedadesActualizar.setText(str(rows[7]))
+                        self.MedicamentosActualizar.setText(str(rows[8]))
+                        self.MedicamentosRegistrar_7.setText(str(rows[9]))
+            else:
+                SQL="""select *from empleadosyadmin where nombre like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese Nombre")
+                else:
+                    for rows in row:
+                        self.NombreActualizarPaciente.setText(str(rows[1]))
+                        self.TelefonoActualizarPaciente.setText(str(rows[2]))
+                        self.FechNacActu.setText(str(rows[3]))
+                        self.UltimCitActu.setText(str(rows[5]))
+                        self.BuscarPor_3.setCurrentText(rows[4])
+                        self.AlergiasActualizar.setText(str(rows[6]))
+                        self.EnfermedadesActualizar.setText(str(rows[7]))
+                        self.MedicamentosActualizar.setText(str(rows[8]))
+                        self.MedicamentosRegistrar_7.setText(str(rows[9]))
+        
+        
+    
+    def actualizarEmpleado(self, cursor):
+        print("yo")
+    
+    def msgError(self,msg1,msg2):
+        msg = QtWidgets.QMessageBox()
+        msg.setWindowTitle(msg1)
+        msg.setText(msg2)
+        msg.setIcon(QtWidgets.QMessageBox.Information)
+        
+        x = msg.exec_()
+        
 
     def retranslateUi(self, MenuAdministrativo):
         _translate = QtCore.QCoreApplication.translate

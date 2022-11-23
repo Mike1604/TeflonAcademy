@@ -31,4 +31,10 @@
     <file>menuicon2.png</file>
     <file>menuIcon.png</file>
   </qresource>
+  <qresource prefix="MenuCliente">
+    <file>MenuCliente (1).png</file>
+    <file>MenuCliente (2).png</file>
+    <file>MenuCliente (3).png</file>
+    <file>MenuCliente (4).png</file>
+  </qresource>
 </RCC>
