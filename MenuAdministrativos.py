@@ -5878,6 +5878,7 @@ class Ui_MenuAdministrativo(object):
         #Botones CRUD Empleados (Actualizar)
         self.BuscarBotonActualizar.clicked.connect(lambda: self.buscarActualizarEmpleado(cursor))
         self.pushButton_4.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_7))
+        self.ActualizarBotonPaciente.clicked.connect(lambda: self.actualizarEmpleado(cursor))
         
         
         
@@ -6014,11 +6015,66 @@ class Ui_MenuAdministrativo(object):
                         self.EnfermedadesActualizar.setText(str(rows[7]))
                         self.MedicamentosActualizar.setText(str(rows[8]))
                         self.MedicamentosRegistrar_7.setText(str(rows[9]))
-        
-        
-    
+         
     def actualizarEmpleado(self, cursor):
-        print("yo")
+        opc = self.BuscarPor_2.currentText()
+        data = self.ID_BuscarActualizarPaciente.text()
+        if opc == "Buscar por Nombre:":
+            SQL="""select id_empleado from empleadosyadmin where nombre like '%{}%' """.format(data)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Busquda", "Debes realizar una busqueda valida primero antes de actualizar")
+            else:
+                for rows in row:
+                    id = str(rows[0])
+        else:
+            id = data
+        if len(id)==0:
+            self.msgError("Busquda", "Debes realizar una busqueda primero antes de actualizar")
+            return
+        nombre=self.NombreActualizarPaciente.text()
+        fechIngreso=self.TelefonoActualizarPaciente.text()
+        naci=self.FechNacActu.text()
+        tel=self.UltimCitActu.text()
+        rol=self.BuscarPor_3.currentText()
+        curp=self.AlergiasActualizar.text()
+        NSS=self.EnfermedadesActualizar.text()
+        RFC=self.MedicamentosActualizar.text() 
+        passw=self.MedicamentosRegistrar_7.text()
+        if len(nombre)==0:
+            self.msgError("Falta de informacion", "Debes ingresar un nombre o dejar el anterior antes de actualizar a un empleado")
+        elif len(fechIngreso)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de ingreso o dejar la anterior antes de actualizar a un empleado")
+        elif len(naci)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de nacimiento o dejar la anterior antes de actualizar a un empleado")
+        elif (len(tel)==0) or (len(tel)!=10):
+            self.msgError("Falta de informacion", "Debes ingresar un numero de telefono valido de almenos 10 digitos o dejar el anterior antes de actualizar")
+        elif (len(curp)==0) or (len(curp)!=18):
+            self.msgError("Falta de informacion", "Debes ingresar una CURP valida la cual se compone de 18 digitos o dejar el anterior antes de actualizar") 
+        elif (len(NSS)==0) or (len(NSS)!=11):
+            self.msgError("Falta de informacion", "Debes ingresar un NSS valido de almenos 11 digitos o dejar el anterior antes de actualizar")
+        elif (len(RFC)==0) or (len(RFC)!=13):
+            self.msgError("Falta de informacion", "Debes ingresar un RFC valido de almenos 13 digitos o dejar el anterior antes de actualizar")
+        elif (len(passw)==0) or (len(passw)!=8):
+            self.msgError("Falta de informacion", "Debes ingresar una contraseña valida de almenos 8 digitos o dejar la anterior antes de actualizar")
+        else:
+            SQL=""" update empleadosyadmin set Nombre='{}', Fecha_Ingreso='{}', Fecha_Nacimiento='{}', rol='{}', Telefono_Empleado='{}', 
+            CURP_Empleado='{}', NSS_Empleado='{}', RFC_Empleado='{}', Contraseña='{}'where id_empleado='{}' """.format(nombre, fechIngreso, naci,rol, tel, curp, NSS, RFC, passw, id)
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+                print(id)
+            except Exception as ex:
+                print(ex)
+            self.NombreActualizarPaciente.clear()
+            self.TelefonoActualizarPaciente.clear()
+            self.FechNacActu.clear()
+            self.UltimCitActu.clear()
+            self.AlergiasActualizar.clear()
+            self.EnfermedadesActualizar.clear()
+            self.MedicamentosActualizar.clear()
+            self.MedicamentosRegistrar_7.clear()
     
     def msgError(self,msg1,msg2):
         msg = QtWidgets.QMessageBox()
