@@ -1,15 +1,7 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'MenuAdministrativos.ui'
-#
-# Created by: PyQt5 UI code generator 5.9.2
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MenuAdministrativo(object):
-    def setupUi(self, MenuAdministrativo):
+    def setupUi(self, MenuAdministrativo, cursor, id, LogIn):
         MenuAdministrativo.setObjectName("MenuAdministrativo")
         MenuAdministrativo.resize(1720, 961)
         icon = QtGui.QIcon()
@@ -38,6 +30,8 @@ class Ui_MenuAdministrativo(object):
         self.Menu_Lateral_Frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.Menu_Lateral_Frame.setObjectName("Menu_Lateral_Frame")
         self.verticalLayout_27 = QtWidgets.QVBoxLayout(self.Menu_Lateral_Frame)
+        self.verticalLayout_27.setContentsMargins(0, 0, 0, 15)
+        self.verticalLayout_27.setSpacing(0)
         self.verticalLayout_27.setObjectName("verticalLayout_27")
         self.frame_56 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
         self.frame_56.setMinimumSize(QtCore.QSize(0, 0))
@@ -68,6 +62,50 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_33 = QtWidgets.QVBoxLayout(self.frame_56)
         self.verticalLayout_33.setSpacing(20)
         self.verticalLayout_33.setObjectName("verticalLayout_33")
+        self.frame_35 = QtWidgets.QFrame(self.frame_56)
+        self.frame_35.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_35.setStyleSheet("QLabel{\n"
+"    font: 87 10pt \"Arial Black\";\n"
+"    \n"
+"color: rgb(226, 176, 30);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"    border: 0px;\n"
+"    \n"
+"    image: url(:/menu/home2.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/home.png);\n"
+"}\n"
+"\n"
+"")
+        self.frame_35.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_35.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_35.setObjectName("frame_35")
+        self.verticalLayout_20 = QtWidgets.QVBoxLayout(self.frame_35)
+        self.verticalLayout_20.setSpacing(20)
+        self.verticalLayout_20.setObjectName("verticalLayout_20")
+        self.pushButton_23 = QtWidgets.QPushButton(self.frame_35)
+        self.pushButton_23.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_23.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.pushButton_23.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_23.setStyleSheet("")
+        self.pushButton_23.setText("")
+        self.pushButton_23.setObjectName("pushButton_23")
+        self.verticalLayout_20.addWidget(self.pushButton_23)
+        self.label_133 = QtWidgets.QLabel(self.frame_35)
+        self.label_133.setMinimumSize(QtCore.QSize(0, 20))
+        self.label_133.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.label_133.setStyleSheet("")
+        self.label_133.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_133.setWordWrap(True)
+        self.label_133.setObjectName("label_133")
+        self.verticalLayout_20.addWidget(self.label_133)
+        self.verticalLayout_33.addWidget(self.frame_35)
         self.pushButton_35 = QtWidgets.QPushButton(self.frame_56)
         self.pushButton_35.setMinimumSize(QtCore.QSize(60, 55))
         self.pushButton_35.setMaximumSize(QtCore.QSize(16777215, 40))
@@ -257,50 +295,6 @@ class Ui_MenuAdministrativo(object):
         self.label_134.setObjectName("label_134")
         self.verticalLayout_21.addWidget(self.label_134)
         self.verticalLayout_27.addWidget(self.frame_36)
-        self.frame_35 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
-        self.frame_35.setMinimumSize(QtCore.QSize(0, 0))
-        self.frame_35.setStyleSheet("QLabel{\n"
-"    font: 87 10pt \"Arial Black\";\n"
-"    \n"
-"color: rgb(226, 176, 30);\n"
-"    border-radius: 15px;\n"
-"}\n"
-"\n"
-"\n"
-"QPushButton{\n"
-"    border: 0px;\n"
-"    \n"
-"    image: url(:/menu/home2.png);\n"
-"}\n"
-"QPushButton:hover{\n"
-"    border: 10px;\n"
-"    image: url(:/menu/home.png);\n"
-"}\n"
-"\n"
-"")
-        self.frame_35.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_35.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_35.setObjectName("frame_35")
-        self.verticalLayout_20 = QtWidgets.QVBoxLayout(self.frame_35)
-        self.verticalLayout_20.setSpacing(20)
-        self.verticalLayout_20.setObjectName("verticalLayout_20")
-        self.pushButton_23 = QtWidgets.QPushButton(self.frame_35)
-        self.pushButton_23.setMinimumSize(QtCore.QSize(60, 55))
-        self.pushButton_23.setMaximumSize(QtCore.QSize(16777215, 40))
-        self.pushButton_23.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_23.setStyleSheet("")
-        self.pushButton_23.setText("")
-        self.pushButton_23.setObjectName("pushButton_23")
-        self.verticalLayout_20.addWidget(self.pushButton_23)
-        self.label_133 = QtWidgets.QLabel(self.frame_35)
-        self.label_133.setMinimumSize(QtCore.QSize(0, 20))
-        self.label_133.setMaximumSize(QtCore.QSize(16777215, 50))
-        self.label_133.setStyleSheet("")
-        self.label_133.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_133.setWordWrap(True)
-        self.label_133.setObjectName("label_133")
-        self.verticalLayout_20.addWidget(self.label_133)
-        self.verticalLayout_27.addWidget(self.frame_35)
         self.frame_53 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
         self.frame_53.setMinimumSize(QtCore.QSize(0, 0))
         self.frame_53.setStyleSheet("QLabel{\n"
@@ -2600,24 +2594,81 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 1698, 775))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 937, 558))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_2)
         self.gridLayout_2.setHorizontalSpacing(20)
         self.gridLayout_2.setVerticalSpacing(10)
         self.gridLayout_2.setObjectName("gridLayout_2")
+        self.UltimaCitaRegistrar = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_2)
+        self.UltimaCitaRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.UltimaCitaRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);")
+        self.UltimaCitaRegistrar.setObjectName("UltimaCitaRegistrar")
+        self.gridLayout_2.addWidget(self.UltimaCitaRegistrar, 4, 3, 1, 1, QtCore.Qt.AlignLeft)
         self.label_17 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
         self.label_17.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_17.setObjectName("label_17")
-        self.gridLayout_2.addWidget(self.label_17, 8, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.gridLayout_2.addWidget(self.label_17, 9, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_21 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_21.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_21.setObjectName("label_21")
+        self.gridLayout_2.addWidget(self.label_21, 4, 0, 1, 1, QtCore.Qt.AlignRight)
         self.AlergiasRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
         self.AlergiasRegistrar.setMinimumSize(QtCore.QSize(600, 0))
         self.AlergiasRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
         self.AlergiasRegistrar.setObjectName("AlergiasRegistrar")
-        self.gridLayout_2.addWidget(self.AlergiasRegistrar, 8, 3, 1, 2, QtCore.Qt.AlignLeft)
+        self.gridLayout_2.addWidget(self.AlergiasRegistrar, 9, 3, 1, 2, QtCore.Qt.AlignLeft)
+        self.label_19 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_19.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_19.setObjectName("label_19")
+        self.gridLayout_2.addWidget(self.label_19, 10, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_25 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_25.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_25.setObjectName("label_25")
+        self.gridLayout_2.addWidget(self.label_25, 5, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.MedicamentosRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
+        self.MedicamentosRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosRegistrar.setObjectName("MedicamentosRegistrar")
+        self.gridLayout_2.addWidget(self.MedicamentosRegistrar, 11, 3, 1, 2, QtCore.Qt.AlignLeft)
+        self.label_18 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_18.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_18.setObjectName("label_18")
+        self.gridLayout_2.addWidget(self.label_18, 11, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.TelefonoRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
+        self.TelefonoRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.TelefonoRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.TelefonoRegistrar.setObjectName("TelefonoRegistrar")
+        self.gridLayout_2.addWidget(self.TelefonoRegistrar, 6, 3, 1, 1, QtCore.Qt.AlignLeft)
+        self.EnfermedadesRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
+        self.EnfermedadesRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.EnfermedadesRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EnfermedadesRegistrar.setObjectName("EnfermedadesRegistrar")
+        self.gridLayout_2.addWidget(self.EnfermedadesRegistrar, 10, 3, 1, 2, QtCore.Qt.AlignLeft)
+        self.label_45 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_45.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_45.setObjectName("label_45")
+        self.gridLayout_2.addWidget(self.label_45, 7, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
+        self.label_20 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_20.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_20.setObjectName("label_20")
+        self.gridLayout_2.addWidget(self.label_20, 1, 0, 1, 1, QtCore.Qt.AlignRight)
         self.GuardarRegistrarPaciente = QtWidgets.QPushButton(self.scrollAreaWidgetContents_2)
         self.GuardarRegistrarPaciente.setMinimumSize(QtCore.QSize(250, 80))
         self.GuardarRegistrarPaciente.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -2642,12 +2693,13 @@ class Ui_MenuAdministrativo(object):
 "}\n"
 "")
         self.GuardarRegistrarPaciente.setObjectName("GuardarRegistrarPaciente")
-        self.gridLayout_2.addWidget(self.GuardarRegistrarPaciente, 14, 3, 1, 2, QtCore.Qt.AlignHCenter)
-        self.label_25 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
-        self.label_25.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_25.setObjectName("label_25")
-        self.gridLayout_2.addWidget(self.label_25, 5, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.gridLayout_2.addWidget(self.GuardarRegistrarPaciente, 15, 3, 1, 2, QtCore.Qt.AlignHCenter)
+        self.FechaNacimientoRegistrar = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_2)
+        self.FechaNacimientoRegistrar.setMinimumSize(QtCore.QSize(600, 0))
+        self.FechaNacimientoRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);")
+        self.FechaNacimientoRegistrar.setObjectName("FechaNacimientoRegistrar")
+        self.gridLayout_2.addWidget(self.FechaNacimientoRegistrar, 5, 3, 1, 1, QtCore.Qt.AlignLeft)
         self.NombreRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
         self.NombreRegistrar.setMinimumSize(QtCore.QSize(600, 0))
         self.NombreRegistrar.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
@@ -2656,40 +2708,11 @@ class Ui_MenuAdministrativo(object):
 "")
         self.NombreRegistrar.setObjectName("NombreRegistrar")
         self.gridLayout_2.addWidget(self.NombreRegistrar, 1, 3, 1, 2, QtCore.Qt.AlignLeft)
-        self.label_19 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
-        self.label_19.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_19.setObjectName("label_19")
-        self.gridLayout_2.addWidget(self.label_19, 9, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.MedicamentosRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
-        self.MedicamentosRegistrar.setMinimumSize(QtCore.QSize(600, 0))
-        self.MedicamentosRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.MedicamentosRegistrar.setObjectName("MedicamentosRegistrar")
-        self.gridLayout_2.addWidget(self.MedicamentosRegistrar, 10, 3, 1, 2, QtCore.Qt.AlignLeft)
-        self.EnfermedadesRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
-        self.EnfermedadesRegistrar.setMinimumSize(QtCore.QSize(600, 0))
-        self.EnfermedadesRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.EnfermedadesRegistrar.setObjectName("EnfermedadesRegistrar")
-        self.gridLayout_2.addWidget(self.EnfermedadesRegistrar, 9, 3, 1, 2, QtCore.Qt.AlignLeft)
         self.label_24 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
         self.label_24.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_24.setObjectName("label_24")
         self.gridLayout_2.addWidget(self.label_24, 6, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.label_21 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
-        self.label_21.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_21.setObjectName("label_21")
-        self.gridLayout_2.addWidget(self.label_21, 4, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.label_18 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
-        self.label_18.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_18.setObjectName("label_18")
-        self.gridLayout_2.addWidget(self.label_18, 10, 0, 1, 1, QtCore.Qt.AlignRight)
         self.label_16 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
         self.label_16.setMaximumSize(QtCore.QSize(600, 50))
         palette = QtGui.QPalette()
@@ -2759,35 +2782,23 @@ class Ui_MenuAdministrativo(object):
 "color: rgb(255, 255, 255);")
         self.label_16.setObjectName("label_16")
         self.gridLayout_2.addWidget(self.label_16, 0, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_20 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
-        self.label_20.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_20.setObjectName("label_20")
-        self.gridLayout_2.addWidget(self.label_20, 1, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.TelefonoRegistrar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
-        self.TelefonoRegistrar.setMinimumSize(QtCore.QSize(600, 0))
-        self.TelefonoRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+        self.MedicamentosRegistrar_6 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_2)
+        self.MedicamentosRegistrar_6.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosRegistrar_6.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.MedicamentosRegistrar_6.setTabletTracking(True)
+        self.MedicamentosRegistrar_6.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
-        self.TelefonoRegistrar.setObjectName("TelefonoRegistrar")
-        self.gridLayout_2.addWidget(self.TelefonoRegistrar, 6, 3, 1, 1, QtCore.Qt.AlignLeft)
-        self.UltimaCitaRegistrar = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_2)
-        self.UltimaCitaRegistrar.setMinimumSize(QtCore.QSize(600, 0))
-        self.UltimaCitaRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);")
-        self.UltimaCitaRegistrar.setObjectName("UltimaCitaRegistrar")
-        self.gridLayout_2.addWidget(self.UltimaCitaRegistrar, 4, 3, 1, 1, QtCore.Qt.AlignLeft)
-        self.FechaNacimientoRegistrar = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_2)
-        self.FechaNacimientoRegistrar.setMinimumSize(QtCore.QSize(600, 0))
-        self.FechaNacimientoRegistrar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);")
-        self.FechaNacimientoRegistrar.setObjectName("FechaNacimientoRegistrar")
-        self.gridLayout_2.addWidget(self.FechaNacimientoRegistrar, 5, 3, 1, 1, QtCore.Qt.AlignLeft)
-        self.label_45 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
-        self.label_45.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+        self.MedicamentosRegistrar_6.setText("")
+        self.MedicamentosRegistrar_6.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.MedicamentosRegistrar_6.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.MedicamentosRegistrar_6.setObjectName("MedicamentosRegistrar_6")
+        self.gridLayout_2.addWidget(self.MedicamentosRegistrar_6, 12, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_148 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
+        self.label_148.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
-        self.label_45.setObjectName("label_45")
-        self.gridLayout_2.addWidget(self.label_45, 7, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_148.setObjectName("label_148")
+        self.gridLayout_2.addWidget(self.label_148, 12, 0, 1, 1, QtCore.Qt.AlignRight)
         self.BuscarPor_4 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_2)
         self.BuscarPor_4.setMinimumSize(QtCore.QSize(600, 0))
         self.BuscarPor_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
@@ -2798,7 +2809,21 @@ class Ui_MenuAdministrativo(object):
         self.BuscarPor_4.setObjectName("BuscarPor_4")
         self.BuscarPor_4.addItem("")
         self.BuscarPor_4.addItem("")
-        self.gridLayout_2.addWidget(self.BuscarPor_4, 7, 3, 1, 1, QtCore.Qt.AlignHCenter)
+        self.gridLayout_2.addWidget(self.BuscarPor_4, 7, 3, 1, 1)
+        self.pushButton_3 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_2)
+        self.pushButton_3.setMinimumSize(QtCore.QSize(40, 40))
+        self.pushButton_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_3.setStyleSheet("QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/ojo.png);\n"
+"    \n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"}")
+        self.pushButton_3.setText("")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.gridLayout_2.addWidget(self.pushButton_3, 12, 4, 1, 1, QtCore.Qt.AlignLeft)
         self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
         self.gridLayout_4.addWidget(self.scrollArea_2, 1, 0, 1, 1)
         self.tabWidget.addTab(self.tab, "")
@@ -2815,18 +2840,13 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_3.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1716, 793))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1009, 540))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.gridLayout_6 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_3)
         self.gridLayout_6.setContentsMargins(0, 0, 0, 50)
         self.gridLayout_6.setHorizontalSpacing(20)
-        self.gridLayout_6.setVerticalSpacing(15)
+        self.gridLayout_6.setVerticalSpacing(0)
         self.gridLayout_6.setObjectName("gridLayout_6")
-        self.label_29 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
-        self.label_29.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_29.setObjectName("label_29")
-        self.gridLayout_6.addWidget(self.label_29, 2, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
         self.BuscarPor_3 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_3)
         self.BuscarPor_3.setMinimumSize(QtCore.QSize(600, 0))
         self.BuscarPor_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
@@ -2837,7 +2857,7 @@ class Ui_MenuAdministrativo(object):
         self.BuscarPor_3.setObjectName("BuscarPor_3")
         self.BuscarPor_3.addItem("")
         self.BuscarPor_3.addItem("")
-        self.gridLayout_6.addWidget(self.BuscarPor_3, 10, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.gridLayout_6.addWidget(self.BuscarPor_3, 11, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_30 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
         self.label_30.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
@@ -2856,7 +2876,7 @@ class Ui_MenuAdministrativo(object):
         self.label_39.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_39.setObjectName("label_39")
-        self.gridLayout_6.addWidget(self.label_39, 10, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.gridLayout_6.addWidget(self.label_39, 11, 0, 1, 1, QtCore.Qt.AlignRight)
         self.ID_BuscarActualizarPaciente = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
         self.ID_BuscarActualizarPaciente.setMinimumSize(QtCore.QSize(600, 0))
         self.ID_BuscarActualizarPaciente.setMaximumSize(QtCore.QSize(600, 16777215))
@@ -2866,32 +2886,76 @@ class Ui_MenuAdministrativo(object):
 "border-radius: 10px;")
         self.ID_BuscarActualizarPaciente.setObjectName("ID_BuscarActualizarPaciente")
         self.gridLayout_6.addWidget(self.ID_BuscarActualizarPaciente, 0, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.label_33 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_33.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_33.setObjectName("label_33")
+        self.gridLayout_6.addWidget(self.label_33, 10, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_35 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_35.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_35.setObjectName("label_35")
+        self.gridLayout_6.addWidget(self.label_35, 13, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_36 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_36.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_36.setObjectName("label_36")
+        self.gridLayout_6.addWidget(self.label_36, 14, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
         self.AlergiasActualizar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
         self.AlergiasActualizar.setMinimumSize(QtCore.QSize(600, 0))
         self.AlergiasActualizar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
         self.AlergiasActualizar.setObjectName("AlergiasActualizar")
-        self.gridLayout_6.addWidget(self.AlergiasActualizar, 11, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.gridLayout_6.addWidget(self.AlergiasActualizar, 12, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.EnfermedadesActualizar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
         self.EnfermedadesActualizar.setMinimumSize(QtCore.QSize(600, 0))
         self.EnfermedadesActualizar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
         self.EnfermedadesActualizar.setObjectName("EnfermedadesActualizar")
-        self.gridLayout_6.addWidget(self.EnfermedadesActualizar, 12, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.gridLayout_6.addWidget(self.EnfermedadesActualizar, 13, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.FechNacActu = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.FechNacActu.setMinimumSize(QtCore.QSize(600, 0))
+        self.FechNacActu.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.FechNacActu.setObjectName("FechNacActu")
+        self.gridLayout_6.addWidget(self.FechNacActu, 9, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_31 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_31.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_31.setObjectName("label_31")
+        self.gridLayout_6.addWidget(self.label_31, 5, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.TelefonoActualizarPaciente = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.TelefonoActualizarPaciente.setMinimumSize(QtCore.QSize(600, 0))
+        self.TelefonoActualizarPaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.TelefonoActualizarPaciente.setObjectName("TelefonoActualizarPaciente")
+        self.gridLayout_6.addWidget(self.TelefonoActualizarPaciente, 5, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.MedicamentosActualizar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.MedicamentosActualizar.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosActualizar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosActualizar.setObjectName("MedicamentosActualizar")
+        self.gridLayout_6.addWidget(self.MedicamentosActualizar, 14, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.NombreActualizarPaciente = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.NombreActualizarPaciente.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente.setObjectName("NombreActualizarPaciente")
+        self.gridLayout_6.addWidget(self.NombreActualizarPaciente, 3, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.UltimCitActu = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
         self.UltimCitActu.setMinimumSize(QtCore.QSize(600, 0))
         self.UltimCitActu.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
         self.UltimCitActu.setObjectName("UltimCitActu")
-        self.gridLayout_6.addWidget(self.UltimCitActu, 9, 1, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_32 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
-        self.label_32.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_32.setObjectName("label_32")
-        self.gridLayout_6.addWidget(self.label_32, 8, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.gridLayout_6.addWidget(self.UltimCitActu, 10, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_34 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
         font = QtGui.QFont()
         font.setFamily("Bahnschrift SemiBold SemiConden")
@@ -2903,39 +2967,7 @@ class Ui_MenuAdministrativo(object):
         self.label_34.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_34.setObjectName("label_34")
-        self.gridLayout_6.addWidget(self.label_34, 11, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.FechNacActu = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
-        self.FechNacActu.setMinimumSize(QtCore.QSize(600, 0))
-        self.FechNacActu.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.FechNacActu.setObjectName("FechNacActu")
-        self.gridLayout_6.addWidget(self.FechNacActu, 8, 1, 1, 1, QtCore.Qt.AlignHCenter)
-        self.ActualizarBotonPaciente = QtWidgets.QPushButton(self.scrollAreaWidgetContents_3)
-        self.ActualizarBotonPaciente.setMinimumSize(QtCore.QSize(130, 70))
-        self.ActualizarBotonPaciente.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.ActualizarBotonPaciente.setStyleSheet("QPushButton{\n"
-"    background-color: #343434;\n"
-"    font: 87 14pt \"Arial Black\";\n"
-"    color: whitesmoke;\n"
-"    border-radius: 5px;\n"
-"    border: .5px solid #e6b31e;\n"
-"    margin: 10 px;\n"
-"    right-margin: 10px;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"    background-color: #e6b31e;\n"
-"    font: 87 14pt \"Arial Black\";\n"
-"    color: whitesmoke;\n"
-"    border-radius: 5px;\n"
-"    border: 1.5px solid #343434;\n"
-"    margin: 10 px;\n"
-"    right-margin: 10px;\n"
-"}\n"
-"")
-        self.ActualizarBotonPaciente.setObjectName("ActualizarBotonPaciente")
-        self.gridLayout_6.addWidget(self.ActualizarBotonPaciente, 14, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.gridLayout_6.addWidget(self.label_34, 12, 0, 1, 1, QtCore.Qt.AlignRight)
         self.BuscarBotonActualizar = QtWidgets.QPushButton(self.scrollAreaWidgetContents_3)
         self.BuscarBotonActualizar.setMinimumSize(QtCore.QSize(130, 70))
         self.BuscarBotonActualizar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -2963,48 +2995,73 @@ class Ui_MenuAdministrativo(object):
 "")
         self.BuscarBotonActualizar.setObjectName("BuscarBotonActualizar")
         self.gridLayout_6.addWidget(self.BuscarBotonActualizar, 0, 2, 1, 1, QtCore.Qt.AlignLeft)
-        self.label_31 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
-        self.label_31.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+        self.label_32 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_32.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
-        self.label_31.setObjectName("label_31")
-        self.gridLayout_6.addWidget(self.label_31, 4, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.NombreActualizarPaciente = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
-        self.NombreActualizarPaciente.setMinimumSize(QtCore.QSize(600, 0))
-        self.NombreActualizarPaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+        self.label_32.setObjectName("label_32")
+        self.gridLayout_6.addWidget(self.label_32, 9, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.MedicamentosRegistrar_7 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
+        self.MedicamentosRegistrar_7.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosRegistrar_7.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.MedicamentosRegistrar_7.setTabletTracking(True)
+        self.MedicamentosRegistrar_7.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosRegistrar_7.setText("")
+        self.MedicamentosRegistrar_7.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.MedicamentosRegistrar_7.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.MedicamentosRegistrar_7.setObjectName("MedicamentosRegistrar_7")
+        self.gridLayout_6.addWidget(self.MedicamentosRegistrar_7, 15, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_154 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_154.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_154.setObjectName("label_154")
+        self.gridLayout_6.addWidget(self.label_154, 15, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
+        self.label_29 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
+        self.label_29.setMaximumSize(QtCore.QSize(16777215, 30))
+        self.label_29.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_29.setObjectName("label_29")
+        self.gridLayout_6.addWidget(self.label_29, 2, 1, 1, 1)
+        self.ActualizarBotonPaciente = QtWidgets.QPushButton(self.scrollAreaWidgetContents_3)
+        self.ActualizarBotonPaciente.setMinimumSize(QtCore.QSize(130, 70))
+        self.ActualizarBotonPaciente.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.ActualizarBotonPaciente.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
 "\n"
-"border-radius: 5px;")
-        self.NombreActualizarPaciente.setObjectName("NombreActualizarPaciente")
-        self.gridLayout_6.addWidget(self.NombreActualizarPaciente, 3, 1, 1, 1, QtCore.Qt.AlignHCenter)
-        self.TelefonoActualizarPaciente = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
-        self.TelefonoActualizarPaciente.setMinimumSize(QtCore.QSize(600, 0))
-        self.TelefonoActualizarPaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 14pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
 "")
-        self.TelefonoActualizarPaciente.setObjectName("TelefonoActualizarPaciente")
-        self.gridLayout_6.addWidget(self.TelefonoActualizarPaciente, 4, 1, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_36 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
-        self.label_36.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_36.setObjectName("label_36")
-        self.gridLayout_6.addWidget(self.label_36, 13, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
-        self.label_33 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
-        self.label_33.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_33.setObjectName("label_33")
-        self.gridLayout_6.addWidget(self.label_33, 9, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.label_35 = QtWidgets.QLabel(self.scrollAreaWidgetContents_3)
-        self.label_35.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_35.setObjectName("label_35")
-        self.gridLayout_6.addWidget(self.label_35, 12, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.MedicamentosActualizar = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_3)
-        self.MedicamentosActualizar.setMinimumSize(QtCore.QSize(600, 0))
-        self.MedicamentosActualizar.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.MedicamentosActualizar.setObjectName("MedicamentosActualizar")
-        self.gridLayout_6.addWidget(self.MedicamentosActualizar, 13, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.ActualizarBotonPaciente.setObjectName("ActualizarBotonPaciente")
+        self.gridLayout_6.addWidget(self.ActualizarBotonPaciente, 16, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.pushButton_4 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_3)
+        self.pushButton_4.setMinimumSize(QtCore.QSize(40, 40))
+        self.pushButton_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_4.setStyleSheet("QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/ojo.png);\n"
+"    \n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"}")
+        self.pushButton_4.setText("")
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.gridLayout_6.addWidget(self.pushButton_4, 15, 2, 1, 1, QtCore.Qt.AlignLeft)
         self.scrollArea_3.setWidget(self.scrollAreaWidgetContents_3)
         self.gridLayout_7.addWidget(self.scrollArea_3, 0, 0, 1, 1)
         self.tabWidget.addTab(self.tab_3, "")
@@ -3138,7 +3195,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_4.setWidgetResizable(True)
         self.scrollArea_4.setObjectName("scrollArea_4")
         self.scrollAreaWidgetContents_5 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 1716, 743))
+        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 987, 364))
         self.scrollAreaWidgetContents_5.setObjectName("scrollAreaWidgetContents_5")
         self.gridLayout_9 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_5)
         self.gridLayout_9.setObjectName("gridLayout_9")
@@ -3333,45 +3390,20 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_5.setWidgetResizable(True)
         self.scrollArea_5.setObjectName("scrollArea_5")
         self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 1680, 757))
+        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 1119, 431))
         self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
         self.gridLayout_29 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_4)
         self.gridLayout_29.setObjectName("gridLayout_29")
-        self.label_27 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
-        self.label_27.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_27.setObjectName("label_27")
-        self.gridLayout_29.addWidget(self.label_27, 6, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.label_28 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
-        self.label_28.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_28.setObjectName("label_28")
-        self.gridLayout_29.addWidget(self.label_28, 7, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.label_46 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
-        self.label_46.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_46.setObjectName("label_46")
-        self.gridLayout_29.addWidget(self.label_46, 10, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.label_22 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
-        self.label_22.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_22.setObjectName("label_22")
-        self.gridLayout_29.addWidget(self.label_22, 8, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.label_23 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
-        self.label_23.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_23.setObjectName("label_23")
-        self.gridLayout_29.addWidget(self.label_23, 9, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.label_38 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
-        self.label_38.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_38.setObjectName("label_38")
-        self.gridLayout_29.addWidget(self.label_38, 5, 0, 1, 1, QtCore.Qt.AlignRight)
         self.label_48 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
         self.label_48.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_48.setObjectName("label_48")
         self.gridLayout_29.addWidget(self.label_48, 3, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_27 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_27.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_27.setObjectName("label_27")
+        self.gridLayout_29.addWidget(self.label_27, 6, 0, 1, 1, QtCore.Qt.AlignRight)
         self.NombreRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
         self.NombreRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
         self.NombreRegistrar_2.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
@@ -3386,6 +3418,16 @@ class Ui_MenuAdministrativo(object):
 "background-color: rgb(255, 255, 255);")
         self.UltimaCitaRegistrar_2.setObjectName("UltimaCitaRegistrar_2")
         self.gridLayout_29.addWidget(self.UltimaCitaRegistrar_2, 5, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_28 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_28.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_28.setObjectName("label_28")
+        self.gridLayout_29.addWidget(self.label_28, 7, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_46 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_46.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_46.setObjectName("label_46")
+        self.gridLayout_29.addWidget(self.label_46, 10, 0, 1, 1, QtCore.Qt.AlignRight)
         self.FechaNacimientoRegistrar_2 = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_4)
         self.FechaNacimientoRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
         self.FechaNacimientoRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
@@ -3461,13 +3503,21 @@ class Ui_MenuAdministrativo(object):
 "color: rgb(255, 255, 255);")
         self.label_47.setObjectName("label_47")
         self.gridLayout_29.addWidget(self.label_47, 0, 1, 1, 1)
-        self.TelefonoRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
-        self.TelefonoRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
-        self.TelefonoRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.TelefonoRegistrar_2.setObjectName("TelefonoRegistrar_2")
-        self.gridLayout_29.addWidget(self.TelefonoRegistrar_2, 7, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_23 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_23.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_23.setObjectName("label_23")
+        self.gridLayout_29.addWidget(self.label_23, 9, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_22 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_22.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_22.setObjectName("label_22")
+        self.gridLayout_29.addWidget(self.label_22, 8, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_38 = QtWidgets.QLabel(self.scrollAreaWidgetContents_4)
+        self.label_38.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_38.setObjectName("label_38")
+        self.gridLayout_29.addWidget(self.label_38, 5, 0, 1, 1, QtCore.Qt.AlignRight)
         self.AlergiasRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
         self.AlergiasRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
         self.AlergiasRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
@@ -3475,20 +3525,6 @@ class Ui_MenuAdministrativo(object):
 "")
         self.AlergiasRegistrar_2.setObjectName("AlergiasRegistrar_2")
         self.gridLayout_29.addWidget(self.AlergiasRegistrar_2, 8, 1, 1, 1, QtCore.Qt.AlignHCenter)
-        self.EnfermedadesRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
-        self.EnfermedadesRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
-        self.EnfermedadesRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.EnfermedadesRegistrar_2.setObjectName("EnfermedadesRegistrar_2")
-        self.gridLayout_29.addWidget(self.EnfermedadesRegistrar_2, 9, 1, 1, 1, QtCore.Qt.AlignHCenter)
-        self.MedicamentosRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
-        self.MedicamentosRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
-        self.MedicamentosRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.MedicamentosRegistrar_2.setObjectName("MedicamentosRegistrar_2")
-        self.gridLayout_29.addWidget(self.MedicamentosRegistrar_2, 10, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.GuardarRegistrarPaciente_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_4)
         self.GuardarRegistrarPaciente_2.setMinimumSize(QtCore.QSize(250, 80))
         self.GuardarRegistrarPaciente_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -3513,7 +3549,28 @@ class Ui_MenuAdministrativo(object):
 "}\n"
 "")
         self.GuardarRegistrarPaciente_2.setObjectName("GuardarRegistrarPaciente_2")
-        self.gridLayout_29.addWidget(self.GuardarRegistrarPaciente_2, 11, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.gridLayout_29.addWidget(self.GuardarRegistrarPaciente_2, 13, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.TelefonoRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
+        self.TelefonoRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.TelefonoRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.TelefonoRegistrar_2.setObjectName("TelefonoRegistrar_2")
+        self.gridLayout_29.addWidget(self.TelefonoRegistrar_2, 7, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.MedicamentosRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
+        self.MedicamentosRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosRegistrar_2.setObjectName("MedicamentosRegistrar_2")
+        self.gridLayout_29.addWidget(self.MedicamentosRegistrar_2, 10, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.EnfermedadesRegistrar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_4)
+        self.EnfermedadesRegistrar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.EnfermedadesRegistrar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EnfermedadesRegistrar_2.setObjectName("EnfermedadesRegistrar_2")
+        self.gridLayout_29.addWidget(self.EnfermedadesRegistrar_2, 9, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.scrollArea_5.setWidget(self.scrollAreaWidgetContents_4)
         self.gridLayout_12.addWidget(self.scrollArea_5, 0, 0, 1, 1)
         self.tabWidget_2.addTab(self.tab_5, "")
@@ -3530,35 +3587,13 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_6.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea_6.setObjectName("scrollArea_6")
         self.scrollAreaWidgetContents_6 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_6.setGeometry(QtCore.QRect(0, 0, 1698, 775))
+        self.scrollAreaWidgetContents_6.setGeometry(QtCore.QRect(0, 0, 1009, 605))
         self.scrollAreaWidgetContents_6.setObjectName("scrollAreaWidgetContents_6")
         self.gridLayout_15 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_6)
         self.gridLayout_15.setContentsMargins(0, 0, 0, 50)
         self.gridLayout_15.setHorizontalSpacing(20)
         self.gridLayout_15.setVerticalSpacing(15)
         self.gridLayout_15.setObjectName("gridLayout_15")
-        self.label_58 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
-        font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiBold SemiConden")
-        font.setPointSize(22)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setWeight(7)
-        self.label_58.setFont(font)
-        self.label_58.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_58.setObjectName("label_58")
-        self.gridLayout_15.addWidget(self.label_58, 10, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.label_51 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
-        self.label_51.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_51.setObjectName("label_51")
-        self.gridLayout_15.addWidget(self.label_51, 3, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.label_53 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
-        self.label_53.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_53.setObjectName("label_53")
-        self.gridLayout_15.addWidget(self.label_53, 11, 0, 1, 1, QtCore.Qt.AlignRight)
         self.BuscarBotonActualizar_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_6)
         self.BuscarBotonActualizar_2.setMinimumSize(QtCore.QSize(130, 70))
         self.BuscarBotonActualizar_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -3586,6 +3621,76 @@ class Ui_MenuAdministrativo(object):
 "")
         self.BuscarBotonActualizar_2.setObjectName("BuscarBotonActualizar_2")
         self.gridLayout_15.addWidget(self.BuscarBotonActualizar_2, 0, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.FechNacActu_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.FechNacActu_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.FechNacActu_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.FechNacActu_2.setObjectName("FechNacActu_2")
+        self.gridLayout_15.addWidget(self.FechNacActu_2, 8, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_51 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_51.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_51.setObjectName("label_51")
+        self.gridLayout_15.addWidget(self.label_51, 3, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_53 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_53.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_53.setObjectName("label_53")
+        self.gridLayout_15.addWidget(self.label_53, 11, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_56 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_56.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_56.setObjectName("label_56")
+        self.gridLayout_15.addWidget(self.label_56, 8, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.BuscarPor_7 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_6)
+        self.BuscarPor_7.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarPor_7.setObjectName("BuscarPor_7")
+        self.BuscarPor_7.addItem("")
+        self.BuscarPor_7.addItem("")
+        self.gridLayout_15.addWidget(self.BuscarPor_7, 0, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.EnfermedadesActualizar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.EnfermedadesActualizar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.EnfermedadesActualizar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.EnfermedadesActualizar_2.setObjectName("EnfermedadesActualizar_2")
+        self.gridLayout_15.addWidget(self.EnfermedadesActualizar_2, 11, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_54 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_54.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_54.setObjectName("label_54")
+        self.gridLayout_15.addWidget(self.label_54, 12, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
+        self.label_58 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiBold SemiConden")
+        font.setPointSize(22)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(7)
+        self.label_58.setFont(font)
+        self.label_58.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_58.setObjectName("label_58")
+        self.gridLayout_15.addWidget(self.label_58, 10, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.NombreActualizarPaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.NombreActualizarPaciente_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente_2.setObjectName("NombreActualizarPaciente_2")
+        self.gridLayout_15.addWidget(self.NombreActualizarPaciente_2, 3, 1, 1, 1, QtCore.Qt.AlignHCenter)
+        self.AlergiasActualizar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.AlergiasActualizar_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.AlergiasActualizar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.AlergiasActualizar_2.setObjectName("AlergiasActualizar_2")
+        self.gridLayout_15.addWidget(self.AlergiasActualizar_2, 10, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.ActualizarBotonPaciente_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_6)
         self.ActualizarBotonPaciente_2.setMinimumSize(QtCore.QSize(130, 70))
         self.ActualizarBotonPaciente_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -3611,20 +3716,11 @@ class Ui_MenuAdministrativo(object):
 "")
         self.ActualizarBotonPaciente_2.setObjectName("ActualizarBotonPaciente_2")
         self.gridLayout_15.addWidget(self.ActualizarBotonPaciente_2, 13, 2, 1, 1, QtCore.Qt.AlignLeft)
-        self.label_56 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
-        self.label_56.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+        self.label_55 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
+        self.label_55.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
-        self.label_56.setObjectName("label_56")
-        self.gridLayout_15.addWidget(self.label_56, 8, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.BuscarPor_7 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_6)
-        self.BuscarPor_7.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"border: .5px solid #e6b31e;\n"
-"background-color: rgb(52, 52, 52);\n"
-"color: whitesmoke;")
-        self.BuscarPor_7.setObjectName("BuscarPor_7")
-        self.BuscarPor_7.addItem("")
-        self.BuscarPor_7.addItem("")
-        self.gridLayout_15.addWidget(self.BuscarPor_7, 0, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_55.setObjectName("label_55")
+        self.gridLayout_15.addWidget(self.label_55, 4, 0, 1, 1, QtCore.Qt.AlignRight)
         self.ID_BuscarActualizarPaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
         self.ID_BuscarActualizarPaciente_2.setMinimumSize(QtCore.QSize(600, 0))
         self.ID_BuscarActualizarPaciente_2.setMaximumSize(QtCore.QSize(600, 16777215))
@@ -3634,20 +3730,6 @@ class Ui_MenuAdministrativo(object):
 "border-radius: 10px;")
         self.ID_BuscarActualizarPaciente_2.setObjectName("ID_BuscarActualizarPaciente_2")
         self.gridLayout_15.addWidget(self.ID_BuscarActualizarPaciente_2, 0, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
-        self.FechNacActu_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
-        self.FechNacActu_2.setMinimumSize(QtCore.QSize(600, 0))
-        self.FechNacActu_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.FechNacActu_2.setObjectName("FechNacActu_2")
-        self.gridLayout_15.addWidget(self.FechNacActu_2, 8, 1, 1, 1, QtCore.Qt.AlignHCenter)
-        self.EnfermedadesActualizar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
-        self.EnfermedadesActualizar_2.setMinimumSize(QtCore.QSize(600, 0))
-        self.EnfermedadesActualizar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.EnfermedadesActualizar_2.setObjectName("EnfermedadesActualizar_2")
-        self.gridLayout_15.addWidget(self.EnfermedadesActualizar_2, 11, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.MedicamentosActualizar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
         self.MedicamentosActualizar_2.setMinimumSize(QtCore.QSize(600, 0))
         self.MedicamentosActualizar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
@@ -3655,24 +3737,6 @@ class Ui_MenuAdministrativo(object):
 "")
         self.MedicamentosActualizar_2.setObjectName("MedicamentosActualizar_2")
         self.gridLayout_15.addWidget(self.MedicamentosActualizar_2, 12, 1, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_54 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
-        self.label_54.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_54.setObjectName("label_54")
-        self.gridLayout_15.addWidget(self.label_54, 12, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
-        self.label_55 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
-        self.label_55.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_55.setObjectName("label_55")
-        self.gridLayout_15.addWidget(self.label_55, 4, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.NombreActualizarPaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
-        self.NombreActualizarPaciente_2.setMinimumSize(QtCore.QSize(600, 0))
-        self.NombreActualizarPaciente_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"\n"
-"border-radius: 5px;")
-        self.NombreActualizarPaciente_2.setObjectName("NombreActualizarPaciente_2")
-        self.gridLayout_15.addWidget(self.NombreActualizarPaciente_2, 3, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.TelefonoActualizarPaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
         self.TelefonoActualizarPaciente_2.setMinimumSize(QtCore.QSize(600, 0))
         self.TelefonoActualizarPaciente_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
@@ -3680,20 +3744,6 @@ class Ui_MenuAdministrativo(object):
 "")
         self.TelefonoActualizarPaciente_2.setObjectName("TelefonoActualizarPaciente_2")
         self.gridLayout_15.addWidget(self.TelefonoActualizarPaciente_2, 4, 1, 1, 1, QtCore.Qt.AlignHCenter)
-        self.AlergiasActualizar_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
-        self.AlergiasActualizar_2.setMinimumSize(QtCore.QSize(600, 0))
-        self.AlergiasActualizar_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.AlergiasActualizar_2.setObjectName("AlergiasActualizar_2")
-        self.gridLayout_15.addWidget(self.AlergiasActualizar_2, 10, 1, 1, 1, QtCore.Qt.AlignHCenter)
-        self.UltimCitActu_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
-        self.UltimCitActu_2.setMinimumSize(QtCore.QSize(600, 0))
-        self.UltimCitActu_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.UltimCitActu_2.setObjectName("UltimCitActu_2")
-        self.gridLayout_15.addWidget(self.UltimCitActu_2, 9, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_57 = QtWidgets.QLabel(self.scrollAreaWidgetContents_6)
         self.label_57.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
@@ -3704,6 +3754,13 @@ class Ui_MenuAdministrativo(object):
 "color: rgb(255, 255, 255);")
         self.label_50.setObjectName("label_50")
         self.gridLayout_15.addWidget(self.label_50, 2, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.UltimCitActu_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_6)
+        self.UltimCitActu_2.setMinimumSize(QtCore.QSize(600, 0))
+        self.UltimCitActu_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.UltimCitActu_2.setObjectName("UltimCitActu_2")
+        self.gridLayout_15.addWidget(self.UltimCitActu_2, 9, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.scrollArea_6.setWidget(self.scrollAreaWidgetContents_6)
         self.gridLayout_14.addWidget(self.scrollArea_6, 0, 0, 1, 1)
         self.tabWidget_2.addTab(self.tab_6, "")
@@ -3951,7 +4008,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_7.setWidgetResizable(True)
         self.scrollArea_7.setObjectName("scrollArea_7")
         self.scrollAreaWidgetContents_7 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_7.setGeometry(QtCore.QRect(0, 0, 1698, 725))
+        self.scrollAreaWidgetContents_7.setGeometry(QtCore.QRect(0, 0, 999, 497))
         self.scrollAreaWidgetContents_7.setObjectName("scrollAreaWidgetContents_7")
         self.gridLayout_65 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_7)
         self.gridLayout_65.setObjectName("gridLayout_65")
@@ -4235,7 +4292,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_8.setWidgetResizable(True)
         self.scrollArea_8.setObjectName("scrollArea_8")
         self.scrollAreaWidgetContents_8 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_8.setGeometry(QtCore.QRect(0, 0, 1680, 767))
+        self.scrollAreaWidgetContents_8.setGeometry(QtCore.QRect(0, 0, 1077, 372))
         self.scrollAreaWidgetContents_8.setObjectName("scrollAreaWidgetContents_8")
         self.gridLayout_25 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_8)
         self.gridLayout_25.setContentsMargins(0, 0, 0, 0)
@@ -4872,7 +4929,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_9.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea_9.setObjectName("scrollArea_9")
         self.scrollAreaWidgetContents_9 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_9.setGeometry(QtCore.QRect(0, 0, 1698, 785))
+        self.scrollAreaWidgetContents_9.setGeometry(QtCore.QRect(0, 0, 100, 30))
         self.scrollAreaWidgetContents_9.setObjectName("scrollAreaWidgetContents_9")
         self.label_78 = QtWidgets.QLabel(self.scrollAreaWidgetContents_9)
         self.label_78.setGeometry(QtCore.QRect(420, 180, 281, 35))
@@ -5491,7 +5548,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_10.setWidgetResizable(True)
         self.scrollArea_10.setObjectName("scrollArea_10")
         self.scrollAreaWidgetContents_10 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_10.setGeometry(QtCore.QRect(0, 0, 1698, 735))
+        self.scrollAreaWidgetContents_10.setGeometry(QtCore.QRect(0, 0, 83, 16))
         self.scrollAreaWidgetContents_10.setObjectName("scrollAreaWidgetContents_10")
         self.Eliminar_NombrePaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_10)
         self.Eliminar_NombrePaciente_2.setGeometry(QtCore.QRect(320, 200, 600, 35))
@@ -5791,6 +5848,7 @@ class Ui_MenuAdministrativo(object):
         self.pushButton_30.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Entrenadores))
         self.pushButton_24.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Clientes))
         self.pushButton_23.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPrincipal))
+        self.pushButton_32.clicked.connect(lambda: self.cerrarSesion(MenuAdministrativo, cursor, LogIn))
         #Clickear menu
         self.pushButton.clicked.connect(lambda: self.desplegrMenu())
         #Botones Menu principal
@@ -5807,9 +5865,19 @@ class Ui_MenuAdministrativo(object):
         self.radioButton.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.Puntodeventas))
         self.radioButton_2.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.page_2))
         self.radioButton_3.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.Ventas))
+        self.GuardarRegistrarPaciente.clicked.connect(lambda: self.prueba())
+        
+        
+        
         """
         Aqui inician las funciones:
         """
+    def cerrarSesion(self, MenuPrincipal, cursor, Login):
+        MenuPrincipal.close()
+        Login.show()
+        
+    def prueba(self):
+        self.MedicamentosRegistrar_6.setEchoMode(QtWidgets.QLineEdit.Normal)
     def desplegrMenu(self):
         if True:
             width = self.Menu_Lateral_Frame.width()
@@ -5839,16 +5907,17 @@ class Ui_MenuAdministrativo(object):
             self.stackedWidget.setCurrentWidget(self.PuntoVenta)
             self.stackedWidget_2.setCurrentWidget(self.Ventas)
             self.radioButton_3.setChecked(True)
-            
+           
+
     def retranslateUi(self, MenuAdministrativo):
         _translate = QtCore.QCoreApplication.translate
         MenuAdministrativo.setWindowTitle(_translate("MenuAdministrativo", "Administrativos"))
+        self.label_133.setText(_translate("MenuAdministrativo", "Menu"))
         self.label_153.setText(_translate("MenuAdministrativo", "Registrar Visita"))
         self.label_152.setText(_translate("MenuAdministrativo", "Empleados"))
         self.label_151.setText(_translate("MenuAdministrativo", "Punto de venta"))
         self.label_136.setText(_translate("MenuAdministrativo", "Entrenadores"))
         self.label_134.setText(_translate("MenuAdministrativo", "Clientes"))
-        self.label_133.setText(_translate("MenuAdministrativo", "Menu"))
         self.label_150.setText(_translate("MenuAdministrativo", "Cerrar sesion"))
         self.label_131.setText(_translate("MenuAdministrativo", "Teflon Academy by GoldenSharks"))
         self.label_Bienvenida.setText(_translate("MenuAdministrativo", "Bienvenido ....!"))
@@ -6019,33 +6088,35 @@ class Ui_MenuAdministrativo(object):
         self.label_10.setText(_translate("MenuAdministrativo", "Nombre:"))
         self.label_11.setText(_translate("MenuAdministrativo", "Fecha de hoy:"))
         self.label_17.setText(_translate("MenuAdministrativo", "CURP:"))
-        self.GuardarRegistrarPaciente.setText(_translate("MenuAdministrativo", "Registrar"))
-        self.label_25.setText(_translate("MenuAdministrativo", "Fecha de nacimiento:"))
-        self.label_19.setText(_translate("MenuAdministrativo", "NSS:"))
-        self.label_24.setText(_translate("MenuAdministrativo", "Teléfono:"))
         self.label_21.setText(_translate("MenuAdministrativo", "Fecha de ingreso:"))
+        self.label_19.setText(_translate("MenuAdministrativo", "NSS:"))
+        self.label_25.setText(_translate("MenuAdministrativo", "Fecha de nacimiento:"))
         self.label_18.setText(_translate("MenuAdministrativo", "RFC:"))
-        self.label_16.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Ingrese la información del empleado</span></p></body></html>"))
-        self.label_20.setText(_translate("MenuAdministrativo", "Nombre:"))
         self.label_45.setText(_translate("MenuAdministrativo", "Rol"))
+        self.label_20.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.GuardarRegistrarPaciente.setText(_translate("MenuAdministrativo", "Registrar"))
+        self.label_24.setText(_translate("MenuAdministrativo", "Teléfono:"))
+        self.label_16.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Ingrese la información del empleado</span></p></body></html>"))
+        self.label_148.setText(_translate("MenuAdministrativo", "Contraseña:"))
         self.BuscarPor_4.setItemText(0, _translate("MenuAdministrativo", "Empleado"))
         self.BuscarPor_4.setItemText(1, _translate("MenuAdministrativo", "Administrativo"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MenuAdministrativo", "Registrar Empleado"))
-        self.label_29.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Actualiza la información del usuario necesaria:</span></p></body></html>"))
         self.BuscarPor_3.setItemText(0, _translate("MenuAdministrativo", "Empleado"))
         self.BuscarPor_3.setItemText(1, _translate("MenuAdministrativo", "Administrativo"))
         self.label_30.setText(_translate("MenuAdministrativo", "Nombre:"))
         self.BuscarPor_2.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
         self.BuscarPor_2.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
         self.label_39.setText(_translate("MenuAdministrativo", "Rol"))
-        self.label_32.setText(_translate("MenuAdministrativo", "Fecha de nacimiento:"))
-        self.label_34.setText(_translate("MenuAdministrativo", "CURP:"))
-        self.ActualizarBotonPaciente.setText(_translate("MenuAdministrativo", "Actualizar"))
-        self.BuscarBotonActualizar.setText(_translate("MenuAdministrativo", "Buscar"))
-        self.label_31.setText(_translate("MenuAdministrativo", "Fecha de ingreso:"))
-        self.label_36.setText(_translate("MenuAdministrativo", "RFC:"))
         self.label_33.setText(_translate("MenuAdministrativo", "Teléfono:"))
         self.label_35.setText(_translate("MenuAdministrativo", "NSS:"))
+        self.label_36.setText(_translate("MenuAdministrativo", "RFC:"))
+        self.label_31.setText(_translate("MenuAdministrativo", "Fecha de ingreso:"))
+        self.label_34.setText(_translate("MenuAdministrativo", "CURP:"))
+        self.BuscarBotonActualizar.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.label_32.setText(_translate("MenuAdministrativo", "Fecha de nacimiento:"))
+        self.label_154.setText(_translate("MenuAdministrativo", "Contraseña:"))
+        self.label_29.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Actualiza la información del usuario necesaria:</span></p></body></html>"))
+        self.ActualizarBotonPaciente.setText(_translate("MenuAdministrativo", "Actualizar"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MenuAdministrativo", "Actualizar Empleado"))
         item = self.TablaEmpleados.horizontalHeaderItem(0)
         item.setText(_translate("MenuAdministrativo", "ID"))
@@ -6080,25 +6151,25 @@ class Ui_MenuAdministrativo(object):
         self.BuscarRegistradosCombobox_2.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
         self.label_40.setText(_translate("MenuAdministrativo", "Datos del empleado encontrados:"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("MenuAdministrativo", "Elminar Empleado"))
+        self.label_48.setText(_translate("MenuAdministrativo", "Nombre:"))
         self.label_27.setText(_translate("MenuAdministrativo", "Fecha de nacimiento:"))
         self.label_28.setText(_translate("MenuAdministrativo", "Teléfono:"))
         self.label_46.setText(_translate("MenuAdministrativo", "RFC:"))
-        self.label_22.setText(_translate("MenuAdministrativo", "CURP:"))
-        self.label_23.setText(_translate("MenuAdministrativo", "NSS:"))
-        self.label_38.setText(_translate("MenuAdministrativo", "Fecha de ingreso:"))
-        self.label_48.setText(_translate("MenuAdministrativo", "Nombre:"))
         self.label_47.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Ingrese la información del entrenador</span></p></body></html>"))
+        self.label_23.setText(_translate("MenuAdministrativo", "NSS:"))
+        self.label_22.setText(_translate("MenuAdministrativo", "CURP:"))
+        self.label_38.setText(_translate("MenuAdministrativo", "Fecha de ingreso:"))
         self.GuardarRegistrarPaciente_2.setText(_translate("MenuAdministrativo", "Registrar"))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_5), _translate("MenuAdministrativo", "Agregar"))
-        self.label_58.setText(_translate("MenuAdministrativo", "CURP:"))
+        self.BuscarBotonActualizar_2.setText(_translate("MenuAdministrativo", "Buscar"))
         self.label_51.setText(_translate("MenuAdministrativo", "Nombre:"))
         self.label_53.setText(_translate("MenuAdministrativo", "NSS:"))
-        self.BuscarBotonActualizar_2.setText(_translate("MenuAdministrativo", "Buscar"))
-        self.ActualizarBotonPaciente_2.setText(_translate("MenuAdministrativo", "Actualizar"))
         self.label_56.setText(_translate("MenuAdministrativo", "Fecha de nacimiento:"))
         self.BuscarPor_7.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
         self.BuscarPor_7.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
         self.label_54.setText(_translate("MenuAdministrativo", "RFC:"))
+        self.label_58.setText(_translate("MenuAdministrativo", "CURP:"))
+        self.ActualizarBotonPaciente_2.setText(_translate("MenuAdministrativo", "Actualizar"))
         self.label_55.setText(_translate("MenuAdministrativo", "Fecha de ingreso:"))
         self.label_57.setText(_translate("MenuAdministrativo", "Teléfono:"))
         self.label_50.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Actualiza la información del usuario necesaria:</span></p></body></html>"))

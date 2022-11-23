@@ -1,0 +1,34 @@
+CREATE DATABASE "TeflonAcademy"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1;
+
+create table empleadosyadmin(
+    id_empleado serial primary key not null,
+    Nombre character varying,
+    Fecha_Ingreso date,
+	rol varchar(15),
+    Telefono_Empleado varchar(10),
+    CURP_Empleado varchar(18),
+    NSS_Empleado varchar(11),
+	RFC_Empleado varchar(13),
+    Contraseña character varying
+);
+drop table empleadosyadmin
+select *from empleadosyadmin
+select *from empleadosyadmin where cast(id_empleado as varchar)='1'
+create table Cliente(
+    ID_cliente serial primary key not null,
+    Nombre_Cliente varchar(50),
+    Telefono_Cliente varchar(10),
+	Correo_Cliente character varying,
+	edad int,
+	peso_act decimal(5,2),
+	id_Entrenador int,
+	situacion_Membresia varchar(10),
+    Fecha_Vencimiento date
+)
+
+insert into empleadosyadmin (Nombre, Fecha_Ingreso, rol, Telefono_Empleado, CURP_Empleado, NSS_Empleado, RFC_Empleado, Contraseña)
+values ('Mike','22/11/22','Administrativo',3311398249,123456789123456789,21235412582,1234567891234,'Mike1234');
