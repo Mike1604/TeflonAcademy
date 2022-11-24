@@ -1,5 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QPushButton, QLineEdit
+from PyQt5.QtWidgets import QDialog, QApplication, QTableWidgetItem, QPushButton, QLineEdit
 class Ui_MenuAdministrativo(object):
     def setupUi(self, MenuAdministrativo, cursor, id, LogIn):
         MenuAdministrativo.setObjectName("MenuAdministrativo")
@@ -602,7 +602,7 @@ class Ui_MenuAdministrativo(object):
         self.label_135.setObjectName("label_135")
         self.verticalLayout_25.addWidget(self.label_135)
         self.horizontalLayout_18.addWidget(self.frame_41, 0, QtCore.Qt.AlignHCenter)
-        self.verticalLayout_5.addWidget(self.frame_40, 0, QtCore.Qt.AlignHCenter)
+        self.verticalLayout_5.addWidget(self.frame_40)
         self.horizontalLayout_16.addWidget(self.frame_3)
         self.verticalLayout_4.addWidget(self.frame_34)
         self.horizontalLayout_5.addWidget(self.frame_33)
@@ -1215,7 +1215,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_14.setWidgetResizable(True)
         self.scrollArea_14.setObjectName("scrollArea_14")
         self.scrollAreaWidgetContents_14 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_14.setGeometry(QtCore.QRect(0, 0, 1030, 325))
+        self.scrollAreaWidgetContents_14.setGeometry(QtCore.QRect(0, 0, 1676, 594))
         self.scrollAreaWidgetContents_14.setObjectName("scrollAreaWidgetContents_14")
         self.gridLayout_38 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_14)
         self.gridLayout_38.setContentsMargins(0, 0, 0, 0)
@@ -2594,7 +2594,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 937, 558))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 1698, 775))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_2)
         self.gridLayout_2.setHorizontalSpacing(20)
@@ -2840,7 +2840,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_3.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1009, 540))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1716, 793))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.gridLayout_6 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_3)
         self.gridLayout_6.setContentsMargins(0, 0, 0, 50)
@@ -3071,6 +3071,41 @@ class Ui_MenuAdministrativo(object):
         self.gridLayout_3.setContentsMargins(-1, -1, -1, 30)
         self.gridLayout_3.setObjectName("gridLayout_3")
         self.TablaEmpleados = QtWidgets.QTableWidget(self.tab_2)
+        palette = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(202, 202, 202))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(202, 202, 202))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(202, 202, 202))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Active, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(202, 202, 202))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(202, 202, 202))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(202, 202, 202))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Inactive, QtGui.QPalette.Window, brush)
+        brush = QtGui.QBrush(QtGui.QColor(202, 202, 202))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Button, brush)
+        brush = QtGui.QBrush(QtGui.QColor(202, 202, 202))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
+        brush = QtGui.QBrush(QtGui.QColor(202, 202, 202))
+        brush.setStyle(QtCore.Qt.SolidPattern)
+        palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, brush)
+        self.TablaEmpleados.setPalette(palette)
+        font = QtGui.QFont()
+        font.setFamily("Bahnschrift SemiCondensed")
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.TablaEmpleados.setFont(font)
         self.TablaEmpleados.setStyleSheet("QHeaderView::section{\n"
 "    padding: 5px;\n"
 "    background-color: #77838d;\n"
@@ -3078,7 +3113,17 @@ class Ui_MenuAdministrativo(object):
 "    font: 87 13pt \"Arial Black\";\n"
 "    color: whitesmoke;\n"
 "\n"
-"}")
+"}\n"
+"QTableWidget{\n"
+"background-color: rgb(202, 202, 202);\n"
+"}\n"
+"QTableWidget::Item {\n"
+"    font: 87 13pt \"Arial Black\";\n"
+"    color: #343434;\n"
+"    border:  .3px solid #034aa6;\n"
+"    background-color: whitesmoke;\n"
+"}\n"
+"")
         self.TablaEmpleados.setDragEnabled(False)
         self.TablaEmpleados.setObjectName("TablaEmpleados")
         self.TablaEmpleados.setColumnCount(9)
@@ -3169,8 +3214,6 @@ class Ui_MenuAdministrativo(object):
         self.BuscarRegistradosCombobox.setObjectName("BuscarRegistradosCombobox")
         self.BuscarRegistradosCombobox.addItem("")
         self.BuscarRegistradosCombobox.addItem("")
-        self.BuscarRegistradosCombobox.addItem("")
-        self.BuscarRegistradosCombobox.setItemText(2, "")
         self.gridLayout_3.addWidget(self.BuscarRegistradosCombobox, 1, 0, 1, 2)
         self.BuscarRegistradosPacientesText = QtWidgets.QLineEdit(self.tab_2)
         self.BuscarRegistradosPacientesText.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
@@ -3195,7 +3238,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_4.setWidgetResizable(True)
         self.scrollArea_4.setObjectName("scrollArea_4")
         self.scrollAreaWidgetContents_5 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 987, 364))
+        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 1716, 743))
         self.scrollAreaWidgetContents_5.setObjectName("scrollAreaWidgetContents_5")
         self.gridLayout_9 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_5)
         self.gridLayout_9.setObjectName("gridLayout_9")
@@ -3308,8 +3351,6 @@ class Ui_MenuAdministrativo(object):
         self.BuscarRegistradosCombobox_2.setObjectName("BuscarRegistradosCombobox_2")
         self.BuscarRegistradosCombobox_2.addItem("")
         self.BuscarRegistradosCombobox_2.addItem("")
-        self.BuscarRegistradosCombobox_2.addItem("")
-        self.BuscarRegistradosCombobox_2.setItemText(2, "")
         self.gridLayout_9.addWidget(self.BuscarRegistradosCombobox_2, 1, 0, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
         self.label_40 = QtWidgets.QLabel(self.scrollAreaWidgetContents_5)
         self.label_40.setMinimumSize(QtCore.QSize(0, 0))
@@ -3390,7 +3431,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_5.setWidgetResizable(True)
         self.scrollArea_5.setObjectName("scrollArea_5")
         self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 1119, 431))
+        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 1680, 757))
         self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
         self.gridLayout_29 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_4)
         self.gridLayout_29.setObjectName("gridLayout_29")
@@ -4292,7 +4333,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_8.setWidgetResizable(True)
         self.scrollArea_8.setObjectName("scrollArea_8")
         self.scrollAreaWidgetContents_8 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_8.setGeometry(QtCore.QRect(0, 0, 1077, 372))
+        self.scrollAreaWidgetContents_8.setGeometry(QtCore.QRect(0, 0, 1680, 767))
         self.scrollAreaWidgetContents_8.setObjectName("scrollAreaWidgetContents_8")
         self.gridLayout_25 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_8)
         self.gridLayout_25.setContentsMargins(0, 0, 0, 0)
@@ -4929,7 +4970,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_9.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea_9.setObjectName("scrollArea_9")
         self.scrollAreaWidgetContents_9 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_9.setGeometry(QtCore.QRect(0, 0, 100, 30))
+        self.scrollAreaWidgetContents_9.setGeometry(QtCore.QRect(0, 0, 1698, 785))
         self.scrollAreaWidgetContents_9.setObjectName("scrollAreaWidgetContents_9")
         self.label_78 = QtWidgets.QLabel(self.scrollAreaWidgetContents_9)
         self.label_78.setGeometry(QtCore.QRect(420, 180, 281, 35))
@@ -5838,6 +5879,7 @@ class Ui_MenuAdministrativo(object):
         self.tabWidget_2.setCurrentIndex(0)
         self.tabWidget_3.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MenuAdministrativo)
+        
         """
         Aqui inician las instrucciones a las funciones:
         """
@@ -5879,8 +5921,12 @@ class Ui_MenuAdministrativo(object):
         self.BuscarBotonActualizar.clicked.connect(lambda: self.buscarActualizarEmpleado(cursor))
         self.pushButton_4.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_7))
         self.ActualizarBotonPaciente.clicked.connect(lambda: self.actualizarEmpleado(cursor))
-        
-        
+        #Botones CRUD Empleados (Mostrar)
+        self.BuscarBotonRegistrados.clicked.connect(lambda: self.BuscarMostrarEmpleados(cursor))
+        self.RefrescarBotonRegistrados.clicked.connect(lambda: self.refrescarMostrarEmpleados(cursor))
+        #Botones CRUD Empleados (Eliminar)
+        self.BuscarBotonEliminar.clicked.connect(lambda: self.buscarEliminarEmpleados(cursor))
+        self.EliminarPacienteBoton.clicked.connect(lambda: self.eliminarEmpleados(cursor))
         
         
         """
@@ -5950,7 +5996,7 @@ class Ui_MenuAdministrativo(object):
             self.msgError("Falta de informacion", "Debes ingresar un NSS valido de almenos 11 digitos")
         elif (len(RFC)==0) or (len(RFC)!=13):
             self.msgError("Falta de informacion", "Debes ingresar un RFC valido de almenos 13 digitos")
-        elif (len(passw)==0) or (len(passw)!=8):
+        elif (len(passw)==0) or (len(passw)<8):
             self.msgError("Falta de informacion", "Debes ingresar una contraseña valida de almenos 8 digitos")
         else:
             SQL=""" insert into empleadosyadmin (Nombre, Fecha_Ingreso, Fecha_Nacimiento, rol, Telefono_Empleado, CURP_Empleado, NSS_Empleado, RFC_Empleado, Contraseña)\
@@ -6056,7 +6102,7 @@ class Ui_MenuAdministrativo(object):
             self.msgError("Falta de informacion", "Debes ingresar un NSS valido de almenos 11 digitos o dejar el anterior antes de actualizar")
         elif (len(RFC)==0) or (len(RFC)!=13):
             self.msgError("Falta de informacion", "Debes ingresar un RFC valido de almenos 13 digitos o dejar el anterior antes de actualizar")
-        elif (len(passw)==0) or (len(passw)!=8):
+        elif (len(passw)==0) or (len(passw)<8):
             self.msgError("Falta de informacion", "Debes ingresar una contraseña valida de almenos 8 digitos o dejar la anterior antes de actualizar")
         else:
             SQL=""" update empleadosyadmin set Nombre='{}', Fecha_Ingreso='{}', Fecha_Nacimiento='{}', rol='{}', Telefono_Empleado='{}', 
@@ -6076,6 +6122,147 @@ class Ui_MenuAdministrativo(object):
             self.MedicamentosActualizar.clear()
             self.MedicamentosRegistrar_7.clear()
     
+    def BuscarMostrarEmpleados(self, cursor):
+        data=self.BuscarRegistradosPacientesText.text()
+        self.TablaEmpleados.clearContents()
+        self.TablaEmpleados.setRowCount(0)
+        #Aqui comprueba que se escribio en el cuadro
+        if len(data)==0:
+            self.msgError("Busqueda", "Debes ingresar informacion antes de buscar")
+        else:
+            opc=self.BuscarRegistradosCombobox.currentText() 
+            if opc == "Buscar por Nombre:":
+                SQL="""select *from empleadosyadmin where nombre like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese nombre de empleado")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados.setRowCount(tablerow + 1)
+                        self.TablaEmpleados.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados.setItem(tablerow,4,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados.setItem(tablerow,5,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        self.TablaEmpleados.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+                        tablerow+=1
+            elif opc == "Buscar por ID:":
+                SQL="""select *from empleadosyadmin where cast(id_empleado as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de empleado")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados.setRowCount(tablerow + 1)
+                        self.TablaEmpleados.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados.setItem(tablerow,4,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados.setItem(tablerow,5,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        self.TablaEmpleados.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+                        tablerow+=1
+            else:
+                self.msgError("Seleccion", "Selecciona un modo de busqueda")
+    
+    def refrescarMostrarEmpleados(self, cursor):
+        self.TablaEmpleados.clearContents()
+        cursor.execute("SELECT *FROM empleadosyadmin")
+        row=cursor.fetchall()
+        tablerow = 0
+        for rows in row:
+            self.TablaEmpleados.setRowCount(tablerow + 1)
+            self.TablaEmpleados.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+            self.TablaEmpleados.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+            self.TablaEmpleados.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+            self.TablaEmpleados.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+            self.TablaEmpleados.setItem(tablerow,4,QTableWidgetItem(str(rows[4])))
+            self.TablaEmpleados.setItem(tablerow,5,QTableWidgetItem(str(rows[5])))
+            self.TablaEmpleados.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+            self.TablaEmpleados.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+            self.TablaEmpleados.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+            tablerow+=1
+            
+    def buscarEliminarEmpleados(self, cursor):
+        self.Eliminar_NombrePaciente.clear()
+        self.Eliminar_TelefenoPaciente.clear()
+        self.EliminarFecha.clear()
+        self.EliminarUltima.clear()
+        
+        data=self.ID_BuscarEliminarPaciente.text()
+        if len(data)==0:
+            self.msgError("Busqued no valida", "Debes Ingresar informacion valida para buscar")
+        else:
+            opc = self.BuscarRegistradosCombobox_2.currentText()
+            if opc == "Buscar por ID:":
+                SQL="""select *from empleadosyadmin where cast(id_empleado as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese ID")
+                else:
+                    for rows in row:
+                        self.Eliminar_NombrePaciente.setText(str(rows[1]))
+                        self.Eliminar_TelefenoPaciente.setText(str(rows[5]))
+                        self.EliminarFecha.setText(str(rows[3]))
+                        self.EliminarUltima.setText(str(rows[4]))
+            else:
+                SQL="""select *from empleadosyadmin where nombre like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese Nombre")
+                else:
+                    for rows in row:
+                        self.Eliminar_NombrePaciente.setText(str(rows[1]))
+                        self.Eliminar_TelefenoPaciente.setText(str(rows[5]))
+                        self.EliminarFecha.setText(str(rows[3]))
+                        self.EliminarUltima.setText(str(rows[4]))
+                        
+    def eliminarEmpleados(self, cursor):
+        opc = self.BuscarRegistradosCombobox_2.currentText()
+        data = self.ID_BuscarEliminarPaciente.text()
+        if opc == "Buscar por Nombre:":
+            SQL="""select id_empleado from empleadosyadmin where nombre like '%{}%' """.format(data)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Busqueda", "Debes realizar una busqueda valida primero antes de eliminar")
+            else:
+                for rows in row:
+                    id = str(rows[0])
+        id=str(data)
+        
+        nombre=self.Eliminar_NombrePaciente.text()
+        tel=self.Eliminar_TelefenoPaciente.text()
+        fech=self.EliminarFecha.text()
+        ult=self.EliminarUltima.text()
+        
+        if len(nombre)==0 or len(tel)==0 or len(fech)==0 or len(ult)==0:
+            self.msgError("Busqueda", "Debes realizar una busqueda valida primero antes de eliminar")
+        else:
+            SQL='''delete from empleadosyadmin where Id_empleado='{}' '''.format(id)   
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+            except Exception as ex:
+                #self.msgError("No fue posible eliminar el empleado", ex)
+                print(ex)
+        
+            self.Eliminar_NombrePaciente.clear()
+            self.Eliminar_TelefenoPaciente.clear()
+            self.EliminarFecha.clear()
+            self.EliminarUltima.clear()
+            
     def msgError(self,msg1,msg2):
         msg = QtWidgets.QMessageBox()
         msg.setWindowTitle(msg1)
@@ -6083,7 +6270,6 @@ class Ui_MenuAdministrativo(object):
         msg.setIcon(QtWidgets.QMessageBox.Information)
         
         x = msg.exec_()
-        
 
     def retranslateUi(self, MenuAdministrativo):
         _translate = QtCore.QCoreApplication.translate

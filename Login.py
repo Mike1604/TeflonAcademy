@@ -1,19 +1,11 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'Login.ui'
-#
-# Created by: PyQt5 UI code generator 5.9.2
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QDialog, QApplication, QTableWidgetItem
+from PyQt5.QtWidgets import QDialog, QApplication, QTableWidgetItem, QLineEdit
 from MenuAdministrativos import Ui_MenuAdministrativo
 
 class Ui_LogIn(object):
     def setupUi(self, LogIn, cursor):
         LogIn.setObjectName("LogIn")
-        LogIn.resize(744, 600)
+        LogIn.resize(921, 685)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/logos/logo.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         LogIn.setWindowIcon(icon)
@@ -89,6 +81,33 @@ class Ui_LogIn(object):
         self.frame_6.setObjectName("frame_6")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.frame_6)
         self.gridLayout_3.setObjectName("gridLayout_3")
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_3.addItem(spacerItem, 1, 4, 1, 1)
+        self.lineEdit_7 = QtWidgets.QLineEdit(self.frame_6)
+        self.lineEdit_7.setMinimumSize(QtCore.QSize(200, 40))
+        self.lineEdit_7.setMaximumSize(QtCore.QSize(400, 40))
+        self.lineEdit_7.setStyleSheet("background-color: #343434;\n"
+"font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;\n"
+"border: 3px solid #e6b31e;\n"
+"border-radius: 10px;\n"
+"")
+        self.lineEdit_7.setAlignment(QtCore.Qt.AlignCenter)
+        self.lineEdit_7.setObjectName("lineEdit_7")
+        self.gridLayout_3.addWidget(self.lineEdit_7, 0, 2, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_3.addItem(spacerItem1, 5, 4, 1, 1)
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_3.addItem(spacerItem2, 1, 0, 1, 1)
+        self.label_120 = QtWidgets.QLabel(self.frame_6)
+        self.label_120.setStyleSheet("font: 87 14pt \"Arial Black\";\n"
+"color: whitesmoke;")
+        self.label_120.setObjectName("label_120")
+        self.gridLayout_3.addWidget(self.label_120, 1, 1, 1, 1)
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_3.addItem(spacerItem3, 5, 0, 1, 1)
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_3.addItem(spacerItem4, 0, 0, 1, 1)
         self.lineEdit_8 = QtWidgets.QLineEdit(self.frame_6)
         self.lineEdit_8.setMinimumSize(QtCore.QSize(200, 40))
         self.lineEdit_8.setMaximumSize(QtCore.QSize(400, 40))
@@ -104,35 +123,8 @@ class Ui_LogIn(object):
         self.lineEdit_8.setCursorMoveStyle(QtCore.Qt.LogicalMoveStyle)
         self.lineEdit_8.setObjectName("lineEdit_8")
         self.gridLayout_3.addWidget(self.lineEdit_8, 1, 2, 1, 1)
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_3.addItem(spacerItem, 0, 0, 1, 1)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_3.addItem(spacerItem1, 5, 0, 1, 1)
-        self.lineEdit_7 = QtWidgets.QLineEdit(self.frame_6)
-        self.lineEdit_7.setMinimumSize(QtCore.QSize(200, 40))
-        self.lineEdit_7.setMaximumSize(QtCore.QSize(400, 40))
-        self.lineEdit_7.setStyleSheet("background-color: #343434;\n"
-"font: 87 14pt \"Arial Black\";\n"
-"color: whitesmoke;\n"
-"border: 3px solid #e6b31e;\n"
-"border-radius: 10px;\n"
-"")
-        self.lineEdit_7.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_7.setObjectName("lineEdit_7")
-        self.gridLayout_3.addWidget(self.lineEdit_7, 0, 2, 1, 1)
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_3.addItem(spacerItem2, 0, 3, 1, 1)
-        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_3.addItem(spacerItem3, 1, 3, 1, 1)
-        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_3.addItem(spacerItem4, 5, 3, 1, 1)
         spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_3.addItem(spacerItem5, 1, 0, 1, 1)
-        self.label_120 = QtWidgets.QLabel(self.frame_6)
-        self.label_120.setStyleSheet("font: 87 14pt \"Arial Black\";\n"
-"color: whitesmoke;")
-        self.label_120.setObjectName("label_120")
-        self.gridLayout_3.addWidget(self.label_120, 1, 1, 1, 1)
+        self.gridLayout_3.addItem(spacerItem5, 0, 4, 1, 1)
         self.label_119 = QtWidgets.QLabel(self.frame_6)
         self.label_119.setStyleSheet("font: 87 14pt \"Arial Black\";\n"
 "color: whitesmoke;")
@@ -173,6 +165,20 @@ class Ui_LogIn(object):
         self.SeleccionRol.addItem("")
         self.SeleccionRol.addItem("")
         self.gridLayout_3.addWidget(self.SeleccionRol, 4, 1, 1, 2)
+        self.pushButton_3 = QtWidgets.QPushButton(self.frame_6)
+        self.pushButton_3.setMinimumSize(QtCore.QSize(40, 40))
+        self.pushButton_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_3.setStyleSheet("QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/ojo.png);\n"
+"    \n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"}")
+        self.pushButton_3.setText("")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.gridLayout_3.addWidget(self.pushButton_3, 1, 3, 1, 1)
         self.verticalLayout_2.addWidget(self.frame_6)
         self.verticalLayout_2.setStretch(0, 5)
         self.verticalLayout_2.setStretch(1, 10)
@@ -183,10 +189,12 @@ class Ui_LogIn(object):
 
         self.retranslateUi(LogIn)
         QtCore.QMetaObject.connectSlotsByName(LogIn)
+        
         """
         Aqui inician las instrucciones a las funciones:
         """
         self.pushButton_28.clicked.connect(lambda: self.iniciarSesion(cursor, LogIn))
+        self.pushButton_3.clicked.connect(lambda: self.passwordHide(self.lineEdit_8))
         """
         Aqui inician las funciones:
         """
@@ -228,7 +236,6 @@ class Ui_LogIn(object):
                             self.msgError("Contraseña Incorrecta", "La contraseña no coincide con el usuario")
                         else:
                             id=rows[0]
-                            print(id)
                             #Conecto al usuario
                             self.window = QtWidgets.QMainWindow()
                             self.ui = Ui_MenuAdministrativo()
@@ -237,7 +244,12 @@ class Ui_LogIn(object):
                             self.lineEdit_7.setText("")
                             self.lineEdit_8.setText("")
                             self.window.show()
-        
+       
+    def passwordHide(self, passw):
+        if passw.echoMode() == QLineEdit.Password:
+            passw.setEchoMode(QtWidgets.QLineEdit.Normal)
+        else:
+            passw.setEchoMode(QtWidgets.QLineEdit.Password)
     def msgError(self,msg1,msg2):
         msg = QtWidgets.QMessageBox()
         msg.setWindowTitle(msg1)
