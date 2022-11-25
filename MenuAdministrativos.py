@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QDialog, QApplication, QTableWidgetItem, QPushButton
 class Ui_MenuAdministrativo(object):
     def setupUi(self, MenuAdministrativo, cursor, id, LogIn):
         MenuAdministrativo.setObjectName("MenuAdministrativo")
-        MenuAdministrativo.resize(1720, 961)
+        MenuAdministrativo.resize(1138, 808)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/logos/logo.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MenuAdministrativo.setWindowIcon(icon)
@@ -13,6 +13,58 @@ class Ui_MenuAdministrativo(object):
         self.gridLayout_26.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_26.setSpacing(0)
         self.gridLayout_26.setObjectName("gridLayout_26")
+        self.Navbar_Frame = QtWidgets.QFrame(self.centralwidget)
+        self.Navbar_Frame.setMinimumSize(QtCore.QSize(0, 0))
+        self.Navbar_Frame.setMaximumSize(QtCore.QSize(16777215, 80))
+        self.Navbar_Frame.setStyleSheet("background-color: #343434;")
+        self.Navbar_Frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.Navbar_Frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.Navbar_Frame.setObjectName("Navbar_Frame")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.Navbar_Frame)
+        self.horizontalLayout_2.setContentsMargins(20, 0, 20, 0)
+        self.horizontalLayout_2.setSpacing(0)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.pushButton = QtWidgets.QPushButton(self.Navbar_Frame)
+        self.pushButton.setMinimumSize(QtCore.QSize(70, 70))
+        self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/menuIcon.png);\n"
+"    \n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    \n"
+"    image: url(:/menu/menuicon2.png);\n"
+"}\n"
+"")
+        self.pushButton.setText("")
+        self.pushButton.setObjectName("pushButton")
+        self.horizontalLayout_2.addWidget(self.pushButton)
+        self.label_Info_actual = QtWidgets.QLabel(self.Navbar_Frame)
+        self.label_Info_actual.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_Info_actual.setStyleSheet("font: 87 16pt \"Arial Black\";\n"
+"color: whitesmoke;")
+        self.label_Info_actual.setText("")
+        self.label_Info_actual.setWordWrap(True)
+        self.label_Info_actual.setObjectName("label_Info_actual")
+        self.horizontalLayout_2.addWidget(self.label_Info_actual)
+        spacerItem = QtWidgets.QSpacerItem(386, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
+        self.label_3 = QtWidgets.QLabel(self.Navbar_Frame)
+        self.label_3.setMinimumSize(QtCore.QSize(70, 70))
+        self.label_3.setStyleSheet("image: url(:/logos/logo.png);")
+        self.label_3.setText("")
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_2.addWidget(self.label_3)
+        spacerItem1 = QtWidgets.QSpacerItem(385, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem1)
+        self.label_4 = QtWidgets.QLabel(self.Navbar_Frame)
+        self.label_4.setStyleSheet("font: 87 16pt \"Arial Black\";\n"
+"color: whitesmoke;")
+        self.label_4.setObjectName("label_4")
+        self.horizontalLayout_2.addWidget(self.label_4)
+        self.gridLayout_26.addWidget(self.Navbar_Frame, 0, 0, 1, 1)
         self.Frame_Inferior = QtWidgets.QFrame(self.centralwidget)
         self.Frame_Inferior.setStyleSheet("background-color: #231f20;")
         self.Frame_Inferior.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -29,14 +81,48 @@ class Ui_MenuAdministrativo(object):
         self.Menu_Lateral_Frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.Menu_Lateral_Frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.Menu_Lateral_Frame.setObjectName("Menu_Lateral_Frame")
-        self.verticalLayout_27 = QtWidgets.QVBoxLayout(self.Menu_Lateral_Frame)
-        self.verticalLayout_27.setContentsMargins(0, 0, 0, 15)
-        self.verticalLayout_27.setSpacing(0)
-        self.verticalLayout_27.setObjectName("verticalLayout_27")
+        self.verticalLayout_17 = QtWidgets.QVBoxLayout(self.Menu_Lateral_Frame)
+        self.verticalLayout_17.setObjectName("verticalLayout_17")
+        self.frame_57 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
+        self.frame_57.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_57.setStyleSheet("QLabel{\n"
+"    font: 87 8pt \"Arial Black\";\n"
+"    \n"
+"color: rgb(226, 176, 30);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton{\n"
+"    border: 0px;\n"
+"    \n"
+"    image: url(:/menu/home2.png);\n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"    image: url(:/menu/home.png);\n"
+"}\n"
+"\n"
+"")
+        self.frame_57.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_57.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_57.setObjectName("frame_57")
+        self.verticalLayout_34 = QtWidgets.QVBoxLayout(self.frame_57)
+        self.verticalLayout_34.setSpacing(20)
+        self.verticalLayout_34.setObjectName("verticalLayout_34")
+        self.pushButton_36 = QtWidgets.QPushButton(self.frame_57)
+        self.pushButton_36.setMinimumSize(QtCore.QSize(0, 50))
+        self.pushButton_36.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.pushButton_36.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_36.setStyleSheet("")
+        self.pushButton_36.setText("")
+        self.pushButton_36.setObjectName("pushButton_36")
+        self.verticalLayout_34.addWidget(self.pushButton_36)
+        self.verticalLayout_17.addWidget(self.frame_57)
         self.frame_56 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
         self.frame_56.setMinimumSize(QtCore.QSize(0, 0))
         self.frame_56.setStyleSheet("QLabel{\n"
-"    font: 87 10pt \"Arial Black\";\n"
+"    font: 87 8pt \"Arial Black\";\n"
 "    \n"
 "color: rgb(226, 176, 30);\n"
 "    border-radius: 15px;\n"
@@ -62,71 +148,19 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_33 = QtWidgets.QVBoxLayout(self.frame_56)
         self.verticalLayout_33.setSpacing(20)
         self.verticalLayout_33.setObjectName("verticalLayout_33")
-        self.frame_35 = QtWidgets.QFrame(self.frame_56)
-        self.frame_35.setMinimumSize(QtCore.QSize(0, 0))
-        self.frame_35.setStyleSheet("QLabel{\n"
-"    font: 87 10pt \"Arial Black\";\n"
-"    \n"
-"color: rgb(226, 176, 30);\n"
-"    border-radius: 15px;\n"
-"}\n"
-"\n"
-"\n"
-"QPushButton{\n"
-"    border: 0px;\n"
-"    \n"
-"    image: url(:/menu/home2.png);\n"
-"}\n"
-"QPushButton:hover{\n"
-"    border: 10px;\n"
-"    image: url(:/menu/home.png);\n"
-"}\n"
-"\n"
-"")
-        self.frame_35.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_35.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_35.setObjectName("frame_35")
-        self.verticalLayout_20 = QtWidgets.QVBoxLayout(self.frame_35)
-        self.verticalLayout_20.setSpacing(20)
-        self.verticalLayout_20.setObjectName("verticalLayout_20")
-        self.pushButton_23 = QtWidgets.QPushButton(self.frame_35)
-        self.pushButton_23.setMinimumSize(QtCore.QSize(60, 55))
-        self.pushButton_23.setMaximumSize(QtCore.QSize(16777215, 40))
-        self.pushButton_23.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_23.setStyleSheet("")
-        self.pushButton_23.setText("")
-        self.pushButton_23.setObjectName("pushButton_23")
-        self.verticalLayout_20.addWidget(self.pushButton_23)
-        self.label_133 = QtWidgets.QLabel(self.frame_35)
-        self.label_133.setMinimumSize(QtCore.QSize(0, 20))
-        self.label_133.setMaximumSize(QtCore.QSize(16777215, 50))
-        self.label_133.setStyleSheet("")
-        self.label_133.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_133.setWordWrap(True)
-        self.label_133.setObjectName("label_133")
-        self.verticalLayout_20.addWidget(self.label_133)
-        self.verticalLayout_33.addWidget(self.frame_35)
         self.pushButton_35 = QtWidgets.QPushButton(self.frame_56)
-        self.pushButton_35.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_35.setMinimumSize(QtCore.QSize(0, 50))
         self.pushButton_35.setMaximumSize(QtCore.QSize(16777215, 40))
         self.pushButton_35.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_35.setStyleSheet("")
         self.pushButton_35.setText("")
         self.pushButton_35.setObjectName("pushButton_35")
         self.verticalLayout_33.addWidget(self.pushButton_35)
-        self.label_153 = QtWidgets.QLabel(self.frame_56)
-        self.label_153.setMinimumSize(QtCore.QSize(0, 20))
-        self.label_153.setMaximumSize(QtCore.QSize(16777215, 50))
-        self.label_153.setStyleSheet("")
-        self.label_153.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_153.setWordWrap(True)
-        self.label_153.setObjectName("label_153")
-        self.verticalLayout_33.addWidget(self.label_153)
-        self.verticalLayout_27.addWidget(self.frame_56)
+        self.verticalLayout_17.addWidget(self.frame_56)
         self.frame_55 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
         self.frame_55.setMinimumSize(QtCore.QSize(0, 0))
         self.frame_55.setStyleSheet("QLabel{\n"
-"    font: 87 10pt \"Arial Black\";\n"
+"    font: 87 8pt \"Arial Black\";\n"
 "    \n"
 "color: rgb(226, 176, 30);\n"
 "    border-radius: 15px;\n"
@@ -150,26 +184,18 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_32.setSpacing(20)
         self.verticalLayout_32.setObjectName("verticalLayout_32")
         self.pushButton_34 = QtWidgets.QPushButton(self.frame_55)
-        self.pushButton_34.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_34.setMinimumSize(QtCore.QSize(0, 50))
         self.pushButton_34.setMaximumSize(QtCore.QSize(16777215, 40))
         self.pushButton_34.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_34.setStyleSheet("")
         self.pushButton_34.setText("")
         self.pushButton_34.setObjectName("pushButton_34")
         self.verticalLayout_32.addWidget(self.pushButton_34)
-        self.label_152 = QtWidgets.QLabel(self.frame_55)
-        self.label_152.setMinimumSize(QtCore.QSize(0, 20))
-        self.label_152.setMaximumSize(QtCore.QSize(16777215, 50))
-        self.label_152.setStyleSheet("")
-        self.label_152.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_152.setWordWrap(True)
-        self.label_152.setObjectName("label_152")
-        self.verticalLayout_32.addWidget(self.label_152)
-        self.verticalLayout_27.addWidget(self.frame_55)
+        self.verticalLayout_17.addWidget(self.frame_55)
         self.frame_54 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
         self.frame_54.setMinimumSize(QtCore.QSize(0, 0))
         self.frame_54.setStyleSheet("QLabel{\n"
-"    font: 87 10pt \"Arial Black\";\n"
+"    font: 87 8pt \"Arial Black\";\n"
 "    \n"
 "color: rgb(226, 176, 30);\n"
 "    border-radius: 15px;\n"
@@ -193,26 +219,18 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_31.setSpacing(20)
         self.verticalLayout_31.setObjectName("verticalLayout_31")
         self.pushButton_33 = QtWidgets.QPushButton(self.frame_54)
-        self.pushButton_33.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_33.setMinimumSize(QtCore.QSize(0, 50))
         self.pushButton_33.setMaximumSize(QtCore.QSize(16777215, 40))
         self.pushButton_33.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_33.setStyleSheet("")
         self.pushButton_33.setText("")
         self.pushButton_33.setObjectName("pushButton_33")
         self.verticalLayout_31.addWidget(self.pushButton_33)
-        self.label_151 = QtWidgets.QLabel(self.frame_54)
-        self.label_151.setMinimumSize(QtCore.QSize(0, 20))
-        self.label_151.setMaximumSize(QtCore.QSize(16777215, 50))
-        self.label_151.setStyleSheet("")
-        self.label_151.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_151.setWordWrap(True)
-        self.label_151.setObjectName("label_151")
-        self.verticalLayout_31.addWidget(self.label_151)
-        self.verticalLayout_27.addWidget(self.frame_54)
+        self.verticalLayout_17.addWidget(self.frame_54)
         self.frame_51 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
         self.frame_51.setMinimumSize(QtCore.QSize(0, 0))
         self.frame_51.setStyleSheet("QLabel{\n"
-"    font: 87 10pt \"Arial Black\";\n"
+"    font: 87 8pt \"Arial Black\";\n"
 "    \n"
 "color: rgb(226, 176, 30);\n"
 "    border-radius: 15px;\n"
@@ -237,26 +255,18 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_26.setSpacing(20)
         self.verticalLayout_26.setObjectName("verticalLayout_26")
         self.pushButton_30 = QtWidgets.QPushButton(self.frame_51)
-        self.pushButton_30.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_30.setMinimumSize(QtCore.QSize(0, 50))
         self.pushButton_30.setMaximumSize(QtCore.QSize(16777215, 40))
         self.pushButton_30.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_30.setStyleSheet("")
         self.pushButton_30.setText("")
         self.pushButton_30.setObjectName("pushButton_30")
         self.verticalLayout_26.addWidget(self.pushButton_30)
-        self.label_136 = QtWidgets.QLabel(self.frame_51)
-        self.label_136.setMinimumSize(QtCore.QSize(0, 20))
-        self.label_136.setMaximumSize(QtCore.QSize(16777215, 50))
-        self.label_136.setStyleSheet("")
-        self.label_136.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_136.setWordWrap(True)
-        self.label_136.setObjectName("label_136")
-        self.verticalLayout_26.addWidget(self.label_136)
-        self.verticalLayout_27.addWidget(self.frame_51)
+        self.verticalLayout_17.addWidget(self.frame_51)
         self.frame_36 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
         self.frame_36.setMinimumSize(QtCore.QSize(0, 0))
         self.frame_36.setStyleSheet("QLabel{\n"
-"    font: 87 10pt \"Arial Black\";\n"
+"    font: 87 8pt \"Arial Black\";\n"
 "    \n"
 "color: rgb(226, 176, 30);\n"
 "    border-radius: 15px;\n"
@@ -279,26 +289,18 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_21.setSpacing(20)
         self.verticalLayout_21.setObjectName("verticalLayout_21")
         self.pushButton_24 = QtWidgets.QPushButton(self.frame_36)
-        self.pushButton_24.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_24.setMinimumSize(QtCore.QSize(0, 50))
         self.pushButton_24.setMaximumSize(QtCore.QSize(16777215, 40))
         self.pushButton_24.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_24.setStyleSheet("")
         self.pushButton_24.setText("")
         self.pushButton_24.setObjectName("pushButton_24")
         self.verticalLayout_21.addWidget(self.pushButton_24)
-        self.label_134 = QtWidgets.QLabel(self.frame_36)
-        self.label_134.setMinimumSize(QtCore.QSize(0, 20))
-        self.label_134.setMaximumSize(QtCore.QSize(16777215, 50))
-        self.label_134.setStyleSheet("")
-        self.label_134.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_134.setWordWrap(True)
-        self.label_134.setObjectName("label_134")
-        self.verticalLayout_21.addWidget(self.label_134)
-        self.verticalLayout_27.addWidget(self.frame_36)
+        self.verticalLayout_17.addWidget(self.frame_36)
         self.frame_53 = QtWidgets.QFrame(self.Menu_Lateral_Frame)
         self.frame_53.setMinimumSize(QtCore.QSize(0, 0))
         self.frame_53.setStyleSheet("QLabel{\n"
-"    font: 87 10pt \"Arial Black\";\n"
+"    font: 87 8pt \"Arial Black\";\n"
 "    \n"
 "color: rgb(226, 176, 30);\n"
 "    border-radius: 15px;\n"
@@ -321,27 +323,19 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_30.setSpacing(20)
         self.verticalLayout_30.setObjectName("verticalLayout_30")
         self.pushButton_32 = QtWidgets.QPushButton(self.frame_53)
-        self.pushButton_32.setMinimumSize(QtCore.QSize(60, 55))
+        self.pushButton_32.setMinimumSize(QtCore.QSize(0, 50))
         self.pushButton_32.setMaximumSize(QtCore.QSize(16777215, 40))
         self.pushButton_32.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_32.setStyleSheet("")
         self.pushButton_32.setText("")
         self.pushButton_32.setObjectName("pushButton_32")
         self.verticalLayout_30.addWidget(self.pushButton_32)
-        self.label_150 = QtWidgets.QLabel(self.frame_53)
-        self.label_150.setMinimumSize(QtCore.QSize(0, 20))
-        self.label_150.setMaximumSize(QtCore.QSize(16777215, 50))
-        self.label_150.setStyleSheet("")
-        self.label_150.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_150.setWordWrap(True)
-        self.label_150.setObjectName("label_150")
-        self.verticalLayout_30.addWidget(self.label_150)
-        self.verticalLayout_27.addWidget(self.frame_53)
+        self.verticalLayout_17.addWidget(self.frame_53)
         self.label_131 = QtWidgets.QLabel(self.Menu_Lateral_Frame)
-        self.label_131.setMinimumSize(QtCore.QSize(0, 20))
-        self.label_131.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.label_131.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_131.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.label_131.setStyleSheet("QLabel{\n"
-"    font: 87 8pt \"Arial Black\";\n"
+"    font: 87 6pt \"Arial Black\";\n"
 "    color: whitesmoke;\n"
 "    border-radius: 15px;\n"
 "}\n"
@@ -354,7 +348,7 @@ class Ui_MenuAdministrativo(object):
         self.label_131.setAlignment(QtCore.Qt.AlignCenter)
         self.label_131.setWordWrap(True)
         self.label_131.setObjectName("label_131")
-        self.verticalLayout_27.addWidget(self.label_131)
+        self.verticalLayout_17.addWidget(self.label_131)
         self.horizontalLayout.addWidget(self.Menu_Lateral_Frame)
         self.frame_4 = QtWidgets.QFrame(self.Frame_Inferior)
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -393,8 +387,8 @@ class Ui_MenuAdministrativo(object):
 "    color: whitesmoke;")
         self.label_Bienvenida.setObjectName("label_Bienvenida")
         self.horizontalLayout_4.addWidget(self.label_Bienvenida)
-        spacerItem = QtWidgets.QSpacerItem(715, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_4.addItem(spacerItem)
+        spacerItem2 = QtWidgets.QSpacerItem(715, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_4.addItem(spacerItem2)
         self.label = QtWidgets.QLabel(self.frame_5)
         self.label.setMinimumSize(QtCore.QSize(100, 100))
         self.label.setStyleSheet("image: url(:/logos/logo.png);")
@@ -436,6 +430,7 @@ class Ui_MenuAdministrativo(object):
         self.horizontalLayout_16.setObjectName("horizontalLayout_16")
         self.frame_3 = QtWidgets.QFrame(self.frame_34)
         self.frame_3.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_3.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.frame_3.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
 "color: whitesmoke;")
         self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -446,7 +441,7 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_5.setObjectName("verticalLayout_5")
         self.frame_2 = QtWidgets.QFrame(self.frame_3)
         self.frame_2.setStyleSheet("\n"
-"font: 87 32pt \"Helvetica Black\";\n"
+"font: 87 20pt \"Helvetica Black\";\n"
 "color: whitesmoke;")
         self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -462,7 +457,7 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_19 = QtWidgets.QVBoxLayout(self.frame_37)
         self.verticalLayout_19.setObjectName("verticalLayout_19")
         self.pushButton_22 = QtWidgets.QPushButton(self.frame_37)
-        self.pushButton_22.setMinimumSize(QtCore.QSize(200, 200))
+        self.pushButton_22.setMinimumSize(QtCore.QSize(120, 150))
         self.pushButton_22.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_22.setStyleSheet("QPushButton{\n"
 "    border: 0px;    \n"
@@ -474,12 +469,12 @@ class Ui_MenuAdministrativo(object):
 "}")
         self.pushButton_22.setText("")
         self.pushButton_22.setObjectName("pushButton_22")
-        self.verticalLayout_19.addWidget(self.pushButton_22)
+        self.verticalLayout_19.addWidget(self.pushButton_22, 0, QtCore.Qt.AlignHCenter)
         self.label_13 = QtWidgets.QLabel(self.frame_37)
         self.label_13.setWordWrap(True)
         self.label_13.setObjectName("label_13")
         self.verticalLayout_19.addWidget(self.label_13, 0, QtCore.Qt.AlignHCenter)
-        self.horizontalLayout_17.addWidget(self.frame_37, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_17.addWidget(self.frame_37, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
         self.frame_38 = QtWidgets.QFrame(self.frame_2)
         self.frame_38.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_38.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -487,7 +482,7 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_22 = QtWidgets.QVBoxLayout(self.frame_38)
         self.verticalLayout_22.setObjectName("verticalLayout_22")
         self.pushButton_25 = QtWidgets.QPushButton(self.frame_38)
-        self.pushButton_25.setMinimumSize(QtCore.QSize(200, 200))
+        self.pushButton_25.setMinimumSize(QtCore.QSize(120, 150))
         self.pushButton_25.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_25.setStyleSheet("QPushButton{\n"
 "    border: 0px;\n"
@@ -500,12 +495,12 @@ class Ui_MenuAdministrativo(object):
 "}")
         self.pushButton_25.setText("")
         self.pushButton_25.setObjectName("pushButton_25")
-        self.verticalLayout_22.addWidget(self.pushButton_25)
+        self.verticalLayout_22.addWidget(self.pushButton_25, 0, QtCore.Qt.AlignHCenter)
         self.label_15 = QtWidgets.QLabel(self.frame_38)
         self.label_15.setWordWrap(False)
         self.label_15.setObjectName("label_15")
         self.verticalLayout_22.addWidget(self.label_15, 0, QtCore.Qt.AlignHCenter)
-        self.horizontalLayout_17.addWidget(self.frame_38, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_17.addWidget(self.frame_38, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
         self.frame_39 = QtWidgets.QFrame(self.frame_2)
         self.frame_39.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_39.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -513,7 +508,7 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_23 = QtWidgets.QVBoxLayout(self.frame_39)
         self.verticalLayout_23.setObjectName("verticalLayout_23")
         self.pushButton_26 = QtWidgets.QPushButton(self.frame_39)
-        self.pushButton_26.setMinimumSize(QtCore.QSize(200, 200))
+        self.pushButton_26.setMinimumSize(QtCore.QSize(120, 150))
         self.pushButton_26.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_26.setStyleSheet("QPushButton{\n"
 "    border: 0px;\n"
@@ -533,11 +528,11 @@ class Ui_MenuAdministrativo(object):
         self.label_132.setWordWrap(True)
         self.label_132.setObjectName("label_132")
         self.verticalLayout_23.addWidget(self.label_132, 0, QtCore.Qt.AlignHCenter)
-        self.horizontalLayout_17.addWidget(self.frame_39, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_17.addWidget(self.frame_39, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
         self.verticalLayout_5.addWidget(self.frame_2)
         self.frame_40 = QtWidgets.QFrame(self.frame_3)
         self.frame_40.setMinimumSize(QtCore.QSize(300, 0))
-        self.frame_40.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
+        self.frame_40.setStyleSheet("font: 87 20pt \"Helvetica Black\";\n"
 "color: whitesmoke;")
         self.frame_40.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_40.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -546,15 +541,14 @@ class Ui_MenuAdministrativo(object):
         self.horizontalLayout_18.setObjectName("horizontalLayout_18")
         self.frame_42 = QtWidgets.QFrame(self.frame_40)
         self.frame_42.setMinimumSize(QtCore.QSize(300, 0))
-        self.frame_42.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
-"color: whitesmoke;")
+        self.frame_42.setStyleSheet("")
         self.frame_42.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_42.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_42.setObjectName("frame_42")
         self.verticalLayout_24 = QtWidgets.QVBoxLayout(self.frame_42)
         self.verticalLayout_24.setObjectName("verticalLayout_24")
         self.pushButton_27 = QtWidgets.QPushButton(self.frame_42)
-        self.pushButton_27.setMinimumSize(QtCore.QSize(200, 200))
+        self.pushButton_27.setMinimumSize(QtCore.QSize(120, 150))
         self.pushButton_27.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_27.setStyleSheet("QPushButton{\n"
 "    border: 0px;\n"
@@ -566,23 +560,22 @@ class Ui_MenuAdministrativo(object):
 "}")
         self.pushButton_27.setText("")
         self.pushButton_27.setObjectName("pushButton_27")
-        self.verticalLayout_24.addWidget(self.pushButton_27)
+        self.verticalLayout_24.addWidget(self.pushButton_27, 0, QtCore.Qt.AlignHCenter)
         self.label_137 = QtWidgets.QLabel(self.frame_42)
         self.label_137.setWordWrap(True)
         self.label_137.setObjectName("label_137")
         self.verticalLayout_24.addWidget(self.label_137, 0, QtCore.Qt.AlignHCenter)
-        self.horizontalLayout_18.addWidget(self.frame_42, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_18.addWidget(self.frame_42, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
         self.frame_41 = QtWidgets.QFrame(self.frame_40)
         self.frame_41.setMinimumSize(QtCore.QSize(300, 0))
-        self.frame_41.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
-"color: whitesmoke;")
+        self.frame_41.setStyleSheet("")
         self.frame_41.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_41.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_41.setObjectName("frame_41")
         self.verticalLayout_25 = QtWidgets.QVBoxLayout(self.frame_41)
         self.verticalLayout_25.setObjectName("verticalLayout_25")
         self.pushButton_2 = QtWidgets.QPushButton(self.frame_41)
-        self.pushButton_2.setMinimumSize(QtCore.QSize(200, 200))
+        self.pushButton_2.setMinimumSize(QtCore.QSize(120, 150))
         self.pushButton_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_2.setStyleSheet("QPushButton{\n"
 "    border: 0px;\n"
@@ -596,12 +589,14 @@ class Ui_MenuAdministrativo(object):
 "}")
         self.pushButton_2.setText("")
         self.pushButton_2.setObjectName("pushButton_2")
-        self.verticalLayout_25.addWidget(self.pushButton_2, 0, QtCore.Qt.AlignHCenter)
+        self.verticalLayout_25.addWidget(self.pushButton_2, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
         self.label_135 = QtWidgets.QLabel(self.frame_41)
         self.label_135.setWordWrap(True)
         self.label_135.setObjectName("label_135")
         self.verticalLayout_25.addWidget(self.label_135)
-        self.horizontalLayout_18.addWidget(self.frame_41, 0, QtCore.Qt.AlignHCenter)
+        self.verticalLayout_25.setStretch(0, 20)
+        self.verticalLayout_25.setStretch(1, 20)
+        self.horizontalLayout_18.addWidget(self.frame_41, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
         self.verticalLayout_5.addWidget(self.frame_40)
         self.horizontalLayout_16.addWidget(self.frame_3)
         self.verticalLayout_4.addWidget(self.frame_34)
@@ -624,7 +619,7 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName("verticalLayout")
         self.frame_25 = QtWidgets.QFrame(self.frame_24)
-        self.frame_25.setMaximumSize(QtCore.QSize(16777215, 150))
+        self.frame_25.setMaximumSize(QtCore.QSize(16777215, 100))
         self.frame_25.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_25.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_25.setObjectName("frame_25")
@@ -633,7 +628,7 @@ class Ui_MenuAdministrativo(object):
         self.horizontalLayout_12.setSpacing(20)
         self.horizontalLayout_12.setObjectName("horizontalLayout_12")
         self.label_125 = QtWidgets.QLabel(self.frame_25)
-        self.label_125.setMinimumSize(QtCore.QSize(150, 150))
+        self.label_125.setMinimumSize(QtCore.QSize(100, 100))
         self.label_125.setStyleSheet("image: url(:/menu/adorno.png);")
         self.label_125.setText("")
         self.label_125.setObjectName("label_125")
@@ -643,10 +638,10 @@ class Ui_MenuAdministrativo(object):
 "    color: whitesmoke;")
         self.label_Bienvenida_2.setObjectName("label_Bienvenida_2")
         self.horizontalLayout_12.addWidget(self.label_Bienvenida_2, 0, QtCore.Qt.AlignVCenter)
-        spacerItem1 = QtWidgets.QSpacerItem(715, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_12.addItem(spacerItem1)
+        spacerItem3 = QtWidgets.QSpacerItem(715, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_12.addItem(spacerItem3)
         self.label_126 = QtWidgets.QLabel(self.frame_25)
-        self.label_126.setMinimumSize(QtCore.QSize(150, 150))
+        self.label_126.setMinimumSize(QtCore.QSize(100, 100))
         self.label_126.setStyleSheet("image: url(:/logos/logo.png);")
         self.label_126.setText("")
         self.label_126.setObjectName("label_126")
@@ -663,7 +658,7 @@ class Ui_MenuAdministrativo(object):
         self.frame_27 = QtWidgets.QFrame(self.frame_26)
         self.frame_27.setStyleSheet("\n"
 "\n"
-"font: 87 32pt \"Helvetica Black\";\n"
+"font: 87 20pt \"Helvetica Black\";\n"
 "color: whitesmoke;")
         self.frame_27.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_27.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -679,7 +674,7 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_15 = QtWidgets.QVBoxLayout(self.frame_28)
         self.verticalLayout_15.setObjectName("verticalLayout_15")
         self.pushButton_11 = QtWidgets.QPushButton(self.frame_28)
-        self.pushButton_11.setMinimumSize(QtCore.QSize(300, 200))
+        self.pushButton_11.setMinimumSize(QtCore.QSize(120, 150))
         self.pushButton_11.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_11.setStyleSheet("QPushButton{\n"
 "    border: 0px;    \n"
@@ -690,12 +685,12 @@ class Ui_MenuAdministrativo(object):
 "}")
         self.pushButton_11.setText("")
         self.pushButton_11.setObjectName("pushButton_11")
-        self.verticalLayout_15.addWidget(self.pushButton_11)
+        self.verticalLayout_15.addWidget(self.pushButton_11, 0, QtCore.Qt.AlignVCenter)
         self.label_127 = QtWidgets.QLabel(self.frame_28)
         self.label_127.setWordWrap(True)
         self.label_127.setObjectName("label_127")
         self.verticalLayout_15.addWidget(self.label_127, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
-        self.horizontalLayout_13.addWidget(self.frame_28, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_13.addWidget(self.frame_28, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
         self.frame_29 = QtWidgets.QFrame(self.frame_27)
         self.frame_29.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_29.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -703,7 +698,7 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_16 = QtWidgets.QVBoxLayout(self.frame_29)
         self.verticalLayout_16.setObjectName("verticalLayout_16")
         self.pushButton_12 = QtWidgets.QPushButton(self.frame_29)
-        self.pushButton_12.setMinimumSize(QtCore.QSize(300, 200))
+        self.pushButton_12.setMinimumSize(QtCore.QSize(120, 150))
         self.pushButton_12.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_12.setStyleSheet("QPushButton{\n"
 "    border: 0px;    \n"
@@ -719,10 +714,10 @@ class Ui_MenuAdministrativo(object):
         self.label_128.setWordWrap(True)
         self.label_128.setObjectName("label_128")
         self.verticalLayout_16.addWidget(self.label_128, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
-        self.horizontalLayout_13.addWidget(self.frame_29, 0, QtCore.Qt.AlignHCenter)
+        self.horizontalLayout_13.addWidget(self.frame_29, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
         self.verticalLayout_14.addWidget(self.frame_27)
         self.frame_30 = QtWidgets.QFrame(self.frame_26)
-        self.frame_30.setStyleSheet("font: 87 32pt \"Helvetica Black\";\n"
+        self.frame_30.setStyleSheet("font: 87 20pt \"Helvetica Black\";\n"
 "color: whitesmoke;")
         self.frame_30.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_30.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -736,7 +731,7 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_18 = QtWidgets.QVBoxLayout(self.frame_32)
         self.verticalLayout_18.setObjectName("verticalLayout_18")
         self.pushButton_14 = QtWidgets.QPushButton(self.frame_32)
-        self.pushButton_14.setMinimumSize(QtCore.QSize(300, 200))
+        self.pushButton_14.setMinimumSize(QtCore.QSize(120, 150))
         self.pushButton_14.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_14.setStyleSheet("QPushButton{\n"
 "    border: 0px;    \n"
@@ -747,13 +742,13 @@ class Ui_MenuAdministrativo(object):
 "}")
         self.pushButton_14.setText("")
         self.pushButton_14.setObjectName("pushButton_14")
-        self.verticalLayout_18.addWidget(self.pushButton_14)
+        self.verticalLayout_18.addWidget(self.pushButton_14, 0, QtCore.Qt.AlignHCenter)
         self.label_130 = QtWidgets.QLabel(self.frame_32)
         self.label_130.setWordWrap(True)
         self.label_130.setObjectName("label_130")
         self.verticalLayout_18.addWidget(self.label_130, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
-        self.horizontalLayout_14.addWidget(self.frame_32)
-        self.verticalLayout_14.addWidget(self.frame_30)
+        self.horizontalLayout_14.addWidget(self.frame_32, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.verticalLayout_14.addWidget(self.frame_30, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
         self.verticalLayout.addWidget(self.frame_26)
         self.gridLayout_27.addWidget(self.frame_24, 0, 0, 1, 1)
         self.stackedWidget.addWidget(self.MenuPuntoVenta)
@@ -960,8 +955,8 @@ class Ui_MenuAdministrativo(object):
         self.label_112 = QtWidgets.QLabel(self.frame_20)
         self.label_112.setObjectName("label_112")
         self.gridLayout_22.addWidget(self.label_112, 1, 0, 1, 2)
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_22.addItem(spacerItem2, 3, 3, 1, 1)
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_22.addItem(spacerItem4, 3, 3, 1, 1)
         self.pushButton_7 = QtWidgets.QPushButton(self.frame_20)
         self.pushButton_7.setMinimumSize(QtCore.QSize(100, 0))
         self.pushButton_7.setStyleSheet("QPushButton{\n"
@@ -1038,8 +1033,8 @@ class Ui_MenuAdministrativo(object):
 "")
         self.lineEdit_10.setObjectName("lineEdit_10")
         self.gridLayout_23.addWidget(self.lineEdit_10, 2, 1, 1, 1)
-        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_23.addItem(spacerItem3, 4, 2, 1, 1)
+        spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_23.addItem(spacerItem5, 4, 2, 1, 1)
         self.horizontalLayout_10.addWidget(self.frame_21)
         self.verticalLayout_12.addWidget(self.frame_18)
         self.frame_19 = QtWidgets.QFrame(self.Puntodeventas)
@@ -1215,7 +1210,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_14.setWidgetResizable(True)
         self.scrollArea_14.setObjectName("scrollArea_14")
         self.scrollAreaWidgetContents_14 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_14.setGeometry(QtCore.QRect(0, 0, 1676, 594))
+        self.scrollAreaWidgetContents_14.setGeometry(QtCore.QRect(0, 0, 1030, 325))
         self.scrollAreaWidgetContents_14.setObjectName("scrollAreaWidgetContents_14")
         self.gridLayout_38 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_14)
         self.gridLayout_38.setContentsMargins(0, 0, 0, 0)
@@ -1923,8 +1918,8 @@ class Ui_MenuAdministrativo(object):
         self.label_124.setAlignment(QtCore.Qt.AlignCenter)
         self.label_124.setObjectName("label_124")
         self.gridLayout_30.addWidget(self.label_124, 0, 0, 1, 4)
-        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_30.addItem(spacerItem4, 3, 2, 1, 1)
+        spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_30.addItem(spacerItem6, 3, 2, 1, 1)
         self.pushButton_15 = QtWidgets.QPushButton(self.Ventas)
         self.pushButton_15.setStyleSheet("QPushButton{\n"
 "    background-color: #343434;\n"
@@ -2007,7 +2002,7 @@ class Ui_MenuAdministrativo(object):
         self.horizontalLayout_6.setSpacing(20)
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
         self.label_138 = QtWidgets.QLabel(self.frame_8)
-        self.label_138.setMinimumSize(QtCore.QSize(100, 100))
+        self.label_138.setMinimumSize(QtCore.QSize(70, 0))
         self.label_138.setStyleSheet("image: url(:/menu/adorno.png);")
         self.label_138.setText("")
         self.label_138.setObjectName("label_138")
@@ -2017,10 +2012,10 @@ class Ui_MenuAdministrativo(object):
 "    color: whitesmoke;")
         self.label_Bienvenida_3.setObjectName("label_Bienvenida_3")
         self.horizontalLayout_6.addWidget(self.label_Bienvenida_3)
-        spacerItem5 = QtWidgets.QSpacerItem(715, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_6.addItem(spacerItem5)
+        spacerItem7 = QtWidgets.QSpacerItem(715, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_6.addItem(spacerItem7)
         self.label_5 = QtWidgets.QLabel(self.frame_8)
-        self.label_5.setMinimumSize(QtCore.QSize(60, 60))
+        self.label_5.setMinimumSize(QtCore.QSize(70, 0))
         self.label_5.setStyleSheet("image: url(:/logos/logo.png);")
         self.label_5.setText("")
         self.label_5.setObjectName("label_5")
@@ -2046,7 +2041,7 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_8.setSpacing(0)
         self.verticalLayout_8.setObjectName("verticalLayout_8")
         self.frame_10 = QtWidgets.QFrame(self.frame_44)
-        self.frame_10.setMinimumSize(QtCore.QSize(600, 600))
+        self.frame_10.setMinimumSize(QtCore.QSize(600, 0))
         self.frame_10.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.frame_10.setStyleSheet("QFrame{\n"
 "    background-color: whitesmoke;\n"
@@ -2070,7 +2065,7 @@ class Ui_MenuAdministrativo(object):
         self.label_7.setObjectName("label_7")
         self.verticalLayout_29.addWidget(self.label_7)
         self.label_9 = QtWidgets.QLabel(self.frame_10)
-        self.label_9.setMinimumSize(QtCore.QSize(270, 50))
+        self.label_9.setMinimumSize(QtCore.QSize(270, 0))
         self.label_9.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
 "border: 0px solid #e6b31e;\n"
 "font: 63 20pt \"Bahnschrift SemiBold SemiConden\";")
@@ -2086,7 +2081,7 @@ class Ui_MenuAdministrativo(object):
         self.FechaTicket.setObjectName("FechaTicket")
         self.verticalLayout_29.addWidget(self.FechaTicket)
         self.label_139 = QtWidgets.QLabel(self.frame_10)
-        self.label_139.setMinimumSize(QtCore.QSize(170, 100))
+        self.label_139.setMinimumSize(QtCore.QSize(170, 0))
         self.label_139.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
 "border: 0px solid #e6b31e;\n"
 "font: 87 10pt \"Helvetica Black\";")
@@ -2094,7 +2089,7 @@ class Ui_MenuAdministrativo(object):
         self.label_139.setObjectName("label_139")
         self.verticalLayout_29.addWidget(self.label_139)
         self.tableWidget_3 = QtWidgets.QTableWidget(self.frame_10)
-        self.tableWidget_3.setMinimumSize(QtCore.QSize(510, 0))
+        self.tableWidget_3.setMinimumSize(QtCore.QSize(0, 0))
         self.tableWidget_3.setStyleSheet("QHeaderView::section{\n"
 "    color: rgb(30, 15, 0);\n"
 "    padding: 5px;\n"
@@ -2125,7 +2120,7 @@ class Ui_MenuAdministrativo(object):
         self.tableWidget_3.horizontalHeader().setStretchLastSection(True)
         self.verticalLayout_29.addWidget(self.tableWidget_3)
         self.frame_48 = QtWidgets.QFrame(self.frame_10)
-        self.frame_48.setMinimumSize(QtCore.QSize(510, 30))
+        self.frame_48.setMinimumSize(QtCore.QSize(510, 0))
         self.frame_48.setStyleSheet("background-color: rgb(230, 179, 30);\n"
 "font: 63 16pt \"Bahnschrift SemiBold SemiConden\";")
         self.frame_48.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -2135,14 +2130,14 @@ class Ui_MenuAdministrativo(object):
         self.horizontalLayout_22.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_22.setSpacing(0)
         self.horizontalLayout_22.setObjectName("horizontalLayout_22")
-        spacerItem6 = QtWidgets.QSpacerItem(213, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_22.addItem(spacerItem6)
+        spacerItem8 = QtWidgets.QSpacerItem(213, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_22.addItem(spacerItem8)
         self.label_143 = QtWidgets.QLabel(self.frame_48)
         self.label_143.setStyleSheet("color: rgb(30, 15, 0);")
         self.label_143.setObjectName("label_143")
         self.horizontalLayout_22.addWidget(self.label_143)
-        spacerItem7 = QtWidgets.QSpacerItem(212, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_22.addItem(spacerItem7)
+        spacerItem9 = QtWidgets.QSpacerItem(212, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_22.addItem(spacerItem9)
         self.label_144 = QtWidgets.QLabel(self.frame_48)
         self.label_144.setStyleSheet("color: rgb(30, 15, 0);\n"
 "border: .5px solid #e6b31e;\n"
@@ -2204,7 +2199,7 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_7.setSpacing(0)
         self.verticalLayout_7.setObjectName("verticalLayout_7")
         self.frame_43 = QtWidgets.QFrame(self.frame_45)
-        self.frame_43.setMinimumSize(QtCore.QSize(900, 600))
+        self.frame_43.setMinimumSize(QtCore.QSize(500, 0))
         self.frame_43.setStyleSheet("QFrame{\n"
 "    background-color: whitesmoke;\n"
 "};\n"
@@ -2215,7 +2210,7 @@ class Ui_MenuAdministrativo(object):
         self.verticalLayout_28 = QtWidgets.QVBoxLayout(self.frame_43)
         self.verticalLayout_28.setObjectName("verticalLayout_28")
         self.frame_46 = QtWidgets.QFrame(self.frame_43)
-        self.frame_46.setMinimumSize(QtCore.QSize(0, 60))
+        self.frame_46.setMinimumSize(QtCore.QSize(0, 0))
         self.frame_46.setStyleSheet("\n"
 "background-color: rgb(255, 255, 255, 0);\n"
 "border: 0px solid #e6b31e;\n"
@@ -2228,15 +2223,15 @@ class Ui_MenuAdministrativo(object):
         self.horizontalLayout_20 = QtWidgets.QHBoxLayout(self.frame_46)
         self.horizontalLayout_20.setObjectName("horizontalLayout_20")
         self.label_140 = QtWidgets.QLabel(self.frame_46)
-        self.label_140.setMinimumSize(QtCore.QSize(270, 50))
+        self.label_140.setMinimumSize(QtCore.QSize(270, 0))
         self.label_140.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
 "border: 0px solid #e6b31e;\n"
 "font: 63 32pt \"Bahnschrift SemiBold SemiConden\";")
         self.label_140.setAlignment(QtCore.Qt.AlignCenter)
         self.label_140.setObjectName("label_140")
         self.horizontalLayout_20.addWidget(self.label_140)
-        spacerItem8 = QtWidgets.QSpacerItem(427, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_20.addItem(spacerItem8)
+        spacerItem10 = QtWidgets.QSpacerItem(427, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_20.addItem(spacerItem10)
         self.Tota_label = QtWidgets.QLabel(self.frame_46)
         self.Tota_label.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
 "border: 0px solid #e6b31e;\n"
@@ -2282,15 +2277,15 @@ class Ui_MenuAdministrativo(object):
         self.horizontalLayout_21.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_21.setSpacing(0)
         self.horizontalLayout_21.setObjectName("horizontalLayout_21")
-        spacerItem9 = QtWidgets.QSpacerItem(356, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_21.addItem(spacerItem9)
+        spacerItem11 = QtWidgets.QSpacerItem(356, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_21.addItem(spacerItem11)
         self.label_142 = QtWidgets.QLabel(self.frame_47)
         self.label_142.setStyleSheet("color: rgb(30, 15, 0);\n"
 "")
         self.label_142.setObjectName("label_142")
         self.horizontalLayout_21.addWidget(self.label_142)
-        spacerItem10 = QtWidgets.QSpacerItem(355, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_21.addItem(spacerItem10)
+        spacerItem12 = QtWidgets.QSpacerItem(355, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_21.addItem(spacerItem12)
         self.label_141 = QtWidgets.QLabel(self.frame_47)
         self.label_141.setStyleSheet("color: rgb(30, 15, 0);\n"
 "border: .5px solid #e6b31e;\n"
@@ -2321,10 +2316,10 @@ class Ui_MenuAdministrativo(object):
         self.label_145.setAlignment(QtCore.Qt.AlignCenter)
         self.label_145.setObjectName("label_145")
         self.horizontalLayout_23.addWidget(self.label_145)
-        spacerItem11 = QtWidgets.QSpacerItem(369, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_23.addItem(spacerItem11)
+        spacerItem13 = QtWidgets.QSpacerItem(369, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_23.addItem(spacerItem13)
         self.lineEdit_13 = QtWidgets.QLineEdit(self.frame_49)
-        self.lineEdit_13.setMinimumSize(QtCore.QSize(50, 0))
+        self.lineEdit_13.setMinimumSize(QtCore.QSize(150, 0))
         self.lineEdit_13.setMaximumSize(QtCore.QSize(150, 16777215))
         self.lineEdit_13.setStyleSheet("background-color: rgb(245, 245, 245);\n"
 "font: 63 32pt \"Bahnschrift SemiBold SemiConden\";\n"
@@ -2356,8 +2351,8 @@ class Ui_MenuAdministrativo(object):
         self.label_146.setAlignment(QtCore.Qt.AlignCenter)
         self.label_146.setObjectName("label_146")
         self.horizontalLayout_24.addWidget(self.label_146)
-        spacerItem12 = QtWidgets.QSpacerItem(369, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_24.addItem(spacerItem12)
+        spacerItem14 = QtWidgets.QSpacerItem(369, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_24.addItem(spacerItem14)
         self.Tota_label_3 = QtWidgets.QLabel(self.frame_50)
         self.Tota_label_3.setStyleSheet("background-color: rgb(255, 255, 255, 0);\n"
 "border: 0px solid #e6b31e;\n"
@@ -2499,7 +2494,7 @@ class Ui_MenuAdministrativo(object):
         self.label_12.setObjectName("label_12")
         self.gridLayout.addWidget(self.label_12, 7, 4, 1, 1, QtCore.Qt.AlignHCenter)
         self.plainTextEdit_3 = QtWidgets.QPlainTextEdit(self.frame_11)
-        self.plainTextEdit_3.setMinimumSize(QtCore.QSize(500, 50))
+        self.plainTextEdit_3.setMinimumSize(QtCore.QSize(500, 0))
         self.plainTextEdit_3.setMaximumSize(QtCore.QSize(16777215, 50))
         self.plainTextEdit_3.setStyleSheet("background-color: #343434;\n"
 "font: 87 14pt \"Arial Black\";\n"
@@ -2509,7 +2504,7 @@ class Ui_MenuAdministrativo(object):
         self.plainTextEdit_3.setObjectName("plainTextEdit_3")
         self.gridLayout.addWidget(self.plainTextEdit_3, 6, 4, 1, 1, QtCore.Qt.AlignHCenter)
         self.plainTextEdit_2 = QtWidgets.QPlainTextEdit(self.frame_11)
-        self.plainTextEdit_2.setMinimumSize(QtCore.QSize(500, 50))
+        self.plainTextEdit_2.setMinimumSize(QtCore.QSize(500, 0))
         self.plainTextEdit_2.setMaximumSize(QtCore.QSize(16777215, 50))
         self.plainTextEdit_2.setStyleSheet("background-color: #343434;\n"
 "font: 87 14pt \"Arial Black\";\n"
@@ -2519,7 +2514,7 @@ class Ui_MenuAdministrativo(object):
         self.plainTextEdit_2.setObjectName("plainTextEdit_2")
         self.gridLayout.addWidget(self.plainTextEdit_2, 4, 4, 1, 1, QtCore.Qt.AlignHCenter)
         self.plainTextEdit = QtWidgets.QPlainTextEdit(self.frame_11)
-        self.plainTextEdit.setMinimumSize(QtCore.QSize(500, 50))
+        self.plainTextEdit.setMinimumSize(QtCore.QSize(500, 0))
         self.plainTextEdit.setMaximumSize(QtCore.QSize(16777215, 50))
         self.plainTextEdit.setStyleSheet("background-color: #343434;\n"
 "font: 87 14pt \"Arial Black\";\n"
@@ -2594,7 +2589,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 1698, 775))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 937, 528))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_2)
         self.gridLayout_2.setHorizontalSpacing(20)
@@ -2670,7 +2665,7 @@ class Ui_MenuAdministrativo(object):
         self.label_20.setObjectName("label_20")
         self.gridLayout_2.addWidget(self.label_20, 1, 0, 1, 1, QtCore.Qt.AlignRight)
         self.GuardarRegistrarPaciente = QtWidgets.QPushButton(self.scrollAreaWidgetContents_2)
-        self.GuardarRegistrarPaciente.setMinimumSize(QtCore.QSize(250, 80))
+        self.GuardarRegistrarPaciente.setMinimumSize(QtCore.QSize(250, 50))
         self.GuardarRegistrarPaciente.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.GuardarRegistrarPaciente.setStyleSheet("QPushButton{\n"
 "    background-color: #343434;\n"
@@ -2840,7 +2835,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_3.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1716, 793))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1009, 540))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.gridLayout_6 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_3)
         self.gridLayout_6.setContentsMargins(0, 0, 0, 50)
@@ -3238,7 +3233,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_4.setWidgetResizable(True)
         self.scrollArea_4.setObjectName("scrollArea_4")
         self.scrollAreaWidgetContents_5 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 1716, 743))
+        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 987, 364))
         self.scrollAreaWidgetContents_5.setObjectName("scrollAreaWidgetContents_5")
         self.gridLayout_9 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_5)
         self.gridLayout_9.setObjectName("gridLayout_9")
@@ -3247,6 +3242,7 @@ class Ui_MenuAdministrativo(object):
         self.Eliminar_NombrePaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
+        self.Eliminar_NombrePaciente.setReadOnly(True)
         self.Eliminar_NombrePaciente.setObjectName("Eliminar_NombrePaciente")
         self.gridLayout_9.addWidget(self.Eliminar_NombrePaciente, 6, 3, 1, 1, QtCore.Qt.AlignHCenter)
         self.EliminarUltima = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_5)
@@ -3254,6 +3250,7 @@ class Ui_MenuAdministrativo(object):
         self.EliminarUltima.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
+        self.EliminarUltima.setReadOnly(True)
         self.EliminarUltima.setObjectName("EliminarUltima")
         self.gridLayout_9.addWidget(self.EliminarUltima, 12, 3, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_41 = QtWidgets.QLabel(self.scrollAreaWidgetContents_5)
@@ -3288,6 +3285,7 @@ class Ui_MenuAdministrativo(object):
         self.EliminarFecha.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
+        self.EliminarFecha.setReadOnly(True)
         self.EliminarFecha.setObjectName("EliminarFecha")
         self.gridLayout_9.addWidget(self.EliminarFecha, 11, 3, 1, 1, QtCore.Qt.AlignHCenter)
         self.EliminarPacienteBoton = QtWidgets.QPushButton(self.scrollAreaWidgetContents_5)
@@ -3364,6 +3362,7 @@ class Ui_MenuAdministrativo(object):
         self.Eliminar_TelefenoPaciente.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
+        self.Eliminar_TelefenoPaciente.setReadOnly(True)
         self.Eliminar_TelefenoPaciente.setObjectName("Eliminar_TelefenoPaciente")
         self.gridLayout_9.addWidget(self.Eliminar_TelefenoPaciente, 10, 3, 1, 1, QtCore.Qt.AlignHCenter)
         self.scrollArea_4.setWidget(self.scrollAreaWidgetContents_5)
@@ -3431,7 +3430,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_5.setWidgetResizable(True)
         self.scrollArea_5.setObjectName("scrollArea_5")
         self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 1680, 757))
+        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 1069, 431))
         self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
         self.gridLayout_29 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_4)
         self.gridLayout_29.setObjectName("gridLayout_29")
@@ -3567,7 +3566,7 @@ class Ui_MenuAdministrativo(object):
         self.AlergiasRegistrar_2.setObjectName("AlergiasRegistrar_2")
         self.gridLayout_29.addWidget(self.AlergiasRegistrar_2, 8, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.GuardarRegistrarPaciente_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_4)
-        self.GuardarRegistrarPaciente_2.setMinimumSize(QtCore.QSize(250, 80))
+        self.GuardarRegistrarPaciente_2.setMinimumSize(QtCore.QSize(200, 80))
         self.GuardarRegistrarPaciente_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.GuardarRegistrarPaciente_2.setStyleSheet("QPushButton{\n"
 "    background-color: #343434;\n"
@@ -4299,12 +4298,12 @@ class Ui_MenuAdministrativo(object):
 "} \n"
 "\n"
 "QTabBar::tab {  \n"
-"  font: 63 18pt \"Bahnschrift SemiBold SemiConden\";\n"
+"  font: 63 14pt \"Bahnschrift SemiBold SemiConden\";\n"
 "  color: whitesmoke;\n"
 "  background-color: #343434;\n"
 "  border: 1px solid #cacaca; \n"
 "  padding: 15px;\n"
-"    width: 250px;\n"
+"    width: 150px;\n"
 "    height: 50px;\n"
 "} \n"
 "\n"
@@ -4333,7 +4332,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_8.setWidgetResizable(True)
         self.scrollArea_8.setObjectName("scrollArea_8")
         self.scrollAreaWidgetContents_8 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_8.setGeometry(QtCore.QRect(0, 0, 1680, 767))
+        self.scrollAreaWidgetContents_8.setGeometry(QtCore.QRect(0, 0, 1077, 372))
         self.scrollAreaWidgetContents_8.setObjectName("scrollAreaWidgetContents_8")
         self.gridLayout_25 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_8)
         self.gridLayout_25.setContentsMargins(0, 0, 0, 0)
@@ -4970,7 +4969,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_9.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea_9.setObjectName("scrollArea_9")
         self.scrollAreaWidgetContents_9 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_9.setGeometry(QtCore.QRect(0, 0, 1698, 785))
+        self.scrollAreaWidgetContents_9.setGeometry(QtCore.QRect(0, 0, 100, 30))
         self.scrollAreaWidgetContents_9.setObjectName("scrollAreaWidgetContents_9")
         self.label_78 = QtWidgets.QLabel(self.scrollAreaWidgetContents_9)
         self.label_78.setGeometry(QtCore.QRect(420, 180, 281, 35))
@@ -5817,58 +5816,6 @@ class Ui_MenuAdministrativo(object):
         self.horizontalLayout_3.addWidget(self.stackedWidget)
         self.horizontalLayout.addWidget(self.frame_4)
         self.gridLayout_26.addWidget(self.Frame_Inferior, 1, 0, 1, 1)
-        self.Navbar_Frame = QtWidgets.QFrame(self.centralwidget)
-        self.Navbar_Frame.setMinimumSize(QtCore.QSize(0, 0))
-        self.Navbar_Frame.setMaximumSize(QtCore.QSize(16777215, 80))
-        self.Navbar_Frame.setStyleSheet("background-color: #343434;")
-        self.Navbar_Frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.Navbar_Frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.Navbar_Frame.setObjectName("Navbar_Frame")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.Navbar_Frame)
-        self.horizontalLayout_2.setContentsMargins(20, 0, 20, 0)
-        self.horizontalLayout_2.setSpacing(0)
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.pushButton = QtWidgets.QPushButton(self.Navbar_Frame)
-        self.pushButton.setMinimumSize(QtCore.QSize(70, 70))
-        self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton.setStyleSheet("QPushButton{\n"
-"    border: 0px;\n"
-"    image: url(:/menu/menuIcon.png);\n"
-"    \n"
-"}\n"
-"QPushButton:hover{\n"
-"    border: 10px;\n"
-"    \n"
-"    image: url(:/menu/menuicon2.png);\n"
-"}\n"
-"")
-        self.pushButton.setText("")
-        self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout_2.addWidget(self.pushButton)
-        self.label_Info_actual = QtWidgets.QLabel(self.Navbar_Frame)
-        self.label_Info_actual.setMinimumSize(QtCore.QSize(0, 0))
-        self.label_Info_actual.setStyleSheet("font: 87 16pt \"Arial Black\";\n"
-"color: whitesmoke;")
-        self.label_Info_actual.setText("")
-        self.label_Info_actual.setWordWrap(True)
-        self.label_Info_actual.setObjectName("label_Info_actual")
-        self.horizontalLayout_2.addWidget(self.label_Info_actual)
-        spacerItem13 = QtWidgets.QSpacerItem(386, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem13)
-        self.label_3 = QtWidgets.QLabel(self.Navbar_Frame)
-        self.label_3.setMinimumSize(QtCore.QSize(70, 70))
-        self.label_3.setStyleSheet("image: url(:/logos/logo.png);")
-        self.label_3.setText("")
-        self.label_3.setObjectName("label_3")
-        self.horizontalLayout_2.addWidget(self.label_3)
-        spacerItem14 = QtWidgets.QSpacerItem(385, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem14)
-        self.label_4 = QtWidgets.QLabel(self.Navbar_Frame)
-        self.label_4.setStyleSheet("font: 87 16pt \"Arial Black\";\n"
-"color: whitesmoke;")
-        self.label_4.setObjectName("label_4")
-        self.horizontalLayout_2.addWidget(self.label_4)
-        self.gridLayout_26.addWidget(self.Navbar_Frame, 0, 0, 1, 1)
         MenuAdministrativo.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MenuAdministrativo)
@@ -5896,7 +5843,7 @@ class Ui_MenuAdministrativo(object):
         self.pushButton_33.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPuntoVenta))
         self.pushButton_30.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Entrenadores))
         self.pushButton_24.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Clientes))
-        self.pushButton_23.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPrincipal))
+        self.pushButton_36.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPrincipal))
         self.pushButton_32.clicked.connect(lambda: self.cerrarSesion(MenuAdministrativo, cursor, LogIn))
         #Clickear menu (Navegacion)
         self.pushButton.clicked.connect(lambda: self.desplegrMenu())
@@ -5941,7 +5888,7 @@ class Ui_MenuAdministrativo(object):
             width = self.Menu_Lateral_Frame.width()
             normal = 0
             if width==0:
-                extender = 200
+                extender = 100
             else:
                 extender = normal
             
@@ -6274,13 +6221,7 @@ class Ui_MenuAdministrativo(object):
     def retranslateUi(self, MenuAdministrativo):
         _translate = QtCore.QCoreApplication.translate
         MenuAdministrativo.setWindowTitle(_translate("MenuAdministrativo", "Administrativos"))
-        self.label_133.setText(_translate("MenuAdministrativo", "Menu"))
-        self.label_153.setText(_translate("MenuAdministrativo", "Registrar Visita"))
-        self.label_152.setText(_translate("MenuAdministrativo", "Empleados"))
-        self.label_151.setText(_translate("MenuAdministrativo", "Punto de venta"))
-        self.label_136.setText(_translate("MenuAdministrativo", "Entrenadores"))
-        self.label_134.setText(_translate("MenuAdministrativo", "Clientes"))
-        self.label_150.setText(_translate("MenuAdministrativo", "Cerrar sesion"))
+        self.label_4.setText(_translate("MenuAdministrativo", "Teflon Academy"))
         self.label_131.setText(_translate("MenuAdministrativo", "Teflon Academy by GoldenSharks"))
         self.label_Bienvenida.setText(_translate("MenuAdministrativo", "Bienvenido ....!"))
         self.label_13.setText(_translate("MenuAdministrativo", "Registrar visita"))
@@ -6626,7 +6567,7 @@ class Ui_MenuAdministrativo(object):
         self.label_87.setText(_translate("MenuAdministrativo", "<html><head/><body><p>Seleccionar el cliente</p></body></html>"))
         self.ActualizarBotonPaciente_3.setText(_translate("MenuAdministrativo", "Actualizar"))
         self.BuscarBotonActualizar_3.setText(_translate("MenuAdministrativo", "Buscar"))
-        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_11), _translate("MenuAdministrativo", "Actualizar Membresia"))
+        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_11), _translate("MenuAdministrativo", "Membresia"))
         self.label_80.setText(_translate("MenuAdministrativo", "Nombre:"))
         self.label_105.setText(_translate("MenuAdministrativo", "<html><head/><body><p>Actualizar informacion del cliente</p></body></html>"))
         self.BuscarPor_9.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
@@ -6639,7 +6580,7 @@ class Ui_MenuAdministrativo(object):
         self.label_109.setText(_translate("MenuAdministrativo", "Edad:"))
         self.label_110.setText(_translate("MenuAdministrativo", "Peso actual:"))
         self.label_111.setText(_translate("MenuAdministrativo", "Altura:"))
-        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_15), _translate("MenuAdministrativo", "Actualizar Informacion"))
+        self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_15), _translate("MenuAdministrativo", "Actualizar cliente"))
         self.RefrescarBotonRegistrados_4.setText(_translate("MenuAdministrativo", "Refrescar"))
         self.BuscarBotonRegistrados_4.setText(_translate("MenuAdministrativo", "Buscar"))
         self.BuscarRegistradosCombobox_6.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
@@ -6677,7 +6618,6 @@ class Ui_MenuAdministrativo(object):
         self.label_117.setText(_translate("MenuAdministrativo", "Altura:"))
         self.label_118.setText(_translate("MenuAdministrativo", "Peso Actual:"))
         self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_13), _translate("MenuAdministrativo", "Elminar"))
-        self.label_4.setText(_translate("MenuAdministrativo", "Teflon Academy"))
 
 import images_rc
 
