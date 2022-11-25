@@ -8,6 +8,7 @@ create table empleadosyadmin(
     id_empleado serial primary key not null,
     Nombre character varying,
     Fecha_Ingreso date,
+    Fecha_nacimiento date,
 	rol varchar(15),
     Telefono_Empleado varchar(10),
     CURP_Empleado varchar(18),
@@ -29,6 +30,24 @@ create table Cliente(
 	situacion_Membresia varchar(10),
     Fecha_Vencimiento date
 )
-
+create table inventario(
+	codigo serial primary key not null,
+	nombre_material varchar(30),
+	cantidad smallint,
+	distribuidor varchar(30),
+	lote_material varchar(30),
+	categoria varchar(30),
+	precio varchar(10),
+	caducidad date,
+	descripcion character varying
+)
+create table venta(
+	folio int,
+	codigo_producto smallint,
+	nombre_producto varchar(30),
+	cantidad smallint,
+	precio varchar(10),
+	total varchar(10),
+)
 insert into empleadosyadmin (Nombre, Fecha_Ingreso, rol, Telefono_Empleado, CURP_Empleado, NSS_Empleado, RFC_Empleado, Contraseña)
 values ('Mike','22/11/22','Administrativo',3311398249,123456789123456789,21235412582,1234567891234,'Mike1234');
