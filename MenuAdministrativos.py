@@ -6521,6 +6521,7 @@ class Ui_MenuAdministrativo(object):
 
         self.radioButton.clicked.connect(lambda: self.limpiaVar())
         self.radioButton_4.clicked.connect(lambda: self.limpiaVar()) 
+       
         #Botones CRUD Empleados (Registrar)
         self.GuardarRegistrarPaciente.clicked.connect(lambda: self.registrarEmpleado(cursor))
         self.pushButton_3.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_6))
@@ -6534,6 +6535,27 @@ class Ui_MenuAdministrativo(object):
         #Botones CRUD Empleados (Eliminar)
         self.BuscarBotonEliminar.clicked.connect(lambda: self.buscarEliminarEmpleados(cursor))
         self.EliminarPacienteBoton.clicked.connect(lambda: self.eliminarEmpleados(cursor))
+        
+        #Botones CRUD Clientes (Registrar)
+        self.GuardarRegistrarPaciente_3.clicked.connect(lambda: self.registrarCliente(cursor))
+        self.pushButton_5.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_8))
+        #Botones CRUD Clientes (AsignarEntrenador)
+        self.BuscarBotonActualizar_4.clicked.connect(lambda: self.buscarCliente(cursor))
+        self.BuscarBotonActualizar_5.clicked.connect(lambda: self.buscarEntrenador(cursor))
+        self.BuscarBotonActualizar_6.clicked.connect(lambda: self.asignarEntrenador(cursor))
+        #Botones CRUD Clientes (Membresia)
+        self.BuscarBotonActualizar_3.clicked.connect(lambda: self.ConsultarMembresia(cursor))
+        #Botones CRUD Clientes (Actualizar Cliente)
+        self.BuscarBotonActualizar_7.clicked.connect(lambda: self.Buscarcliente(cursor))
+        self.pushButton_6.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_9))
+        self.ActualizarBotonPaciente_4.clicked.connect(lambda: self.ActualizarCliente(cursor))
+        #Botones CRUD Clientes (Mostrar)
+        self.BuscarBotonRegistrados_4.clicked.connect(lambda: self.MostrarCliente(cursor))
+        self.RefrescarBotonRegistrados_4.clicked.connect(lambda: self.RefrescarClientess(cursor))
+        #Botones CRUD Clientes (Eliminar)
+        self.BuscarBotonEliminar_3.clicked.connect(lambda: self.BuscarCliente(cursor))
+        self.EliminarPacienteBoton_3.clicked.connect(lambda: self.EliminarCliente(cursor))
+        
         #Punto de venta (VENTA)
         self.pushButton_11.clicked.connect(lambda: self.getFolio(cursor))
         self.radioButton.clicked.connect(lambda: self.getFolio(cursor))
@@ -6936,7 +6958,389 @@ class Ui_MenuAdministrativo(object):
             self.Eliminar_TelefenoPaciente.clear()
             self.EliminarFecha.clear()
             self.EliminarUltima.clear()
+        
+    """
+    CRUD Clientes
+    """ 
+    def registrarCliente(self, cursor):
+        nombre=self.NombreRegistrar_4.text()
+        telefono=self.TelefonoRegistrar_4.text()
+        correo=self.AlergiasRegistrar_5.text()
+        edad=self.AlergiasRegistrar_4.text()
+        peso=self.EnfermedadesRegistrar_4.text()
+        altura=self.MedicamentosRegistrar_4.text()
+        password_cliente=self.MedicamentosRegistrar_8.text()
+        if len(nombre)==0:
+            self.msgError("Falta de informacion", "Debes ingresar un nombre para poder registrar a un cliente")
+        elif (len(telefono)==0) or (len(telefono)!=10):
+            self.msgError("Falta de informacion", "Debes ingresar un numero de telefono valido de almenos 10 digitos")
+        elif (len(correo)==0):
+            self.msgError("Falta de informacion", "Debes ingresar un correo") 
+        elif (len(edad)==0):
+            self.msgError("Falta de informacion", "Debes ingresar una edad")
+        elif (len(peso)==0):
+            self.msgError("Falta de informacion", "Debes ingresar un peso")
+        elif (len(altura)==0):
+            self.msgError("Falta de informacion", "Debes ingresar una altura")
+        elif (len(password_cliente)<8):
+            self.msgError("Falta de informacion", "Debes ingresar una contraseña de almenos 8 digitos")
+        else:
+            SQL=""" insert into cliente (nombre_cliente, telefono_cliente, correo_cliente, edad, peso_act, altura, contraseña)\
+                values ('{}','{}','{}','{}',{},'{}','{}'); """.format(nombre,telefono,correo,edad,peso,altura,password_cliente)
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+            except Exception as ex:
+                print(ex)
+            self.NombreRegistrar_4.clear()
+            self.TelefonoRegistrar_4.clear()
+            self.AlergiasRegistrar_5.clear()
+            self.AlergiasRegistrar_4.clear()
+            self.EnfermedadesRegistrar_4.clear()
+            self.MedicamentosRegistrar_4.clear()
+            self.MedicamentosRegistrar_8.clear()
+      
+    def buscarCliente(self, cursor):
+        self.NombreRegistrar_6.clear()
+        self.NombreRegistrar_7.clear()
+        ID_Cliente=self.NombreRegistrar_5.text()
+        if len(ID_Cliente)==0:
+            self.msgError("Busqueda no valida", "Debes ingresar un ID valido para buscar")
+        else:  
+            SQL="""select * from cliente where cast(id_cliente as varchar)='{}' """.format(ID_Cliente)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Sin coincidencia", "No existe cliente registrado con ese ID")
+            else:
+                for rows in row:
+                    self.NombreRegistrar_6.setText(str(rows[1]))
+                    self.NombreRegistrar_7.setText(str(rows[3]))
+    
+    def buscarEntrenador(self, cursor):
+        self.NombreRegistrar_9.clear()
+        self.NombreRegistrar_10.clear()
+        ID_Entrenador=self.NombreRegistrar_8.text()
+        if len(ID_Entrenador)==0:
+            self.msgError("Busqueda no valida", "Debes ingresar un ID valido para buscar")
+        else:  
+            SQL="""select * from entrenador where cast(id_entrenador as varchar)='{}' """.format(ID_Entrenador)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Sin coincidencia", "No existe entrenador registrado con ese ID")
+            else:
+                for rows in row:
+                    self.NombreRegistrar_10.setText(str(rows[1]))
+                    self.NombreRegistrar_9.setText(str(rows[2]))
+    
+    def asignarEntrenador(self, cursor):
+        ID_Cliente=self.NombreRegistrar_5.text()
+        if len(ID_Cliente)==0:
+            self.msgError("Asignacion no valida", "Debes ingresar un ID valido para cliente")
+        else:
+            ID_Entrenador=self.NombreRegistrar_8.text()
+            if len(ID_Entrenador)==0:
+                self.msgError("Asignacion no valida", "Debes ingresar un ID valido para entrenador")
+            else:  
+                SQL=""" update cliente set id_entrenador='{}' where cast(id_cliente as varchar)='{}' """.format(ID_Entrenador,ID_Cliente)
+                try:
+                    cursor.execute(SQL)     
+                    cursor.connection.commit()
+                except Exception as ex:
+                    print(ex)
+                self.NombreRegistrar_5.clear()
+                self.NombreRegistrar_6.clear()
+                self.NombreRegistrar_7.clear()
+                self.NombreRegistrar_8.clear()
+                self.NombreRegistrar_9.clear()
+                self.NombreRegistrar_10.clear()
+                
+    def ConsultarMembresia(self, cursor):
+        self.NombreActualizarPaciente_3.clear()
+        self.TelefonoActualizarPaciente_3.clear()
+        self.FechNacActu_3.clear()
+        self.UltimCitActu_3.clear()
+        data=self.ID_BuscarActualizarPaciente_3.text()
+        if len(data)==0:
+            self.msgError("Busqueda no valida", "Debes Ingresar informacion valida para buscar")
+        else:
+            opc = self.BuscarPor_8.currentText()
+            if opc == "Buscar por ID:":
+                SQL="""select * from cliente where cast(id_cliente as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe cliente registrado con ese ID")
+                else:
+                    for rows in row:
+                        self.NombreActualizarPaciente_3.setText(str(rows[1]))
+                        self.TelefonoActualizarPaciente_3.setText(str(rows[3]))
+                        self.FechNacActu_3.setText(str(rows[8]))
+                        self.UltimCitActu_3.setText(str(rows[9]))
+            else:
+                SQL="""select * from cliente where nombre_cliente like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe cliente registrado con ese Nombre")
+                else:
+                    for rows in row:
+                        self.NombreActualizarPaciente_3.setText(str(rows[1]))
+                        self.TelefonoActualizarPaciente_3.setText(str(rows[3]))
+                        self.FechNacActu_3.setText(str(rows[8]))
+                        self.UltimCitActu_3.setText(str(rows[9]))
+                
+    def Buscarcliente(self, cursor):
+        self.NombreActualizarPaciente_4.clear()
+        self.NombreActualizarPaciente_5.clear()
+        self.NombreActualizarPaciente_6.clear()
+        self.NombreActualizarPaciente_7.clear()
+        self.NombreActualizarPaciente_8.clear()
+        self.NombreActualizarPaciente_9.clear()
+        self.MedicamentosRegistrar_9.clear()
+        data=self.ID_BuscarActualizarPaciente_4.text()
+        if len(data)==0:
+            self.msgError("Busqueda no valida", "Debes Ingresar informacion valida para buscar")
+        else:
+            opc = self.BuscarPor_9.currentText()
+            if opc == "Buscar por ID:":
+                SQL="""select * from cliente where cast(id_cliente as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe cliente registrado con ese ID")
+                else:
+                    for rows in row:
+                        self.NombreActualizarPaciente_4.setText(str(rows[1]))
+                        self.NombreActualizarPaciente_5.setText(str(rows[2]))
+                        self.NombreActualizarPaciente_6.setText(str(rows[3]))
+                        self.NombreActualizarPaciente_7.setText(str(rows[4]))
+                        self.NombreActualizarPaciente_8.setText(str(rows[5]))
+                        self.NombreActualizarPaciente_9.setText(str(rows[6]))
+                        self.MedicamentosRegistrar_9.setText(str(rows[10]))
+            else:
+                SQL="""select * from cliente where nombre_cliente like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe cliente registrado con ese Nombre")
+                else:
+                    for rows in row:
+                        self.NombreActualizarPaciente_4.setText(str(rows[1]))
+                        self.NombreActualizarPaciente_5.setText(str(rows[2]))
+                        self.NombreActualizarPaciente_6.setText(str(rows[3]))
+                        self.NombreActualizarPaciente_7.setText(str(rows[4]))
+                        self.NombreActualizarPaciente_8.setText(str(rows[5]))
+                        self.NombreActualizarPaciente_9.setText(str(rows[6]))
+                        self.MedicamentosRegistrar_9.setText(str(rows[10]))
+                        
+    def ActualizarCliente(self, cursor):
+        opc = self.BuscarPor_9.currentText()
+        data = self.ID_BuscarActualizarPaciente_4.text()
+        if opc == "Buscar por Nombre:":
+            SQL="""select id_cliente from cliente where nombre_cliente like '%{}%' """.format(data)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Sin coincidencia", "Debes realizar una busqueda valida primero antes de actualizar")
+            else:
+                for rows in row:
+                    id = str(rows[0])
+        else:
+            id = data
+        if len(id)==0:
+            self.msgError("Sin coincidencia", "Debes realizar una busqueda primero antes de actualizar")
+            return
+        nombre=self.NombreActualizarPaciente_4.text()
+        telefono=self.NombreActualizarPaciente_5.text()
+        correo=self.NombreActualizarPaciente_6.text()
+        edad=self.NombreActualizarPaciente_7.text()
+        peso=self.NombreActualizarPaciente_8.text()
+        altura=self.NombreActualizarPaciente_9.text()
+        password=self.MedicamentosRegistrar_9.text()
+        if len(nombre)==0:
+            self.msgError("Falta de informacion", "Debes ingresar un nombre o dejar el anterior antes de actualizar a un cliente")
+        elif (len(telefono)==0) or (len(telefono)!=10):
+            self.msgError("Falta de informacion", "Debes ingresar un numero de telefono valido de almenos 10 digitos o dejar el anterior antes de actualizar")
+        elif (len(correo)==0):
+            self.msgError("Falta de informacion", "Debes ingresar un correo o dejar el anterior antes de actualizar") 
+        elif (len(edad)==0):
+            self.msgError("Falta de informacion", "Debes ingresar una edad o dejar el anterior antes de actualizar")
+        elif (len(peso)==0):
+            self.msgError("Falta de informacion", "Debes ingresar un peso o dejar el anterior antes de actualizar")
+        elif (len(altura)==0):
+            self.msgError("Falta de informacion", "Debes ingresar una altura o dejar la anterior antes de actualizar")
+        elif (len(password)==0) or (len(password)<8):
+            self.msgError("Falta de informacion", "Debes ingresar una contraseña valida de almenos 8 digitos o dejar la anterior antes de actualizar")
+        else:
+            SQL=""" update cliente set nombre_cliente='{}', telefono_cliente='{}', correo_cliente='{}', edad='{}', peso_act='{}', 
+            altura='{}', contraseña='{}' where id_cliente='{}' """.format(nombre, telefono, correo, edad, peso, altura, password, id)
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+            except Exception as ex:
+                print(ex)            
+            self.NombreActualizarPaciente_4.clear()
+            self.NombreActualizarPaciente_5.clear()
+            self.NombreActualizarPaciente_6.clear()
+            self.NombreActualizarPaciente_7.clear()
+            self.NombreActualizarPaciente_8.clear()
+            self.NombreActualizarPaciente_9.clear()
+            self.MedicamentosRegistrar_9.clear()
             
+    def MostrarCliente(self, cursor):
+        data=self.BuscarRegistradosPacientesText_4.text()
+        self.TablaEmpleados_4.clearContents()
+        self.TablaEmpleados_4.setRowCount(0)
+        if len(data)==0:
+            self.msgError("Busqueda", "Debes ingresar informacion antes de buscar")
+        else:
+            opc=self.BuscarRegistradosCombobox_6.currentText() 
+            if opc == "Buscar por Nombre:":
+                SQL="""select * from cliente where nombre_cliente like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese nombre de cliente")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados_4.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_4.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_4.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_4.setItem(tablerow,2,QTableWidgetItem(str(rows[9])))
+                        self.TablaEmpleados_4.setItem(tablerow,3,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_4.setItem(tablerow,4,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_4.setItem(tablerow,5,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_4.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_4.setItem(tablerow,7,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_4.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+                        tablerow+=1
+            elif opc == "Buscar por ID:":
+                SQL="""select * from cliente where cast(id_cliente as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de cliente")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados_4.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_4.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_4.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_4.setItem(tablerow,2,QTableWidgetItem(str(rows[9])))
+                        self.TablaEmpleados_4.setItem(tablerow,3,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_4.setItem(tablerow,4,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_4.setItem(tablerow,5,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_4.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_4.setItem(tablerow,7,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_4.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+                        tablerow+=1
+            else:
+                self.msgError("Seleccion", "Selecciona un modo de busqueda")
+    
+    def RefrescarClientess(self, cursor):
+        self.TablaEmpleados.clearContents()
+        cursor.execute("select * from cliente")
+        row=cursor.fetchall()
+        tablerow = 0
+        for rows in row:
+            self.TablaEmpleados_4.setRowCount(tablerow + 1)
+            self.TablaEmpleados_4.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+            self.TablaEmpleados_4.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+            self.TablaEmpleados_4.setItem(tablerow,2,QTableWidgetItem(str(rows[9])))
+            self.TablaEmpleados_4.setItem(tablerow,3,QTableWidgetItem(str(rows[4])))
+            self.TablaEmpleados_4.setItem(tablerow,4,QTableWidgetItem(str(rows[2])))
+            self.TablaEmpleados_4.setItem(tablerow,5,QTableWidgetItem(str(rows[3])))
+            self.TablaEmpleados_4.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+            self.TablaEmpleados_4.setItem(tablerow,7,QTableWidgetItem(str(rows[5])))
+            self.TablaEmpleados_4.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+            tablerow+=1
+            
+    def BuscarCliente(self, cursor):
+        self.Eliminar_NombrePaciente_2.clear()
+        self.Eliminar_TelefenoPaciente_2.clear()
+        self.EliminarFecha_2.clear()
+        self.EliminarUltima_2.clear()
+        self.EliminarFecha_4.clear()
+        self.EliminarUltima_4.clear()
+        data=self.ID_BuscarEliminarPaciente_3.text()
+        if len(data)==0:
+            self.msgError("Busqueda no valida", "Debes Ingresar informacion valida para buscar")
+        else:
+            opc = self.BuscarRegistradosCombobox_7.currentText()
+            if opc == "Buscar por ID:":
+                SQL="""select * from cliente where cast(id_cliente as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe cliente registrado con ese ID")
+                else:
+                    for rows in row:
+                        self.Eliminar_NombrePaciente_2.setText(str(rows[1]))
+                        self.Eliminar_TelefenoPaciente_2.setText(str(rows[2]))
+                        self.EliminarFecha_2.setText(str(rows[3]))
+                        self.EliminarUltima_2.setText(str(rows[4]))
+                        self.EliminarFecha_4.setText(str(rows[5]))
+                        self.EliminarUltima_4.setText(str(rows[6]))
+            else:
+                SQL="""select * from cliente where nombre_cliente like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe cliente registrado con ese Nombre")
+                else:
+                    for rows in row:
+                        self.Eliminar_NombrePaciente_2.setText(str(rows[1]))
+                        self.Eliminar_TelefenoPaciente_2.setText(str(rows[2]))
+                        self.EliminarFecha_2.setText(str(rows[3]))
+                        self.EliminarUltima_2.setText(str(rows[4]))
+                        self.EliminarFecha_4.setText(str(rows[5]))
+                        self.EliminarUltima_4.setText(str(rows[6]))
+        
+        
+    def EliminarCliente(self, cursor):
+        data = self.ID_BuscarEliminarPaciente_3.text()
+        if len(data)==0:
+            self.msgError("Busqueda", "Debes realizar una busqueda valida primero antes de eliminar")
+        else:
+            opc = self.BuscarRegistradosCombobox_7.currentText()
+            if opc == "Buscar por Nombre:":
+                SQL="""select * from cliente where nombre_cliente like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Busqueda", "Debes realizar una busqueda valida primero antes de eliminar")
+                else:
+                    for rows in row:
+                        id = str(rows[0])
+                    SQL='''delete from cliente where id_cliente='{}' '''.format(id)   
+                    try:
+                        cursor.execute(SQL)     
+                        cursor.connection.commit()
+                    except Exception as ex:
+                        print(ex)
+                    self.Eliminar_NombrePaciente_2.clear()
+                    self.Eliminar_TelefenoPaciente_2.clear()
+                    self.EliminarFecha_2.clear()
+                    self.EliminarUltima_2.clear()
+                    self.EliminarFecha_4.clear()
+                    self.EliminarUltima_4.clear()
+            else:
+                SQL='''delete from cliente where id_cliente='{}' '''.format(data)   
+                try:
+                    cursor.execute(SQL)     
+                    cursor.connection.commit()
+                except Exception as ex:
+                    print(ex)
+                self.Eliminar_NombrePaciente_2.clear()
+                self.Eliminar_TelefenoPaciente_2.clear()
+                self.EliminarFecha_2.clear()
+                self.EliminarUltima_2.clear()
+                self.EliminarFecha_4.clear()
+                self.EliminarUltima_4.clear()
+        
     """
     CRUD Productos
     """      
