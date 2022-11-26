@@ -6553,9 +6553,433 @@ class Ui_MenuAdministrativo(object):
         self.BuscarBotonEliminar_2.clicked.connect(lambda: self.buscarEliminar_Entrenador(cursor))
         self.EliminarPacienteBoton_2.clicked.connect(lambda: self.eliminar_Entrenador(cursor))
         
+
+        #Botones CRUD Clientes (Registrar)
+        self.GuardarRegistrarPaciente_3.clicked.connect(lambda: self.registrarCliente(cursor))
+        self.pushButton_5.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_8))
+        #Botones CRUD Clientes (AsignarEntrenador)
+        self.BuscarBotonActualizar_4.clicked.connect(lambda: self.buscarCliente(cursor))
+        self.BuscarBotonActualizar_5.clicked.connect(lambda: self.buscarEntrenador(cursor))
+        self.BuscarBotonActualizar_6.clicked.connect(lambda: self.asignarEntrenador(cursor))
+        #Botones CRUD Clientes (Membresia)
+        self.BuscarBotonActualizar_3.clicked.connect(lambda: self.ConsultarMembresia(cursor))
+        #Botones CRUD Clientes (Actualizar Cliente)
+        self.BuscarBotonActualizar_7.clicked.connect(lambda: self.Buscarcliente(cursor))
+        self.pushButton_6.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_9))
+        self.ActualizarBotonPaciente_4.clicked.connect(lambda: self.ActualizarCliente(cursor))
+        #Botones CRUD Clientes (Mostrar)
+        self.BuscarBotonRegistrados_4.clicked.connect(lambda: self.MostrarCliente(cursor))
+        self.RefrescarBotonRegistrados_4.clicked.connect(lambda: self.RefrescarClientess(cursor))
+        #Botones CRUD Clientes (Eliminar)
+        self.BuscarBotonEliminar_3.clicked.connect(lambda: self.BuscarCliente(cursor))
+        self.EliminarPacienteBoton_3.clicked.connect(lambda: self.EliminarCliente(cursor))
+        
+        #Punto de venta (VENTA)
+        self.pushButton_11.clicked.connect(lambda: self.getFolio(cursor))
+        self.radioButton.clicked.connect(lambda: self.getFolio(cursor))
+        fechaActual = datetime.datetime.now()
+        fecha=datetime.datetime.strftime(fechaActual, '%d/%m/%Y')
+        self.lineEdit_2.setText(fecha)
+        self.lineEdit_4.setText(name)
+        self.lineEdit.setText(str(id))
+        self.CantidadTotal = 0.0
+        self.carrito=[]
+        self.folio=0
+            #Buscar producto venta
+        self.pushButton_7.clicked.connect(lambda: self.buscarProductoVenta(cursor))
+        self.pushButton_8.clicked.connect(lambda: self.agregarProductoVenta(cursor))
+            #Realizar venta
+        self.pushButton_10.clicked.connect(lambda: self.realizarVentaProducto(cursor))
+            #Generar Ticket
+        self.pushButton_28.clicked.connect(lambda: self.generarTicket(cursor, fecha, name, self.opc))
+            #Cancelar venta
+        self.pushButton_9.clicked.connect(lambda: self.cancelarVentaProducto())
+            #Finalizar venta
+        self.pushButton_29.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPuntoVenta))   
+            #Buscar Membresia
+        self.pushButton_37.clicked.connect(lambda: self.buscarMembresiaVenta(cursor))
+        self.pushButton_38.clicked.connect(lambda: self.agregarMembresiaVenta(cursor))
+            #Cancelar Venta Membresia
+        self.pushButton_31.clicked.connect(lambda: self.cancelarMembresiaVenta())
+            #Realizar Venta Membresia
+        self.pushButton_23.clicked.connect(lambda: self.realizarVentaMembresia(cursor))
+        #Funciones del inventario
+            #Registrar producto 
+        self.GuardarRegistrarPaciente_5.clicked.connect(lambda: self.registrarProducto(cursor))
+             #Registrar membresia
+        self.GuardarRegistrarPaciente_6.clicked.connect(lambda: self.registrarMembresia(cursor))
+            #Actualizar producto
+        self.BuscarBotonActualizar_9.clicked.connect(lambda: self.buscarActualizarProducto(cursor))
+        self.ActualizarBotonPaciente_6.clicked.connect(lambda: self.actualizarProducto(cursor))
+            #Eliminar producto
+        self.BuscarBotonEliminar_5.clicked.connect(lambda: self.buscarEliminarProducto(cursor))
+        self.EliminarPacienteBoton_5.clicked.connect(lambda: self.eliminarProducto(cursor))        
+            #Mostrar inventario
+        self.radioButton_2.clicked.connect(lambda: self.mostrarInventario(cursor))
+        self.pushButton_12.clicked.connect(lambda: self.mostrarInventario(cursor))
+        self.BuscarBotonRegistrados_8.clicked.connect(lambda: self.buscarInventario(cursor))
+        self.RefrescarBotonRegistrados_6.clicked.connect(lambda: self.refrescarInvenatario(cursor))
+             #mostrar Ventas self.mostrarVentas(cursor)
+        self.radioButton_3.clicked.connect(lambda: self.mostrarVentas(cursor))
+        self.pushButton_14.clicked.connect(lambda: self.mostrarVentas(cursor))
+        self.pushButton_15.clicked.connect(lambda: self.mostrarVentas(cursor))  
+        self.pushButton_15.clicked.connect(lambda: self.refrescarVentas(cursor))
+             #Buscar Ventas 
+        self.BuscarBotonRegistrados_7.clicked.connect(lambda: self.buscarVentas(cursor))  
+             #Buscar Visita
+        self.Buscar_Visita_3.clicked.connect(lambda: self.buscarVisita(cursor, fecha))  
+        #ActualizarStatusClientes
+        self.actualizarClientesSituacion(cursor)
+        #RegistrarVisita Volver al menu
+        self.Buscar_Visita_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPrincipal)) 
+
         """
-        CRUD Entrenadores
+        Aqui inician las funciones:
         """
+    def cerrarSesion(self, MenuPrincipal, cursor, Login):
+        MenuPrincipal.close()
+        Login.show()
+        
+    def desplegrMenu(self):
+        
+        if True:
+            width = self.Menu_Lateral_Frame.width()
+            normal = 0
+            if width==0:
+                extender = 100
+            else:
+                extender = normal
+            
+            self.animacion = QtCore.QPropertyAnimation(self.Menu_Lateral_Frame, b'minimumWidth') 
+            self.animacion.setDuration(300)
+            self.animacion.setStartValue(width) 
+            self.animacion.setEndValue(extender) 
+            self.animacion.setEasingCurve(QtCore.QEasingCurve.InOutQuart) 
+            self.animacion.start()
+    
+    def puntoVentaOpc(self,opc):
+        if opc==1:
+            self.stackedWidget.setCurrentWidget(self.PuntoVenta)
+            self.stackedWidget_2.setCurrentWidget(self.Puntodeventas)
+            self.radioButton.setChecked(True)
+        elif opc==2:
+            self.stackedWidget.setCurrentWidget(self.PuntoVenta)
+            self.stackedWidget_2.setCurrentWidget(self.page_2)
+            self.radioButton_2.setChecked(True)
+        elif opc==3:
+            self.stackedWidget.setCurrentWidget(self.PuntoVenta)
+            self.stackedWidget_2.setCurrentWidget(self.Ventas)
+            self.radioButton_3.setChecked(True)
+        elif opc==4:
+            self.stackedWidget.setCurrentWidget(self.PuntoVenta)
+            self.stackedWidget_2.setCurrentWidget(self.page)
+            self.radioButton_4.setCheckable(True)
+
+    def passwordHide(self, passw):
+        if passw.echoMode() == QLineEdit.Password:
+            passw.setEchoMode(QtWidgets.QLineEdit.Normal)
+        else:
+            passw.setEchoMode(QtWidgets.QLineEdit.Password)
+    """
+    CRUD Empleados
+    """
+    
+    def registrarEmpleado(self, cursor):
+        nombre=self.NombreRegistrar.text()
+        fechIngreso=self.UltimaCitaRegistrar.text()
+        naci=self.FechaNacimientoRegistrar.text()
+        tel=self.TelefonoRegistrar.text()
+        rol=self.BuscarPor_4.currentText()
+        curp=self.AlergiasRegistrar.text()
+        NSS=self.EnfermedadesRegistrar.text()
+        RFC=self.MedicamentosRegistrar.text() 
+        passw=self.MedicamentosRegistrar_6.text()
+        if len(nombre)==0:
+            self.msgError("Falta de informacion", "Debes ingresar un nombre para poder registrar a un empleado")
+        elif len(fechIngreso)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de ingreso para poder registrar a un empleado")
+        elif len(naci)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de nacimiento para poder registrar a un empleado")
+        elif (len(tel)==0) or (len(tel)!=10):
+            self.msgError("Falta de informacion", "Debes ingresar un numero de telefono valido de almenos 10 digitos")
+        elif (len(curp)==0) or (len(curp)!=18):
+            self.msgError("Falta de informacion", "Debes ingresar una CURP valida la cual se compone de 18 digitos") 
+        elif (len(NSS)==0) or (len(NSS)!=11):
+            self.msgError("Falta de informacion", "Debes ingresar un NSS valido de almenos 11 digitos")
+        elif (len(RFC)==0) or (len(RFC)!=13):
+            self.msgError("Falta de informacion", "Debes ingresar un RFC valido de almenos 13 digitos")
+        elif (len(passw)==0) or (len(passw)<8):
+            self.msgError("Falta de informacion", "Debes ingresar una contraseña valida de almenos 8 digitos")
+        else:
+            SQL=""" insert into empleadosyadmin (Nombre, Fecha_Ingreso, Fecha_Nacimiento, rol, Telefono_Empleado, CURP_Empleado, NSS_Empleado, RFC_Empleado, Contraseña)\
+                values ('{}','{}','{}','{}',{},'{}','{}','{}','{}'); """.format(nombre, fechIngreso, naci,rol, tel, curp, NSS, RFC, passw)
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+            except Exception as ex:
+                print(ex)
+            self.NombreRegistrar.clear()
+            self.TelefonoRegistrar.clear()
+            self.AlergiasRegistrar.clear()
+            self.EnfermedadesRegistrar.clear()
+            self.MedicamentosRegistrar.clear()
+            self.MedicamentosRegistrar_6.clear()
+    
+    def buscarActualizarEmpleado(self, cursor):
+        self.NombreActualizarPaciente.clear()
+        self.TelefonoActualizarPaciente.clear()
+        self.FechNacActu.clear()
+        self.UltimCitActu.clear()
+        self.AlergiasActualizar.clear()
+        self.EnfermedadesActualizar.clear()
+        self.MedicamentosActualizar.clear()
+        self.MedicamentosRegistrar_7.clear()
+        data=self.ID_BuscarActualizarPaciente.text()
+        if len(data)==0:
+            self.msgError("Busqued no valida", "Debes Ingresar informacion valida para buscar")
+        else:
+            opc = self.BuscarPor_2.currentText()
+            if opc == "Buscar por ID:":
+                SQL="""select *from empleadosyadmin where cast(id_empleado as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese ID")
+                else:
+                    for rows in row:
+                        self.NombreActualizarPaciente.setText(str(rows[1]))
+                        self.TelefonoActualizarPaciente.setText(str(rows[2]))
+                        self.FechNacActu.setText(str(rows[3]))
+                        self.UltimCitActu.setText(str(rows[5]))
+                        self.BuscarPor_3.setCurrentText(rows[4])
+                        self.AlergiasActualizar.setText(str(rows[6]))
+                        self.EnfermedadesActualizar.setText(str(rows[7]))
+                        self.MedicamentosActualizar.setText(str(rows[8]))
+                        self.MedicamentosRegistrar_7.setText(str(rows[9]))
+            else:
+                SQL="""select *from empleadosyadmin where nombre like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese Nombre")
+                else:
+                    for rows in row:
+                        self.NombreActualizarPaciente.setText(str(rows[1]))
+                        self.TelefonoActualizarPaciente.setText(str(rows[2]))
+                        self.FechNacActu.setText(str(rows[3]))
+                        self.UltimCitActu.setText(str(rows[5]))
+                        self.BuscarPor_3.setCurrentText(rows[4])
+                        self.AlergiasActualizar.setText(str(rows[6]))
+                        self.EnfermedadesActualizar.setText(str(rows[7]))
+                        self.MedicamentosActualizar.setText(str(rows[8]))
+                        self.MedicamentosRegistrar_7.setText(str(rows[9]))
+         
+    def actualizarEmpleado(self, cursor):
+        
+        opc = self.BuscarPor_2.currentText()
+        data = self.ID_BuscarActualizarPaciente.text()
+        if opc == "Buscar por Nombre:":
+            SQL="""select id_empleado from empleadosyadmin where nombre like '%{}%' """.format(data)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Busquda", "Debes realizar una busqueda valida primero antes de actualizar")
+            else:
+                for rows in row:
+                    id = str(rows[0])
+        else:
+            id = data
+        if len(id)==0:
+            self.msgError("Busquda", "Debes realizar una busqueda primero antes de actualizar")
+            return
+        nombre=self.NombreActualizarPaciente.text()
+        fechIngreso=self.TelefonoActualizarPaciente.text()
+        naci=self.FechNacActu.text()
+        tel=self.UltimCitActu.text()
+        rol=self.BuscarPor_3.currentText()
+        curp=self.AlergiasActualizar.text()
+        NSS=self.EnfermedadesActualizar.text()
+        RFC=self.MedicamentosActualizar.text() 
+        passw=self.MedicamentosRegistrar_7.text()
+        if len(nombre)==0:
+            self.msgError("Falta de informacion", "Debes ingresar un nombre o dejar el anterior antes de actualizar a un empleado")
+        elif len(fechIngreso)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de ingreso o dejar la anterior antes de actualizar a un empleado")
+        elif len(naci)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de nacimiento o dejar la anterior antes de actualizar a un empleado")
+        elif (len(tel)==0) or (len(tel)!=10):
+            self.msgError("Falta de informacion", "Debes ingresar un numero de telefono valido de almenos 10 digitos o dejar el anterior antes de actualizar")
+        elif (len(curp)==0) or (len(curp)!=18):
+            self.msgError("Falta de informacion", "Debes ingresar una CURP valida la cual se compone de 18 digitos o dejar el anterior antes de actualizar") 
+        elif (len(NSS)==0) or (len(NSS)!=11):
+            self.msgError("Falta de informacion", "Debes ingresar un NSS valido de almenos 11 digitos o dejar el anterior antes de actualizar")
+        elif (len(RFC)==0) or (len(RFC)!=13):
+            self.msgError("Falta de informacion", "Debes ingresar un RFC valido de almenos 13 digitos o dejar el anterior antes de actualizar")
+        elif (len(passw)==0) or (len(passw)<8):
+            self.msgError("Falta de informacion", "Debes ingresar una contraseña valida de almenos 8 digitos o dejar la anterior antes de actualizar")
+        else:
+            SQL=""" update empleadosyadmin set Nombre='{}', Fecha_Ingreso='{}', Fecha_Nacimiento='{}', rol='{}', Telefono_Empleado='{}', 
+            CURP_Empleado='{}', NSS_Empleado='{}', RFC_Empleado='{}', Contraseña='{}'where id_empleado='{}' """.format(nombre, fechIngreso, naci,rol, tel, curp, NSS, RFC, passw, id)
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+                print(id)
+            except Exception as ex:
+                print(ex)
+            self.NombreActualizarPaciente.clear()
+            self.TelefonoActualizarPaciente.clear()
+            self.FechNacActu.clear()
+            self.UltimCitActu.clear()
+            self.AlergiasActualizar.clear()
+            self.EnfermedadesActualizar.clear()
+            self.MedicamentosActualizar.clear()
+            self.MedicamentosRegistrar_7.clear()
+    
+    def BuscarMostrarEmpleados(self, cursor):
+        data=self.BuscarRegistradosPacientesText.text()
+        self.TablaEmpleados.clearContents()
+        self.TablaEmpleados.setRowCount(0)
+        #Aqui comprueba que se escribio en el cuadro
+        if len(data)==0:
+            self.msgError("Busqueda", "Debes ingresar informacion antes de buscar")
+        else:
+            opc=self.BuscarRegistradosCombobox.currentText() 
+            if opc == "Buscar por Nombre:":
+                SQL="""select *from empleadosyadmin where nombre like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese nombre de empleado")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados.setRowCount(tablerow + 1)
+                        self.TablaEmpleados.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        self.TablaEmpleados.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+                        tablerow+=1
+            elif opc == "Buscar por ID:":
+                SQL="""select *from empleadosyadmin where cast(id_empleado as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de empleado")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados.setRowCount(tablerow + 1)
+                        self.TablaEmpleados.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        self.TablaEmpleados.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+                        tablerow+=1
+            else:
+                self.msgError("Seleccion", "Selecciona un modo de busqueda")
+    
+    def refrescarMostrarEmpleados(self, cursor):
+        self.TablaEmpleados.clearContents()
+        cursor.execute("SELECT *FROM empleadosyadmin")
+        row=cursor.fetchall()
+        tablerow = 0
+        for rows in row:
+            self.TablaEmpleados.setRowCount(tablerow + 1)
+            self.TablaEmpleados.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+            self.TablaEmpleados.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+            self.TablaEmpleados.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+            self.TablaEmpleados.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+            self.TablaEmpleados.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+            self.TablaEmpleados.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+            self.TablaEmpleados.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+            self.TablaEmpleados.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+            self.TablaEmpleados.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+            print(rows[3])
+            tablerow+=1
+            
+    def buscarEliminarEmpleados(self, cursor):
+        self.Eliminar_NombrePaciente.clear()
+        self.Eliminar_TelefenoPaciente.clear()
+        self.EliminarFecha.clear()
+        self.EliminarUltima.clear()
+        
+        data=self.ID_BuscarEliminarPaciente.text()
+        if len(data)==0:
+            self.msgError("Busqued no valida", "Debes Ingresar informacion valida para buscar")
+        else:
+            opc = self.BuscarRegistradosCombobox_2.currentText()
+            if opc == "Buscar por ID:":
+                SQL="""select *from empleadosyadmin where cast(id_empleado as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese ID")
+                else:
+                    for rows in row:
+                        self.Eliminar_NombrePaciente.setText(str(rows[1]))
+                        self.Eliminar_TelefenoPaciente.setText(str(rows[5]))
+                        self.EliminarFecha.setText(str(rows[3]))
+                        self.EliminarUltima.setText(str(rows[4]))
+            else:
+                SQL="""select *from empleadosyadmin where nombre like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese Nombre")
+                else:
+                    for rows in row:
+                        self.Eliminar_NombrePaciente.setText(str(rows[1]))
+                        self.Eliminar_TelefenoPaciente.setText(str(rows[5]))
+                        self.EliminarFecha.setText(str(rows[3]))
+                        self.EliminarUltima.setText(str(rows[4]))
+                        
+    def eliminarEmpleados(self, cursor):
+        opc = self.BuscarRegistradosCombobox_2.currentText()
+        data = self.ID_BuscarEliminarPaciente.text()
+        if opc == "Buscar por Nombre:":
+            SQL="""select id_empleado from empleadosyadmin where nombre like '%{}%' """.format(data)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Busqueda", "Debes realizar una busqueda valida primero antes de eliminar")
+            else:
+                for rows in row:
+                    id = str(rows[0])
+        id=str(data)
+        
+        nombre=self.Eliminar_NombrePaciente.text()
+        tel=self.Eliminar_TelefenoPaciente.text()
+        fech=self.EliminarFecha.text()
+        ult=self.EliminarUltima.text()
+        
+        if len(nombre)==0 or len(tel)==0 or len(fech)==0 or len(ult)==0:
+            self.msgError("Busqueda", "Debes realizar una busqueda valida primero antes de eliminar")
+        else:
+            SQL='''delete from empleadosyadmin where Id_empleado='{}' '''.format(id)   
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+            except Exception as ex:
+                #self.msgError("No fue posible eliminar el empleado", ex)
+                print(ex)
+        
+            self.Eliminar_NombrePaciente.clear()
+            self.Eliminar_TelefenoPaciente.clear()
+            self.EliminarFecha.clear()
+            self.EliminarUltima.clear()
+        
+    """
+    CRUD Entrenadores
+    """ 
         
     def Agregar_Entrenador(self, cursor):
         nombre=self.NombreRegistrar_2.text()
@@ -6916,432 +7340,8 @@ class Ui_MenuAdministrativo(object):
             self.TelefonoRegistrar_3.clear()
             self.AlergiasRegistrar_3.clear()
             self.EnfermedadesRegistrar_3.clear()
-            self.MedicamentosRegistrar_3.clear()
-        
-        
-        #Botones CRUD Clientes (Registrar)
-        self.GuardarRegistrarPaciente_3.clicked.connect(lambda: self.registrarCliente(cursor))
-        self.pushButton_5.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_8))
-        #Botones CRUD Clientes (AsignarEntrenador)
-        self.BuscarBotonActualizar_4.clicked.connect(lambda: self.buscarCliente(cursor))
-        self.BuscarBotonActualizar_5.clicked.connect(lambda: self.buscarEntrenador(cursor))
-        self.BuscarBotonActualizar_6.clicked.connect(lambda: self.asignarEntrenador(cursor))
-        #Botones CRUD Clientes (Membresia)
-        self.BuscarBotonActualizar_3.clicked.connect(lambda: self.ConsultarMembresia(cursor))
-        #Botones CRUD Clientes (Actualizar Cliente)
-        self.BuscarBotonActualizar_7.clicked.connect(lambda: self.Buscarcliente(cursor))
-        self.pushButton_6.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_9))
-        self.ActualizarBotonPaciente_4.clicked.connect(lambda: self.ActualizarCliente(cursor))
-        #Botones CRUD Clientes (Mostrar)
-        self.BuscarBotonRegistrados_4.clicked.connect(lambda: self.MostrarCliente(cursor))
-        self.RefrescarBotonRegistrados_4.clicked.connect(lambda: self.RefrescarClientess(cursor))
-        #Botones CRUD Clientes (Eliminar)
-        self.BuscarBotonEliminar_3.clicked.connect(lambda: self.BuscarCliente(cursor))
-        self.EliminarPacienteBoton_3.clicked.connect(lambda: self.EliminarCliente(cursor))
-        
-        #Punto de venta (VENTA)
-        self.pushButton_11.clicked.connect(lambda: self.getFolio(cursor))
-        self.radioButton.clicked.connect(lambda: self.getFolio(cursor))
-        fechaActual = datetime.datetime.now()
-        fecha=datetime.datetime.strftime(fechaActual, '%d/%m/%Y')
-        self.lineEdit_2.setText(fecha)
-        self.lineEdit_4.setText(name)
-        self.lineEdit.setText(str(id))
-        self.CantidadTotal = 0.0
-        self.carrito=[]
-        self.folio=0
-            #Buscar producto venta
-        self.pushButton_7.clicked.connect(lambda: self.buscarProductoVenta(cursor))
-        self.pushButton_8.clicked.connect(lambda: self.agregarProductoVenta(cursor))
-            #Realizar venta
-        self.pushButton_10.clicked.connect(lambda: self.realizarVentaProducto(cursor))
-            #Generar Ticket
-        self.pushButton_28.clicked.connect(lambda: self.generarTicket(cursor, fecha, name, self.opc))
-            #Cancelar venta
-        self.pushButton_9.clicked.connect(lambda: self.cancelarVentaProducto())
-            #Finalizar venta
-        self.pushButton_29.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPuntoVenta))   
-            #Buscar Membresia
-        self.pushButton_37.clicked.connect(lambda: self.buscarMembresiaVenta(cursor))
-        self.pushButton_38.clicked.connect(lambda: self.agregarMembresiaVenta(cursor))
-            #Cancelar Venta Membresia
-        self.pushButton_31.clicked.connect(lambda: self.cancelarMembresiaVenta())
-            #Realizar Venta Membresia
-        self.pushButton_23.clicked.connect(lambda: self.realizarVentaMembresia(cursor))
-        #Funciones del inventario
-            #Registrar producto 
-        self.GuardarRegistrarPaciente_5.clicked.connect(lambda: self.registrarProducto(cursor))
-             #Registrar membresia
-        self.GuardarRegistrarPaciente_6.clicked.connect(lambda: self.registrarMembresia(cursor))
-            #Actualizar producto
-        self.BuscarBotonActualizar_9.clicked.connect(lambda: self.buscarActualizarProducto(cursor))
-        self.ActualizarBotonPaciente_6.clicked.connect(lambda: self.actualizarProducto(cursor))
-            #Eliminar producto
-        self.BuscarBotonEliminar_5.clicked.connect(lambda: self.buscarEliminarProducto(cursor))
-        self.EliminarPacienteBoton_5.clicked.connect(lambda: self.eliminarProducto(cursor))        
-            #Mostrar inventario
-        self.radioButton_2.clicked.connect(lambda: self.mostrarInventario(cursor))
-        self.pushButton_12.clicked.connect(lambda: self.mostrarInventario(cursor))
-        self.BuscarBotonRegistrados_8.clicked.connect(lambda: self.buscarInventario(cursor))
-        self.RefrescarBotonRegistrados_6.clicked.connect(lambda: self.refrescarInvenatario(cursor))
-             #mostrar Ventas self.mostrarVentas(cursor)
-        self.radioButton_3.clicked.connect(lambda: self.mostrarVentas(cursor))
-        self.pushButton_14.clicked.connect(lambda: self.mostrarVentas(cursor))
-        self.pushButton_15.clicked.connect(lambda: self.mostrarVentas(cursor))  
-        self.pushButton_15.clicked.connect(lambda: self.refrescarVentas(cursor))
-             #Buscar Ventas 
-        self.BuscarBotonRegistrados_7.clicked.connect(lambda: self.buscarVentas(cursor))  
-             #Buscar Visita
-        self.Buscar_Visita_3.clicked.connect(lambda: self.buscarVisita(cursor, fecha))  
-        #ActualizarStatusClientes
-        self.actualizarClientesSituacion(cursor)
-        #RegistrarVisita Volver al menu
-        self.Buscar_Visita_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPrincipal)) 
-
-        """
-        Aqui inician las funciones:
-        """
-    def cerrarSesion(self, MenuPrincipal, cursor, Login):
-        MenuPrincipal.close()
-        Login.show()
-        
-    def desplegrMenu(self):
-        
-        if True:
-            width = self.Menu_Lateral_Frame.width()
-            normal = 0
-            if width==0:
-                extender = 100
-            else:
-                extender = normal
-            
-            self.animacion = QtCore.QPropertyAnimation(self.Menu_Lateral_Frame, b'minimumWidth') 
-            self.animacion.setDuration(300)
-            self.animacion.setStartValue(width) 
-            self.animacion.setEndValue(extender) 
-            self.animacion.setEasingCurve(QtCore.QEasingCurve.InOutQuart) 
-            self.animacion.start()
+            self.MedicamentosRegistrar_3.clear()    
     
-    def puntoVentaOpc(self,opc):
-        if opc==1:
-            self.stackedWidget.setCurrentWidget(self.PuntoVenta)
-            self.stackedWidget_2.setCurrentWidget(self.Puntodeventas)
-            self.radioButton.setChecked(True)
-        elif opc==2:
-            self.stackedWidget.setCurrentWidget(self.PuntoVenta)
-            self.stackedWidget_2.setCurrentWidget(self.page_2)
-            self.radioButton_2.setChecked(True)
-        elif opc==3:
-            self.stackedWidget.setCurrentWidget(self.PuntoVenta)
-            self.stackedWidget_2.setCurrentWidget(self.Ventas)
-            self.radioButton_3.setChecked(True)
-        elif opc==4:
-            self.stackedWidget.setCurrentWidget(self.PuntoVenta)
-            self.stackedWidget_2.setCurrentWidget(self.page)
-            self.radioButton_4.setCheckable(True)
-
-    def passwordHide(self, passw):
-        if passw.echoMode() == QLineEdit.Password:
-            passw.setEchoMode(QtWidgets.QLineEdit.Normal)
-        else:
-            passw.setEchoMode(QtWidgets.QLineEdit.Password)
-    """
-    CRUD Epleados
-    """
-    
-    def registrarEmpleado(self, cursor):
-        nombre=self.NombreRegistrar.text()
-        fechIngreso=self.UltimaCitaRegistrar.text()
-        naci=self.FechaNacimientoRegistrar.text()
-        tel=self.TelefonoRegistrar.text()
-        rol=self.BuscarPor_4.currentText()
-        curp=self.AlergiasRegistrar.text()
-        NSS=self.EnfermedadesRegistrar.text()
-        RFC=self.MedicamentosRegistrar.text() 
-        passw=self.MedicamentosRegistrar_6.text()
-        if len(nombre)==0:
-            self.msgError("Falta de informacion", "Debes ingresar un nombre para poder registrar a un empleado")
-        elif len(fechIngreso)==0:
-            self.msgError("Falta de informacion", "Debes ingresar una fecha de ingreso para poder registrar a un empleado")
-        elif len(naci)==0:
-            self.msgError("Falta de informacion", "Debes ingresar una fecha de nacimiento para poder registrar a un empleado")
-        elif (len(tel)==0) or (len(tel)!=10):
-            self.msgError("Falta de informacion", "Debes ingresar un numero de telefono valido de almenos 10 digitos")
-        elif (len(curp)==0) or (len(curp)!=18):
-            self.msgError("Falta de informacion", "Debes ingresar una CURP valida la cual se compone de 18 digitos") 
-        elif (len(NSS)==0) or (len(NSS)!=11):
-            self.msgError("Falta de informacion", "Debes ingresar un NSS valido de almenos 11 digitos")
-        elif (len(RFC)==0) or (len(RFC)!=13):
-            self.msgError("Falta de informacion", "Debes ingresar un RFC valido de almenos 13 digitos")
-        elif (len(passw)==0) or (len(passw)<8):
-            self.msgError("Falta de informacion", "Debes ingresar una contraseña valida de almenos 8 digitos")
-        else:
-            SQL=""" insert into empleadosyadmin (Nombre, Fecha_Ingreso, Fecha_Nacimiento, rol, Telefono_Empleado, CURP_Empleado, NSS_Empleado, RFC_Empleado, Contraseña)\
-                values ('{}','{}','{}','{}',{},'{}','{}','{}','{}'); """.format(nombre, fechIngreso, naci,rol, tel, curp, NSS, RFC, passw)
-            try:
-                cursor.execute(SQL)     
-                cursor.connection.commit()
-            except Exception as ex:
-                print(ex)
-            self.NombreRegistrar.clear()
-            self.TelefonoRegistrar.clear()
-            self.AlergiasRegistrar.clear()
-            self.EnfermedadesRegistrar.clear()
-            self.MedicamentosRegistrar.clear()
-            self.MedicamentosRegistrar_6.clear()
-    
-    def buscarActualizarEmpleado(self, cursor):
-        self.NombreActualizarPaciente.clear()
-        self.TelefonoActualizarPaciente.clear()
-        self.FechNacActu.clear()
-        self.UltimCitActu.clear()
-        self.AlergiasActualizar.clear()
-        self.EnfermedadesActualizar.clear()
-        self.MedicamentosActualizar.clear()
-        self.MedicamentosRegistrar_7.clear()
-        data=self.ID_BuscarActualizarPaciente.text()
-        if len(data)==0:
-            self.msgError("Busqued no valida", "Debes Ingresar informacion valida para buscar")
-        else:
-            opc = self.BuscarPor_2.currentText()
-            if opc == "Buscar por ID:":
-                SQL="""select *from empleadosyadmin where cast(id_empleado as varchar)='{}' """.format(data)
-                cursor.execute(SQL)
-                row=cursor.fetchall()
-                if len(row)==0:
-                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese ID")
-                else:
-                    for rows in row:
-                        self.NombreActualizarPaciente.setText(str(rows[1]))
-                        self.TelefonoActualizarPaciente.setText(str(rows[2]))
-                        self.FechNacActu.setText(str(rows[3]))
-                        self.UltimCitActu.setText(str(rows[5]))
-                        self.BuscarPor_3.setCurrentText(rows[4])
-                        self.AlergiasActualizar.setText(str(rows[6]))
-                        self.EnfermedadesActualizar.setText(str(rows[7]))
-                        self.MedicamentosActualizar.setText(str(rows[8]))
-                        self.MedicamentosRegistrar_7.setText(str(rows[9]))
-            else:
-                SQL="""select *from empleadosyadmin where nombre like '%{}%' """.format(data)
-                cursor.execute(SQL)
-                row=cursor.fetchall()
-                if len(row)==0:
-                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese Nombre")
-                else:
-                    for rows in row:
-                        self.NombreActualizarPaciente.setText(str(rows[1]))
-                        self.TelefonoActualizarPaciente.setText(str(rows[2]))
-                        self.FechNacActu.setText(str(rows[3]))
-                        self.UltimCitActu.setText(str(rows[5]))
-                        self.BuscarPor_3.setCurrentText(rows[4])
-                        self.AlergiasActualizar.setText(str(rows[6]))
-                        self.EnfermedadesActualizar.setText(str(rows[7]))
-                        self.MedicamentosActualizar.setText(str(rows[8]))
-                        self.MedicamentosRegistrar_7.setText(str(rows[9]))
-         
-    def actualizarEmpleado(self, cursor):
-        
-        opc = self.BuscarPor_2.currentText()
-        data = self.ID_BuscarActualizarPaciente.text()
-        if opc == "Buscar por Nombre:":
-            SQL="""select id_empleado from empleadosyadmin where nombre like '%{}%' """.format(data)
-            cursor.execute(SQL)
-            row=cursor.fetchall()
-            if len(row)==0:
-                self.msgError("Busquda", "Debes realizar una busqueda valida primero antes de actualizar")
-            else:
-                for rows in row:
-                    id = str(rows[0])
-        else:
-            id = data
-        if len(id)==0:
-            self.msgError("Busquda", "Debes realizar una busqueda primero antes de actualizar")
-            return
-        nombre=self.NombreActualizarPaciente.text()
-        fechIngreso=self.TelefonoActualizarPaciente.text()
-        naci=self.FechNacActu.text()
-        tel=self.UltimCitActu.text()
-        rol=self.BuscarPor_3.currentText()
-        curp=self.AlergiasActualizar.text()
-        NSS=self.EnfermedadesActualizar.text()
-        RFC=self.MedicamentosActualizar.text() 
-        passw=self.MedicamentosRegistrar_7.text()
-        if len(nombre)==0:
-            self.msgError("Falta de informacion", "Debes ingresar un nombre o dejar el anterior antes de actualizar a un empleado")
-        elif len(fechIngreso)==0:
-            self.msgError("Falta de informacion", "Debes ingresar una fecha de ingreso o dejar la anterior antes de actualizar a un empleado")
-        elif len(naci)==0:
-            self.msgError("Falta de informacion", "Debes ingresar una fecha de nacimiento o dejar la anterior antes de actualizar a un empleado")
-        elif (len(tel)==0) or (len(tel)!=10):
-            self.msgError("Falta de informacion", "Debes ingresar un numero de telefono valido de almenos 10 digitos o dejar el anterior antes de actualizar")
-        elif (len(curp)==0) or (len(curp)!=18):
-            self.msgError("Falta de informacion", "Debes ingresar una CURP valida la cual se compone de 18 digitos o dejar el anterior antes de actualizar") 
-        elif (len(NSS)==0) or (len(NSS)!=11):
-            self.msgError("Falta de informacion", "Debes ingresar un NSS valido de almenos 11 digitos o dejar el anterior antes de actualizar")
-        elif (len(RFC)==0) or (len(RFC)!=13):
-            self.msgError("Falta de informacion", "Debes ingresar un RFC valido de almenos 13 digitos o dejar el anterior antes de actualizar")
-        elif (len(passw)==0) or (len(passw)<8):
-            self.msgError("Falta de informacion", "Debes ingresar una contraseña valida de almenos 8 digitos o dejar la anterior antes de actualizar")
-        else:
-            SQL=""" update empleadosyadmin set Nombre='{}', Fecha_Ingreso='{}', Fecha_Nacimiento='{}', rol='{}', Telefono_Empleado='{}', 
-            CURP_Empleado='{}', NSS_Empleado='{}', RFC_Empleado='{}', Contraseña='{}'where id_empleado='{}' """.format(nombre, fechIngreso, naci,rol, tel, curp, NSS, RFC, passw, id)
-            try:
-                cursor.execute(SQL)     
-                cursor.connection.commit()
-                print(id)
-            except Exception as ex:
-                print(ex)
-            self.NombreActualizarPaciente.clear()
-            self.TelefonoActualizarPaciente.clear()
-            self.FechNacActu.clear()
-            self.UltimCitActu.clear()
-            self.AlergiasActualizar.clear()
-            self.EnfermedadesActualizar.clear()
-            self.MedicamentosActualizar.clear()
-            self.MedicamentosRegistrar_7.clear()
-    
-    def BuscarMostrarEmpleados(self, cursor):
-        data=self.BuscarRegistradosPacientesText.text()
-        self.TablaEmpleados.clearContents()
-        self.TablaEmpleados.setRowCount(0)
-        #Aqui comprueba que se escribio en el cuadro
-        if len(data)==0:
-            self.msgError("Busqueda", "Debes ingresar informacion antes de buscar")
-        else:
-            opc=self.BuscarRegistradosCombobox.currentText() 
-            if opc == "Buscar por Nombre:":
-                SQL="""select *from empleadosyadmin where nombre like '%{}%' """.format(data)
-                cursor.execute(SQL)
-                row=cursor.fetchall()
-                if len(row)==0:
-                    self.msgError("Sin coincidencia", "No existe coincidencia con ese nombre de empleado")
-                else:
-                    tablerow = 0
-                    for rows in row:
-                        self.TablaEmpleados.setRowCount(tablerow + 1)
-                        self.TablaEmpleados.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
-                        self.TablaEmpleados.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
-                        self.TablaEmpleados.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
-                        self.TablaEmpleados.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
-                        self.TablaEmpleados.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
-                        self.TablaEmpleados.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
-                        self.TablaEmpleados.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
-                        self.TablaEmpleados.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
-                        self.TablaEmpleados.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
-                        tablerow+=1
-            elif opc == "Buscar por ID:":
-                SQL="""select *from empleadosyadmin where cast(id_empleado as varchar)='{}' """.format(data)
-                cursor.execute(SQL)
-                row=cursor.fetchall()
-                if len(row)==0:
-                    self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de empleado")
-                else:
-                    tablerow = 0
-                    for rows in row:
-                        self.TablaEmpleados.setRowCount(tablerow + 1)
-                        self.TablaEmpleados.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
-                        self.TablaEmpleados.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
-                        self.TablaEmpleados.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
-                        self.TablaEmpleados.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
-                        self.TablaEmpleados.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
-                        self.TablaEmpleados.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
-                        self.TablaEmpleados.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
-                        self.TablaEmpleados.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
-                        self.TablaEmpleados.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
-                        tablerow+=1
-            else:
-                self.msgError("Seleccion", "Selecciona un modo de busqueda")
-    
-    def refrescarMostrarEmpleados(self, cursor):
-        self.TablaEmpleados.clearContents()
-        cursor.execute("SELECT *FROM empleadosyadmin")
-        row=cursor.fetchall()
-        tablerow = 0
-        for rows in row:
-            self.TablaEmpleados.setRowCount(tablerow + 1)
-            self.TablaEmpleados.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
-            self.TablaEmpleados.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
-            self.TablaEmpleados.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
-            self.TablaEmpleados.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
-            self.TablaEmpleados.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
-            self.TablaEmpleados.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
-            self.TablaEmpleados.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
-            self.TablaEmpleados.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
-            self.TablaEmpleados.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
-            print(rows[3])
-            tablerow+=1
-            
-    def buscarEliminarEmpleados(self, cursor):
-        self.Eliminar_NombrePaciente.clear()
-        self.Eliminar_TelefenoPaciente.clear()
-        self.EliminarFecha.clear()
-        self.EliminarUltima.clear()
-        
-        data=self.ID_BuscarEliminarPaciente.text()
-        if len(data)==0:
-            self.msgError("Busqued no valida", "Debes Ingresar informacion valida para buscar")
-        else:
-            opc = self.BuscarRegistradosCombobox_2.currentText()
-            if opc == "Buscar por ID:":
-                SQL="""select *from empleadosyadmin where cast(id_empleado as varchar)='{}' """.format(data)
-                cursor.execute(SQL)
-                row=cursor.fetchall()
-                if len(row)==0:
-                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese ID")
-                else:
-                    for rows in row:
-                        self.Eliminar_NombrePaciente.setText(str(rows[1]))
-                        self.Eliminar_TelefenoPaciente.setText(str(rows[5]))
-                        self.EliminarFecha.setText(str(rows[3]))
-                        self.EliminarUltima.setText(str(rows[4]))
-            else:
-                SQL="""select *from empleadosyadmin where nombre like '%{}%' """.format(data)
-                cursor.execute(SQL)
-                row=cursor.fetchall()
-                if len(row)==0:
-                    self.msgError("Sin coincidencia", "No existe usuario registrado con ese Nombre")
-                else:
-                    for rows in row:
-                        self.Eliminar_NombrePaciente.setText(str(rows[1]))
-                        self.Eliminar_TelefenoPaciente.setText(str(rows[5]))
-                        self.EliminarFecha.setText(str(rows[3]))
-                        self.EliminarUltima.setText(str(rows[4]))
-                        
-    def eliminarEmpleados(self, cursor):
-        opc = self.BuscarRegistradosCombobox_2.currentText()
-        data = self.ID_BuscarEliminarPaciente.text()
-        if opc == "Buscar por Nombre:":
-            SQL="""select id_empleado from empleadosyadmin where nombre like '%{}%' """.format(data)
-            cursor.execute(SQL)
-            row=cursor.fetchall()
-            if len(row)==0:
-                self.msgError("Busqueda", "Debes realizar una busqueda valida primero antes de eliminar")
-            else:
-                for rows in row:
-                    id = str(rows[0])
-        id=str(data)
-        
-        nombre=self.Eliminar_NombrePaciente.text()
-        tel=self.Eliminar_TelefenoPaciente.text()
-        fech=self.EliminarFecha.text()
-        ult=self.EliminarUltima.text()
-        
-        if len(nombre)==0 or len(tel)==0 or len(fech)==0 or len(ult)==0:
-            self.msgError("Busqueda", "Debes realizar una busqueda valida primero antes de eliminar")
-        else:
-            SQL='''delete from empleadosyadmin where Id_empleado='{}' '''.format(id)   
-            try:
-                cursor.execute(SQL)     
-                cursor.connection.commit()
-            except Exception as ex:
-                #self.msgError("No fue posible eliminar el empleado", ex)
-                print(ex)
-        
-            self.Eliminar_NombrePaciente.clear()
-            self.Eliminar_TelefenoPaciente.clear()
-            self.EliminarFecha.clear()
-            self.EliminarUltima.clear()
-        
     """
     CRUD Clientes
     """ 
