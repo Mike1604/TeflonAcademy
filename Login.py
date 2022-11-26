@@ -1,6 +1,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QTableWidgetItem, QLineEdit
 from MenuAdministrativos import Ui_MenuAdministrativo
+from MenuClientes import Ui_MainWindow
 
 class Ui_LogIn(object):
     def setupUi(self, LogIn, cursor):
@@ -224,7 +225,7 @@ class Ui_LogIn(object):
                             id=rows[0]
                             #Conecto al usuario
                             self.window = QtWidgets.QMainWindow()
-                            self.ui = Ui_MenuAdministrativo
+                            self.ui = Ui_MainWindow()
                             self.ui.setupUi(self.window,cursor,id,LogIn)
                             LogIn.close()
                             self.lineEdit_7.setText("")
