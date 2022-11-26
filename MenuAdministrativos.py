@@ -6582,8 +6582,17 @@ class Ui_MenuAdministrativo(object):
              #mostrar Ventas self.mostrarVentas(cursor)
         self.radioButton_3.clicked.connect(lambda: self.mostrarVentas(cursor))
         self.pushButton_14.clicked.connect(lambda: self.mostrarVentas(cursor))
-        self.pushButton_15.clicked.connect(lambda: self.mostrarVentas(cursor))     
-        
+        self.pushButton_15.clicked.connect(lambda: self.mostrarVentas(cursor))  
+        self.pushButton_15.clicked.connect(lambda: self.refrescarVentas(cursor))
+             #Buscar Ventas 
+        self.BuscarBotonRegistrados_7.clicked.connect(lambda: self.buscarVentas(cursor))  
+             #Buscar Visita
+        self.Buscar_Visita_3.clicked.connect(lambda: self.buscarVisita(cursor, fecha))  
+        #ActualizarStatusClientes
+        self.actualizarClientesSituacion(cursor)
+        #RegistrarVisita Volver al menu
+        self.Buscar_Visita_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPrincipal)) 
+
         """
         Aqui inician las funciones:
         """
@@ -7710,6 +7719,175 @@ class Ui_MenuAdministrativo(object):
             self.TablaEmpleados_7.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
             tablerow+=1
     
+    def buscarVentas(self, cursor):
+        data = self.BuscarRegistradosPacientesText_7.text()
+        self.TablaEmpleados_7.clearContents()
+        self.TablaEmpleados_7.setRowCount(0)
+        if len(data)==0:
+            self.msgError("Busqueda", "Debes ingresar informacion antes de buscar")
+        else:
+            opc=self.BuscarRegistradosCombobox_10.currentText()
+            if opc == "Buscar por Nombre:":
+                SQL="""select *from venta where nombre_producto like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese producto")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados_7.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_7.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_7.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_7.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_7.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_7.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_7.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_7.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_7.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        tablerow+=1
+            elif opc == "Buscar por ID venta:":
+                SQL="""select *from venta where cast(folio as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese codigo de producto")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados_7.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_7.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_7.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_7.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_7.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_7.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_7.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_7.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_7.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        tablerow+=1
+            else:
+                self.msgError("Seleccion", "Selecciona un modo de busqueda")
+        
+    def refrescarVentas(self, cursor):
+        opc = self.BuscarRegistradosCombobox_11.currentText()
+        self.TablaEmpleados_7.clearContents()
+        self.TablaEmpleados_7.setRowCount(0)
+        if opc == "Ordenar por ID":
+                SQL="select *from venta order by folio "
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin elementos", "No hay ventas realizadas aun")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados_7.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_7.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_7.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_7.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_7.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_7.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_7.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_7.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_7.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        tablerow+=1
+        elif opc == "Ordenar por fecha":
+                SQL="select *from venta order by fecha "
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin elementos", "No hay ventas realizadas aun")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados_7.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_7.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_7.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_7.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_7.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_7.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_7.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_7.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_7.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        tablerow+=1
+        elif opc == "Ordenar por cantidad":
+                SQL="select *from venta order by cantidad "
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin elementos", "No hay ventas realizadas aun")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados_7.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_7.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_7.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_7.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_7.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_7.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_7.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_7.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_7.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        tablerow+=1
+
+    """
+    Registrar visita
+    """
+    def buscarVisita(self, cursor, date):
+        id = self.plainTextEdit.toPlainText()
+        if (len(id)) != 0:
+                SQL="""select Nombre_Cliente, fecha_Vencimiento from cliente where ID_cliente='{}' """.format(id)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                        self.msgError("Sin coincidencia", "No existe coincidencia con ese ID, debes ingresar un cliente ya registrado")
+                        return
+                else:
+                        for rows in row:
+                                self.plainTextEdit_2.setPlainText(rows[0])
+                                venci = str(rows[1])
+                self.plainTextEdit_3.setPlainText(date)
+                ano = venci[:4]
+                mes = venci[5:7]
+                dia = venci[8:11]
+                venc = datetime.date(int(ano), int(mes), int(dia))
+                today = datetime.date.today()       
+                if today > venc:
+                        resta = today - venc
+                        restastr = str(resta)
+                        msg ="Tu membresia ha vencido hace "+str(restastr[:2])+" dias"
+                        self.label_12.setText(msg)
+                        self.msgError("Membresia vencida", "La membresia del cliente ha vencido")
+                else:
+                        resta = today - venc
+                        restastr = str(resta)
+                        msg ="Tu membresia vencera en "+str(restastr[:2])+" dias"
+                        self.label_12.setText(msg)
+
+        else:
+                self.msgError("Busqueda", "Debes ingresar un ID para poder buscar")
+                return
+     
+    def actualizarClientesSituacion(self, cursor):
+        SQL="select id_Cliente, fecha_Vencimiento from cliente"
+        cursor.execute(SQL)
+        row=cursor.fetchall()
+        for rows in row:
+                venci = str(rows[1])
+                ano = venci[:4]
+                mes = venci[5:7]
+                dia = venci[8:11]
+                venc = datetime.date(int(ano), int(mes), int(dia))
+                today = datetime.date.today()       
+                if today > venc:
+                        sql="""update cliente set situacion_Membresia='Vencida' where id_cliente='{}' """.format(str(rows[0]))
+                        cursor.execute(sql)
+                        cursor.connection.commit()
+                else:
+                        sql="""update cliente set situacion_Membresia='Activa' where id_cliente='{}' """.format(str(rows[0]))
+                        cursor.execute(sql)
+                        cursor.connection.commit()
+
     def msgError(self,msg1,msg2):
         msg = QtWidgets.QMessageBox()
         msg.setWindowTitle(msg1)
@@ -7717,8 +7895,7 @@ class Ui_MenuAdministrativo(object):
         msg.setIcon(QtWidgets.QMessageBox.Information)
         
         x = msg.exec_()
-
-
+    
 
 
     def retranslateUi(self, MenuAdministrativo):
