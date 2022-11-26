@@ -2,7 +2,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
+    def setupUi(self, MainWindow , cursor, id, LogIn):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(851, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -716,6 +716,27 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(4)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        
+         
+        ''' Botones del menu '''
+        self.pushButton_12.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Catalogo))
+        self.pushButton_11.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Reusmen))
+        self.pushButton_10.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Membresia))
+        self.pushButton_8.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.InfoPersona))
+        
+        ''' informacion personal '''
+        sql = "select * from cliente where cast(id_cliente as varchar)='{}' """.format(id)
+        cursor.execute(sql)
+        row=cursor.fetchall()
+        for rows in row:
+            self.lineEdit_2.setText(str(rows[0]))
+            self.lineEdit_3.setText(str(rows[1]))
+            self.lineEdit_4.setText(str(rows[2]))
+            self.lineEdit_5.setText(str(rows[3]))
+            self.lineEdit_6.setText(str(rows[4]))
+            self.lineEdit_7.setText(str(rows[5]))
+            self.lineEdit_8.setText(str(rows[6]))
+            self.lineEdit_9.setText(str(rows[7]))
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
