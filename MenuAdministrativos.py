@@ -1,4 +1,5 @@
-from datetime import datetime
+import datetime
+from dateutil.relativedelta import relativedelta
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QTableWidgetItem, QPushButton, QLineEdit
 
@@ -1216,12 +1217,12 @@ class Ui_MenuAdministrativo(object):
 "} \n"
 "\n"
 "QTabBar::tab {  \n"
-"  font: 63 18pt \"Bahnschrift SemiBold SemiConden\";\n"
+"  font: 63 14pt \"Bahnschrift SemiBold SemiConden\";\n"
 "  color: whitesmoke;\n"
 "  background-color: #343434;\n"
 "  border: 1px solid #cacaca; \n"
 "  padding: 20px;\n"
-"    width: 230px;\n"
+"    width: 160px;\n"
 "    height: 50px;\n"
 "} \n"
 "\n"
@@ -1363,20 +1364,124 @@ class Ui_MenuAdministrativo(object):
 "")
         self.lineEdit_31.setObjectName("lineEdit_31")
         self.gridLayout_38.addWidget(self.lineEdit_31, 5, 1, 1, 1)
-        self.label_129 = QtWidgets.QLabel(self.scrollAreaWidgetContents_14)
-        self.label_129.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_129.setObjectName("label_129")
-        self.gridLayout_38.addWidget(self.label_129, 9, 0, 1, 1)
         self.lineEdit_14 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_14)
         self.lineEdit_14.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
         self.lineEdit_14.setObjectName("lineEdit_14")
         self.gridLayout_38.addWidget(self.lineEdit_14, 9, 1, 1, 1)
+        self.label_129 = QtWidgets.QLabel(self.scrollAreaWidgetContents_14)
+        self.label_129.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_129.setObjectName("label_129")
+        self.gridLayout_38.addWidget(self.label_129, 9, 0, 1, 1)
         self.scrollArea_14.setWidget(self.scrollAreaWidgetContents_14)
         self.gridLayout_37.addWidget(self.scrollArea_14, 1, 0, 1, 1)
         self.tabWidget_4.addTab(self.tab_20, "")
+        self.tab_16 = QtWidgets.QWidget()
+        self.tab_16.setObjectName("tab_16")
+        self.gridLayout_32 = QtWidgets.QGridLayout(self.tab_16)
+        self.gridLayout_32.setObjectName("gridLayout_32")
+        self.scrollArea_17 = QtWidgets.QScrollArea(self.tab_16)
+        self.scrollArea_17.setStyleSheet("border-radius: 5px;")
+        self.scrollArea_17.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.scrollArea_17.setWidgetResizable(True)
+        self.scrollArea_17.setObjectName("scrollArea_17")
+        self.scrollAreaWidgetContents_17 = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents_17.setGeometry(QtCore.QRect(0, 0, 1076, 446))
+        self.scrollAreaWidgetContents_17.setObjectName("scrollAreaWidgetContents_17")
+        self.gridLayout_46 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_17)
+        self.gridLayout_46.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_46.setHorizontalSpacing(20)
+        self.gridLayout_46.setVerticalSpacing(0)
+        self.gridLayout_46.setObjectName("gridLayout_46")
+        self.NombreRegistrar_13 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_17)
+        self.NombreRegistrar_13.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_13.setCursor(QtGui.QCursor(QtCore.Qt.CrossCursor))
+        self.NombreRegistrar_13.setStyleSheet("font: 63 18pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.NombreRegistrar_13.setReadOnly(True)
+        self.NombreRegistrar_13.setObjectName("NombreRegistrar_13")
+        self.gridLayout_46.addWidget(self.NombreRegistrar_13, 0, 1, 1, 1)
+        self.GuardarRegistrarPaciente_6 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_17)
+        self.GuardarRegistrarPaciente_6.setMinimumSize(QtCore.QSize(200, 70))
+        self.GuardarRegistrarPaciente_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.GuardarRegistrarPaciente_6.setStyleSheet("QPushButton{\n"
+"    background-color: #343434;\n"
+"    font: 87  18pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: .5px solid #e6b31e;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #e6b31e;\n"
+"    font: 87 19pt \"Arial Black\";\n"
+"    color: whitesmoke;\n"
+"    border-radius: 5px;\n"
+"    border: 1.5px solid #343434;\n"
+"    margin: 10 px;\n"
+"    right-margin: 10px;\n"
+"}\n"
+"")
+        self.GuardarRegistrarPaciente_6.setObjectName("GuardarRegistrarPaciente_6")
+        self.gridLayout_46.addWidget(self.GuardarRegistrarPaciente_6, 8, 3, 1, 2)
+        self.label_134 = QtWidgets.QLabel(self.scrollAreaWidgetContents_17)
+        self.label_134.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_134.setObjectName("label_134")
+        self.gridLayout_46.addWidget(self.label_134, 4, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.lineEdit_35 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_17)
+        self.lineEdit_35.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_35.setObjectName("lineEdit_35")
+        self.gridLayout_46.addWidget(self.lineEdit_35, 5, 1, 1, 1)
+        self.label_173 = QtWidgets.QLabel(self.scrollAreaWidgetContents_17)
+        self.label_173.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_173.setObjectName("label_173")
+        self.gridLayout_46.addWidget(self.label_173, 5, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.lineEdit_39 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_17)
+        self.lineEdit_39.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_39.setReadOnly(True)
+        self.lineEdit_39.setObjectName("lineEdit_39")
+        self.gridLayout_46.addWidget(self.lineEdit_39, 4, 1, 1, 1)
+        self.label_153 = QtWidgets.QLabel(self.scrollAreaWidgetContents_17)
+        self.label_153.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_153.setObjectName("label_153")
+        self.gridLayout_46.addWidget(self.label_153, 3, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.lineEdit_38 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_17)
+        self.lineEdit_38.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_38.setObjectName("lineEdit_38")
+        self.gridLayout_46.addWidget(self.lineEdit_38, 3, 1, 1, 1)
+        self.label_177 = QtWidgets.QLabel(self.scrollAreaWidgetContents_17)
+        self.label_177.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_177.setObjectName("label_177")
+        self.gridLayout_46.addWidget(self.label_177, 0, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.label_136 = QtWidgets.QLabel(self.scrollAreaWidgetContents_17)
+        self.label_136.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_136.setObjectName("label_136")
+        self.gridLayout_46.addWidget(self.label_136, 6, 0, 1, 1)
+        self.lineEdit_16 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_17)
+        self.lineEdit_16.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.lineEdit_16.setObjectName("lineEdit_16")
+        self.gridLayout_46.addWidget(self.lineEdit_16, 6, 1, 1, 1)
+        self.scrollArea_17.setWidget(self.scrollAreaWidgetContents_17)
+        self.gridLayout_32.addWidget(self.scrollArea_17, 0, 0, 1, 1)
+        self.tabWidget_4.addTab(self.tab_16, "")
         self.tab_21 = QtWidgets.QWidget()
         self.tab_21.setObjectName("tab_21")
         self.gridLayout_39 = QtWidgets.QGridLayout(self.tab_21)
@@ -1397,92 +1502,97 @@ class Ui_MenuAdministrativo(object):
         self.gridLayout_40.setHorizontalSpacing(20)
         self.gridLayout_40.setVerticalSpacing(15)
         self.gridLayout_40.setObjectName("gridLayout_40")
-        self.lineEdit_27 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
-        self.lineEdit_27.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"\n"
-"border-radius: 5px;")
-        self.lineEdit_27.setObjectName("lineEdit_27")
-        self.gridLayout_40.addWidget(self.lineEdit_27, 10, 1, 1, 1)
-        self.label_14 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
-        self.label_14.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+        self.label_133 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_133.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
-        self.label_14.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_14.setObjectName("label_14")
-        self.gridLayout_40.addWidget(self.label_14, 7, 0, 1, 1)
-        self.lineEdit_25 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
-        self.lineEdit_25.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+        self.label_133.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_133.setObjectName("label_133")
+        self.gridLayout_40.addWidget(self.label_133, 14, 0, 1, 1)
+        self.lineEdit_15 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_15.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "\n"
 "border-radius: 5px;")
-        self.lineEdit_25.setObjectName("lineEdit_25")
-        self.gridLayout_40.addWidget(self.lineEdit_25, 7, 1, 1, 1)
-        self.lineEdit_29 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
-        self.lineEdit_29.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"\n"
-"border-radius: 5px;font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"\n"
-"border-radius: 5px;")
-        self.lineEdit_29.setObjectName("lineEdit_29")
-        self.gridLayout_40.addWidget(self.lineEdit_29, 12, 1, 1, 1)
-        self.label_167 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
-        self.label_167.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_167.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_167.setObjectName("label_167")
-        self.gridLayout_40.addWidget(self.label_167, 12, 0, 1, 1)
-        self.lineEdit_30 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
-        self.lineEdit_30.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"\n"
-"border-radius: 5px;")
-        self.lineEdit_30.setObjectName("lineEdit_30")
-        self.gridLayout_40.addWidget(self.lineEdit_30, 9, 1, 1, 1)
-        self.lineEdit_26 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
-        self.lineEdit_26.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"\n"
-"border-radius: 5px;")
-        self.lineEdit_26.setObjectName("lineEdit_26")
-        self.gridLayout_40.addWidget(self.lineEdit_26, 8, 1, 1, 1)
-        self.NombreActualizarPaciente_11 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
-        self.NombreActualizarPaciente_11.setMinimumSize(QtCore.QSize(600, 0))
-        self.NombreActualizarPaciente_11.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"\n"
-"border-radius: 5px;")
-        self.NombreActualizarPaciente_11.setObjectName("NombreActualizarPaciente_11")
-        self.gridLayout_40.addWidget(self.NombreActualizarPaciente_11, 3, 1, 1, 1)
-        self.label_170 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
-        self.label_170.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_170.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_170.setObjectName("label_170")
-        self.gridLayout_40.addWidget(self.label_170, 9, 0, 1, 1)
+        self.lineEdit_15.setObjectName("lineEdit_15")
+        self.gridLayout_40.addWidget(self.lineEdit_15, 14, 2, 1, 1)
         self.lineEdit_28 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
         self.lineEdit_28.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "\n"
 "border-radius: 5px;")
         self.lineEdit_28.setObjectName("lineEdit_28")
-        self.gridLayout_40.addWidget(self.lineEdit_28, 11, 1, 1, 1)
+        self.gridLayout_40.addWidget(self.lineEdit_28, 11, 2, 1, 1)
+        self.lineEdit_25 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_25.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.lineEdit_25.setObjectName("lineEdit_25")
+        self.gridLayout_40.addWidget(self.lineEdit_25, 7, 2, 1, 1)
+        self.lineEdit_27 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_27.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.lineEdit_27.setObjectName("lineEdit_27")
+        self.gridLayout_40.addWidget(self.lineEdit_27, 10, 2, 1, 1)
+        self.label_14 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_14.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_14.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_14.setObjectName("label_14")
+        self.gridLayout_40.addWidget(self.label_14, 7, 0, 1, 1)
+        self.label_69 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_69.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);\n"
+"")
+        self.label_69.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_69.setObjectName("label_69")
+        self.gridLayout_40.addWidget(self.label_69, 10, 0, 1, 1)
+        self.label_162 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_162.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_162.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_162.setObjectName("label_162")
+        self.gridLayout_40.addWidget(self.label_162, 11, 0, 1, 1)
+        self.label_167 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_167.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_167.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_167.setObjectName("label_167")
+        self.gridLayout_40.addWidget(self.label_167, 12, 0, 1, 1)
         self.label_59 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
         self.label_59.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_59.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_59.setObjectName("label_59")
         self.gridLayout_40.addWidget(self.label_59, 8, 0, 1, 1)
-        self.BuscarPor_13 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_15)
-        self.BuscarPor_13.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"border: .5px solid #e6b31e;\n"
-"background-color: rgb(52, 52, 52);\n"
-"color: whitesmoke;")
-        self.BuscarPor_13.setObjectName("BuscarPor_13")
-        self.BuscarPor_13.addItem("")
-        self.BuscarPor_13.addItem("")
-        self.gridLayout_40.addWidget(self.BuscarPor_13, 0, 0, 1, 1, QtCore.Qt.AlignRight)
+        self.lineEdit_26 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_26.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.lineEdit_26.setObjectName("lineEdit_26")
+        self.gridLayout_40.addWidget(self.lineEdit_26, 8, 2, 1, 1)
+        self.lineEdit_29 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_29.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.lineEdit_29.setObjectName("lineEdit_29")
+        self.gridLayout_40.addWidget(self.lineEdit_29, 12, 2, 1, 1)
+        self.lineEdit_30 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.lineEdit_30.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.lineEdit_30.setObjectName("lineEdit_30")
+        self.gridLayout_40.addWidget(self.lineEdit_30, 9, 2, 1, 1)
+        self.label_166 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_166.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_166.setObjectName("label_166")
+        self.gridLayout_40.addWidget(self.label_166, 3, 0, 1, 1, QtCore.Qt.AlignRight)
         self.BuscarBotonActualizar_9 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_15)
         self.BuscarBotonActualizar_9.setMinimumSize(QtCore.QSize(130, 70))
         self.BuscarBotonActualizar_9.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -1509,7 +1619,16 @@ class Ui_MenuAdministrativo(object):
 "\n"
 "")
         self.BuscarBotonActualizar_9.setObjectName("BuscarBotonActualizar_9")
-        self.gridLayout_40.addWidget(self.BuscarBotonActualizar_9, 0, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.gridLayout_40.addWidget(self.BuscarBotonActualizar_9, 0, 3, 1, 1, QtCore.Qt.AlignLeft)
+        self.BuscarPor_13 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_15)
+        self.BuscarPor_13.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"border: .5px solid #e6b31e;\n"
+"background-color: rgb(52, 52, 52);\n"
+"color: whitesmoke;")
+        self.BuscarPor_13.setObjectName("BuscarPor_13")
+        self.BuscarPor_13.addItem("")
+        self.BuscarPor_13.addItem("")
+        self.gridLayout_40.addWidget(self.BuscarPor_13, 0, 0, 1, 1, QtCore.Qt.AlignRight)
         self.ID_BuscarActualizarPaciente_6 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
         self.ID_BuscarActualizarPaciente_6.setMinimumSize(QtCore.QSize(600, 0))
         self.ID_BuscarActualizarPaciente_6.setMaximumSize(QtCore.QSize(600, 16777215))
@@ -1518,7 +1637,26 @@ class Ui_MenuAdministrativo(object):
 "border: 3px solid #e6b31e;\n"
 "border-radius: 10px;")
         self.ID_BuscarActualizarPaciente_6.setObjectName("ID_BuscarActualizarPaciente_6")
-        self.gridLayout_40.addWidget(self.ID_BuscarActualizarPaciente_6, 0, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.gridLayout_40.addWidget(self.ID_BuscarActualizarPaciente_6, 0, 2, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
+        self.NombreActualizarPaciente_11 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
+        self.NombreActualizarPaciente_11.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreActualizarPaciente_11.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"\n"
+"border-radius: 5px;")
+        self.NombreActualizarPaciente_11.setObjectName("NombreActualizarPaciente_11")
+        self.gridLayout_40.addWidget(self.NombreActualizarPaciente_11, 3, 2, 1, 1)
+        self.label_170 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_170.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_170.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_170.setObjectName("label_170")
+        self.gridLayout_40.addWidget(self.label_170, 9, 0, 1, 1)
+        self.label_165 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
+        self.label_165.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_165.setObjectName("label_165")
+        self.gridLayout_40.addWidget(self.label_165, 2, 2, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
         self.ActualizarBotonPaciente_6 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_15)
         self.ActualizarBotonPaciente_6.setMinimumSize(QtCore.QSize(130, 70))
         self.ActualizarBotonPaciente_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -1543,43 +1681,7 @@ class Ui_MenuAdministrativo(object):
 "}\n"
 "")
         self.ActualizarBotonPaciente_6.setObjectName("ActualizarBotonPaciente_6")
-        self.gridLayout_40.addWidget(self.ActualizarBotonPaciente_6, 14, 1, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label_162 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
-        self.label_162.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_162.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_162.setObjectName("label_162")
-        self.gridLayout_40.addWidget(self.label_162, 11, 0, 1, 1)
-        self.label_69 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
-        self.label_69.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);\n"
-"")
-        self.label_69.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_69.setObjectName("label_69")
-        self.gridLayout_40.addWidget(self.label_69, 10, 0, 1, 1)
-        self.label_165 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
-        self.label_165.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_165.setObjectName("label_165")
-        self.gridLayout_40.addWidget(self.label_165, 2, 1, 1, 1, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
-        self.label_166 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
-        self.label_166.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_166.setObjectName("label_166")
-        self.gridLayout_40.addWidget(self.label_166, 3, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.lineEdit_15 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_15)
-        self.lineEdit_15.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"\n"
-"border-radius: 5px;")
-        self.lineEdit_15.setObjectName("lineEdit_15")
-        self.gridLayout_40.addWidget(self.lineEdit_15, 13, 1, 1, 1)
-        self.label_133 = QtWidgets.QLabel(self.scrollAreaWidgetContents_15)
-        self.label_133.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_133.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_133.setObjectName("label_133")
-        self.gridLayout_40.addWidget(self.label_133, 13, 0, 1, 1)
+        self.gridLayout_40.addWidget(self.ActualizarBotonPaciente_6, 15, 2, 1, 1, QtCore.Qt.AlignHCenter)
         self.scrollArea_15.setWidget(self.scrollAreaWidgetContents_15)
         self.gridLayout_39.addWidget(self.scrollArea_15, 0, 0, 1, 1)
         self.tabWidget_4.addTab(self.tab_21, "")
@@ -2280,8 +2382,9 @@ class Ui_MenuAdministrativo(object):
         self.frame_60.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_60.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_60.setObjectName("frame_60")
+        self.gridLayout_33 = QtWidgets.QGridLayout(self.frame_60)
+        self.gridLayout_33.setObjectName("gridLayout_33")
         self.tableWidget_6 = QtWidgets.QTableWidget(self.frame_60)
-        self.tableWidget_6.setGeometry(QtCore.QRect(10, 20, 731, 216))
         font = QtGui.QFont()
         font.setFamily("Bahnschrift SemiBold SemiConden")
         font.setPointSize(13)
@@ -2307,7 +2410,7 @@ class Ui_MenuAdministrativo(object):
 "}\n"
 "")
         self.tableWidget_6.setObjectName("tableWidget_6")
-        self.tableWidget_6.setColumnCount(5)
+        self.tableWidget_6.setColumnCount(6)
         self.tableWidget_6.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_6.setHorizontalHeaderItem(0, item)
@@ -2319,8 +2422,11 @@ class Ui_MenuAdministrativo(object):
         self.tableWidget_6.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_6.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget_6.setHorizontalHeaderItem(5, item)
         self.tableWidget_6.horizontalHeader().setSortIndicatorShown(False)
         self.tableWidget_6.horizontalHeader().setStretchLastSection(True)
+        self.gridLayout_33.addWidget(self.tableWidget_6, 0, 0, 1, 1)
         self.horizontalLayout_26.addWidget(self.frame_60)
         self.frame_61 = QtWidgets.QFrame(self.frame_52)
         self.frame_61.setStyleSheet("\n"
@@ -2405,7 +2511,6 @@ class Ui_MenuAdministrativo(object):
         self.gridLayout_21.addWidget(self.stackedWidget_2, 0, 1, 1, 1)
         self.verticalLayout_10.addWidget(self.frame_14)
         self.verticalLayout_10.setStretch(0, 2)
-        self.verticalLayout_10.setStretch(1, 9)
         self.verticalLayout_9.addWidget(self.frame_13)
         self.verticalLayout_9.setStretch(0, 6)
         self.stackedWidget.addWidget(self.PuntoVenta)
@@ -3044,7 +3149,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollArea_2.setObjectName("scrollArea_2")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 937, 528))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 1116, 650))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_2)
         self.gridLayout_2.setHorizontalSpacing(20)
@@ -3290,7 +3395,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_3.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1009, 540))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 1134, 668))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.gridLayout_6 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_3)
         self.gridLayout_6.setContentsMargins(0, 0, 0, 50)
@@ -3688,7 +3793,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_4.setWidgetResizable(True)
         self.scrollArea_4.setObjectName("scrollArea_4")
         self.scrollAreaWidgetContents_5 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 987, 364))
+        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 1134, 618))
         self.scrollAreaWidgetContents_5.setObjectName("scrollAreaWidgetContents_5")
         self.gridLayout_9 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_5)
         self.gridLayout_9.setObjectName("gridLayout_9")
@@ -3885,7 +3990,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_5.setWidgetResizable(True)
         self.scrollArea_5.setObjectName("scrollArea_5")
         self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 1069, 431))
+        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 1098, 632))
         self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
         self.gridLayout_29 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_4)
         self.gridLayout_29.setObjectName("gridLayout_29")
@@ -4819,49 +4924,31 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_8.setWidgetResizable(True)
         self.scrollArea_8.setObjectName("scrollArea_8")
         self.scrollAreaWidgetContents_8 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_8.setGeometry(QtCore.QRect(0, 0, 1077, 372))
+        self.scrollAreaWidgetContents_8.setGeometry(QtCore.QRect(0, 0, 1098, 642))
         self.scrollAreaWidgetContents_8.setObjectName("scrollAreaWidgetContents_8")
         self.gridLayout_25 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_8)
         self.gridLayout_25.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_25.setObjectName("gridLayout_25")
-        self.label_72 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
-        self.label_72.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_72.setObjectName("label_72")
-        self.gridLayout_25.addWidget(self.label_72, 4, 1, 1, 1, QtCore.Qt.AlignRight)
-        self.label_71 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
-        self.label_71.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_71.setObjectName("label_71")
-        self.gridLayout_25.addWidget(self.label_71, 7, 1, 1, 1, QtCore.Qt.AlignRight)
-        self.label_74 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
-        self.label_74.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_74.setObjectName("label_74")
-        self.gridLayout_25.addWidget(self.label_74, 8, 1, 1, 1, QtCore.Qt.AlignRight)
         self.label_49 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
         self.label_49.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_49.setObjectName("label_49")
         self.gridLayout_25.addWidget(self.label_49, 6, 1, 1, 1, QtCore.Qt.AlignRight)
-        self.label_77 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
-        self.label_77.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_77.setObjectName("label_77")
-        self.gridLayout_25.addWidget(self.label_77, 5, 1, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
-        self.label_76 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
-        self.label_76.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
-"color: rgb(255, 255, 255);")
-        self.label_76.setObjectName("label_76")
-        self.gridLayout_25.addWidget(self.label_76, 1, 1, 1, 1, QtCore.Qt.AlignRight)
-        self.AlergiasRegistrar_5 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
-        self.AlergiasRegistrar_5.setMinimumSize(QtCore.QSize(600, 0))
-        self.AlergiasRegistrar_5.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+        self.NombreRegistrar_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
+        self.NombreRegistrar_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.NombreRegistrar_4.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.NombreRegistrar_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
-        self.AlergiasRegistrar_5.setText("")
-        self.AlergiasRegistrar_5.setObjectName("AlergiasRegistrar_5")
-        self.gridLayout_25.addWidget(self.AlergiasRegistrar_5, 5, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.NombreRegistrar_4.setObjectName("NombreRegistrar_4")
+        self.gridLayout_25.addWidget(self.NombreRegistrar_4, 1, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.MedicamentosRegistrar_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
+        self.MedicamentosRegistrar_4.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosRegistrar_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosRegistrar_4.setObjectName("MedicamentosRegistrar_4")
+        self.gridLayout_25.addWidget(self.MedicamentosRegistrar_4, 8, 2, 1, 1, QtCore.Qt.AlignHCenter)
         self.AlergiasRegistrar_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
         self.AlergiasRegistrar_4.setMinimumSize(QtCore.QSize(600, 0))
         self.AlergiasRegistrar_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
@@ -4877,14 +4964,16 @@ class Ui_MenuAdministrativo(object):
 "")
         self.EnfermedadesRegistrar_4.setObjectName("EnfermedadesRegistrar_4")
         self.gridLayout_25.addWidget(self.EnfermedadesRegistrar_4, 7, 2, 1, 1, QtCore.Qt.AlignHCenter)
-        self.NombreRegistrar_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
-        self.NombreRegistrar_4.setMinimumSize(QtCore.QSize(600, 0))
-        self.NombreRegistrar_4.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
-        self.NombreRegistrar_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.NombreRegistrar_4.setObjectName("NombreRegistrar_4")
-        self.gridLayout_25.addWidget(self.NombreRegistrar_4, 1, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_71 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_71.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_71.setObjectName("label_71")
+        self.gridLayout_25.addWidget(self.label_71, 7, 1, 1, 1, QtCore.Qt.AlignRight)
+        self.label_77 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_77.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_77.setObjectName("label_77")
+        self.gridLayout_25.addWidget(self.label_77, 5, 1, 1, 1, QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
         self.TelefonoRegistrar_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
         self.TelefonoRegistrar_4.setMinimumSize(QtCore.QSize(600, 0))
         self.TelefonoRegistrar_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
@@ -4892,6 +4981,16 @@ class Ui_MenuAdministrativo(object):
 "")
         self.TelefonoRegistrar_4.setObjectName("TelefonoRegistrar_4")
         self.gridLayout_25.addWidget(self.TelefonoRegistrar_4, 4, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_74 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_74.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_74.setObjectName("label_74")
+        self.gridLayout_25.addWidget(self.label_74, 8, 1, 1, 1, QtCore.Qt.AlignRight)
+        self.label_72 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_72.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_72.setObjectName("label_72")
+        self.gridLayout_25.addWidget(self.label_72, 4, 1, 1, 1, QtCore.Qt.AlignRight)
         self.label_75 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
         self.label_75.setMaximumSize(QtCore.QSize(600, 50))
         palette = QtGui.QPalette()
@@ -4961,13 +5060,6 @@ class Ui_MenuAdministrativo(object):
 "color: rgb(255, 255, 255);")
         self.label_75.setObjectName("label_75")
         self.gridLayout_25.addWidget(self.label_75, 0, 2, 1, 1, QtCore.Qt.AlignHCenter)
-        self.MedicamentosRegistrar_4 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
-        self.MedicamentosRegistrar_4.setMinimumSize(QtCore.QSize(600, 0))
-        self.MedicamentosRegistrar_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
-        self.MedicamentosRegistrar_4.setObjectName("MedicamentosRegistrar_4")
-        self.gridLayout_25.addWidget(self.MedicamentosRegistrar_4, 8, 2, 1, 1, QtCore.Qt.AlignHCenter)
         self.GuardarRegistrarPaciente_3 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_8)
         self.GuardarRegistrarPaciente_3.setMinimumSize(QtCore.QSize(250, 80))
         self.GuardarRegistrarPaciente_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -4992,7 +5084,51 @@ class Ui_MenuAdministrativo(object):
 "}\n"
 "")
         self.GuardarRegistrarPaciente_3.setObjectName("GuardarRegistrarPaciente_3")
-        self.gridLayout_25.addWidget(self.GuardarRegistrarPaciente_3, 9, 3, 1, 1, QtCore.Qt.AlignLeft)
+        self.gridLayout_25.addWidget(self.GuardarRegistrarPaciente_3, 10, 3, 1, 1, QtCore.Qt.AlignLeft)
+        self.AlergiasRegistrar_5 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
+        self.AlergiasRegistrar_5.setMinimumSize(QtCore.QSize(600, 0))
+        self.AlergiasRegistrar_5.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.AlergiasRegistrar_5.setText("")
+        self.AlergiasRegistrar_5.setObjectName("AlergiasRegistrar_5")
+        self.gridLayout_25.addWidget(self.AlergiasRegistrar_5, 5, 2, 1, 1, QtCore.Qt.AlignHCenter)
+        self.label_76 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_76.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_76.setObjectName("label_76")
+        self.gridLayout_25.addWidget(self.label_76, 1, 1, 1, 1, QtCore.Qt.AlignRight)
+        self.MedicamentosRegistrar_8 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_8)
+        self.MedicamentosRegistrar_8.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosRegistrar_8.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.MedicamentosRegistrar_8.setTabletTracking(True)
+        self.MedicamentosRegistrar_8.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosRegistrar_8.setText("")
+        self.MedicamentosRegistrar_8.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.MedicamentosRegistrar_8.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.MedicamentosRegistrar_8.setObjectName("MedicamentosRegistrar_8")
+        self.gridLayout_25.addWidget(self.MedicamentosRegistrar_8, 9, 2, 1, 1)
+        self.label_150 = QtWidgets.QLabel(self.scrollAreaWidgetContents_8)
+        self.label_150.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_150.setObjectName("label_150")
+        self.gridLayout_25.addWidget(self.label_150, 9, 1, 1, 1, QtCore.Qt.AlignRight)
+        self.pushButton_5 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_8)
+        self.pushButton_5.setMinimumSize(QtCore.QSize(40, 40))
+        self.pushButton_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_5.setStyleSheet("QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/ojo.png);\n"
+"    \n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"}")
+        self.pushButton_5.setText("")
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.gridLayout_25.addWidget(self.pushButton_5, 9, 3, 1, 1, QtCore.Qt.AlignLeft)
         self.scrollArea_8.setWidget(self.scrollAreaWidgetContents_8)
         self.gridLayout_10.addWidget(self.scrollArea_8, 0, 0, 1, 1)
         self.tabWidget_3.addTab(self.tab_10, "")
@@ -5456,7 +5592,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_9.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea_9.setObjectName("scrollArea_9")
         self.scrollAreaWidgetContents_9 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_9.setGeometry(QtCore.QRect(0, 0, 100, 30))
+        self.scrollAreaWidgetContents_9.setGeometry(QtCore.QRect(0, 0, 1116, 660))
         self.scrollAreaWidgetContents_9.setObjectName("scrollAreaWidgetContents_9")
         self.label_78 = QtWidgets.QLabel(self.scrollAreaWidgetContents_9)
         self.label_78.setGeometry(QtCore.QRect(420, 180, 281, 35))
@@ -5718,7 +5854,7 @@ class Ui_MenuAdministrativo(object):
 "color: rgb(255, 255, 255);")
         self.label_81.setObjectName("label_81")
         self.ActualizarBotonPaciente_4 = QtWidgets.QPushButton(self.tab_15)
-        self.ActualizarBotonPaciente_4.setGeometry(QtCore.QRect(510, 540, 130, 70))
+        self.ActualizarBotonPaciente_4.setGeometry(QtCore.QRect(490, 580, 130, 70))
         self.ActualizarBotonPaciente_4.setMinimumSize(QtCore.QSize(130, 70))
         self.ActualizarBotonPaciente_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.ActualizarBotonPaciente_4.setStyleSheet("QPushButton{\n"
@@ -5851,6 +5987,37 @@ class Ui_MenuAdministrativo(object):
 "\n"
 "border-radius: 5px;")
         self.NombreActualizarPaciente_9.setObjectName("NombreActualizarPaciente_9")
+        self.label_151 = QtWidgets.QLabel(self.tab_15)
+        self.label_151.setGeometry(QtCore.QRect(180, 530, 136, 40))
+        self.label_151.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_151.setObjectName("label_151")
+        self.MedicamentosRegistrar_9 = QtWidgets.QLineEdit(self.tab_15)
+        self.MedicamentosRegistrar_9.setGeometry(QtCore.QRect(340, 530, 600, 35))
+        self.MedicamentosRegistrar_9.setMinimumSize(QtCore.QSize(600, 0))
+        self.MedicamentosRegistrar_9.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.MedicamentosRegistrar_9.setTabletTracking(True)
+        self.MedicamentosRegistrar_9.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.MedicamentosRegistrar_9.setText("")
+        self.MedicamentosRegistrar_9.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.MedicamentosRegistrar_9.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.MedicamentosRegistrar_9.setObjectName("MedicamentosRegistrar_9")
+        self.pushButton_6 = QtWidgets.QPushButton(self.tab_15)
+        self.pushButton_6.setGeometry(QtCore.QRect(950, 530, 40, 40))
+        self.pushButton_6.setMinimumSize(QtCore.QSize(40, 40))
+        self.pushButton_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_6.setStyleSheet("QPushButton{\n"
+"    border: 0px;\n"
+"    image: url(:/menu/ojo.png);\n"
+"    \n"
+"}\n"
+"QPushButton:hover{\n"
+"    border: 10px;\n"
+"}")
+        self.pushButton_6.setText("")
+        self.pushButton_6.setObjectName("pushButton_6")
         self.tabWidget_3.addTab(self.tab_15, "")
         self.tab_12 = QtWidgets.QWidget()
         self.tab_12.setObjectName("tab_12")
@@ -6066,7 +6233,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_10.setWidgetResizable(True)
         self.scrollArea_10.setObjectName("scrollArea_10")
         self.scrollAreaWidgetContents_10 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_10.setGeometry(QtCore.QRect(0, 0, 83, 16))
+        self.scrollAreaWidgetContents_10.setGeometry(QtCore.QRect(0, 0, 1116, 610))
         self.scrollAreaWidgetContents_10.setObjectName("scrollAreaWidgetContents_10")
         self.Eliminar_NombrePaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_10)
         self.Eliminar_NombrePaciente_2.setGeometry(QtCore.QRect(320, 200, 600, 35))
@@ -6297,13 +6464,15 @@ class Ui_MenuAdministrativo(object):
         MenuAdministrativo.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MenuAdministrativo)
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(0)
         self.stackedWidget_2.setCurrentIndex(1)
-        self.tabWidget_4.setCurrentIndex(2)
+        self.tabWidget_4.setCurrentIndex(4)
         self.tabWidget.setCurrentIndex(0)
         self.tabWidget_2.setCurrentIndex(0)
         self.tabWidget_3.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MenuAdministrativo)
+
+
         
         """
         Aqui inician las instrucciones a las funciones:
@@ -6338,8 +6507,8 @@ class Ui_MenuAdministrativo(object):
         #Botones punto de venta (Navegacion)
         self.radioButton.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.Puntodeventas))
         self.radioButton_2.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.page_2))
-        self.radioButton_3.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.Ventas))
-        self.radioButton_4.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.page))
+        self.radioButton_3.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.Ventas)) 
+        self.radioButton_4.clicked.connect(lambda: self.stackedWidget_2.setCurrentWidget(self.page)) 
         #Botones CRUD Empleados (Registrar)
         self.GuardarRegistrarPaciente.clicked.connect(lambda: self.registrarEmpleado(cursor))
         self.pushButton_3.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_6))
@@ -6354,19 +6523,35 @@ class Ui_MenuAdministrativo(object):
         self.BuscarBotonEliminar.clicked.connect(lambda: self.buscarEliminarEmpleados(cursor))
         self.EliminarPacienteBoton.clicked.connect(lambda: self.eliminarEmpleados(cursor))
         #Punto de venta (VENTA)
-        fechaActual = datetime.now()
-        fecha=datetime.strftime(fechaActual, '%d/%m/%Y')
+        self.pushButton_11.clicked.connect(lambda: self.getFolio(cursor))
+        self.radioButton.clicked.connect(lambda: self.getFolio(cursor))
+        fechaActual = datetime.datetime.now()
+        fecha=datetime.datetime.strftime(fechaActual, '%d/%m/%Y')
         self.lineEdit_2.setText(fecha)
         self.lineEdit_4.setText(name)
         self.lineEdit.setText(str(id))
         self.CantidadTotal = 0.0
         self.carrito=[]
+        self.folio=0
             #Buscar producto venta
         self.pushButton_7.clicked.connect(lambda: self.buscarProductoVenta(cursor))
         self.pushButton_8.clicked.connect(lambda: self.agregarProductoVenta(cursor))
             #Realizar venta
         self.pushButton_10.clicked.connect(lambda: self.realizarVentaProducto(cursor))
-            #Funciones del inventario
+            #Generar Ticket
+        self.pushButton_28.clicked.connect(lambda: self.generarTicket(cursor, fecha, name, self.opc))
+            #Cancelar venta
+        self.pushButton_9.clicked.connect(lambda: self.cancelarVentaProducto())
+            #Finalizar venta
+        self.pushButton_29.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPuntoVenta))   
+            #Buscar Membresia
+        self.pushButton_37.clicked.connect(lambda: self.buscarMembresiaVenta(cursor))
+        self.pushButton_38.clicked.connect(lambda: self.agregarMembresiaVenta(cursor))
+            #Cancelar Venta Membresia
+        self.pushButton_31.clicked.connect(lambda: self.cancelarMembresiaVenta())
+            #Realizar Venta Membresia
+        self.pushButton_23.clicked.connect(lambda: self.realizarVentaMembresia(cursor))
+        #Funciones del inventario
             #Registrar producto 
         self.GuardarRegistrarPaciente_5.clicked.connect(lambda: self.registrarProducto(cursor))
             #Actualizar producto
@@ -6426,7 +6611,10 @@ class Ui_MenuAdministrativo(object):
             passw.setEchoMode(QtWidgets.QLineEdit.Normal)
         else:
             passw.setEchoMode(QtWidgets.QLineEdit.Password)
-            
+    """
+    CRUD Epleados
+    """
+    
     def registrarEmpleado(self, cursor):
         nombre=self.NombreRegistrar.text()
         fechIngreso=self.UltimaCitaRegistrar.text()
@@ -6646,6 +6834,7 @@ class Ui_MenuAdministrativo(object):
             self.TablaEmpleados.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
             self.TablaEmpleados.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
             self.TablaEmpleados.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+            print(rows[3])
             tablerow+=1
             
     def buscarEliminarEmpleados(self, cursor):
@@ -6719,118 +6908,10 @@ class Ui_MenuAdministrativo(object):
             self.EliminarFecha.clear()
             self.EliminarUltima.clear()
             
-    def buscarProductoVenta(self, cursor):
-        data = self.lineEdit_5.text()
-        if (len(data)) ==0:
-            self.msgError("Ingresa informacion valida", "Debes ingresar un ID para realizar una busqueda")
-        else:
-            SQL="""select codigo, nombre_material, cantidad, precio from inventario where codigo='{}' """.format(data)
-            cursor.execute(SQL)
-            row=cursor.fetchall()
-            if len(row)==0:
-                self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de producto")
-            else:
-                for rows in row:
-                    
-                    self.lineEdit_8.setText(str(rows[1]))
-                    self.lineEdit_6.setText(str(rows[2]))
-                    self.lineEdit_9.setText(str(rows[3]))
-                    
+    """
+    CRUD Productos
+    """ 
             
-    def agregarProductoVenta(self, cursor):
-        #Validacion de la cantidad a vender
-        cantidad  = self.lineEdit_7.text()
-        if ((len(cantidad)) == 0) or (int(cantidad) < 1):
-            self.msgError("Cantidad no especificada", "Necesitas indicar correctamente la cantidad de productos que quieres vender")
-            
-        data = self.lineEdit_5.text()
-        prec = 0;
-        
-        #Busco y obtengo los datos del producto
-        if (len(data)) ==0:
-            self.msgError("Busqueda", "Debes realizar la busqueda del producto primero")
-        else:
-            SQL="""select codigo, nombre_material, cantidad, precio from inventario where codigo='{}' """.format(data)
-            cursor.execute(SQL)
-            row=cursor.fetchall()
-            if len(row)==0:
-                self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de producto")
-            else:
-                for rows in row:
-                    
-                    self.lineEdit_8.setText(str(rows[1]))
-                    self.lineEdit_6.setText(str(rows[2]))
-                    self.lineEdit_9.setText(str(rows[3]))
-                    codigo = rows[0]
-                    nombre = rows[1]
-                    precio=float(rows[3])
-                    inv=int(rows[2])
-                    
-        caritem = False
-        if (len(self.carrito)) != 0:
-            for car in self.carrito:
-                if car[0] == codigo:
-                    caritem = True
-                    inv=inv-int(car[2])
-                    
-        if float(inv) < float(cantidad):
-            self.msgError("Sin inventario :(", "Desafortunadamente no se cuenta con el inventario suficiente para dicha cantidad")
-            return
-        
-        prec = precio * float(cantidad);
-        
-        desc = self.lineEdit_10.text()
-        if (len(desc)) != 0:
-            if (int(desc)) <0:
-                self.msgError("Descuento", "La cantidad rebajada en el descuento debe ser ingresada en positivo")
-            else:
-                prec = float(prec) - float(desc) 
-                
-                
-        self.lineEdit_11.setText(str(prec))
-        print(caritem)
-        if caritem == True:
-            for car in self.carrito:
-                if car[0] == codigo:
-                    car[2] = int(car[2]) + int(cantidad)
-                    car[4] = float(car[4]) + float(prec)
-        else:    
-            self.carrito.append([codigo, nombre, cantidad, precio, prec])
-        
-        tablerow = 0
-        for rows in self.carrito:
-            print(rows)
-            self.tableWidget.setRowCount(tablerow + 1)
-            self.tableWidget.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
-            self.tableWidget.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
-            self.tableWidget.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
-            self.tableWidget.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
-            self.tableWidget.setItem(tablerow,4,QTableWidgetItem(str(rows[4])))
-            tablerow+=1
-            
-        #print(self.carrito)
-        
-        self.CantidadTotal = float(self.CantidadTotal) + prec
-        self.lineEdit_12.setText(str(self.CantidadTotal))
-    
-    def realizarVentaProducto(self, cursor):
-        if (len(self.carrito))!=0:
-            self.stackedWidget.setCurrentWidget(self.VentaTicket)
-            self.Tota_label.setText(str(self.CantidadTotal))
-            self.label_141.setText(str(self.CantidadTotal))
-            tablerow = 0
-            for rows in self.carrito:
-                print(rows)
-                self.tableWidget_2.setRowCount(tablerow + 1)
-                self.tableWidget_2.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
-                self.tableWidget_2.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
-                self.tableWidget_2.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
-                self.tableWidget_2.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
-                self.tableWidget_2.setItem(tablerow,4,QTableWidgetItem(str(rows[4])))
-                tablerow+=1
-        else:
-            self.msgError("Venta no posbible", "Primero deberas agregar productos a tu carrito antes de realizar una venta")
-    
     def registrarProducto(self,cursor):
         nombre=self.NombreRegistrar_12.text()
         cantidad=self.lineEdit_21.text()
@@ -6920,8 +7001,7 @@ class Ui_MenuAdministrativo(object):
                         self.lineEdit_28.setText(str(rows[6]))
                         self.lineEdit_29.setText(str(rows[7]))
                         self.lineEdit_15.setText(str(rows[8]))
-                    
-                        
+                                   
     def actualizarProducto(self,cursor):
         data=self.ID_BuscarActualizarPaciente_6.text()
         opc = self.BuscarPor_13.currentText()
@@ -7055,6 +7135,7 @@ class Ui_MenuAdministrativo(object):
             self.lineEdit_34.clear()
         
     def mostrarInventario(self,cursor):
+        print("Hola")
         self.TablaEmpleados_8.clearContents()
         cursor.execute("SELECT *FROM inventario")
         row=cursor.fetchall()
@@ -7139,7 +7220,404 @@ class Ui_MenuAdministrativo(object):
             self.TablaEmpleados_8.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
             self.TablaEmpleados_8.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
             self.TablaEmpleados_8.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+            tablerow+=1        
+           
+    """
+    Punto de venta productos y membresia
+    """         
+    def buscarProductoVenta(self, cursor):
+        data = self.lineEdit_5.text()
+        if (len(data)) ==0:
+            self.msgError("Ingresa informacion valida", "Debes ingresar un ID para realizar una busqueda")
+        else:
+            SQL="""select codigo, nombre_material, cantidad, precio from inventario where codigo='{}' """.format(data)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de producto")
+            else:
+                for rows in row:
+                    
+                    self.lineEdit_8.setText(str(rows[1]))
+                    self.lineEdit_6.setText(str(rows[2]))
+                    self.lineEdit_9.setText(str(rows[3]))
+                         
+    def agregarProductoVenta(self, cursor):
+        #Validacion de la cantidad a vender
+        cantidad  = self.lineEdit_7.text()
+        if ((len(cantidad)) == 0) or (int(cantidad) < 1):
+            self.msgError("Cantidad no especificada", "Necesitas indicar correctamente la cantidad de productos que quieres vender")
+            return
+        data = self.lineEdit_5.text()
+        prec = 0;
+        
+        #Busco y obtengo los datos del producto
+        if (len(data)) ==0:
+            self.msgError("Busqueda", "Debes realizar la busqueda del producto primero")
+            return
+        else:
+            SQL="""select codigo, nombre_material, cantidad, precio from inventario where codigo='{}' """.format(data)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de producto")
+            else:
+                for rows in row:
+                    
+                    self.lineEdit_8.setText(str(rows[1]))
+                    self.lineEdit_6.setText(str(rows[2]))
+                    self.lineEdit_9.setText(str(rows[3]))
+                    codigo = rows[0]
+                    nombre = rows[1]
+                    precio=float(rows[3])
+                    inv=int(rows[2])
+                    
+        caritem = False
+        if (len(self.carrito)) != 0:
+            for car in self.carrito:
+                if car[0] == codigo:
+                    caritem = True
+                    inv=inv-int(car[2])
+                    
+        if int(inv) < int(cantidad):
+            self.msgError("Sin inventario :(", "Desafortunadamente no se cuenta con el inventario suficiente para dicha cantidad")
+            return
+        
+        prec = precio * float(cantidad);
+        
+        desc = self.lineEdit_10.text()
+        if (len(desc)) != 0:
+            if (int(desc)) <0:
+                self.msgError("Descuento", "La cantidad rebajada en el descuento debe ser ingresada en positivo")
+                return
+            else:
+                prec = float(prec) - float(desc) 
+                
+                
+        self.lineEdit_11.setText(str(prec))
+        print(caritem)
+        if caritem == True:
+            for car in self.carrito:
+                if car[0] == codigo:
+                    car[2] = int(car[2]) + int(cantidad)
+                    car[4] = float(car[4]) + float(prec)
+        else:    
+            self.carrito.append([codigo, nombre, cantidad, precio, prec])
+        
+        tablerow = 0
+        for rows in self.carrito:
+            print(rows)
+            self.tableWidget.setRowCount(tablerow + 1)
+            self.tableWidget.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+            self.tableWidget.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+            self.tableWidget.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+            self.tableWidget.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+            self.tableWidget.setItem(tablerow,4,QTableWidgetItem(str(rows[4])))
             tablerow+=1
+            
+        #print(self.carrito)
+        
+        self.CantidadTotal = float(self.CantidadTotal) + prec
+        self.lineEdit_12.setText(str(self.CantidadTotal))
+        
+    def cancelarVentaProducto(self):
+        self.lineEdit_7.clear()
+        self.lineEdit_10.clear()
+        self.lineEdit_11.clear()
+        self.lineEdit_12.clear()
+        self.tableWidget.setRowCount(0)
+        self.lineEdit_5.clear()
+        self.lineEdit_8.clear()
+        self.lineEdit_6.clear()
+        self.lineEdit_9.clear()
+        
+        self.carrito.clear()
+        self.CantidadTotal=0.0
+        
+    def realizarVentaProducto(self, cursor):
+        if (len(self.carrito))!=0:
+            
+            self.lineEdit_7.clear()
+            self.lineEdit_10.clear()
+            self.lineEdit_11.clear()
+            self.lineEdit_12.clear()
+            self.tableWidget.setRowCount(0)
+            self.lineEdit_5.clear()
+            self.lineEdit_8.clear()
+            self.lineEdit_6.clear()
+            self.lineEdit_9.clear()
+            
+            self.lineEdit_13.clear()
+            self.stackedWidget.setCurrentWidget(self.VentaTicket)
+            self.Tota_label.setText("$" + str(self.CantidadTotal))
+            self.label_141.setText("$" + str(self.CantidadTotal))
+            tablerow = 0
+            for rows in self.carrito:
+                print(rows)
+                self.tableWidget_2.setRowCount(tablerow + 1)
+                self.tableWidget_2.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                self.tableWidget_2.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                self.tableWidget_2.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                self.tableWidget_2.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                self.tableWidget_2.setItem(tablerow,4,QTableWidgetItem(str(rows[4])))
+                tablerow+=1
+            self.opc=0
+        else:
+            self.msgError("Venta no posbible", "Primero deberas agregar productos a tu carrito antes de realizar una venta")
+    
+    def getFolio(self, cursor):
+        SQL="select folio from venta"
+        cursor.execute(SQL)
+        data=cursor.fetchall()
+        if (len(data)) == 0:
+            self.folio += 1
+            
+        else:
+            for row in data:
+                fol=row[0]
+            self.folio = int(fol) + 1
+        self.lineEdit_3.setText(str(self.folio))
+    
+    def generarTicket(self, cursor, date, name, opc):
+        data = self.lineEdit_13.text()
+        print(opc)
+        if (len(data)) == 0:
+            self.msgError("Cantidad pagada", "Debes ingresar la cantidad pagada por el cliente para continuar")
+        elif float(data) < 0:
+            self.msgError("Cantidad no valida", "Debes ingresar una cantidad valida pagada por el cliente para continuar")
+        elif float(data) < self.CantidadTotal:
+            self.msgError("Cantidad no valida", "El cliente no puede pagar menos de la cantidad total")
+        else:
+            cantidad = float(self.CantidadTotal)
+            data = float(data) - cantidad
+            msg = "$"+str(data)
+            self.Tota_label_3.setText(msg)
+            tablerow = 0
+            for rows in self.carrito:
+                print(rows)
+                if opc == 0 :
+                    
+                    self.tableWidget_3.setRowCount(tablerow + 1)
+                    self.tableWidget_3.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                    self.tableWidget_3.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                    self.tableWidget_3.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                    self.tableWidget_3.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                    self.tableWidget_3.setItem(tablerow,4,QTableWidgetItem(str(rows[4])))
+                    
+                    
+                    SQL=""" insert into venta (folio, codigo_producto, nombre_producto, cantidad, precio, total, fecha, vendedor) values ('{}','{}','{}','{}','{}','{}','{}','{}'); """.format(self.folio, rows[0], rows[1], rows[2], rows[3], rows[4], str(date), name)
+                    cursor.execute(SQL)     
+                    cursor.connection.commit()
+                    
+                    SQL="""select cantidad from inventario where codigo='{}' """.format(rows[0])
+                    cursor.execute(SQL)
+                    cant=cursor.fetchall()
+                    for row in cant:
+                        invact = row[0]
+                    invact = int(invact) - int(rows[2])
+                    
+                    SQL = """ update inventario set cantidad='{}' where codigo='{}' """.format(invact, rows[0])
+                    cursor.execute(SQL)     
+                    cursor.connection.commit()
+                else:
+                    self.tableWidget_3.setRowCount(tablerow + 1)
+                    self.tableWidget_3.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                    self.tableWidget_3.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                    self.tableWidget_3.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                    self.tableWidget_3.setItem(tablerow,3,QTableWidgetItem(str(rows[4])))
+                    self.tableWidget_3.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                    
+                    
+                    SQL=""" insert into venta (folio, codigo_producto, nombre_producto, cantidad, precio, total, fecha, vendedor) values ('{}','{}','{}','{}','{}','{}','{}','{}'); """.format(self.folio, rows[0], rows[1], rows[3], rows[4], rows[5], str(date), name)
+                    cursor.execute(SQL)     
+                    cursor.connection.commit()
+                    
+                    venci = str(self.vencimientoClient)
+                    ano = venci[:4]
+                    mes = venci[5:7]
+                    dia = venci[8:11]
+                    venc = datetime.date(int(ano), int(mes), int(dia))
+                    today = datetime.date.today()
+                    
+                    if venc > today:
+                        venc = venc + relativedelta(months=int(rows[2]))
+                    else:
+                        venc = today + relativedelta(months=int(rows[2]))
+                    msg="Activa"
+                    SQL = """ update cliente set Fecha_Vencimiento='{}', situacion_membresia='{}' where ID_cliente='{}' """.format(venc, msg, str(self.idcliente))
+                    cursor.execute(SQL)     
+                    cursor.connection.commit()
+                
+                tablerow+=1
+            
+            self.FechaTicket.setText(("Fecha: "+date))
+            self.label_149.setText(("Folio: "+str(self.folio)))
+            self.label_144.setText(("$"+str(self.CantidadTotal)))
+            self.carrito.clear()
+            self.CantidadTotal=0.0
+            self.folio=0
+    
+    def buscarMembresiaVenta(self, cursor):
+        data = self.lineEdit_55.text()
+        if (len(data)) ==0:
+            self.msgError("Ingresa informacion valida", "Debes ingresar un ID para realizar una busqueda")
+        else:
+            SQL="""select codigo, nombre_material, cantidad, precio from inventario where codigo='{}' """.format(data)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de producto")
+            else:
+                for rows in row:
+                    name=str(rows[1])
+                    print(name)
+                    if (name != "Membresia"): 
+                        self.msgError("Producto no valido", "Debes buscar un tipo de membresia registrado o registrar uno")
+                        return
+                    self.lineEdit_52.setText(str(rows[1]))
+                    meses=(str(rows[2])+" meses")
+                    self.lineEdit_54.setText(meses)
+                    self.lineEdit_53.setText(str(rows[3]))
+       
+    def agregarMembresiaVenta(self, cursor):
+        #Validacion de la cantidad a vender
+        cantidad  = 1
+        id = self.lineEdit_57.text()
+        
+        data = self.lineEdit_55.text()
+        prec = 0;
+        
+        #Busco y obtengo los datos del producto
+        if (len(data)) ==0:
+            self.msgError("Busqueda", "Debes realizar la busqueda de la membresia primero")
+            return
+        elif (len(id)) ==0:
+            self.msgError("Id no valido", "Debes ingresar un id de cliente para despues asignarle la membresia")
+        else:
+            SQL="""select codigo, nombre_material, cantidad, precio from inventario where codigo='{}' """.format(data)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Sin coincidencia", "No existe coincidencia con ese ID")
+            else:
+                for rows in row:
+                    
+                    name=str(rows[1])
+                    print(name)
+                    if (name != "Membresia"): 
+                        self.msgError("Producto no valido", "Debes buscar un tipo de membresia registrado o registrar uno")
+                        return
+                    self.lineEdit_52.setText(str(rows[1]))
+                    meses=(str(rows[2])+" meses")
+                    self.lineEdit_54.setText(meses)
+                    self.lineEdit_53.setText(str(rows[3]))
+                    
+                    codigo = rows[0]
+                    precio=float(rows[3])
+                    inv=int(rows[2])
+                    
+        
+        if (len(self.carrito)) != 0:
+            self.msgError("1 a la vez", "Solo puedes realizar la venta de una membresia a la vez")
+            return
+        prec =precio 
+        desc = self.lineEdit_58.text()
+        if (len(desc)) != 0:
+            if (int(desc)) <0:
+                self.msgError("Descuento", "La cantidad rebajada en el descuento debe ser ingresada en positivo")
+            else:
+                prec = float(prec) - float(desc) 
+                
+                
+        self.lineEdit_56.setText(str(prec))
+       
+        
+        self.carrito.append([codigo, name, inv, cantidad,precio, prec])
+        
+        tablerow = 0
+        for rows in self.carrito:
+            print(rows)
+            self.tableWidget_6.setRowCount(tablerow + 1)
+            self.tableWidget_6.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+            self.tableWidget_6.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+            self.tableWidget_6.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+            self.tableWidget_6.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+            self.tableWidget_6.setItem(tablerow,4,QTableWidgetItem(str(rows[4])))
+            self.tableWidget_6.setItem(tablerow,5,QTableWidgetItem(str(rows[5])))
+            tablerow+=1
+            
+        #print(self.carrito)
+        
+        self.CantidadTotal = float(self.CantidadTotal) + prec
+        self.lineEdit_51.setText(str(self.CantidadTotal))
+    
+    def cancelarMembresiaVenta(self):
+        self.lineEdit_55.clear()
+        self.lineEdit_52.clear()
+        self.lineEdit_54.clear()
+        self.lineEdit_53.clear()
+        self.tableWidget_6.setRowCount(0)
+        self.lineEdit_57.clear()
+        self.lineEdit_58.clear()
+        self.lineEdit_56.clear()
+        self.lineEdit_51.clear()
+        
+        self.carrito.clear()
+        self.CantidadTotal=0.0
+      
+    def realizarVentaMembresia(self, cursor):
+        id = self.lineEdit_57.text() 
+        if (len(id)) == 0:
+            self.msgError("Venta no posbible", "Primero deberas ingresar un id")
+            return
+        else:
+            SQL="""select Nombre_Cliente, Fecha_Vencimiento from cliente where ID_cliente='{}' """.format(id)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Sin coincidencia", "No existe coincidencia con ese ID, debes ingresar un cliente ya registrado")
+                return
+            else:
+                for rows in row:
+                    self.nameclient=rows[0]
+                    self.vencimientoClient=rows[1]
+                self.idcliente=id
+                
+        if (len(self.carrito))!=0:
+            
+            self.lineEdit_55.clear()
+            self.lineEdit_52.clear()
+            self.lineEdit_54.clear()
+            self.lineEdit_53.clear()
+            self.tableWidget_6.setRowCount(0)
+            self.lineEdit_57.clear()
+            self.lineEdit_58.clear()
+            self.lineEdit_56.clear()
+            self.lineEdit_51.clear()
+            
+            self.FechaTicket.clear()
+            self.label_149.clear()
+            self.label_144.setText("$")
+            self.tableWidget_3.setRowCount(0)
+            
+            self.lineEdit_13.clear()
+            self.stackedWidget.setCurrentWidget(self.VentaTicket)
+            self.Tota_label.setText("$" + str(self.CantidadTotal))
+            self.label_141.setText("$" + str(self.CantidadTotal))
+            tablerow = 0
+            for rows in self.carrito:
+                print(rows)
+                self.tableWidget_2.setRowCount(tablerow + 1)
+                self.tableWidget_2.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                self.tableWidget_2.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                self.tableWidget_2.setItem(tablerow,2,QTableWidgetItem(str(rows[3])))
+                self.tableWidget_2.setItem(tablerow,3,QTableWidgetItem(str(rows[4])))
+                self.tableWidget_2.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                tablerow+=1
+            self.opc=1
+        else:
+            self.msgError("Venta no posbible", "Primero deberas agregar productos a tu carrito antes de realizar una venta")
+    
     
     def msgError(self,msg1,msg2):
         msg = QtWidgets.QMessageBox()
@@ -7148,6 +7626,8 @@ class Ui_MenuAdministrativo(object):
         msg.setIcon(QtWidgets.QMessageBox.Information)
         
         x = msg.exec_()
+
+
 
     def retranslateUi(self, MenuAdministrativo):
         _translate = QtCore.QCoreApplication.translate
@@ -7206,27 +7686,36 @@ class Ui_MenuAdministrativo(object):
         self.label_171.setText(_translate("MenuAdministrativo", "Lote:"))
         self.label_129.setText(_translate("MenuAdministrativo", "Descripción:"))
         self.tabWidget_4.setTabText(self.tabWidget_4.indexOf(self.tab_20), _translate("MenuAdministrativo", "Registrar producto"))
-        self.label_14.setText(_translate("MenuAdministrativo", "Cantidad:"))
-        self.label_167.setText(_translate("MenuAdministrativo", "Caducidad:"))
-        self.label_170.setText(_translate("MenuAdministrativo", "Lote:"))
-        self.label_59.setText(_translate("MenuAdministrativo", "Distribuidor:"))
-        self.BuscarPor_13.setItemText(0, _translate("MenuAdministrativo", "Buscar por Codigo:"))
-        self.BuscarPor_13.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
-        self.BuscarBotonActualizar_9.setText(_translate("MenuAdministrativo", "Buscar"))
-        self.ActualizarBotonPaciente_6.setText(_translate("MenuAdministrativo", "Actualizar"))
-        self.label_162.setText(_translate("MenuAdministrativo", "Precio:"))
-        self.label_69.setText(_translate("MenuAdministrativo", "Categoria:"))
-        self.label_165.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Actualiza la información del producto necesaria:</span></p></body></html>"))
-        self.label_166.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.NombreRegistrar_13.setText(_translate("MenuAdministrativo", "Membresia"))
+        self.GuardarRegistrarPaciente_6.setText(_translate("MenuAdministrativo", "Registrar"))
+        self.label_134.setText(_translate("MenuAdministrativo", "Categoria:"))
+        self.label_173.setText(_translate("MenuAdministrativo", "Precio:"))
+        self.lineEdit_39.setText(_translate("MenuAdministrativo", "Membresia"))
+        self.label_153.setText(_translate("MenuAdministrativo", "Meses:"))
+        self.label_177.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_136.setText(_translate("MenuAdministrativo", "Descripción:"))
+        self.tabWidget_4.setTabText(self.tabWidget_4.indexOf(self.tab_16), _translate("MenuAdministrativo", "Registrar Membresia"))
         self.label_133.setText(_translate("MenuAdministrativo", "Descripción"))
+        self.label_14.setText(_translate("MenuAdministrativo", "Cantidad:"))
+        self.label_69.setText(_translate("MenuAdministrativo", "Categoria:"))
+        self.label_162.setText(_translate("MenuAdministrativo", "Precio:"))
+        self.label_167.setText(_translate("MenuAdministrativo", "Caducidad:"))
+        self.label_59.setText(_translate("MenuAdministrativo", "Distribuidor:"))
+        self.label_166.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.BuscarBotonActualizar_9.setText(_translate("MenuAdministrativo", "Buscar"))
+        self.BuscarPor_13.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
+        self.BuscarPor_13.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
+        self.label_170.setText(_translate("MenuAdministrativo", "Lote:"))
+        self.label_165.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Actualiza la información del producto necesaria:</span></p></body></html>"))
+        self.ActualizarBotonPaciente_6.setText(_translate("MenuAdministrativo", "Actualizar"))
         self.tabWidget_4.setTabText(self.tabWidget_4.indexOf(self.tab_21), _translate("MenuAdministrativo", "Actualizar producto"))
-        self.label_172.setText(_translate("MenuAdministrativo", "Categoria:"))
+        self.label_172.setText(_translate("MenuAdministrativo", "Costo:"))
         self.label_168.setText(_translate("MenuAdministrativo", "Cantidad:"))
         self.label_169.setText(_translate("MenuAdministrativo", "Lote:"))
         self.label_178.setText(_translate("MenuAdministrativo", "Datos del producto encontrados:"))
         self.label_174.setText(_translate("MenuAdministrativo", "Nombre:"))
         self.BuscarBotonEliminar_5.setText(_translate("MenuAdministrativo", "Buscar"))
-        self.BuscarRegistradosCombobox_14.setItemText(0, _translate("MenuAdministrativo", "Buscar por Codigo:"))
+        self.BuscarRegistradosCombobox_14.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
         self.BuscarRegistradosCombobox_14.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
         self.EliminarPacienteBoton_5.setText(_translate("MenuAdministrativo", "Eliminar prodcuto"))
         self.tabWidget_4.setTabText(self.tabWidget_4.indexOf(self.tab_23), _translate("MenuAdministrativo", "Elminar producto"))
@@ -7240,18 +7729,18 @@ class Ui_MenuAdministrativo(object):
         item = self.TablaEmpleados_8.horizontalHeaderItem(3)
         item.setText(_translate("MenuAdministrativo", "Distribuidor"))
         item = self.TablaEmpleados_8.horizontalHeaderItem(4)
-        item.setText(_translate("MenuAdministrativo", "Lote"))
-        item = self.TablaEmpleados_8.horizontalHeaderItem(5)
         item.setText(_translate("MenuAdministrativo", "Categoria"))
+        item = self.TablaEmpleados_8.horizontalHeaderItem(5)
+        item.setText(_translate("MenuAdministrativo", "Lote"))
         item = self.TablaEmpleados_8.horizontalHeaderItem(6)
         item.setText(_translate("MenuAdministrativo", "Precio"))
         item = self.TablaEmpleados_8.horizontalHeaderItem(7)
         item.setText(_translate("MenuAdministrativo", "Caducidad"))
         item = self.TablaEmpleados_8.horizontalHeaderItem(8)
-        item.setText(_translate("MenuAdministrativo", "Descripción"))
+        item.setText(_translate("MenuAdministrativo", "Descripcion"))
         self.BuscarBotonRegistrados_8.setText(_translate("MenuAdministrativo", "Buscar"))
         self.RefrescarBotonRegistrados_6.setText(_translate("MenuAdministrativo", "Refrescar"))
-        self.BuscarRegistradosCombobox_13.setItemText(0, _translate("MenuAdministrativo", "Buscar por Codigo:"))
+        self.BuscarRegistradosCombobox_13.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
         self.BuscarRegistradosCombobox_13.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
         self.tabWidget_4.setTabText(self.tabWidget_4.indexOf(self.tab_22), _translate("MenuAdministrativo", "Inventario actual"))
         self.BuscarRegistradosCombobox_10.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
@@ -7286,10 +7775,12 @@ class Ui_MenuAdministrativo(object):
         item = self.tableWidget_6.horizontalHeaderItem(1)
         item.setText(_translate("MenuAdministrativo", "Nombre"))
         item = self.tableWidget_6.horizontalHeaderItem(2)
-        item.setText(_translate("MenuAdministrativo", "Cantidad"))
+        item.setText(_translate("MenuAdministrativo", "Meses"))
         item = self.tableWidget_6.horizontalHeaderItem(3)
-        item.setText(_translate("MenuAdministrativo", "Precio"))
+        item.setText(_translate("MenuAdministrativo", "Cantidad"))
         item = self.tableWidget_6.horizontalHeaderItem(4)
+        item.setText(_translate("MenuAdministrativo", "Precio"))
+        item = self.tableWidget_6.horizontalHeaderItem(5)
         item.setText(_translate("MenuAdministrativo", "Total"))
         self.label_196.setText(_translate("MenuAdministrativo", "Resumen"))
         self.label_195.setText(_translate("MenuAdministrativo", "Total a pagar: "))
@@ -7493,14 +7984,15 @@ class Ui_MenuAdministrativo(object):
         self.label_68.setText(_translate("MenuAdministrativo", "RFC:"))
         self.EliminarPacienteBoton_2.setText(_translate("MenuAdministrativo", "Eliminar"))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_8), _translate("MenuAdministrativo", "Elminar"))
-        self.label_72.setText(_translate("MenuAdministrativo", "Teléfono:"))
-        self.label_71.setText(_translate("MenuAdministrativo", "Peso actual:"))
-        self.label_74.setText(_translate("MenuAdministrativo", "Altura:"))
         self.label_49.setText(_translate("MenuAdministrativo", "Edad:"))
+        self.label_71.setText(_translate("MenuAdministrativo", "Peso actual:"))
         self.label_77.setText(_translate("MenuAdministrativo", "Correo electronico:"))
-        self.label_76.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_74.setText(_translate("MenuAdministrativo", "Altura:"))
+        self.label_72.setText(_translate("MenuAdministrativo", "Teléfono:"))
         self.label_75.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-weight:696; color:#ffffff;\">Ingrese la información del cliente</span></p></body></html>"))
         self.GuardarRegistrarPaciente_3.setText(_translate("MenuAdministrativo", "Registrar"))
+        self.label_76.setText(_translate("MenuAdministrativo", "Nombre:"))
+        self.label_150.setText(_translate("MenuAdministrativo", "Contraseña:"))
         self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_10), _translate("MenuAdministrativo", "Agregar"))
         self.label_95.setText(_translate("MenuAdministrativo", "Buscar por ID cliente:"))
         self.BuscarBotonActualizar_4.setText(_translate("MenuAdministrativo", "Buscar"))
@@ -7538,6 +8030,7 @@ class Ui_MenuAdministrativo(object):
         self.label_109.setText(_translate("MenuAdministrativo", "Edad:"))
         self.label_110.setText(_translate("MenuAdministrativo", "Peso actual:"))
         self.label_111.setText(_translate("MenuAdministrativo", "Altura:"))
+        self.label_151.setText(_translate("MenuAdministrativo", "Contraseña:"))
         self.tabWidget_3.setTabText(self.tabWidget_3.indexOf(self.tab_15), _translate("MenuAdministrativo", "Actualizar cliente"))
         self.RefrescarBotonRegistrados_4.setText(_translate("MenuAdministrativo", "Refrescar"))
         self.BuscarBotonRegistrados_4.setText(_translate("MenuAdministrativo", "Buscar"))

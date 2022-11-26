@@ -16,9 +16,6 @@ create table empleadosyadmin(
 	RFC_Empleado varchar(13),
     Contraseña character varying
 );
-drop table empleadosyadmin
-select *from empleadosyadmin
-select *from empleadosyadmin where cast(id_empleado as varchar)='1'
 create table Cliente(
     ID_cliente serial primary key not null,
     Nombre_Cliente varchar(50),
@@ -28,7 +25,8 @@ create table Cliente(
 	peso_act decimal(5,2),
 	id_Entrenador int,
 	situacion_Membresia varchar(10),
-    Fecha_Vencimiento date
+    Fecha_Vencimiento date,
+    contraseña character varying
 )
 create table inventario(
 	codigo serial primary key not null,
@@ -39,7 +37,7 @@ create table inventario(
 	categoria varchar(30),
 	precio varchar(10),
 	caducidad date,
-	descripcion character varying
+	descripcion_material character varying
 )
 create table venta(
 	folio int,
