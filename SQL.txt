@@ -28,7 +28,12 @@ create table cliente(
 	situacion_Membresia varchar(10),
     Fecha_Vencimiento date,
     contraseña character varying
-)
+);
+create table entrenador(
+    ID_entrenador serial primary key not null,
+    Nombre_entrenador varchar(50),
+	Correo_entrenador character varying
+);
 create table inventario(
 	codigo serial primary key not null,
 	nombre_material varchar(30),
