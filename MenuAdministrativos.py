@@ -4832,7 +4832,7 @@ class Ui_MenuAdministrativo(object):
 "")
         self.MedicamentosRegistrar_3.setObjectName("MedicamentosRegistrar_3")
         self.EliminarPacienteBoton_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_7)
-        self.EliminarPacienteBoton_2.setGeometry(QtCore.QRect(730, 460, 130, 70))
+        self.EliminarPacienteBoton_2.setGeometry(QtCore.QRect(890, 400, 130, 70))
         self.EliminarPacienteBoton_2.setMinimumSize(QtCore.QSize(130, 70))
         self.EliminarPacienteBoton_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.EliminarPacienteBoton_2.setStyleSheet("QPushButton{\n"
