@@ -23,6 +23,7 @@ create table Cliente(
 	Correo_Cliente character varying,
 	edad int,
 	peso_act decimal(5,2),
+	altura decimal(5,2),
 	id_Entrenador int,
 	situacion_Membresia varchar(10),
     Fecha_Vencimiento date,
