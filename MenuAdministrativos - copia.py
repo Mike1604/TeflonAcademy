@@ -1495,7 +1495,7 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_15.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea_15.setObjectName("scrollArea_15")
         self.scrollAreaWidgetContents_15 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_15.setGeometry(QtCore.QRect(0, 0, 1077, 655))
+        self.scrollAreaWidgetContents_15.setGeometry(QtCore.QRect(0, -191, 1077, 655))
         self.scrollAreaWidgetContents_15.setObjectName("scrollAreaWidgetContents_15")
         self.gridLayout_40 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_15)
         self.gridLayout_40.setContentsMargins(0, 0, 0, 50)
@@ -1985,6 +1985,8 @@ class Ui_MenuAdministrativo(object):
         self.BuscarRegistradosCombobox_10.setObjectName("BuscarRegistradosCombobox_10")
         self.BuscarRegistradosCombobox_10.addItem("")
         self.BuscarRegistradosCombobox_10.addItem("")
+        self.BuscarRegistradosCombobox_10.addItem("")
+        self.BuscarRegistradosCombobox_10.setItemText(2, "")
         self.gridLayout_30.addWidget(self.BuscarRegistradosCombobox_10, 1, 0, 1, 1)
         self.BuscarRegistradosCombobox_11 = QtWidgets.QComboBox(self.Ventas)
         self.BuscarRegistradosCombobox_11.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
@@ -2024,7 +2026,7 @@ class Ui_MenuAdministrativo(object):
 "")
         self.TablaEmpleados_7.setDragEnabled(False)
         self.TablaEmpleados_7.setObjectName("TablaEmpleados_7")
-        self.TablaEmpleados_7.setColumnCount(8)
+        self.TablaEmpleados_7.setColumnCount(5)
         self.TablaEmpleados_7.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
         self.TablaEmpleados_7.setHorizontalHeaderItem(0, item)
@@ -2036,12 +2038,6 @@ class Ui_MenuAdministrativo(object):
         self.TablaEmpleados_7.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         self.TablaEmpleados_7.setHorizontalHeaderItem(4, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.TablaEmpleados_7.setHorizontalHeaderItem(5, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.TablaEmpleados_7.setHorizontalHeaderItem(6, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.TablaEmpleados_7.setHorizontalHeaderItem(7, item)
         self.TablaEmpleados_7.horizontalHeader().setCascadingSectionResizes(False)
         self.TablaEmpleados_7.horizontalHeader().setHighlightSections(False)
         self.TablaEmpleados_7.horizontalHeader().setSortIndicatorShown(False)
@@ -6469,13 +6465,12 @@ class Ui_MenuAdministrativo(object):
 
         self.retranslateUi(MenuAdministrativo)
         self.stackedWidget.setCurrentIndex(0)
-        self.stackedWidget_2.setCurrentIndex(3)
-        self.tabWidget_4.setCurrentIndex(0)
+        self.stackedWidget_2.setCurrentIndex(1)
+        self.tabWidget_4.setCurrentIndex(4)
         self.tabWidget.setCurrentIndex(0)
         self.tabWidget_2.setCurrentIndex(0)
         self.tabWidget_3.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MenuAdministrativo)
-
 
 
         
@@ -6579,10 +6574,7 @@ class Ui_MenuAdministrativo(object):
         self.pushButton_12.clicked.connect(lambda: self.mostrarInventario(cursor))
         self.BuscarBotonRegistrados_8.clicked.connect(lambda: self.buscarInventario(cursor))
         self.RefrescarBotonRegistrados_6.clicked.connect(lambda: self.refrescarInvenatario(cursor))
-             #mostrar Ventas self.mostrarVentas(cursor)
-        self.radioButton_3.clicked.connect(lambda: self.mostrarVentas(cursor))
-        self.pushButton_14.clicked.connect(lambda: self.mostrarVentas(cursor))
-        self.pushButton_15.clicked.connect(lambda: self.mostrarVentas(cursor))     
+
         
         """
         Aqui inician las funciones:
@@ -7695,19 +7687,20 @@ class Ui_MenuAdministrativo(object):
     
     def mostrarVentas(self, cursor):
         self.TablaEmpleados_7.clearContents()
-        cursor.execute("SELECT *FROM venta")
+        cursor.execute("SELECT *FROM ventas")
         row=cursor.fetchall()
         tablerow = 0
         for rows in row:
-            self.TablaEmpleados_7.setRowCount(tablerow + 1)
-            self.TablaEmpleados_7.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
-            self.TablaEmpleados_7.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
-            self.TablaEmpleados_7.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
-            self.TablaEmpleados_7.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
-            self.TablaEmpleados_7.setItem(tablerow,4,QTableWidgetItem(str(rows[4])))
-            self.TablaEmpleados_7.setItem(tablerow,5,QTableWidgetItem(str(rows[5])))
-            self.TablaEmpleados_7.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
-            self.TablaEmpleados_7.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+            self.TablaEmpleados_8.setRowCount(tablerow + 1)
+            self.TablaEmpleados_8.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+            self.TablaEmpleados_8.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+            self.TablaEmpleados_8.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+            self.TablaEmpleados_8.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+            self.TablaEmpleados_8.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+            self.TablaEmpleados_8.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+            self.TablaEmpleados_8.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+            self.TablaEmpleados_8.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+            self.TablaEmpleados_8.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
             tablerow+=1
     
     def msgError(self,msg1,msg2):
@@ -7717,7 +7710,6 @@ class Ui_MenuAdministrativo(object):
         msg.setIcon(QtWidgets.QMessageBox.Information)
         
         x = msg.exec_()
-
 
 
 
@@ -7835,27 +7827,21 @@ class Ui_MenuAdministrativo(object):
         self.BuscarRegistradosCombobox_13.setItemText(0, _translate("MenuAdministrativo", "Buscar por Codigo:"))
         self.BuscarRegistradosCombobox_13.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
         self.tabWidget_4.setTabText(self.tabWidget_4.indexOf(self.tab_22), _translate("MenuAdministrativo", "Inventario actual"))
-        self.BuscarRegistradosCombobox_10.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID venta:"))
+        self.BuscarRegistradosCombobox_10.setItemText(0, _translate("MenuAdministrativo", "Buscar por ID:"))
         self.BuscarRegistradosCombobox_10.setItemText(1, _translate("MenuAdministrativo", "Buscar por Nombre:"))
         self.BuscarRegistradosCombobox_11.setItemText(0, _translate("MenuAdministrativo", "Ordenar por ID"))
         self.BuscarRegistradosCombobox_11.setItemText(1, _translate("MenuAdministrativo", "Ordenar por fecha"))
         self.BuscarRegistradosCombobox_11.setItemText(2, _translate("MenuAdministrativo", "Ordenar por cantidad"))
         item = self.TablaEmpleados_7.horizontalHeaderItem(0)
-        item.setText(_translate("MenuAdministrativo", "ID Venta"))
+        item.setText(_translate("MenuAdministrativo", "ID"))
         item = self.TablaEmpleados_7.horizontalHeaderItem(1)
-        item.setText(_translate("MenuAdministrativo", "Codigo Producto"))
+        item.setText(_translate("MenuAdministrativo", "ID vendedor"))
         item = self.TablaEmpleados_7.horizontalHeaderItem(2)
-        item.setText(_translate("MenuAdministrativo", "Nombre"))
+        item.setText(_translate("MenuAdministrativo", "Fecha de venta"))
         item = self.TablaEmpleados_7.horizontalHeaderItem(3)
-        item.setText(_translate("MenuAdministrativo", "Cantidad"))
+        item.setText(_translate("MenuAdministrativo", "Cantidad productos"))
         item = self.TablaEmpleados_7.horizontalHeaderItem(4)
-        item.setText(_translate("MenuAdministrativo", "Precio"))
-        item = self.TablaEmpleados_7.horizontalHeaderItem(5)
-        item.setText(_translate("MenuAdministrativo", "Total"))
-        item = self.TablaEmpleados_7.horizontalHeaderItem(6)
-        item.setText(_translate("MenuAdministrativo", "Fecha venta"))
-        item = self.TablaEmpleados_7.horizontalHeaderItem(7)
-        item.setText(_translate("MenuAdministrativo", "Vendedor"))
+        item.setText(_translate("MenuAdministrativo", "Total de venta"))
         self.label_124.setText(_translate("MenuAdministrativo", "<html><head/><body><p><span style=\" font-size:24pt; color:#ffffff;\">Ventas</span></p></body></html>"))
         self.pushButton_15.setText(_translate("MenuAdministrativo", "Refrescar"))
         self.BuscarBotonRegistrados_7.setText(_translate("MenuAdministrativo", "Buscar"))

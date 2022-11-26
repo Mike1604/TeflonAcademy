@@ -1940,7 +1940,7 @@ border-radius: 10px;
                     <item row="0" column="1">
                      <widget class="QStackedWidget" name="stackedWidget_2">
                       <property name="currentIndex">
-                       <number>1</number>
+                       <number>3</number>
                       </property>
                       <widget class="QWidget" name="Puntodeventas">
                        <layout class="QVBoxLayout" name="verticalLayout_12">
@@ -2599,7 +2599,7 @@ border: 1px solid rgb(161, 161, 161);
                            <enum>QTabWidget::Rounded</enum>
                           </property>
                           <property name="currentIndex">
-                           <number>4</number>
+                           <number>0</number>
                           </property>
                           <property name="usesScrollButtons">
                            <bool>false</bool>
@@ -3138,7 +3138,7 @@ background-color: rgb(255, 255, 255);
                                <property name="geometry">
                                 <rect>
                                  <x>0</x>
-                                 <y>-191</y>
+                                 <y>0</y>
                                  <width>1077</width>
                                  <height>655</height>
                                 </rect>
@@ -3378,7 +3378,7 @@ color: whitesmoke;</string>
                                   </property>
                                   <item>
                                    <property name="text">
-                                    <string>Buscar por ID:</string>
+                                    <string>Buscar por Codigo:</string>
                                    </property>
                                   </item>
                                   <item>
@@ -3696,7 +3696,7 @@ color: whitesmoke;</string>
                                   </property>
                                   <item>
                                    <property name="text">
-                                    <string>Buscar por ID:</string>
+                                    <string>Buscar por Codigo:</string>
                                    </property>
                                   </item>
                                   <item>
@@ -3996,7 +3996,7 @@ color: whitesmoke;</string>
                               </property>
                               <item>
                                <property name="text">
-                                <string>Buscar por ID:</string>
+                                <string>Buscar por Codigo:</string>
                                </property>
                               </item>
                               <item>
@@ -4056,17 +4056,12 @@ color: whitesmoke;</string>
                           </property>
                           <item>
                            <property name="text">
-                            <string>Buscar por ID:</string>
+                            <string>Buscar por ID venta:</string>
                            </property>
                           </item>
                           <item>
                            <property name="text">
                             <string>Buscar por Nombre:</string>
-                           </property>
-                          </item>
-                          <item>
-                           <property name="text">
-                            <string/>
                            </property>
                           </item>
                          </widget>
@@ -4152,27 +4147,42 @@ QTableWidget::Item {
                           </attribute>
                           <column>
                            <property name="text">
-                            <string>ID</string>
+                            <string>ID Venta</string>
                            </property>
                           </column>
                           <column>
                            <property name="text">
-                            <string>ID vendedor</string>
+                            <string>Codigo Producto</string>
                            </property>
                           </column>
                           <column>
                            <property name="text">
-                            <string>Fecha de venta</string>
+                            <string>Nombre</string>
                            </property>
                           </column>
                           <column>
                            <property name="text">
-                            <string>Cantidad productos</string>
+                            <string>Cantidad</string>
                            </property>
                           </column>
                           <column>
                            <property name="text">
-                            <string>Total de venta</string>
+                            <string>Precio</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Total</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Fecha venta</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Vendedor</string>
                            </property>
                           </column>
                          </widget>
