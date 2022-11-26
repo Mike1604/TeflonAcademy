@@ -16,7 +16,7 @@ create table empleadosyadmin(
 	RFC_Empleado varchar(13),
     Contraseña character varying
 );
-create table Cliente(
+create table cliente(
     ID_cliente serial primary key not null,
     Nombre_Cliente varchar(50),
     Telefono_Cliente varchar(10),
