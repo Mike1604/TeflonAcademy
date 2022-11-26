@@ -4644,11 +4644,10 @@ class Ui_MenuAdministrativo(object):
         self.scrollArea_7.setWidgetResizable(True)
         self.scrollArea_7.setObjectName("scrollArea_7")
         self.scrollAreaWidgetContents_7 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_7.setGeometry(QtCore.QRect(0, 0, 999, 497))
+        self.scrollAreaWidgetContents_7.setGeometry(QtCore.QRect(0, 0, 1116, 600))
         self.scrollAreaWidgetContents_7.setObjectName("scrollAreaWidgetContents_7")
-        self.gridLayout_65 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_7)
-        self.gridLayout_65.setObjectName("gridLayout_65")
         self.BuscarRegistradosCombobox_4 = QtWidgets.QComboBox(self.scrollAreaWidgetContents_7)
+        self.BuscarRegistradosCombobox_4.setGeometry(QtCore.QRect(20, 20, 227, 37))
         self.BuscarRegistradosCombobox_4.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
         self.BuscarRegistradosCombobox_4.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "border: .5px solid #e6b31e;\n"
@@ -4659,15 +4658,15 @@ class Ui_MenuAdministrativo(object):
         self.BuscarRegistradosCombobox_4.addItem("")
         self.BuscarRegistradosCombobox_4.addItem("")
         self.BuscarRegistradosCombobox_4.setItemText(2, "")
-        self.gridLayout_65.addWidget(self.BuscarRegistradosCombobox_4, 0, 0, 1, 1, QtCore.Qt.AlignRight)
         self.ID_BuscarEliminarPaciente_2 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.ID_BuscarEliminarPaciente_2.setGeometry(QtCore.QRect(260, 20, 600, 35))
         self.ID_BuscarEliminarPaciente_2.setMinimumSize(QtCore.QSize(600, 0))
         self.ID_BuscarEliminarPaciente_2.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
         self.ID_BuscarEliminarPaciente_2.setObjectName("ID_BuscarEliminarPaciente_2")
-        self.gridLayout_65.addWidget(self.ID_BuscarEliminarPaciente_2, 0, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.BuscarBotonEliminar_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_7)
+        self.BuscarBotonEliminar_2.setGeometry(QtCore.QRect(870, 0, 130, 70))
         self.BuscarBotonEliminar_2.setMinimumSize(QtCore.QSize(130, 70))
         self.BuscarBotonEliminar_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.BuscarBotonEliminar_2.setStyleSheet("QPushButton{\n"
@@ -4692,8 +4691,8 @@ class Ui_MenuAdministrativo(object):
 "\n"
 "")
         self.BuscarBotonEliminar_2.setObjectName("BuscarBotonEliminar_2")
-        self.gridLayout_65.addWidget(self.BuscarBotonEliminar_2, 0, 2, 1, 1, QtCore.Qt.AlignLeft)
         self.label_66 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_66.setGeometry(QtCore.QRect(330, 100, 458, 40))
         self.label_66.setMaximumSize(QtCore.QSize(600, 50))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
@@ -4761,91 +4760,79 @@ class Ui_MenuAdministrativo(object):
         self.label_66.setStyleSheet("font: 63 25pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_66.setObjectName("label_66")
-        self.gridLayout_65.addWidget(self.label_66, 1, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_64 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_64.setGeometry(QtCore.QRect(9, 174, 95, 35))
         self.label_64.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_64.setObjectName("label_64")
-        self.gridLayout_65.addWidget(self.label_64, 2, 0, 1, 1, QtCore.Qt.AlignRight)
         self.NombreRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.NombreRegistrar_3.setGeometry(QtCore.QRect(254, 174, 600, 35))
         self.NombreRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
         self.NombreRegistrar_3.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
         self.NombreRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
         self.NombreRegistrar_3.setObjectName("NombreRegistrar_3")
-        self.gridLayout_65.addWidget(self.NombreRegistrar_3, 2, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_65 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_65.setGeometry(QtCore.QRect(9, 215, 198, 35))
         self.label_65.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_65.setObjectName("label_65")
-        self.gridLayout_65.addWidget(self.label_65, 3, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.UltimaCitaRegistrar_3 = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_7)
-        self.UltimaCitaRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
-        self.UltimaCitaRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);")
-        self.UltimaCitaRegistrar_3.setObjectName("UltimaCitaRegistrar_3")
-        self.gridLayout_65.addWidget(self.UltimaCitaRegistrar_3, 3, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_52 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_52.setGeometry(QtCore.QRect(9, 256, 239, 35))
         self.label_52.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_52.setObjectName("label_52")
-        self.gridLayout_65.addWidget(self.label_52, 4, 0, 1, 1, QtCore.Qt.AlignRight)
-        self.FechaNacimientoRegistrar_3 = QtWidgets.QDateEdit(self.scrollAreaWidgetContents_7)
-        self.FechaNacimientoRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
-        self.FechaNacimientoRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
-"background-color: rgb(255, 255, 255);")
-        self.FechaNacimientoRegistrar_3.setObjectName("FechaNacimientoRegistrar_3")
-        self.gridLayout_65.addWidget(self.FechaNacimientoRegistrar_3, 4, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_63 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_63.setGeometry(QtCore.QRect(9, 297, 97, 35))
         self.label_63.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_63.setObjectName("label_63")
-        self.gridLayout_65.addWidget(self.label_63, 5, 0, 1, 1, QtCore.Qt.AlignRight)
         self.TelefonoRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.TelefonoRegistrar_3.setGeometry(QtCore.QRect(254, 297, 600, 35))
         self.TelefonoRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
         self.TelefonoRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
         self.TelefonoRegistrar_3.setObjectName("TelefonoRegistrar_3")
-        self.gridLayout_65.addWidget(self.TelefonoRegistrar_3, 5, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_62 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_62.setGeometry(QtCore.QRect(9, 338, 65, 35))
         self.label_62.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_62.setObjectName("label_62")
-        self.gridLayout_65.addWidget(self.label_62, 6, 0, 1, 1, QtCore.Qt.AlignRight)
         self.AlergiasRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.AlergiasRegistrar_3.setGeometry(QtCore.QRect(254, 338, 600, 35))
         self.AlergiasRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
         self.AlergiasRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
         self.AlergiasRegistrar_3.setObjectName("AlergiasRegistrar_3")
-        self.gridLayout_65.addWidget(self.AlergiasRegistrar_3, 6, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_61 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_61.setGeometry(QtCore.QRect(9, 379, 51, 35))
         self.label_61.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_61.setObjectName("label_61")
-        self.gridLayout_65.addWidget(self.label_61, 7, 0, 1, 1, QtCore.Qt.AlignRight)
         self.EnfermedadesRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.EnfermedadesRegistrar_3.setGeometry(QtCore.QRect(254, 379, 600, 35))
         self.EnfermedadesRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
         self.EnfermedadesRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
         self.EnfermedadesRegistrar_3.setObjectName("EnfermedadesRegistrar_3")
-        self.gridLayout_65.addWidget(self.EnfermedadesRegistrar_3, 7, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.label_68 = QtWidgets.QLabel(self.scrollAreaWidgetContents_7)
+        self.label_68.setGeometry(QtCore.QRect(9, 420, 49, 35))
         self.label_68.setStyleSheet("font: 63 22pt \"Bahnschrift SemiBold SemiConden\";\n"
 "color: rgb(255, 255, 255);")
         self.label_68.setObjectName("label_68")
-        self.gridLayout_65.addWidget(self.label_68, 8, 0, 1, 1, QtCore.Qt.AlignRight)
         self.MedicamentosRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.MedicamentosRegistrar_3.setGeometry(QtCore.QRect(254, 420, 600, 35))
         self.MedicamentosRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
         self.MedicamentosRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
 "background-color: rgb(255, 255, 255);\n"
 "")
         self.MedicamentosRegistrar_3.setObjectName("MedicamentosRegistrar_3")
-        self.gridLayout_65.addWidget(self.MedicamentosRegistrar_3, 8, 1, 1, 1, QtCore.Qt.AlignHCenter)
         self.EliminarPacienteBoton_2 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_7)
+        self.EliminarPacienteBoton_2.setGeometry(QtCore.QRect(730, 460, 130, 70))
         self.EliminarPacienteBoton_2.setMinimumSize(QtCore.QSize(130, 70))
         self.EliminarPacienteBoton_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.EliminarPacienteBoton_2.setStyleSheet("QPushButton{\n"
@@ -4870,7 +4857,20 @@ class Ui_MenuAdministrativo(object):
 "\n"
 "")
         self.EliminarPacienteBoton_2.setObjectName("EliminarPacienteBoton_2")
-        self.gridLayout_65.addWidget(self.EliminarPacienteBoton_2, 9, 2, 1, 1, QtCore.Qt.AlignLeft)
+        self.UltimaCitaRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.UltimaCitaRegistrar_3.setGeometry(QtCore.QRect(254, 215, 600, 35))
+        self.UltimaCitaRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.UltimaCitaRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.UltimaCitaRegistrar_3.setObjectName("UltimaCitaRegistrar_3")
+        self.FechaNacimientoRegistrar_3 = QtWidgets.QLineEdit(self.scrollAreaWidgetContents_7)
+        self.FechaNacimientoRegistrar_3.setGeometry(QtCore.QRect(254, 256, 600, 35))
+        self.FechaNacimientoRegistrar_3.setMinimumSize(QtCore.QSize(600, 0))
+        self.FechaNacimientoRegistrar_3.setStyleSheet("font: 63 20pt \"Bahnschrift SemiBold SemiConden\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"")
+        self.FechaNacimientoRegistrar_3.setObjectName("FechaNacimientoRegistrar_3")
         self.scrollArea_7.setWidget(self.scrollAreaWidgetContents_7)
         self.gridLayout_17.addWidget(self.scrollArea_7, 0, 0, 1, 1)
         self.tabWidget_2.addTab(self.tab_8, "")
@@ -4910,6 +4910,7 @@ class Ui_MenuAdministrativo(object):
 "}\n"
 "\n"
 "")
+
         self.tabWidget_3.setTabShape(QtWidgets.QTabWidget.Rounded)
         self.tabWidget_3.setUsesScrollButtons(False)
         self.tabWidget_3.setDocumentMode(False)
@@ -6535,6 +6536,388 @@ class Ui_MenuAdministrativo(object):
         #Botones CRUD Empleados (Eliminar)
         self.BuscarBotonEliminar.clicked.connect(lambda: self.buscarEliminarEmpleados(cursor))
         self.EliminarPacienteBoton.clicked.connect(lambda: self.eliminarEmpleados(cursor))
+        
+        
+        #CRUD ENTRENADORES - Botón (Agregar)
+        self.GuardarRegistrarPaciente_2.clicked.connect(lambda: self.Agregar_Entrenador(cursor))
+        #CRUD ENTRENADORES - Botón  (Actualizar)
+        self.BuscarBotonActualizar_2.clicked.connect(lambda: self.buscarActualizarEntrenador(cursor))
+        self.ActualizarBotonPaciente_2.clicked.connect(lambda: self.actualizarEntrenador(cursor))
+        #CRUD ENTRENADORES - Botón (Clientes asignados)
+        self.BuscarBotonRegistrados_2.clicked.connect(lambda: self.MostrarCliente_Entrenador(cursor))
+        self.RefrescarBotonRegistrados_2.clicked.connect(lambda: self.RefrescarCliente_Entrenador(cursor))
+        #CRUD ENTRENADORES - Botón (Mostrar)
+        self.BuscarBotonRegistrados_3.clicked.connect(lambda: self.BuscarMostrar_Entrenador(cursor))
+        self.RefrescarBotonRegistrados_3.clicked.connect(lambda: self.refrescarMostrar_Entrenador(cursor))
+        #CRUD ENTRENADORES - Botón (Eliminar)
+        self.BuscarBotonEliminar_2.clicked.connect(lambda: self.buscarEliminar_Entrenador(cursor))
+        self.EliminarPacienteBoton_2.clicked.connect(lambda: self.eliminar_Entrenador(cursor))
+        
+        """
+        CRUD Entrenadores
+        """
+        
+    def Agregar_Entrenador(self, cursor):
+        nombre=self.NombreRegistrar_2.text()
+        fechIngreso=self.UltimaCitaRegistrar_2.text()
+        naci=self.FechaNacimientoRegistrar_2.text()
+        tel=self.TelefonoRegistrar_2.text()
+        curp=self.AlergiasRegistrar_2.text()
+        NSS=self.EnfermedadesRegistrar_2.text()
+        RFC=self.MedicamentosRegistrar_2.text() 
+        if len(nombre)==0:
+            self.msgError("Falta de informacion", "Debes ingresar un nombre para poder registrar a un entrenador")
+        elif len(fechIngreso)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de ingreso para poder registrar a un entrenador")
+        elif len(naci)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de nacimiento para poder registrar a un entrenador")
+        elif (len(tel)==0) or (len(tel)!=10):
+            self.msgError("Falta de informacion", "Debes ingresar un numero de telefono valido de almenos 10 digitos")
+        elif (len(curp)==0) or (len(curp)!=18):
+            self.msgError("Falta de informacion", "Debes ingresar una CURP valida la cual se compone de 18 digitos") 
+        elif (len(NSS)==0) or (len(NSS)!=11):
+            self.msgError("Falta de informacion", "Debes ingresar un NSS valido de almenos 11 digitos")
+        elif (len(RFC)==0) or (len(RFC)!=13):
+            self.msgError("Falta de informacion", "Debes ingresar un RFC valido de almenos 13 digitos")
+        else:
+            SQL=""" insert into entrenador(Nombre_Entrenador, Fecha_Ingreso, Fecha_nacimiento, Telefono_Entrenador, CURP_Entrenador, NSS_Entrenador, RFC_Entrenador)\
+                values ('{}','{}','{}','{}',{},'{}','{}'); """.format(nombre, fechIngreso, naci, tel, curp, NSS, RFC)
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+            except Exception as ex:
+                print(ex)
+            self.NombreRegistrar_2.clear()
+            self.TelefonoRegistrar_2.clear()
+            self.AlergiasRegistrar_2.clear()
+            self.EnfermedadesRegistrar_2.clear()
+            self.MedicamentosRegistrar_2.clear()
+    
+    def buscarActualizarEntrenador(self, cursor):
+        self.NombreActualizarPaciente_2.clear()
+        self.TelefonoActualizarPaciente_2.clear()
+        self.FechNacActu_2.clear()
+        self.UltimCitActu_2.clear()
+        self.AlergiasActualizar_2.clear()
+        self.EnfermedadesActualizar_2.clear()
+        self.MedicamentosActualizar_2.clear()
+        data=self.ID_BuscarActualizarPaciente_2.text()
+        if len(data)==0:
+            self.msgError("Busqueda no valida", "Debes Ingresar informacion valida para buscar")
+        else:
+            opc = self.BuscarPor_7.currentText()
+            if opc == "Buscar por ID:":
+                SQL="""select *from entrenador where cast(ID_entrenador as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe entrenador registrado con ese ID")
+                else:
+                    for rows in row:
+                        self.NombreActualizarPaciente_2.setText(str(rows[1]))
+                        self.TelefonoActualizarPaciente_2.setText(str(rows[2]))
+                        self.FechNacActu_2.setText(str(rows[3]))
+                        self.UltimCitActu_2.setText(str(rows[4]))
+                        self.AlergiasActualizar_2.setText(str(rows[5]))
+                        self.EnfermedadesActualizar_2.setText(str(rows[6]))
+                        self.MedicamentosActualizar_2.setText(str(rows[7]))
+            else:
+                SQL="""select *from entrenador where Nombre_Entrenador like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe entrenador registrado con ese Nombre")
+                else:
+                    for rows in row:
+                        self.NombreActualizarPaciente_2.setText(str(rows[1]))
+                        self.TelefonoActualizarPaciente_2.setText(str(rows[2]))
+                        self.FechNacActu_2.setText(str(rows[3]))
+                        self.UltimCitActu_2.setText(str(rows[4]))
+                        self.AlergiasActualizar_2.setText(str(rows[5]))
+                        self.EnfermedadesActualizar_2.setText(str(rows[6]))
+                        self.MedicamentosActualizar_2.setText(str(rows[7]))
+         
+    def actualizarEntrenador(self, cursor):
+        
+        opc = self.BuscarPor_7.currentText()
+        data = self.ID_BuscarActualizarPaciente_2.text()
+        if opc == "Buscar por Nombre:":
+            SQL="""select ID_entrenador from entrenador where Nombre_Entrenador like '%{}%' """.format(data)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Busqueda", "Debes realizar una busqueda valida primero antes de actualizar")
+            else:
+                for rows in row:
+                    id = str(rows[0])
+        else:
+            id = data
+        if len(id)==0:
+            self.msgError("Busqueda", "Debes realizar una busqueda primero antes de actualizar")
+            return
+        nombre=self.NombreActualizarPaciente_2.text()
+        fechIngreso=self.TelefonoActualizarPaciente_2.text()
+        naci=self.FechNacActu_2.text()
+        tel=self.UltimCitActu_2.text()
+        curp=self.AlergiasActualizar_2.text()
+        NSS=self.EnfermedadesActualizar_2.text()
+        RFC=self.MedicamentosActualizar_2.text() 
+        if len(nombre)==0:
+            self.msgError("Falta de informacion", "Debes ingresar un nombre o dejar el anterior antes de actualizar a un entrenador")
+        elif len(fechIngreso)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de ingreso o dejar la anterior antes de actualizar a un entrenador")
+        elif len(naci)==0:
+            self.msgError("Falta de informacion", "Debes ingresar una fecha de nacimiento o dejar la anterior antes de actualizar a un entrenador")
+        elif (len(tel)==0) or (len(tel)!=10):
+            self.msgError("Falta de informacion", "Debes ingresar un numero de telefono valido de almenos 10 digitos o dejar el anterior antes de actualizar")
+        elif (len(curp)==0) or (len(curp)!=18):
+            self.msgError("Falta de informacion", "Debes ingresar una CURP valida la cual se compone de 18 digitos o dejar el anterior antes de actualizar") 
+        elif (len(NSS)==0) or (len(NSS)!=11):
+            self.msgError("Falta de informacion", "Debes ingresar un NSS valido de almenos 11 digitos o dejar el anterior antes de actualizar")
+        elif (len(RFC)==0) or (len(RFC)!=13):
+            self.msgError("Falta de informacion", "Debes ingresar un RFC valido de almenos 13 digitos o dejar el anterior antes de actualizar")
+        else:
+            SQL=""" update entrenador set Nombre_Entrenador='{}', Fecha_Ingreso='{}', Fecha_nacimiento='{}',Telefono_Entrenador='{}', 
+            CURP_Entrenador='{}', NSS_Entrenador='{}', RFC_Entrenador='{}' where ID_entrenador='{}' """.format(nombre, fechIngreso, naci, tel, curp, NSS, RFC, id)
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+                print(id)
+            except Exception as ex:
+                print(ex)
+            self.NombreActualizarPaciente_2.clear()
+            self.TelefonoActualizarPaciente_2.clear()
+            self.FechNacActu_2.clear()
+            self.UltimCitActu_2.clear()
+            self.AlergiasActualizar_2.clear()
+            self.EnfermedadesActualizar_2.clear()
+            self.MedicamentosActualizar_2.clear()
+
+  
+    def MostrarCliente_Entrenador(self, cursor):
+        data=self.BuscarRegistradosPacientesText_2.text()
+        self.TablaEmpleados_2.clearContents()
+        self.TablaEmpleados_2.setRowCount(0)
+        if len(data)==0:
+            self.msgError("Busqueda", "Debes ingresar informacion antes de buscar")
+        else:
+            opc=self.BuscarRegistradosCombobox_3.currentText() 
+            if opc == "Buscar por Nombre:":
+                SQL="""select * from cliente where nombre_cliente like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese nombre de cliente")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados_2.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_2.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_2.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_2.setItem(tablerow,2,QTableWidgetItem(str(rows[9])))
+                        self.TablaEmpleados_2.setItem(tablerow,3,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_2.setItem(tablerow,4,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_2.setItem(tablerow,5,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_2.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_2.setItem(tablerow,7,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_2.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+                        tablerow+=1
+            elif opc == "Buscar por ID:":
+                SQL="""select * from cliente where cast(id_cliente as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de cliente")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados_2.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_2.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_2.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_2.setItem(tablerow,2,QTableWidgetItem(str(rows[9])))
+                        self.TablaEmpleados_2.setItem(tablerow,3,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_2.setItem(tablerow,4,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_2.setItem(tablerow,5,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_2.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_2.setItem(tablerow,7,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_2.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+                        tablerow+=1
+            else:
+                self.msgError("Seleccion", "Selecciona un modo de busqueda")
+    
+    def RefrescarCliente_Entrenador(self, cursor):
+        self.TablaEmpleados.clearContents()
+        cursor.execute("select * from cliente")
+        row=cursor.fetchall()
+        tablerow = 0
+        for rows in row:
+            self.TablaEmpleados_2.setRowCount(tablerow + 1)
+            self.TablaEmpleados_2.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+            self.TablaEmpleados_2.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+            self.TablaEmpleados_2.setItem(tablerow,2,QTableWidgetItem(str(rows[9])))
+            self.TablaEmpleados_2.setItem(tablerow,3,QTableWidgetItem(str(rows[4])))
+            self.TablaEmpleados_2.setItem(tablerow,4,QTableWidgetItem(str(rows[2])))
+            self.TablaEmpleados_2.setItem(tablerow,5,QTableWidgetItem(str(rows[3])))
+            self.TablaEmpleados_2.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+            self.TablaEmpleados_2.setItem(tablerow,7,QTableWidgetItem(str(rows[5])))
+            self.TablaEmpleados_2.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+            tablerow+=1
+    
+    
+    def BuscarMostrar_Entrenador(self, cursor):
+        data=self.BuscarRegistradosPacientesText_3.text()
+        self.TablaEmpleados_3.clearContents()
+        self.TablaEmpleados_3.setRowCount(0)
+        
+        if len(data)==0:
+            self.msgError("Busqueda", "Debes ingresar informacion antes de buscar")
+        else:
+            opc=self.BuscarRegistradosCombobox.currentText() 
+            if opc == "Buscar por Nombre:":
+                SQL="""select *from entrenador where Nombre_Entrenador like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese nombre de entrenador")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados_3.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_3.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_3.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_3.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_3.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_3.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_3.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_3.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_3.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        tablerow+=1
+            elif opc == "Buscar por ID:":
+                SQL="""select *from entrenador where cast(ID_entrenador as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de entrenador")
+                else:
+                    tablerow = 0
+                    for rows in row:
+                        self.TablaEmpleados_3.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_3.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_3.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_3.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_3.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_3.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_3.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_3.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_3.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        tablerow+=1
+            else:
+                self.msgError("Seleccion", "Selecciona un modo de busqueda")
+    
+    def refrescarMostrar_Entrenador(self, cursor):
+        self.TablaEmpleados_3.clearContents()
+        cursor.execute("SELECT *FROM entrenador")
+        row=cursor.fetchall()
+        tablerow = 0
+        for rows in row:
+            self.TablaEmpleados_3.setRowCount(tablerow + 1)
+            self.TablaEmpleados_3.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+            self.TablaEmpleados_3.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+            self.TablaEmpleados_3.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+            self.TablaEmpleados_3.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+            self.TablaEmpleados_3.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+            self.TablaEmpleados_3.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+            self.TablaEmpleados_3.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+            self.TablaEmpleados_3.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+            print(rows[3])
+            tablerow+=1
+            
+    def buscarEliminar_Entrenador(self, cursor):
+        self.NombreRegistrar_3.clear()
+        self.UltimaCitaRegistrar_3.clear()
+        self.FechaNacimientoRegistrar_3.clear()
+        self.TelefonoRegistrar_3.clear()
+        self.AlergiasRegistrar_3.clear()
+        self.EnfermedadesRegistrar_3.clear()
+        self.MedicamentosRegistrar_3.clear()
+        
+        data=self.ID_BuscarEliminarPaciente_2.text()
+        if len(data)==0:
+            self.msgError("Busqued no valida", "Debes Ingresar informacion valida para buscar")
+        else:
+            opc = self.BuscarRegistradosCombobox_4.currentText()
+            if opc == "Buscar por ID:":
+                SQL="""select *from entrenador where cast(ID_entrenador as varchar)='{}' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe entrenador registrado con ese ID")
+                else:
+                    for rows in row:
+                        self.NombreRegistrar_3.setText(str(rows[1]))
+                        self.UltimaCitaRegistrar_3.setText(str(rows[2]))
+                        self.FechaNacimientoRegistrar_3.setText(str(rows[3]))
+                        self.TelefonoRegistrar_3.setText(str(rows[4]))
+                        self.AlergiasRegistrar_3.setText(str(rows[5]))
+                        self.EnfermedadesRegistrar_3.setText(str(rows[6]))
+                        self.MedicamentosRegistrar_3.setText(str(rows[7]))
+            else:
+                SQL="""select *from entrenador where Nombre_Entrenador like '%{}%' """.format(data)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe entrenador registrado con ese Nombre")
+                else:
+                    for rows in row:
+                        self.NombreRegistrar_3.setText(str(rows[1]))
+                        self.UltimaCitaRegistrar_3.setText(str(rows[2]))
+                        self.FechaNacimientoRegistrar_3.setText(str(rows[3]))
+                        self.TelefonoRegistrar_3.setText(str(rows[4]))
+                        self.AlergiasRegistrar_3.setText(str(rows[5]))
+                        self.EnfermedadesRegistrar_3.setText(str(rows[6]))
+                        self.MedicamentosRegistrar_3.setText(str(rows[7]))
+                                
+    def eliminar_Entrenador(self, cursor):
+        opc = self.BuscarRegistradosCombobox_4.currentText()
+        data = self.ID_BuscarEliminarPaciente_2.text()
+        if opc == "Buscar por Nombre:":
+            SQL="""select ID_entrenador from entrenador where Nombre_Entrenador like '%{}%' """.format(data)
+            cursor.execute(SQL)
+            row=cursor.fetchall()
+            if len(row)==0:
+                self.msgError("Busqueda", "Debes realizar una busqueda valida primero antes de eliminar")
+            else:
+                for rows in row:
+                    id = str(rows[0])
+        id=str(data)
+        
+        nombre=self.NombreRegistrar_3.text()
+        fechIngreso=self.UltimaCitaRegistrar_3.text()
+        naci=self.FechaNacimientoRegistrar_3.text()
+        tel=self.TelefonoRegistrar_3.text()
+        curp=self.AlergiasRegistrar_3.text()
+        NSS=self.EnfermedadesRegistrar_3.text()
+        RFC=self.MedicamentosRegistrar_3.text() 
+        
+        if len(nombre)==0 or len(fechIngreso)==0 or len(naci)==0 or len(tel)==0 or len(curp)==0 or len(NSS)==0 or len(RFC)==0:
+            self.msgError("Busqueda", "Debes realizar una busqueda valida primero antes de eliminar")
+        else:
+            SQL='''delete from entrenador where ID_entrenador='{}' '''.format(id)   
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+            except Exception as ex:
+                #self.msgError("No fue posible eliminar el entrenador", ex)
+                print(ex)
+        
+            self.NombreRegistrar_3.clear()
+            self.UltimaCitaRegistrar_3.clear()
+            self.FechaNacimientoRegistrar_3.clear()
+            self.TelefonoRegistrar_3.clear()
+            self.AlergiasRegistrar_3.clear()
+            self.EnfermedadesRegistrar_3.clear()
+            self.MedicamentosRegistrar_3.clear()
+        
         
         #Botones CRUD Clientes (Registrar)
         self.GuardarRegistrarPaciente_3.clicked.connect(lambda: self.registrarCliente(cursor))
