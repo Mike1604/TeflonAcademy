@@ -764,7 +764,7 @@ color: rgb(226, 176, 30);
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="currentIndex">
-             <number>6</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="MenuPrincipal">
              <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -1940,7 +1940,7 @@ border-radius: 10px;
                     <item row="0" column="1">
                      <widget class="QStackedWidget" name="stackedWidget_2">
                       <property name="currentIndex">
-                       <number>3</number>
+                       <number>1</number>
                       </property>
                       <widget class="QWidget" name="Puntodeventas">
                        <layout class="QVBoxLayout" name="verticalLayout_12">
@@ -2599,7 +2599,7 @@ border: 1px solid rgb(161, 161, 161);
                            <enum>QTabWidget::Rounded</enum>
                           </property>
                           <property name="currentIndex">
-                           <number>0</number>
+                           <number>1</number>
                           </property>
                           <property name="usesScrollButtons">
                            <bool>false</bool>
@@ -2636,76 +2636,239 @@ border: 1px solid rgb(161, 161, 161);
                             <property name="spacing">
                              <number>0</number>
                             </property>
-                            <item row="1" column="0">
-                             <widget class="QScrollArea" name="scrollArea_14">
-                              <property name="styleSheet">
-                               <string notr="true">border-radius: 5px;</string>
-                              </property>
-                              <property name="frameShape">
-                               <enum>QFrame::NoFrame</enum>
-                              </property>
+                            <item row="0" column="0">
+                             <widget class="QScrollArea" name="scrollArea">
                               <property name="widgetResizable">
                                <bool>true</bool>
                               </property>
-                              <widget class="QWidget" name="scrollAreaWidgetContents_14">
+                              <widget class="QWidget" name="scrollAreaWidgetContents">
                                <property name="geometry">
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>1030</width>
-                                 <height>360</height>
+                                 <width>1092</width>
+                                 <height>462</height>
                                 </rect>
                                </property>
-                               <layout class="QGridLayout" name="gridLayout_38">
-                                <property name="leftMargin">
-                                 <number>0</number>
-                                </property>
-                                <property name="topMargin">
-                                 <number>0</number>
-                                </property>
-                                <property name="rightMargin">
-                                 <number>0</number>
-                                </property>
-                                <property name="bottomMargin">
-                                 <number>0</number>
-                                </property>
-                                <property name="horizontalSpacing">
-                                 <number>20</number>
-                                </property>
-                                <property name="verticalSpacing">
-                                 <number>0</number>
-                                </property>
-                                <item row="7" column="1">
-                                 <widget class="QLineEdit" name="lineEdit_24">
+                               <layout class="QGridLayout" name="gridLayout_34">
+                                <item row="0" column="0">
+                                 <widget class="QScrollArea" name="scrollArea_14">
                                   <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                   <string notr="true">border-radius: 5px;</string>
+                                  </property>
+                                  <property name="frameShape">
+                                   <enum>QFrame::NoFrame</enum>
+                                  </property>
+                                  <property name="widgetResizable">
+                                   <bool>true</bool>
+                                  </property>
+                                  <widget class="QWidget" name="scrollAreaWidgetContents_14">
+                                   <property name="geometry">
+                                    <rect>
+                                     <x>0</x>
+                                     <y>0</y>
+                                     <width>1083</width>
+                                     <height>528</height>
+                                    </rect>
+                                   </property>
+                                   <layout class="QGridLayout" name="gridLayout_35">
+                                    <item row="1" column="1">
+                                     <widget class="QLabel" name="label_67">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Cantidad:</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="1" column="2">
+                                     <widget class="QLineEdit" name="lineEdit_21">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 background-color: rgb(255, 255, 255);
 </string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="8" column="1">
-                                 <widget class="QDateEdit" name="dateEdit">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="2" column="1">
+                                     <widget class="QLabel" name="label_37">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Distribuidor:</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="2" column="2">
+                                     <widget class="QLineEdit" name="lineEdit_22">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 background-color: rgb(255, 255, 255);
 </string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="12" column="3" colspan="2">
-                                 <widget class="QPushButton" name="GuardarRegistrarPaciente_5">
-                                  <property name="minimumSize">
-                                   <size>
-                                    <width>250</width>
-                                    <height>80</height>
-                                   </size>
-                                  </property>
-                                  <property name="cursor">
-                                   <cursorShape>PointingHandCursor</cursorShape>
-                                  </property>
-                                  <property name="styleSheet">
-                                   <string notr="true">QPushButton{
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="4" column="1">
+                                     <widget class="QLabel" name="label_60">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Categoria:</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="0" column="1">
+                                     <widget class="QLabel" name="label_163">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Nombre:</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="3" column="2">
+                                     <widget class="QLineEdit" name="lineEdit_31">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="0" column="2">
+                                     <widget class="QLineEdit" name="NombreRegistrar_12">
+                                      <property name="minimumSize">
+                                       <size>
+                                        <width>600</width>
+                                        <height>0</height>
+                                       </size>
+                                      </property>
+                                      <property name="cursor">
+                                       <cursorShape>IBeamCursor</cursorShape>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 18pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="5" column="2">
+                                     <widget class="QLineEdit" name="lineEdit_24">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="5" column="1">
+                                     <widget class="QLabel" name="label_164">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Precio:</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="6" column="1">
+                                     <widget class="QLabel" name="label_26">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Caducidad:</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="6" column="2">
+                                     <widget class="QDateEdit" name="dateEdit">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="7" column="0" colspan="2">
+                                     <widget class="QLabel" name="label_129">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Descripción:</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="3" column="0" colspan="2">
+                                     <widget class="QLabel" name="label_171">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Lote:</string>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="7" column="2">
+                                     <widget class="QLineEdit" name="lineEdit_14">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="10" column="3">
+                                     <widget class="QPushButton" name="GuardarRegistrarPaciente_5">
+                                      <property name="minimumSize">
+                                       <size>
+                                        <width>250</width>
+                                        <height>80</height>
+                                       </size>
+                                      </property>
+                                      <property name="cursor">
+                                       <cursorShape>PointingHandCursor</cursorShape>
+                                      </property>
+                                      <property name="styleSheet">
+                                       <string notr="true">QPushButton{
 	background-color: #343434;
 	font: 87  22pt &quot;Arial Black&quot;;
 	color: whitesmoke;
@@ -2725,253 +2888,37 @@ QPushButton:hover{
 	right-margin: 10px;
 }
 </string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Registrar</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="3" column="1">
-                                 <widget class="QLineEdit" name="lineEdit_21">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="6" column="1">
-                                 <widget class="QLineEdit" name="lineEdit_23">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="4" column="1">
-                                 <widget class="QLineEdit" name="lineEdit_22">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="0" column="1">
-                                 <widget class="QLineEdit" name="NombreRegistrar_12">
-                                  <property name="minimumSize">
-                                   <size>
-                                    <width>600</width>
-                                    <height>0</height>
-                                   </size>
-                                  </property>
-                                  <property name="cursor">
-                                   <cursorShape>CrossCursor</cursorShape>
-                                  </property>
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 18pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="0" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QLabel" name="label_163">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                      </property>
+                                      <property name="text">
+                                       <string>Registrar</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="8" column="2">
+                                     <widget class="QLabel" name="label_156">
+                                      <property name="text">
+                                       <string/>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignCenter</set>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="8" column="0" colspan="2">
+                                     <widget class="QLabel" name="label_155">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Nombre:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="4" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QLabel" name="label_37">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Distribuidor:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="6" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QLabel" name="label_60">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Categoria:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="8" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QLabel" name="label_26">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Caducidad</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="3" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QLabel" name="label_67">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Cantidad:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="7" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QLabel" name="label_164">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Precio:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="5" column="0">
-                                 <widget class="QLabel" name="label_171">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Lote:</string>
-                                  </property>
-                                  <property name="alignment">
-                                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="5" column="1">
-                                 <widget class="QLineEdit" name="lineEdit_31">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="9" column="1">
-                                 <widget class="QLineEdit" name="lineEdit_14">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="9" column="0">
-                                 <widget class="QLabel" name="label_129">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Descripción:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                               </layout>
-                              </widget>
-                             </widget>
-                            </item>
-                           </layout>
-                          </widget>
-                          <widget class="QWidget" name="tab_16">
-                           <attribute name="title">
-                            <string>Registrar Membresia</string>
-                           </attribute>
-                           <layout class="QGridLayout" name="gridLayout_32">
-                            <item row="0" column="0">
-                             <widget class="QScrollArea" name="scrollArea_17">
-                              <property name="styleSheet">
-                               <string notr="true">border-radius: 5px;</string>
-                              </property>
-                              <property name="frameShape">
-                               <enum>QFrame::NoFrame</enum>
-                              </property>
-                              <property name="widgetResizable">
-                               <bool>true</bool>
-                              </property>
-                              <widget class="QWidget" name="scrollAreaWidgetContents_17">
-                               <property name="geometry">
-                                <rect>
-                                 <x>0</x>
-                                 <y>0</y>
-                                 <width>980</width>
-                                 <height>245</height>
-                                </rect>
-                               </property>
-                               <layout class="QGridLayout" name="gridLayout_46">
-                                <property name="leftMargin">
-                                 <number>0</number>
-                                </property>
-                                <property name="topMargin">
-                                 <number>0</number>
-                                </property>
-                                <property name="rightMargin">
-                                 <number>0</number>
-                                </property>
-                                <property name="bottomMargin">
-                                 <number>0</number>
-                                </property>
-                                <property name="horizontalSpacing">
-                                 <number>20</number>
-                                </property>
-                                <property name="verticalSpacing">
-                                 <number>0</number>
-                                </property>
-                                <item row="0" column="1">
-                                 <widget class="QLineEdit" name="NombreRegistrar_13">
-                                  <property name="minimumSize">
-                                   <size>
-                                    <width>600</width>
-                                    <height>0</height>
-                                   </size>
-                                  </property>
-                                  <property name="cursor">
-                                   <cursorShape>CrossCursor</cursorShape>
-                                  </property>
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 18pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Membresia</string>
-                                  </property>
-                                  <property name="readOnly">
-                                   <bool>true</bool>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="8" column="3" colspan="2">
-                                 <widget class="QPushButton" name="GuardarRegistrarPaciente_6">
-                                  <property name="minimumSize">
-                                   <size>
-                                    <width>200</width>
-                                    <height>70</height>
-                                   </size>
-                                  </property>
-                                  <property name="cursor">
-                                   <cursorShape>PointingHandCursor</cursorShape>
-                                  </property>
-                                  <property name="styleSheet">
-                                   <string notr="true">QPushButton{
+                                      </property>
+                                      <property name="text">
+                                       <string>Foto del producto:</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="9" column="2">
+                                     <widget class="QPushButton" name="pushButton_13">
+                                      <property name="styleSheet">
+                                       <string notr="true">QPushButton{
 	background-color: #343434;
 	font: 87  18pt &quot;Arial Black&quot;;
 	color: whitesmoke;
@@ -2983,115 +2930,50 @@ background-color: rgb(255, 255, 255);
 
 QPushButton:hover{
 	background-color: #e6b31e;
-	font: 87 19pt &quot;Arial Black&quot;;
+	font: 87 18pt &quot;Arial Black&quot;;
 	color: whitesmoke;
 	border-radius: 5px;
 	border: 1.5px solid #343434;
 	margin: 10 px;
 	right-margin: 10px;
-}
-</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Registrar</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="4" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QLabel" name="label_134">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Categoria:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="5" column="1">
-                                 <widget class="QLineEdit" name="lineEdit_35">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+}</string>
+                                      </property>
+                                      <property name="text">
+                                       <string>Seleccionar foto del producto</string>
+                                      </property>
+                                     </widget>
+                                    </item>
+                                    <item row="4" column="2">
+                                     <widget class="QComboBox" name="comboBox">
+                                      <property name="styleSheet">
+                                       <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 background-color: rgb(255, 255, 255);
 </string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="5" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QLabel" name="label_173">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Precio:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="4" column="1">
-                                 <widget class="QLineEdit" name="lineEdit_39">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Membresia</string>
-                                  </property>
-                                  <property name="readOnly">
-                                   <bool>true</bool>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="3" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QLabel" name="label_153">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Meses:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="3" column="1">
-                                 <widget class="QLineEdit" name="lineEdit_38">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="0" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QLabel" name="label_177">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Nombre:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="6" column="0">
-                                 <widget class="QLabel" name="label_136">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Descripción:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="6" column="1">
-                                 <widget class="QLineEdit" name="lineEdit_16">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-</string>
-                                  </property>
+                                      </property>
+                                      <item>
+                                       <property name="text">
+                                        <string>Suplementos</string>
+                                       </property>
+                                      </item>
+                                      <item>
+                                       <property name="text">
+                                        <string>Membresías</string>
+                                       </property>
+                                      </item>
+                                      <item>
+                                       <property name="text">
+                                        <string>Consumibles</string>
+                                       </property>
+                                      </item>
+                                      <item>
+                                       <property name="text">
+                                        <string>Accesorios</string>
+                                       </property>
+                                      </item>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
                                  </widget>
                                 </item>
                                </layout>
@@ -3139,208 +3021,265 @@ background-color: rgb(255, 255, 255);
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>997</width>
-                                 <height>655</height>
+                                 <width>1094</width>
+                                 <height>464</height>
                                 </rect>
                                </property>
-                               <layout class="QGridLayout" name="gridLayout_40">
-                                <property name="leftMargin">
-                                 <number>0</number>
-                                </property>
-                                <property name="topMargin">
-                                 <number>0</number>
-                                </property>
-                                <property name="rightMargin">
-                                 <number>0</number>
-                                </property>
-                                <property name="bottomMargin">
-                                 <number>50</number>
-                                </property>
-                                <property name="horizontalSpacing">
-                                 <number>20</number>
-                                </property>
-                                <property name="verticalSpacing">
-                                 <number>15</number>
-                                </property>
-                                <item row="14" column="0">
-                                 <widget class="QLabel" name="label_133">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                               <layout class="QGridLayout" name="gridLayout_36">
+                                <item row="0" column="0">
+                                 <widget class="QScrollArea" name="scrollArea_11">
+                                  <property name="widgetResizable">
+                                   <bool>true</bool>
+                                  </property>
+                                  <widget class="QWidget" name="scrollAreaWidgetContents_11">
+                                   <property name="geometry">
+                                    <rect>
+                                     <x>0</x>
+                                     <y>0</y>
+                                     <width>1076</width>
+                                     <height>446</height>
+                                    </rect>
+                                   </property>
+                                   <layout class="QGridLayout" name="gridLayout_38">
+                                    <item row="0" column="0">
+                                     <widget class="QScrollArea" name="scrollArea_18">
+                                      <property name="styleSheet">
+                                       <string notr="true">border-radius: 5px;</string>
+                                      </property>
+                                      <property name="frameShape">
+                                       <enum>QFrame::NoFrame</enum>
+                                      </property>
+                                      <property name="widgetResizable">
+                                       <bool>true</bool>
+                                      </property>
+                                      <property name="alignment">
+                                       <set>Qt::AlignCenter</set>
+                                      </property>
+                                      <widget class="QWidget" name="scrollAreaWidgetContents_18">
+                                       <property name="geometry">
+                                        <rect>
+                                         <x>0</x>
+                                         <y>0</y>
+                                         <width>1041</width>
+                                         <height>775</height>
+                                        </rect>
+                                       </property>
+                                       <layout class="QGridLayout" name="gridLayout_40">
+                                        <property name="leftMargin">
+                                         <number>0</number>
+                                        </property>
+                                        <property name="topMargin">
+                                         <number>0</number>
+                                        </property>
+                                        <property name="rightMargin">
+                                         <number>0</number>
+                                        </property>
+                                        <property name="bottomMargin">
+                                         <number>50</number>
+                                        </property>
+                                        <property name="horizontalSpacing">
+                                         <number>20</number>
+                                        </property>
+                                        <property name="verticalSpacing">
+                                         <number>15</number>
+                                        </property>
+                                        <item row="11" column="2">
+                                         <widget class="QLineEdit" name="lineEdit_28">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+
+border-radius: 5px;</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="7" column="2">
+                                         <widget class="QLineEdit" name="lineEdit_25">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+
+border-radius: 5px;</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="7" column="0">
+                                         <widget class="QLabel" name="label_14">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Descripción</string>
-                                  </property>
-                                  <property name="alignment">
-                                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="14" column="2">
-                                 <widget class="QLineEdit" name="lineEdit_15">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-
-border-radius: 5px;</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="11" column="2">
-                                 <widget class="QLineEdit" name="lineEdit_28">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-
-border-radius: 5px;</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="7" column="2">
-                                 <widget class="QLineEdit" name="lineEdit_25">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-
-border-radius: 5px;</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="10" column="2">
-                                 <widget class="QLineEdit" name="lineEdit_27">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-
-border-radius: 5px;</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="7" column="0">
-                                 <widget class="QLabel" name="label_14">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                          </property>
+                                          <property name="text">
+                                           <string>Cantidad:</string>
+                                          </property>
+                                          <property name="alignment">
+                                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="14" column="0">
+                                         <widget class="QLabel" name="label_133">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Cantidad:</string>
-                                  </property>
-                                  <property name="alignment">
-                                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="10" column="0">
-                                 <widget class="QLabel" name="label_69">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                          </property>
+                                          <property name="text">
+                                           <string>Descripción</string>
+                                          </property>
+                                          <property name="alignment">
+                                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="14" column="2">
+                                         <widget class="QLineEdit" name="lineEdit_15">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+
+border-radius: 5px;</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="10" column="0">
+                                         <widget class="QLabel" name="label_69">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 color: rgb(255, 255, 255);
 </string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Categoria:</string>
-                                  </property>
-                                  <property name="alignment">
-                                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="11" column="0">
-                                 <widget class="QLabel" name="label_162">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                          </property>
+                                          <property name="text">
+                                           <string>Categoria:</string>
+                                          </property>
+                                          <property name="alignment">
+                                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="11" column="0">
+                                         <widget class="QLabel" name="label_162">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Precio:</string>
-                                  </property>
-                                  <property name="alignment">
-                                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="12" column="0">
-                                 <widget class="QLabel" name="label_167">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                          </property>
+                                          <property name="text">
+                                           <string>Precio:</string>
+                                          </property>
+                                          <property name="alignment">
+                                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="16" column="2">
+                                         <widget class="QPushButton" name="pushButton_16">
+                                          <property name="styleSheet">
+                                           <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87  18pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 18pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}</string>
+                                          </property>
+                                          <property name="text">
+                                           <string>Seleccionar nueva foto del producto</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="8" column="0">
+                                         <widget class="QLabel" name="label_59">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Caducidad:</string>
-                                  </property>
-                                  <property name="alignment">
-                                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="8" column="0">
-                                 <widget class="QLabel" name="label_59">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                          </property>
+                                          <property name="text">
+                                           <string>Distribuidor:</string>
+                                          </property>
+                                          <property name="alignment">
+                                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="12" column="0">
+                                         <widget class="QLabel" name="label_167">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Distribuidor:</string>
-                                  </property>
-                                  <property name="alignment">
-                                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="8" column="2">
-                                 <widget class="QLineEdit" name="lineEdit_26">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                          </property>
+                                          <property name="text">
+                                           <string>Caducidad:</string>
+                                          </property>
+                                          <property name="alignment">
+                                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="12" column="2">
+                                         <widget class="QLineEdit" name="lineEdit_29">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 background-color: rgb(255, 255, 255);
 
 border-radius: 5px;</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="12" column="2">
-                                 <widget class="QLineEdit" name="lineEdit_29">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="8" column="2">
+                                         <widget class="QLineEdit" name="lineEdit_26">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 background-color: rgb(255, 255, 255);
 
 border-radius: 5px;</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="9" column="2">
-                                 <widget class="QLineEdit" name="lineEdit_30">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-
-border-radius: 5px;</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="3" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QLabel" name="label_166">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="3" column="0" alignment="Qt::AlignRight">
+                                         <widget class="QLabel" name="label_166">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Nombre:</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="0" column="3" alignment="Qt::AlignLeft">
-                                 <widget class="QPushButton" name="BuscarBotonActualizar_9">
-                                  <property name="minimumSize">
-                                   <size>
-                                    <width>130</width>
-                                    <height>70</height>
-                                   </size>
-                                  </property>
-                                  <property name="cursor">
-                                   <cursorShape>PointingHandCursor</cursorShape>
-                                  </property>
-                                  <property name="styleSheet">
-                                   <string notr="true">QPushButton{
+                                          </property>
+                                          <property name="text">
+                                           <string>Nombre:</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="9" column="2">
+                                         <widget class="QLineEdit" name="lineEdit_30">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+
+border-radius: 5px;</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="0" column="3" alignment="Qt::AlignLeft">
+                                         <widget class="QPushButton" name="BuscarBotonActualizar_9">
+                                          <property name="minimumSize">
+                                           <size>
+                                            <width>130</width>
+                                            <height>70</height>
+                                           </size>
+                                          </property>
+                                          <property name="cursor">
+                                           <cursorShape>PointingHandCursor</cursorShape>
+                                          </property>
+                                          <property name="styleSheet">
+                                           <string notr="true">QPushButton{
 	background-color: #343434;
 	font: 87 14pt &quot;Arial Black&quot;;
 	color: whitesmoke;
@@ -3362,108 +3301,94 @@ QPushButton:hover{
 
 
 </string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Buscar</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="0" column="0" alignment="Qt::AlignRight">
-                                 <widget class="QComboBox" name="BuscarPor_13">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                          </property>
+                                          <property name="text">
+                                           <string>Buscar</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="0" column="0" alignment="Qt::AlignRight">
+                                         <widget class="QComboBox" name="BuscarPor_13">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 border: .5px solid #e6b31e;
 background-color: rgb(52, 52, 52);
 color: whitesmoke;</string>
-                                  </property>
-                                  <item>
-                                   <property name="text">
-                                    <string>Buscar por Codigo:</string>
-                                   </property>
-                                  </item>
-                                  <item>
-                                   <property name="text">
-                                    <string>Buscar por Nombre:</string>
-                                   </property>
-                                  </item>
-                                 </widget>
-                                </item>
-                                <item row="0" column="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-                                 <widget class="QLineEdit" name="ID_BuscarActualizarPaciente_6">
-                                  <property name="minimumSize">
-                                   <size>
-                                    <width>600</width>
-                                    <height>0</height>
-                                   </size>
-                                  </property>
-                                  <property name="maximumSize">
-                                   <size>
-                                    <width>600</width>
-                                    <height>16777215</height>
-                                   </size>
-                                  </property>
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-background-color: rgb(255, 255, 255);
-border: 3px solid #e6b31e;
-border-radius: 10px;</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="3" column="2">
-                                 <widget class="QLineEdit" name="NombreActualizarPaciente_11">
-                                  <property name="minimumSize">
-                                   <size>
-                                    <width>600</width>
-                                    <height>0</height>
-                                   </size>
-                                  </property>
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                          </property>
+                                          <item>
+                                           <property name="text">
+                                            <string>Buscar por Codigo:</string>
+                                           </property>
+                                          </item>
+                                          <item>
+                                           <property name="text">
+                                            <string>Buscar por Nombre:</string>
+                                           </property>
+                                          </item>
+                                         </widget>
+                                        </item>
+                                        <item row="3" column="2">
+                                         <widget class="QLineEdit" name="NombreActualizarPaciente_11">
+                                          <property name="minimumSize">
+                                           <size>
+                                            <width>600</width>
+                                            <height>0</height>
+                                           </size>
+                                          </property>
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 background-color: rgb(255, 255, 255);
 
 border-radius: 5px;</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="9" column="0">
-                                 <widget class="QLabel" name="label_170">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="2" column="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                                         <widget class="QLabel" name="label_165">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
 color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Lote:</string>
-                                  </property>
-                                  <property name="alignment">
-                                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="2" column="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-                                 <widget class="QLabel" name="label_165">
-                                  <property name="styleSheet">
-                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
-color: rgb(255, 255, 255);</string>
-                                  </property>
-                                  <property name="text">
-                                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:696; color:#ffffff;&quot;&gt;Actualiza la información del producto necesaria:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                                  </property>
-                                 </widget>
-                                </item>
-                                <item row="15" column="2" alignment="Qt::AlignHCenter">
-                                 <widget class="QPushButton" name="ActualizarBotonPaciente_6">
-                                  <property name="minimumSize">
-                                   <size>
-                                    <width>130</width>
-                                    <height>70</height>
-                                   </size>
-                                  </property>
-                                  <property name="cursor">
-                                   <cursorShape>PointingHandCursor</cursorShape>
-                                  </property>
-                                  <property name="styleSheet">
-                                   <string notr="true">QPushButton{
+                                          </property>
+                                          <property name="text">
+                                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:696; color:#ffffff;&quot;&gt;Actualiza la información del producto necesaria:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="0" column="2" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                                         <widget class="QLineEdit" name="ID_BuscarActualizarPaciente_6">
+                                          <property name="minimumSize">
+                                           <size>
+                                            <width>600</width>
+                                            <height>0</height>
+                                           </size>
+                                          </property>
+                                          <property name="maximumSize">
+                                           <size>
+                                            <width>600</width>
+                                            <height>16777215</height>
+                                           </size>
+                                          </property>
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+border: 3px solid #e6b31e;
+border-radius: 10px;</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="17" column="2" alignment="Qt::AlignHCenter">
+                                         <widget class="QPushButton" name="ActualizarBotonPaciente_6">
+                                          <property name="minimumSize">
+                                           <size>
+                                            <width>130</width>
+                                            <height>70</height>
+                                           </size>
+                                          </property>
+                                          <property name="cursor">
+                                           <cursorShape>PointingHandCursor</cursorShape>
+                                          </property>
+                                          <property name="styleSheet">
+                                           <string notr="true">QPushButton{
 	background-color: #343434;
 	font: 87 14pt &quot;Arial Black&quot;;
 	color: whitesmoke;
@@ -3483,10 +3408,86 @@ QPushButton:hover{
 	right-margin: 10px;
 }
 </string>
-                                  </property>
-                                  <property name="text">
-                                   <string>Actualizar</string>
-                                  </property>
+                                          </property>
+                                          <property name="text">
+                                           <string>Actualizar</string>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="9" column="0">
+                                         <widget class="QLabel" name="label_170">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                          </property>
+                                          <property name="text">
+                                           <string>Lote:</string>
+                                          </property>
+                                          <property name="alignment">
+                                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="15" column="0">
+                                         <widget class="QLabel" name="label_158">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                          </property>
+                                          <property name="text">
+                                           <string>Foto del producto:</string>
+                                          </property>
+                                          <property name="alignment">
+                                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="15" column="2">
+                                         <widget class="QLabel" name="label_157">
+                                          <property name="text">
+                                           <string/>
+                                          </property>
+                                          <property name="alignment">
+                                           <set>Qt::AlignCenter</set>
+                                          </property>
+                                         </widget>
+                                        </item>
+                                        <item row="10" column="2">
+                                         <widget class="QComboBox" name="comboBox_2">
+                                          <property name="styleSheet">
+                                           <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+
+border-radius: 5px;</string>
+                                          </property>
+                                          <item>
+                                           <property name="text">
+                                            <string>Suplementos</string>
+                                           </property>
+                                          </item>
+                                          <item>
+                                           <property name="text">
+                                            <string>Membresías</string>
+                                           </property>
+                                          </item>
+                                          <item>
+                                           <property name="text">
+                                            <string>Consumibles</string>
+                                           </property>
+                                          </item>
+                                          <item>
+                                           <property name="text">
+                                            <string>Accesorios</string>
+                                           </property>
+                                          </item>
+                                         </widget>
+                                        </item>
+                                       </layout>
+                                      </widget>
+                                     </widget>
+                                    </item>
+                                   </layout>
+                                  </widget>
                                  </widget>
                                 </item>
                                </layout>
@@ -3784,6 +3785,215 @@ QPushButton:hover{
                                   </property>
                                   <property name="text">
                                    <string>Eliminar prodcuto</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </widget>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                          <widget class="QWidget" name="tab_16">
+                           <attribute name="title">
+                            <string>Registrar Membresia</string>
+                           </attribute>
+                           <layout class="QGridLayout" name="gridLayout_32">
+                            <item row="0" column="0">
+                             <widget class="QScrollArea" name="scrollArea_17">
+                              <property name="styleSheet">
+                               <string notr="true">border-radius: 5px;</string>
+                              </property>
+                              <property name="frameShape">
+                               <enum>QFrame::NoFrame</enum>
+                              </property>
+                              <property name="widgetResizable">
+                               <bool>true</bool>
+                              </property>
+                              <widget class="QWidget" name="scrollAreaWidgetContents_17">
+                               <property name="geometry">
+                                <rect>
+                                 <x>0</x>
+                                 <y>0</y>
+                                 <width>980</width>
+                                 <height>245</height>
+                                </rect>
+                               </property>
+                               <layout class="QGridLayout" name="gridLayout_46">
+                                <property name="leftMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="topMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="rightMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="bottomMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="horizontalSpacing">
+                                 <number>20</number>
+                                </property>
+                                <property name="verticalSpacing">
+                                 <number>0</number>
+                                </property>
+                                <item row="0" column="1">
+                                 <widget class="QLineEdit" name="NombreRegistrar_13">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>600</width>
+                                    <height>0</height>
+                                   </size>
+                                  </property>
+                                  <property name="cursor">
+                                   <cursorShape>CrossCursor</cursorShape>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">font: 63 18pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Membresia</string>
+                                  </property>
+                                  <property name="readOnly">
+                                   <bool>true</bool>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="8" column="3" colspan="2">
+                                 <widget class="QPushButton" name="GuardarRegistrarPaciente_6">
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>200</width>
+                                    <height>70</height>
+                                   </size>
+                                  </property>
+                                  <property name="cursor">
+                                   <cursorShape>PointingHandCursor</cursorShape>
+                                  </property>
+                                  <property name="styleSheet">
+                                   <string notr="true">QPushButton{
+	background-color: #343434;
+	font: 87  18pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: .5px solid #e6b31e;
+	margin: 10 px;
+	right-margin: 10px;
+}
+
+QPushButton:hover{
+	background-color: #e6b31e;
+	font: 87 19pt &quot;Arial Black&quot;;
+	color: whitesmoke;
+	border-radius: 5px;
+	border: 1.5px solid #343434;
+	margin: 10 px;
+	right-margin: 10px;
+}
+</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Registrar</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="4" column="0" alignment="Qt::AlignRight">
+                                 <widget class="QLabel" name="label_134">
+                                  <property name="styleSheet">
+                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Categoria:</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="5" column="1">
+                                 <widget class="QLineEdit" name="lineEdit_35">
+                                  <property name="styleSheet">
+                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="5" column="0" alignment="Qt::AlignRight">
+                                 <widget class="QLabel" name="label_173">
+                                  <property name="styleSheet">
+                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Precio:</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="4" column="1">
+                                 <widget class="QLineEdit" name="lineEdit_39">
+                                  <property name="styleSheet">
+                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Membresia</string>
+                                  </property>
+                                  <property name="readOnly">
+                                   <bool>true</bool>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="3" column="0" alignment="Qt::AlignRight">
+                                 <widget class="QLabel" name="label_153">
+                                  <property name="styleSheet">
+                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Meses:</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="3" column="1">
+                                 <widget class="QLineEdit" name="lineEdit_38">
+                                  <property name="styleSheet">
+                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="0" column="0" alignment="Qt::AlignRight">
+                                 <widget class="QLabel" name="label_177">
+                                  <property name="styleSheet">
+                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Nombre:</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="6" column="0">
+                                 <widget class="QLabel" name="label_136">
+                                  <property name="styleSheet">
+                                   <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                                  </property>
+                                  <property name="text">
+                                   <string>Descripción:</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="6" column="1">
+                                 <widget class="QLineEdit" name="lineEdit_16">
+                                  <property name="styleSheet">
+                                   <string notr="true">font: 63 20pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+background-color: rgb(255, 255, 255);
+</string>
                                   </property>
                                  </widget>
                                 </item>
@@ -8303,7 +8513,7 @@ border: 1px solid rgb(161, 161, 161);
                  <enum>QTabWidget::Rounded</enum>
                 </property>
                 <property name="currentIndex">
-                 <number>4</number>
+                 <number>0</number>
                 </property>
                 <property name="usesScrollButtons">
                  <bool>false</bool>
@@ -8341,8 +8551,8 @@ border: 1px solid rgb(161, 161, 161);
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>1098</width>
-                       <height>632</height>
+                       <width>1069</width>
+                       <height>431</height>
                       </rect>
                      </property>
                      <layout class="QGridLayout" name="gridLayout_29">
@@ -8810,8 +9020,8 @@ background-color: rgb(255, 255, 255);
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>1116</width>
-                       <height>650</height>
+                       <width>1009</width>
+                       <height>605</height>
                       </rect>
                      </property>
                      <layout class="QGridLayout" name="gridLayout_15">
@@ -9248,45 +9458,6 @@ color: whitesmoke;</string>
                     </item>
                    </widget>
                   </item>
-                  <item row="3" column="1" colspan="2" alignment="Qt::AlignHCenter">
-                   <widget class="QPushButton" name="RefrescarBotonRegistrados_2">
-                    <property name="minimumSize">
-                     <size>
-                      <width>130</width>
-                      <height>70</height>
-                     </size>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QPushButton{
-	background-color: #343434;
-	font: 87 14pt &quot;Arial Black&quot;;
-	color: whitesmoke;
-	border-radius: 5px;
-	border: .5px solid #e6b31e;
-	margin: 10 px;
-	right-margin: 10px;
-}
-
-QPushButton:hover{
-	background-color: #e6b31e;
-	font: 87 14pt &quot;Arial Black&quot;;
-	color: whitesmoke;
-	border-radius: 5px;
-	border: 1.5px solid #e6b31e;
-	margin: 10 px;
-	right-margin: 10px;
-}
-
-</string>
-                    </property>
-                    <property name="text">
-                     <string>Refrescar</string>
-                    </property>
-                   </widget>
-                  </item>
                   <item row="2" column="0" colspan="4">
                    <widget class="QTableWidget" name="TablaEmpleados_2">
                     <property name="font">
@@ -9383,6 +9554,17 @@ QTableWidget::Item {
                       <string>Membrecia Actual</string>
                      </property>
                     </column>
+                   </widget>
+                  </item>
+                  <item row="0" column="2" alignment="Qt::AlignHCenter">
+                   <widget class="QLabel" name="label_152">
+                    <property name="styleSheet">
+                     <string notr="true">font: 63 22pt &quot;Bahnschrift SemiBold SemiConden&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:696; color:#ffffff;&quot;&gt;Ingresa el id del entrenador para ver sus clientes asignados&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
                    </widget>
                   </item>
                  </layout>
@@ -9652,8 +9834,8 @@ QPushButton:hover{
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>1116</width>
-                       <height>600</height>
+                       <width>100</width>
+                       <height>30</height>
                       </rect>
                      </property>
                      <widget class="QComboBox" name="BuscarRegistradosCombobox_4">
@@ -10374,8 +10556,8 @@ border: 1px solid rgb(161, 161, 161);
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>1077</width>
-                       <height>418</height>
+                       <width>1098</width>
+                       <height>642</height>
                       </rect>
                      </property>
                      <layout class="QGridLayout" name="gridLayout_25">
@@ -13649,8 +13831,8 @@ color: rgb(255, 255, 255);</string>
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>83</width>
-                       <height>16</height>
+                       <width>100</width>
+                       <height>30</height>
                       </rect>
                      </property>
                      <widget class="QLineEdit" name="Eliminar_NombrePaciente_2">

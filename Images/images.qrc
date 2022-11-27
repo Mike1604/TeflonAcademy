@@ -32,6 +32,7 @@
     <file>menuIcon.png</file>
   </qresource>
   <qresource prefix="MenuCliente">
+    <file>ActualizarInfo.png</file>
     <file>MenuCliente (1).png</file>
     <file>MenuCliente (2).png</file>
     <file>MenuCliente (3).png</file>

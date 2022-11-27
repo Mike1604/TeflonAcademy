@@ -2,6 +2,7 @@ import datetime
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QTableWidgetItem, QLineEdit
 from MenuAdministrativos import Ui_MenuAdministrativo
+from MenuEmpleados import Ui_MenuEmpleados
 from MenuClientes import Ui_MainWindow
 
 class Ui_LogIn(object):
@@ -213,7 +214,7 @@ class Ui_LogIn(object):
             if rol=="Cliente":
                 sql='''select id_cliente,contraseña from cliente where cast(id_cliente as varchar)='{}' '''.format(user)
             else:
-                sql='''select id_empleado,contraseña from empleadosyadmin where cast(id_empleado as varchar)='{}' '''.format(user)
+                sql='''select id_empleado,contraseña, rol from empleadosyadmin where cast(id_empleado as varchar)='{}' '''.format(user)
             cursor.execute(sql)
             row=cursor.fetchall()
             print(row)
@@ -237,18 +238,28 @@ class Ui_LogIn(object):
                             self.window.show()
                     else:
                         if str(rows[1])!=passw:
-                            msg = QtWidgets.QMessageBox()
                             self.msgError("Contraseña Incorrecta", "La contraseña no coincide con el usuario")
                         else:
                             id=rows[0]
-                            #Conecto al usuario
-                            self.window = QtWidgets.QMainWindow()
-                            self.ui = Ui_MenuAdministrativo()
-                            self.ui.setupUi(self.window, cursor, id, LogIn)
-                            LogIn.close()
-                            self.lineEdit_7.setText("")
-                            self.lineEdit_8.setText("")
-                            self.window.show()
+                            rols=rows[2]
+                            if rols == "Administrativo":
+                                #Conecto al usuario al menu administrativo
+                                self.window = QtWidgets.QMainWindow()
+                                self.ui = Ui_MenuAdministrativo()
+                                self.ui.setupUi(self.window, cursor, id, LogIn)
+                                LogIn.close()
+                                self.lineEdit_7.setText("")
+                                self.lineEdit_8.setText("")
+                                self.window.show()
+                            elif rols == "Empleado":
+                                #Conecto al usuario al menu administrativo
+                                self.window = QtWidgets.QMainWindow()
+                                self.ui = Ui_MenuEmpleados()
+                                self.ui.setupUi(self.window, cursor, id, LogIn)
+                                LogIn.close()
+                                self.lineEdit_7.setText("")
+                                self.lineEdit_8.setText("")
+                                self.window.show()
     
     def actualizarClientesSituacion(self, cursor):
         fechaActual = datetime.datetime.now()
