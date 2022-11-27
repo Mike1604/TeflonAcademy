@@ -1,5 +1,5 @@
 import cv2
-from datetime import datetime
+import datetime
 from dateutil.relativedelta import relativedelta
 from os import getcwd, makedirs
 from PyQt5.QtWidgets import QFileDialog
@@ -6582,8 +6582,8 @@ class Ui_MenuAdministrativo(object):
         for rows in row: 
             name = rows[0]
         self.label_Bienvenida.setText("¡Bienvenido "+name+"!")
-        fechaActual = datetime.now()
-        fecha=datetime.strftime(fechaActual, '%d/%m/%Y')
+        fechaActual = datetime.datetime.now()
+        fecha=datetime.datetime.strftime(fechaActual, '%d/%m/%Y')
         
         #Botones menu desplegable (Navegacion)
         self.pushButton_35.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.RegistrarVisita))
@@ -6689,11 +6689,9 @@ class Ui_MenuAdministrativo(object):
         self.pushButton_31.clicked.connect(lambda: self.cancelarMembresiaVenta())
             #Realizar Venta Membresia
         self.pushButton_23.clicked.connect(lambda: self.realizarVentaMembresia(cursor))
-        #Funciones del inventario
+            #Funciones del inventario
             #Registrar producto 
         self.GuardarRegistrarPaciente_5.clicked.connect(lambda: self.registrarProducto(cursor))
-             #Registrar membresia
-        self.GuardarRegistrarPaciente_6.clicked.connect(lambda: self.registrarMembresia(cursor))
             #Actualizar producto
         self.BuscarBotonActualizar_9.clicked.connect(lambda: self.buscarActualizarProducto(cursor))
         self.ActualizarBotonPaciente_6.clicked.connect(lambda: self.actualizarProducto(cursor))
@@ -6702,9 +6700,11 @@ class Ui_MenuAdministrativo(object):
         self.EliminarPacienteBoton_5.clicked.connect(lambda: self.eliminarProducto(cursor))        
             #Mostrar inventario
         self.radioButton_2.clicked.connect(lambda: self.mostrarInventario(cursor))
-        self.pushButton_12.clicked.connect(lambda: self.mostrarInventario(cursor))
         self.BuscarBotonRegistrados_8.clicked.connect(lambda: self.buscarInventario(cursor))
         self.RefrescarBotonRegistrados_6.clicked.connect(lambda: self.refrescarInvenatario(cursor))
+            #Registrar Foto de producto
+        self.pushButton_13.clicked.connect(lambda: self.seleccionarFoto(cursor))
+        self.pushButton_16.clicked.connect(lambda: self.seleccionarNuevaFoto(cursor))
              #mostrar Ventas self.mostrarVentas(cursor)
         self.radioButton_3.clicked.connect(lambda: self.mostrarVentas(cursor))
         self.pushButton_14.clicked.connect(lambda: self.mostrarVentas(cursor))
@@ -6722,23 +6722,6 @@ class Ui_MenuAdministrativo(object):
         self.pushButton_22.clicked.connect(lambda: self.limpiarVisita())
         self.Buscar_Visita_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPrincipal))
         
-            #Funciones del inventario
-            #Registrar producto 
-        self.GuardarRegistrarPaciente_5.clicked.connect(lambda: self.registrarProducto(cursor))
-            #Actualizar producto
-        self.BuscarBotonActualizar_9.clicked.connect(lambda: self.buscarActualizarProducto(cursor))
-        self.ActualizarBotonPaciente_6.clicked.connect(lambda: self.actualizarProducto(cursor))
-            #Eliminar producto
-        self.BuscarBotonEliminar_5.clicked.connect(lambda: self.buscarEliminarProducto(cursor))
-        self.EliminarPacienteBoton_5.clicked.connect(lambda: self.eliminarProducto(cursor))        
-            #Mostrar inventario
-        self.radioButton_2.clicked.connect(lambda: self.mostrarInventario(cursor))
-        self.BuscarBotonRegistrados_8.clicked.connect(lambda: self.buscarInventario(cursor))
-        self.RefrescarBotonRegistrados_6.clicked.connect(lambda: self.refrescarInvenatario(cursor))
-            #Registrar Foto de producto
-        self.pushButton_13.clicked.connect(lambda: self.seleccionarFoto(cursor))
-        self.pushButton_16.clicked.connect(lambda: self.seleccionarNuevaFoto(cursor))
-
         """
         Aqui inician las funciones:
         """
@@ -7223,7 +7206,6 @@ class Ui_MenuAdministrativo(object):
             self.EnfermedadesActualizar_2.clear()
             self.MedicamentosActualizar_2.clear()
 
-  
     def MostrarCliente_Entrenador(self, cursor):
         data=self.BuscarRegistradosPacientesText_2.text()
         self.TablaEmpleados_2.clearContents()
@@ -7881,13 +7863,19 @@ class Ui_MenuAdministrativo(object):
         caducidad=self.dateEdit.text()
         descripcion=self.lineEdit_14.text()
         foto=self.label_156.pixmap()
-        sql=sql1="SELECT * FROM inventario ORDER BY codigo DESC LIMIT 1;"
+        sql1="SELECT * FROM inventario ORDER BY codigo DESC LIMIT 1;"
         cursor.execute(sql1)
         row=cursor.fetchall()
-        for rows in row:
+        print(row)
+        if (len(row)) == 0:
+            codigo = 1
+        else:
+            for rows in row:
                 codigo = (rows[0])+1
+        print("hola" +str(codigo))
         if not QFile.exists("Fotos"):
-            makedirs("Fotos")    
+            makedirs("Fotos") 
+        print("Sexo")
         foto.save("Fotos/{}.png".format(codigo), quality = 100) 
         direccionfoto="Fotos/{}.png".format(codigo)
         
@@ -7920,7 +7908,6 @@ class Ui_MenuAdministrativo(object):
             self.lineEdit_21.clear()
             self.lineEdit_22.clear()
             self.lineEdit_31.clear()
-            self.comboBox.clear()
             self.lineEdit_24.clear()
             self.dateEdit.clear()
             self.lineEdit_14.clear()
@@ -7930,7 +7917,6 @@ class Ui_MenuAdministrativo(object):
         self.NombreActualizarPaciente_11.text()
         self.lineEdit_25.clear()
         self.lineEdit_26.clear()
-        self.comboBox_2.clear()
         self.lineEdit_28.clear()
         self.lineEdit_29.clear()
         self.lineEdit_15.clear()
@@ -7999,10 +7985,15 @@ class Ui_MenuAdministrativo(object):
         cantidad=self.lineEdit_25.text()
         distribui=self.lineEdit_26.text()
         lote=self.lineEdit_30.text()
-        categoria=self.comboBox.currentText()
+        categoria=self.comboBox_2.currentText()
         precio=self.lineEdit_28.text()
-        caducidad=self.comboBox_2.currentText()
+        caducidad=self.lineEdit_29.text()
         descripcion=self.lineEdit_15.text()
+
+        foto=self.label_157.pixmap()
+        foto.save("Fotos/{}.png".format(id), quality = 100)  
+        direccionfoto="Fotos/{}.png".format(id)
+
         if len(nombre)==0:
             self.msgError("Falta de informacion", "Debes ingresar un nombre para poder registrar un producto")
         elif len(cantidad)==0:
@@ -8459,8 +8450,8 @@ class Ui_MenuAdministrativo(object):
                     ano = venci[:4]
                     mes = venci[5:7]
                     dia = venci[8:11]
-                    venc = datetime.date(int(ano), int(mes), int(dia))
-                    today = datetime.date.today()
+                    venc = datetime.datetime(int(ano), int(mes), int(dia))
+                    today = datetime.datetime.today()
                     
                     if venc > today:
                         venc = venc + relativedelta(months=int(rows[2]))
@@ -8789,10 +8780,11 @@ class Ui_MenuAdministrativo(object):
                 ano = venci[:4]
                 mes = venci[5:7]
                 dia = venci[8:11]
-                venc = datetime.date(int(ano), int(mes), int(dia))
-                venci =datetime.strftime(venc, '%d/%m/%Y')
+                print(venci)
+                venc = datetime.datetime(int(ano), int(mes), int(dia))
+                venci =datetime.datetime.strftime(venc, '%d/%m/%Y')
                 print("Vencimiento: "+str(venc))
-                today = datetime.date.today()       
+                today = datetime.datetime.today()
                 if today >= venc:
                         resta = today - venc
                         msg ="Tu membresia vencio hace "+str(resta.days)+" dias el dia "+str(venci)
@@ -8808,8 +8800,8 @@ class Ui_MenuAdministrativo(object):
                 return
     
     def registrarVisita(self, cursor):
-        fechaActual = datetime.now()
-        fecha = datetime.strftime(fechaActual, '%d/%m/%Y')
+        fechaActual = datetime.datetime.now()
+        fecha = datetime.datetime.strftime(fechaActual, '%d/%m/%Y')
         hora = str(fechaActual.hour) + ":"+ str(fechaActual.minute)+":"+str(fechaActual.second)
         id = self.plainTextEdit.toPlainText()
         if (len(id)) != 0:
@@ -8823,6 +8815,7 @@ class Ui_MenuAdministrativo(object):
                         for rows in row:
                                 name = rows[0]
                                 status = rows[1]
+                
                 if status == "Vencida":
                         self.msgError("Membresia Vencida", "No se puede registrar visita de un cliente con una membresia vencida")
                         return
