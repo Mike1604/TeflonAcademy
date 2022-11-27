@@ -6490,6 +6490,8 @@ class Ui_MenuAdministrativo(object):
         for rows in row: 
             name = rows[0]
         self.label_Bienvenida.setText("¡Bienvenido "+name+"!")
+        fechaActual = datetime.datetime.now()
+        fecha=datetime.datetime.strftime(fechaActual, '%d/%m/%Y')
         #Botones menu desplegable (Navegacion)
         self.pushButton_35.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.RegistrarVisita))
         self.pushButton_34.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.CRUD_Empleados))
@@ -6545,7 +6547,6 @@ class Ui_MenuAdministrativo(object):
         self.ActualizarBotonPaciente_2.clicked.connect(lambda: self.actualizarEntrenador(cursor))
         #CRUD ENTRENADORES - Botón (Clientes asignados)
         self.BuscarBotonRegistrados_2.clicked.connect(lambda: self.MostrarCliente_Entrenador(cursor))
-        self.RefrescarBotonRegistrados_2.clicked.connect(lambda: self.RefrescarCliente_Entrenador(cursor))
         #CRUD ENTRENADORES - Botón (Mostrar)
         self.BuscarBotonRegistrados_3.clicked.connect(lambda: self.BuscarMostrar_Entrenador(cursor))
         self.RefrescarBotonRegistrados_3.clicked.connect(lambda: self.refrescarMostrar_Entrenador(cursor))
@@ -6555,7 +6556,7 @@ class Ui_MenuAdministrativo(object):
         
 
         #Botones CRUD Clientes (Registrar)
-        self.GuardarRegistrarPaciente_3.clicked.connect(lambda: self.registrarCliente(cursor))
+        self.GuardarRegistrarPaciente_3.clicked.connect(lambda: self.registrarCliente(cursor,fecha))
         self.pushButton_5.clicked.connect(lambda: self.passwordHide(self.MedicamentosRegistrar_8))
         #Botones CRUD Clientes (AsignarEntrenador)
         self.BuscarBotonActualizar_4.clicked.connect(lambda: self.buscarCliente(cursor))
@@ -6577,8 +6578,6 @@ class Ui_MenuAdministrativo(object):
         #Punto de venta (VENTA)
         self.pushButton_11.clicked.connect(lambda: self.getFolio(cursor))
         self.radioButton.clicked.connect(lambda: self.getFolio(cursor))
-        fechaActual = datetime.datetime.now()
-        fecha=datetime.datetime.strftime(fechaActual, '%d/%m/%Y')
         self.lineEdit_2.setText(fecha)
         self.lineEdit_4.setText(name)
         self.lineEdit.setText(str(id))
@@ -6628,11 +6627,13 @@ class Ui_MenuAdministrativo(object):
         self.BuscarBotonRegistrados_7.clicked.connect(lambda: self.buscarVentas(cursor))  
              #Buscar Visita
         self.Buscar_Visita_3.clicked.connect(lambda: self.buscarVisita(cursor, fecha))  
-        #ActualizarStatusClientes
-        self.actualizarClientesSituacion(cursor)
         #RegistrarVisita Volver al menu
         self.Buscar_Visita_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPrincipal)) 
-
+        #Registrar Visita
+        self.Buscar_Visita_4.clicked.connect(lambda: self.registrarVisita(cursor)) 
+        self.pushButton_35.clicked.connect(lambda: self.limpiarVisita())
+        self.pushButton_22.clicked.connect(lambda: self.limpiarVisita())
+        self.Buscar_Visita_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.MenuPrincipal))
         """
         Aqui inician las funciones:
         """
@@ -7005,7 +7006,7 @@ class Ui_MenuAdministrativo(object):
             self.msgError("Falta de informacion", "Debes ingresar un RFC valido de almenos 13 digitos")
         else:
             SQL=""" insert into entrenador(Nombre_Entrenador, Fecha_Ingreso, Fecha_nacimiento, Telefono_Entrenador, CURP_Entrenador, NSS_Entrenador, RFC_Entrenador)\
-                values ('{}','{}','{}','{}',{},'{}','{}'); """.format(nombre, fechIngreso, naci, tel, curp, NSS, RFC)
+                values ('{}','{}','{}','{}','{}','{}','{}'); """.format(nombre, fechIngreso, naci, tel, curp, NSS, RFC)
             try:
                 cursor.execute(SQL)     
                 cursor.connection.commit()
@@ -7127,11 +7128,22 @@ class Ui_MenuAdministrativo(object):
         else:
             opc=self.BuscarRegistradosCombobox_3.currentText() 
             if opc == "Buscar por Nombre:":
-                SQL="""select * from cliente where nombre_cliente like '%{}%' """.format(data)
+
+                SQL="""select ID_entrenador from entrenador where Nombre_Entrenador like '%{}%' """.format(data)
                 cursor.execute(SQL)
                 row=cursor.fetchall()
                 if len(row)==0:
-                    self.msgError("Sin coincidencia", "No existe coincidencia con ese nombre de cliente")
+                        self.msgError("Sin coincidencia", "No existe coincidencia con ese nombre de cliente")
+                        return
+
+                for rows in row:
+                        idEntrenador=rows[0]
+
+                SQL="""select * from cliente where cast(ID_entrenador as varchar)='{}' """.format(idEntrenador)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese nombre de entrenador")
                 else:
                     tablerow = 0
                     for rows in row:
@@ -7147,11 +7159,11 @@ class Ui_MenuAdministrativo(object):
                         self.TablaEmpleados_2.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
                         tablerow+=1
             elif opc == "Buscar por ID:":
-                SQL="""select * from cliente where cast(id_cliente as varchar)='{}' """.format(data)
+                SQL="""select * from cliente where cast(ID_entrenador as varchar)='{}' """.format(data)
                 cursor.execute(SQL)
                 row=cursor.fetchall()
                 if len(row)==0:
-                    self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de cliente")
+                    self.msgError("Sin coincidencia", "No existe coincidencia con ese ID de entrenador")
                 else:
                     tablerow = 0
                     for rows in row:
@@ -7168,25 +7180,6 @@ class Ui_MenuAdministrativo(object):
                         tablerow+=1
             else:
                 self.msgError("Seleccion", "Selecciona un modo de busqueda")
-    
-    def RefrescarCliente_Entrenador(self, cursor):
-        self.TablaEmpleados.clearContents()
-        cursor.execute("select * from cliente")
-        row=cursor.fetchall()
-        tablerow = 0
-        for rows in row:
-            self.TablaEmpleados_2.setRowCount(tablerow + 1)
-            self.TablaEmpleados_2.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
-            self.TablaEmpleados_2.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
-            self.TablaEmpleados_2.setItem(tablerow,2,QTableWidgetItem(str(rows[9])))
-            self.TablaEmpleados_2.setItem(tablerow,3,QTableWidgetItem(str(rows[4])))
-            self.TablaEmpleados_2.setItem(tablerow,4,QTableWidgetItem(str(rows[2])))
-            self.TablaEmpleados_2.setItem(tablerow,5,QTableWidgetItem(str(rows[3])))
-            self.TablaEmpleados_2.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
-            self.TablaEmpleados_2.setItem(tablerow,7,QTableWidgetItem(str(rows[5])))
-            self.TablaEmpleados_2.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
-            tablerow+=1
-    
     
     def BuscarMostrar_Entrenador(self, cursor):
         data=self.BuscarRegistradosPacientesText_3.text()
@@ -7333,6 +7326,14 @@ class Ui_MenuAdministrativo(object):
             except Exception as ex:
                 #self.msgError("No fue posible eliminar el entrenador", ex)
                 print(ex)
+            SQL='''update cliente set id_entrenador=null where id_entrenador='{}' '''.format(id)   
+            try:
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+            except Exception as ex:
+                #self.msgError("No fue posible eliminar el entrenador", ex)
+                print(ex)
+                
         
             self.NombreRegistrar_3.clear()
             self.UltimaCitaRegistrar_3.clear()
@@ -7345,7 +7346,7 @@ class Ui_MenuAdministrativo(object):
     """
     CRUD Clientes
     """ 
-    def registrarCliente(self, cursor):
+    def registrarCliente(self, cursor, date):
         nombre=self.NombreRegistrar_4.text()
         telefono=self.TelefonoRegistrar_4.text()
         correo=self.AlergiasRegistrar_5.text()
@@ -7363,13 +7364,25 @@ class Ui_MenuAdministrativo(object):
             self.msgError("Falta de informacion", "Debes ingresar una edad")
         elif (len(peso)==0):
             self.msgError("Falta de informacion", "Debes ingresar un peso")
-        elif (len(altura)==0):
-            self.msgError("Falta de informacion", "Debes ingresar una altura")
+        elif (len(altura)==0) or (float(altura)<=1.0) or (float(altura)>=2.5):
+            self.msgError("Campo incompleto","Debes ingresar una altura valida en formato (1.50) y no dejarlo vacio")
         elif (len(password_cliente)<8):
             self.msgError("Falta de informacion", "Debes ingresar una contraseña de almenos 8 digitos")
         else:
-            SQL=""" insert into cliente (nombre_cliente, telefono_cliente, correo_cliente, edad, peso_act, altura, contraseña)\
-                values ('{}','{}','{}','{}',{},'{}','{}'); """.format(nombre,telefono,correo,edad,peso,altura,password_cliente)
+            alt=float(altura)
+            pes=float(peso) 
+            IMC = pes / (alt**2)
+            
+            if IMC<18.5:
+                IMCS= str(self.truncate(IMC),2)+" Bajo peso"
+            elif (IMC<=24.9) and (IMC>=18.5):
+                IMCS= str(self.truncate(IMC,2))+" Peso saludable"
+            elif (IMC<=29.9) and (IMC>=25):
+                IMCS= str(self.truncate(IMC,2))+" Sobrepeso"  
+            elif (IMC>30):
+                IMCS= str(self.truncate(IMC,2))+" Obesidad" 
+            SQL=""" insert into cliente (nombre_cliente, telefono_cliente, correo_cliente, edad, peso_act, altura, IMC, Fecha_Vencimiento, contraseña)\
+                values ('{}','{}','{}','{}',{},'{}','{}','{}','{}'); """.format(nombre,telefono,correo,edad,peso,altura,IMCS,date,password_cliente)
             try:
                 cursor.execute(SQL)     
                 cursor.connection.commit()
@@ -7625,7 +7638,7 @@ class Ui_MenuAdministrativo(object):
     
     def RefrescarClientess(self, cursor):
         self.TablaEmpleados.clearContents()
-        cursor.execute("select * from cliente")
+        cursor.execute("select *from cliente")
         row=cursor.fetchall()
         tablerow = 0
         for rows in row:
@@ -8638,43 +8651,62 @@ class Ui_MenuAdministrativo(object):
                 mes = venci[5:7]
                 dia = venci[8:11]
                 venc = datetime.date(int(ano), int(mes), int(dia))
+                venci =datetime.datetime.strftime(venc, '%d/%m/%Y')
+                print("Vencimiento: "+str(venc))
                 today = datetime.date.today()       
-                if today > venc:
+                if today >= venc:
                         resta = today - venc
-                        restastr = str(resta)
-                        msg ="Tu membresia ha vencido hace "+str(restastr[:2])+" dias"
+                        msg ="Tu membresia vencio hace "+str(resta.days)+" dias el dia "+str(venci)
                         self.label_12.setText(msg)
                         self.msgError("Membresia vencida", "La membresia del cliente ha vencido")
                 else:
-                        resta = today - venc
-                        restastr = str(resta)
-                        msg ="Tu membresia vencera en "+str(restastr[:2])+" dias"
+                        resta = venc - today
+                        msg ="Tu membresia vencera en "+str(resta.days)+" dias el dia "+str(venci)
                         self.label_12.setText(msg)
 
         else:
                 self.msgError("Busqueda", "Debes ingresar un ID para poder buscar")
                 return
-     
-    def actualizarClientesSituacion(self, cursor):
-        SQL="select id_Cliente, fecha_Vencimiento from cliente"
-        cursor.execute(SQL)
-        row=cursor.fetchall()
-        for rows in row:
-                venci = str(rows[1])
-                ano = venci[:4]
-                mes = venci[5:7]
-                dia = venci[8:11]
-                venc = datetime.date(int(ano), int(mes), int(dia))
-                today = datetime.date.today()       
-                if today > venc:
-                        sql="""update cliente set situacion_Membresia='Vencida' where id_cliente='{}' """.format(str(rows[0]))
-                        cursor.execute(sql)
-                        cursor.connection.commit()
+    
+    def registrarVisita(self, cursor):
+        fechaActual = datetime.datetime.now()
+        fecha = datetime.datetime.strftime(fechaActual, '%d/%m/%Y')
+        hora = str(fechaActual.hour) + ":"+ str(fechaActual.minute)+":"+str(fechaActual.second)
+        id = self.plainTextEdit.toPlainText()
+        if (len(id)) != 0:
+                SQL="""select Nombre_Cliente, situacion_Membresia from cliente where ID_cliente='{}' """.format(id)
+                cursor.execute(SQL)
+                row=cursor.fetchall()
+                if len(row)==0:
+                        self.msgError("Sin coincidencia", "No existe coincidencia con ese ID, debes ingresar un cliente ya registrado")
+                        return
                 else:
-                        sql="""update cliente set situacion_Membresia='Activa' where id_cliente='{}' """.format(str(rows[0]))
-                        cursor.execute(sql)
-                        cursor.connection.commit()
+                        for rows in row:
+                                name = rows[0]
+                                status = rows[1]
+                if status == "Vencida":
+                        self.msgError("Membresia Vencida", "No se puede registrar visita de un cliente con una membresia vencida")
+                        return
+                print("Fecha: "+str(fecha)+" Hora: "+hora+" id= "+id+" Nombre: "+name)
+                SQL=""" insert into visita (id, Nombre_Cliente, fecha, hora) values ('{}','{}','{}','{}'); """.format(id,name,fecha,hora)
+                cursor.execute(SQL)     
+                cursor.connection.commit()
+                self.limpiarVisita()
+                self.msgError("Visita Registrada", "Visita Registrada correctamente")
+                return
+        else:
+                self.msgError("Busqueda", "Debes iprimero buscar un ID para poder registrar visita")
+                return
 
+    def limpiarVisita(self):
+        self.label_12.setText("Tu membresía vence en: 00 dias.")
+        self.plainTextEdit.clear()
+        self.plainTextEdit_2.clear()
+        self.plainTextEdit_3.clear()
+
+    """
+    Otros
+    """ 
     def msgError(self,msg1,msg2):
         msg = QtWidgets.QMessageBox()
         msg.setWindowTitle(msg1)
@@ -8683,6 +8715,9 @@ class Ui_MenuAdministrativo(object):
         
         x = msg.exec_()
     
+    def truncate(self, number: float, max_decimals: int) -> float:
+        int_part, dec_part = str(number).split(".")
+        return float(".".join((int_part, dec_part[:max_decimals])))
 
 
     def retranslateUi(self, MenuAdministrativo):

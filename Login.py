@@ -1,3 +1,4 @@
+import datetime
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QTableWidgetItem, QLineEdit
 from MenuAdministrativos import Ui_MenuAdministrativo
@@ -196,6 +197,9 @@ class Ui_LogIn(object):
         """
         self.pushButton_28.clicked.connect(lambda: self.iniciarSesion(cursor, LogIn))
         self.pushButton_3.clicked.connect(lambda: self.passwordHide(self.lineEdit_8))
+        #Actualizacion de STATUS
+        self.actualizarClientesSituacion(cursor)
+
         """
         Aqui inician las funciones:
         """
@@ -245,7 +249,20 @@ class Ui_LogIn(object):
                             self.lineEdit_7.setText("")
                             self.lineEdit_8.setText("")
                             self.window.show()
-       
+    
+    def actualizarClientesSituacion(self, cursor):
+        fechaActual = datetime.datetime.now()
+        fecha=datetime.datetime.strftime(fechaActual, '%d/%m/%Y')
+        SQL="""select *from cliente where fecha_vencimiento<='{}' """.format(str(fecha))
+        cursor.execute(SQL)
+        row=cursor.fetchall()
+        if (len(row)) != 0:
+                for rows in row:
+                        sql="""update cliente set situacion_Membresia='Vencida' where id_cliente='{}' """.format(str(rows[0]))
+                        cursor.execute(sql)
+                        cursor.connection.commit()
+
+
     def passwordHide(self, passw):
         if passw.echoMode() == QLineEdit.Password:
             passw.setEchoMode(QtWidgets.QLineEdit.Normal)

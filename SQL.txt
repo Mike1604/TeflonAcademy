@@ -24,6 +24,7 @@ create table cliente(
 	edad int,
 	peso_act decimal(5,2),
 	altura decimal(5,2),
+	IMC character varying,
 	id_Entrenador int,
 	situacion_Membresia varchar(10),
     Fecha_Vencimiento date,
@@ -57,6 +58,14 @@ create table venta(
 	cantidad smallint,
 	precio varchar(10),
 	total varchar(10),
+	fecha date,
+	vendedor character varying
 )
+create table visita(
+	ind int,
+	Nombre_Cliente varchar(50),
+	fecha date,
+	hora varchar(30)
+);
 insert into empleadosyadmin (Nombre, Fecha_Ingreso, rol, Telefono_Empleado, CURP_Empleado, NSS_Empleado, RFC_Empleado, Contraseña)
 values ('Mike','22/11/22','Administrativo',3311398249,123456789123456789,21235412582,1234567891234,'Mike1234');
