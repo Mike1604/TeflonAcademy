@@ -28,7 +28,8 @@ create table cliente(
 	situacion_Membresia varchar(10),
     Fecha_Vencimiento date,
     contraseña character varying,
-	IMC character varying
+	IMC character varying,
+	fecha_ingreso date
 );
 create table entrenador(
     ID_entrenador serial primary key not null,
