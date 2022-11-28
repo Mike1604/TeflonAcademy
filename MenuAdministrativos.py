@@ -7836,6 +7836,9 @@ class Ui_MenuAdministrativo(object):
         meses=self.lineEdit_38.text()
         precio=self.lineEdit_35.text()
         descripcion=self.lineEdit_16.text()
+
+        direccionfoto="Images/membresia.png"
+
         if len(meses)==0:
             self.msgError("Falta de informacion", "Debes ingresar los meses de duracion de la membresia")
         elif (len(precio)==0) or ((float(precio)) < 1):
@@ -7843,8 +7846,8 @@ class Ui_MenuAdministrativo(object):
         elif len(descripcion)==0:
             self.msgError("Falta de informacion", "Debes ingresar una descripcion a la membresia")
         else:
-            sql="insert into inventario(nombre_material,cantidad,categoria,precio,descripcion_material)\
-                values('"+nombre+"','"+meses+"','"+categoria+"','"+precio+"','"+descripcion+"')"
+            sql="insert into inventario(nombre_material,cantidad,categoria,precio,descripcion_material,foto)\
+                values('"+nombre+"','"+meses+"','"+categoria+"','"+precio+"','"+descripcion+"','"+direccionfoto+"')"
             print(sql)
             try:
                 cursor.execute(sql)
