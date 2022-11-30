@@ -6384,7 +6384,7 @@ class Ui_MenuAdministrativo(object):
 "")
         self.EliminarFecha_2.setObjectName("EliminarFecha_2")
         self.EliminarPacienteBoton_3 = QtWidgets.QPushButton(self.scrollAreaWidgetContents_10)
-        self.EliminarPacienteBoton_3.setGeometry(QtCore.QRect(490, 520, 131, 70))
+        self.EliminarPacienteBoton_3.setGeometry(QtCore.QRect(950, 420, 131, 70))
         self.EliminarPacienteBoton_3.setMinimumSize(QtCore.QSize(130, 70))
         self.EliminarPacienteBoton_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.EliminarPacienteBoton_3.setStyleSheet("QPushButton{\n"
