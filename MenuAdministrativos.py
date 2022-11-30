@@ -7463,7 +7463,7 @@ class Ui_MenuAdministrativo(object):
             IMC = pes / (alt**2)
             
             if IMC<18.5:
-                IMCS= str(self.truncate(IMC),2)+" Bajo peso"
+                IMCS= str(self.truncate(IMC,2))+" Bajo peso"
             elif (IMC<=24.9) and (IMC>=18.5):
                 IMCS= str(self.truncate(IMC,2))+" Peso saludable"
             elif (IMC<=29.9) and (IMC>=25):
@@ -8024,7 +8024,7 @@ class Ui_MenuAdministrativo(object):
                 cursor.connection.commit()
             except Exception as ex:
                 print(ex)
-            self.NombreActualizarPaciente_11.text()
+            self.NombreActualizarPaciente_11.clear()
             self.lineEdit_25.clear()
             self.lineEdit_26.clear()
             self.lineEdit_30.clear()
@@ -8124,7 +8124,7 @@ class Ui_MenuAdministrativo(object):
             tablerow+=1
     
     def buscarInventario(self,cursor):
-        data=self.BuscarRegistradosPacientesText_8
+        data=self.BuscarRegistradosPacientesText_8.text()
         self.TablaEmpleados_8.clearContents()
         self.TablaEmpleados_8.setRowCount(0)
         if len(data)==0:
@@ -8153,6 +8153,7 @@ class Ui_MenuAdministrativo(object):
                         tablerow+=1
             elif opc == "Buscar por Codigo:":
                 SQL="""select *from inventario where cast(codigo as varchar)='{}' """.format(data)
+                print(SQL)
                 cursor.execute(SQL)
                 row=cursor.fetchall()
                 if len(row)==0:
@@ -8160,16 +8161,16 @@ class Ui_MenuAdministrativo(object):
                 else:
                     tablerow = 0
                     for rows in row:
-                        self.TablaEmpleados.setRowCount(tablerow + 1)
-                        self.TablaEmpleados.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
-                        self.TablaEmpleados.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
-                        self.TablaEmpleados.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
-                        self.TablaEmpleados.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
-                        self.TablaEmpleados.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
-                        self.TablaEmpleados.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
-                        self.TablaEmpleados.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
-                        self.TablaEmpleados.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
-                        self.TablaEmpleados.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
+                        self.TablaEmpleados_8.setRowCount(tablerow + 1)
+                        self.TablaEmpleados_8.setItem(tablerow,0,QTableWidgetItem(str(rows[0])))
+                        self.TablaEmpleados_8.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
+                        self.TablaEmpleados_8.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
+                        self.TablaEmpleados_8.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
+                        self.TablaEmpleados_8.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
+                        self.TablaEmpleados_8.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_8.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
+                        self.TablaEmpleados_8.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
+                        self.TablaEmpleados_8.setItem(tablerow,8,QTableWidgetItem(str(rows[8])))
                         tablerow+=1
             else:
                 self.msgError("Seleccion", "Selecciona un modo de busqueda")
@@ -8234,8 +8235,15 @@ class Ui_MenuAdministrativo(object):
         self.lineEdit_8.clear()
         self.lineEdit_6.clear()
         self.lineEdit_9.clear()
+
         
+        self.Tota_label_3.clear()
+        self.label_141.clear()
+        self.Tota_label.clear()
+        self.lineEdit_13.clear()
+
         self.vencimientoClient=""
+        self.CantidadTotal=0
         self.idcliente=0
         self.carrito.clear()
 

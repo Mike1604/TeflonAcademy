@@ -1570,7 +1570,7 @@ class Ui_MainWindow(object):
         IMC = pes / (alt**2)
             
         if IMC<18.5:
-                IMCS= str(self.truncate(IMC),2)+" Bajo peso"
+                IMCS= str(self.truncate(IMC,2))+" Bajo peso"
         elif (IMC<=24.9) and (IMC>=18.5):
                 IMCS= str(self.truncate(IMC,2))+" Peso saludable"
         elif (IMC<=29.9) and (IMC>=25):
