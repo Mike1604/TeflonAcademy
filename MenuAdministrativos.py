@@ -5954,7 +5954,7 @@ class Ui_MenuAdministrativo(object):
 "color: rgb(255, 255, 255);")
         self.label_81.setObjectName("label_81")
         self.ActualizarBotonPaciente_4 = QtWidgets.QPushButton(self.tab_15)
-        self.ActualizarBotonPaciente_4.setGeometry(QtCore.QRect(490, 580, 130, 70))
+        self.ActualizarBotonPaciente_4.setGeometry(QtCore.QRect(970, 450, 130, 70))
         self.ActualizarBotonPaciente_4.setMinimumSize(QtCore.QSize(130, 70))
         self.ActualizarBotonPaciente_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.ActualizarBotonPaciente_4.setStyleSheet("QPushButton{\n"
