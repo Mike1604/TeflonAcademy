@@ -7984,7 +7984,7 @@ class Ui_MenuAdministrativo(object):
         else:
             id = data
             if len(id)==0:
-                self.msgError("Busquda", "Debes realizar una busqueda primero antes de actualizar")
+                self.msgError("Busqueda", "Debes realizar una busqueda primero antes de actualizar")
                 return
         nombre=self.NombreActualizarPaciente_11.text()
         cantidad=self.lineEdit_25.text()
@@ -8017,7 +8017,7 @@ class Ui_MenuAdministrativo(object):
             self.msgError("Falta de informacion", "Agrega una descripcion al producto para continuar")
         else:
             sql="""update inventario set nombre_material='{}',cantidad='{}',distribuidor='{}',lote_material='{}',categoria='{}',
-            precio='{}',caducidad='{}',descripcion_material='{}' where codigo='{}'""".format(nombre,cantidad,distribui,lote,categoria,precio,caducidad,descripcion,id)
+            precio='{}',caducidad='{}',descripcion_material='{}', foto='{}' where codigo='{}'""".format(nombre,cantidad,distribui,lote,categoria,precio,caducidad,descripcion,direccionfoto,id)
             print(sql)
             try:
                 cursor.execute(sql)
@@ -8195,7 +8195,7 @@ class Ui_MenuAdministrativo(object):
     def seleccionarFoto(self,cursor):
         global filename
         filename = QFileDialog.getOpenFileName(filter="Image (*.*)")[0]
-        imagen = cv2.imread(filename, IMREAD_UNCHANGED)
+        imagen = cv2.imread(filename)
         frame = cv2.cvtColor(imagen, cv2.COLOR_BGR2RGB)
         #frame = cv2.resize(frame, (300, 300), interpolation=cv2.INTER_CUBIC)
         imagen = QImage(frame, frame.shape[1], frame.shape[0], frame.strides[0], QImage.Format_RGB888)
