@@ -8195,10 +8195,11 @@ class Ui_MenuAdministrativo(object):
     def seleccionarFoto(self,cursor):
         global filename
         filename = QFileDialog.getOpenFileName(filter="Image (*.*)")[0]
-        imagen = cv2.imread(filename)
+        imagen = cv2.imread(filename, IMREAD_UNCHANGED)
         frame = cv2.cvtColor(imagen, cv2.COLOR_BGR2RGB)
+        #frame = cv2.resize(frame, (300, 300), interpolation=cv2.INTER_CUBIC)
         imagen = QImage(frame, frame.shape[1], frame.shape[0], frame.strides[0], QImage.Format_RGB888)
-        imagen = imagen.scaled(400, 280, Qt.KeepAspectRatio)
+        imagen = imagen.scaled(300, 300, Qt.KeepAspectRatio)
         self.label_156.setPixmap(QtGui.QPixmap.fromImage(imagen))
         
     def seleccionarNuevaFoto(self,cursor):
@@ -8258,7 +8259,7 @@ class Ui_MenuAdministrativo(object):
     def agregarProductoVenta(self, cursor):
         #Validacion de la cantidad a vender
         cantidad  = self.lineEdit_7.text()
-        data = self.lineEdit_8.text()
+        data = self.lineEdit_5.text()
         if data == "Membresia":
             self.msgError("Membresia", "No puedes agregar membresias al carrito de ventas, para ello es necesario acceder a venta membresias")
             return 
@@ -8721,8 +8722,8 @@ class Ui_MenuAdministrativo(object):
                         self.TablaEmpleados_7.setItem(tablerow,1,QTableWidgetItem(str(rows[1])))
                         self.TablaEmpleados_7.setItem(tablerow,2,QTableWidgetItem(str(rows[2])))
                         self.TablaEmpleados_7.setItem(tablerow,3,QTableWidgetItem(str(rows[3])))
-                        self.TablaEmpleados_7.setItem(tablerow,4,QTableWidgetItem(str(rows[5])))
-                        self.TablaEmpleados_7.setItem(tablerow,5,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_7.setItem(tablerow,4,QTableWidgetItem(str(rows[4])))
+                        self.TablaEmpleados_7.setItem(tablerow,5,QTableWidgetItem(str(rows[5])))
                         self.TablaEmpleados_7.setItem(tablerow,6,QTableWidgetItem(str(rows[6])))
                         self.TablaEmpleados_7.setItem(tablerow,7,QTableWidgetItem(str(rows[7])))
                         tablerow+=1
