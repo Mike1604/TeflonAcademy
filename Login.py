@@ -3,7 +3,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QTableWidgetItem, QLineEdit
 from MenuAdministrativos import Ui_MenuAdministrativo
 from MenuEmpleados import Ui_MenuEmpleados
-from MenuClientes import Ui_MainWindow
+from newMenuClientes import Ui_MainWindow
 
 class Ui_LogIn(object):
     def setupUi(self, LogIn, cursor):
